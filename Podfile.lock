@@ -1,0 +1,44 @@
+PODS:
+  - AWSAuthCore (2.6.2):
+    - AWSCore (= 2.6.2)
+  - AWSCognito (2.6.2):
+    - AWSCore (= 2.6.2)
+  - AWSCore (2.6.2)
+  - AWSDynamoDB (2.6.2):
+    - AWSCore (= 2.6.2)
+  - AWSS3 (2.6.2):
+    - AWSCore (= 2.6.2)
+  - NVActivityIndicatorView (4.0.0):
+    - NVActivityIndicatorView/Presenter (= 4.0.0)
+  - NVActivityIndicatorView/Presenter (4.0.0)
+  - SwiftHash (2.0.1)
+
+DEPENDENCIES:
+  - AWSAuthCore (~> 2.6.1)
+  - AWSCognito (~> 2.6.1)
+  - AWSDynamoDB (~> 2.6.1)
+  - AWSS3 (~> 2.6.1)
+  - NVActivityIndicatorView
+  - SwiftHash (from `https://github.com/onmyway133/SwiftHash`)
+
+EXTERNAL SOURCES:
+  SwiftHash:
+    :git: https://github.com/onmyway133/SwiftHash
+
+CHECKOUT OPTIONS:
+  SwiftHash:
+    :commit: 1387bd2a614060ff516b3aa1279354b139b3e6f1
+    :git: https://github.com/onmyway133/SwiftHash
+
+SPEC CHECKSUMS:
+  AWSAuthCore: 41155990fc5b10d84667c237a8757799edbf6267
+  AWSCognito: e8db76ef485fbbc1c90617217451301b1477ce45
+  AWSCore: 8f458961a4967be219162108f5be7df1c935639a
+  AWSDynamoDB: 29e1d8775b13a18033b6064e1563e5769fdfe024
+  AWSS3: b3e2c4aca868cae06b5b88337ceabee25709fcc5
+  NVActivityIndicatorView: 54c9b93b6f25a4f467512680c0c90c09a1095cf2
+  SwiftHash: 62691a0d6b09b958d21ab1ea0014b83d56f58e8f
+
+PODFILE CHECKSUM: ec9992abf7e1811831ca16d6b2e9bb4df8c572b8
+
+COCOAPODS: 1.3.1
