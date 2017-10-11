@@ -87,7 +87,9 @@ class LoginViewController: BaseVC {
                 
                 if(user.password == MD5(self.passwordText.text!)) {
                     //UserDefaults.standard.set(task.result, forKey: "currentUser")
+                    DispatchQueue.main.async(execute: {
                     self.performSegue(withIdentifier: "showWelcomeVC", sender: self)
+                    })
                 }
                 else {
                     self.displayAlert(message: "Incorrect credentials, please try again.")
