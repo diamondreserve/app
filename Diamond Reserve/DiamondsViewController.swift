@@ -56,11 +56,34 @@ class DiamondsViewController: UIViewController, UIScrollViewDelegate {
     
     @IBAction func nextButtonTapped(_ sender: Any) {
         if(scrollView.contentOffset.x == self.view.frame.size.width*2) {
-            self.performSegue(withIdentifier: "showDiamondsListView", sender: self)
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let mainDiamondVC: MainDiamondsViewController? = storyboard.instantiateViewController(withIdentifier: "MainDiamondsVC") as? MainDiamondsViewController
+            let mainDiamondsNC = UINavigationController(rootViewController: mainDiamondVC!)
+            setAttributesFor(mainDiamondsNC)
+
+            let mainViewController: MainSideMenuController = (storyboard.instantiateViewController(withIdentifier: "MainSideMenuVC") as? MainSideMenuController)!
+            mainViewController.rootViewController = mainDiamondsNC
+            let window: UIWindow? = (UIApplication.shared.delegate?.window)!
+            window?.rootViewController = mainViewController
+            UIView.transition(with: window!, duration: 0.3, options: .transitionCrossDissolve, animations: nil, completion: { _ in })
+
         }
         else {
             scrollView.contentOffset.x += self.view.frame.size.width
         }
+    }
+    
+    func setAttributesFor(_ navController: UINavigationController) {
+        navController.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
+        navController.navigationBar.isHidden = false
+        navController.navigationBar.shadowImage = UIImage()
+        navController.navigationBar.isTranslucent = false
+        navController.navigationBar.barTintColor = DIAMOND_THEME_COLOR
+        navController.navigationBar.tintColor = UIColor.white
+        navController.navigationBar.frame = CGRect(x: CGFloat(0), y: CGFloat(0), width: CGFloat(SCREEN_WIDTH), height: CGFloat(20))
+        navController.navigationBar.titleTextAttributes = [NSFontAttributeName: UIFont(name: "Unica One", size: 24)!, NSForegroundColorAttributeName: UIColor.white]
+
+        UIBarButtonItem.appearance().setBackButtonTitlePositionAdjustment(UIOffsetMake(-60, -60), for: UIBarMetrics.default)
     }
 
 }

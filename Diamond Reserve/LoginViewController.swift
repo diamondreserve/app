@@ -66,6 +66,12 @@ class LoginViewController: BaseVC {
         navigationController?.popViewController(animated: true)
     }
     @IBAction func loginTapped(_ sender: Any) {
+        
+        // Temporarily
+//        self.performSegue(withIdentifier: "showWelcomeVC", sender: self)
+//        return
+        
+        
         if(emailText.text! == "" || passwordText.text! == "" ){
             displayAlert(message: "Please fill all the fields in!")
             return

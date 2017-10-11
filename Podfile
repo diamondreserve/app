@@ -10,6 +10,8 @@ target 'Diamond Reserve' do
     pod 'AWSDynamoDB', '~> 2.6.1'
     pod 'NVActivityIndicatorView'
     pod 'SwiftHash', git: 'https://github.com/onmyway133/SwiftHash'
+    pod 'LGSideMenuController'
+
 target 'Diamond ReserveTests' do
     inherit! :search_paths
     # Pods for testing

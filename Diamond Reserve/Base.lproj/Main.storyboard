@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="jsd-vc-jXd">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="jsd-vc-jXd">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -581,7 +581,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B4p-KE-a8b" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="884" y="481"/>
+            <point key="canvasLocation" x="721" y="484"/>
         </scene>
         <!--Verify View Controller-->
         <scene sceneID="3Em-2E-xrX">
@@ -701,7 +701,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eJN-XR-zlb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1665" y="481"/>
+            <point key="canvasLocation" x="1471" y="468"/>
         </scene>
         <!--Forgot View Controller-->
         <scene sceneID="4EC-CG-qAn">
@@ -928,7 +928,7 @@ IN THE MEANTIME LET’S TAKE A TOUR!</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4MP-QQ-v9P" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-612" y="1181"/>
+            <point key="canvasLocation" x="-591" y="1181"/>
         </scene>
         <!--Tutorial View Controller-->
         <scene sceneID="Xdu-tV-hB6">
@@ -1071,6 +1071,9 @@ TO SEE IF YOU QUALIFY </string>
                                 <state key="normal" title="ENTER">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="nextButtonTapped:" destination="Pvt-ZD-MH5" eventType="touchUpInside" id="CBp-Ua-anb"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SEARCH FOR THE MOST EXQUISITE DIAMONDS YOU WONT FIND ON RAPPNET" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gEG-Js-R2A">
                                 <rect key="frame" x="38" y="505.5" width="299" height="47.5"/>
@@ -1128,30 +1131,103 @@ TO SEE IF YOU QUALIFY </string>
                         <outlet property="mainText" destination="gEG-Js-R2A" id="5MD-D5-c6y"/>
                         <outlet property="scrollView" destination="Z4F-l0-oTX" id="hnW-Sj-BWj"/>
                         <outlet property="titleText" destination="0kY-5l-5jZ" id="aez-rh-2nN"/>
-                        <segue destination="fOL-pc-est" kind="show" identifier="showDiamondListView" id="X0y-Np-LrG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tN4-oP-Sh1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-612" y="1921.8890554722641"/>
+            <point key="canvasLocation" x="977" y="1181"/>
         </scene>
-        <!--View Controller-->
+        <!--Main Side Menu Controller-->
+        <scene sceneID="P7R-o1-mgG">
+            <objects>
+                <viewController storyboardIdentifier="MainSideMenuVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="iG7-ZJ-vTu" customClass="MainSideMenuController" customModule="Diamond_Reserve" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gEd-ya-E0y"/>
+                        <viewControllerLayoutGuide type="bottom" id="Jtf-n1-cKF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2DS-0o-bfT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="HWu-yU-4Bl" kind="show" identifier="left" customClass="LGSideMenuSegue" id="N5d-Oq-6kg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OtE-oe-gjA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1817" y="1181"/>
+        </scene>
+        <!--Right Menu View Controller-->
+        <scene sceneID="ojI-ee-cR5">
+            <objects>
+                <viewController id="HWu-yU-4Bl" customClass="RightMenuViewController" customModule="Diamond_Reserve" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="djd-Qd-0Jd"/>
+                        <viewControllerLayoutGuide type="bottom" id="f6r-ut-HX1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0Tq-sj-xYT">
+                        <rect key="frame" x="0.0" y="0.0" width="300" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="300" height="667"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L2N-cS-C2r" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1816" y="1924"/>
+        </scene>
+        <!--Main Diamonds View Controller-->
         <scene sceneID="a1c-aa-mIQ">
             <objects>
-                <viewController id="fOL-pc-est" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainDiamondsVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="fOL-pc-est" customClass="MainDiamondsViewController" customModule="Diamond_Reserve" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="XFe-Hm-j9z"/>
                         <viewControllerLayoutGuide type="bottom" id="m6d-ud-12i"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="zyo-Jj-QAl">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZyE-OU-94f" userLabel="Bottom Tabbar">
+                                <rect key="frame" x="0.0" y="538" width="375" height="65"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="playback" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ic-zY-RV5">
+                                        <rect key="frame" x="17" y="2" width="78" height="61"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="12"/>
+                                        <inset key="titleEdgeInsets" minX="-30" minY="45" maxX="0.0" maxY="0.0"/>
+                                        <inset key="imageEdgeInsets" minX="22" minY="-6" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="DIAMONDS" image="gems.png"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="playback" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TxU-eO-Oxz">
+                                        <rect key="frame" x="93" y="4" width="78" height="61"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="12"/>
+                                        <inset key="titleEdgeInsets" minX="-30" minY="45" maxX="0.0" maxY="0.0"/>
+                                        <inset key="imageEdgeInsets" minX="22" minY="-6" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="DIAMONDS" image="gems.png"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="HPX-PJ-KaM"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="ZyE-OU-94f" secondAttribute="bottom" id="IbZ-oP-SiD"/>
+                            <constraint firstItem="ZyE-OU-94f" firstAttribute="leading" secondItem="zyo-Jj-QAl" secondAttribute="leading" id="Jfb-fw-rOe"/>
+                            <constraint firstAttribute="trailing" secondItem="ZyE-OU-94f" secondAttribute="trailing" id="b8N-JN-rvd"/>
+                        </constraints>
                     </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jfO-Uk-lkA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-612" y="2655"/>
+            <point key="canvasLocation" x="2892" y="1180.6596701649175"/>
         </scene>
     </scenes>
     <resources>
@@ -1165,6 +1241,7 @@ TO SEE IF YOU QUALIFY </string>
         <image name="Merged Background 1.jpg" width="806" height="1429"/>
         <image name="Stars.png" width="375" height="667"/>
         <image name="Unchecked" width="22" height="22"/>
+        <image name="gems.png" width="32" height="33"/>
         <image name="strip1.png" width="375" height="425"/>
     </resources>
 </document>

@@ -8,6 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		3C810FFD90232539F650E257 /* Pods_Diamond_Reserve.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15BA25770C46A51BCD57924B /* Pods_Diamond_Reserve.framework */; };
+		802594EF1F8DCDFD004F1F94 /* BLACK_IV_FMX.png in Resources */ = {isa = PBXBuildFile; fileRef = 802594EC1F8DCDFD004F1F94 /* BLACK_IV_FMX.png */; };
+		802594F01F8DCDFD004F1F94 /* BLACK_IV_FMX@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 802594ED1F8DCDFD004F1F94 /* BLACK_IV_FMX@2x.png */; };
+		802594F11F8DCDFD004F1F94 /* BLACK_IV_FMX@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 802594EE1F8DCDFD004F1F94 /* BLACK_IV_FMX@3x.png */; };
+		802594F31F8E00B2004F1F94 /* MainDiamondsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802594F21F8E00B2004F1F94 /* MainDiamondsViewController.swift */; };
+		802594F61F8E0295004F1F94 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802594F51F8E0295004F1F94 /* Constants.swift */; };
+		802594F91F8E070A004F1F94 /* MainSideMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802594F81F8E070A004F1F94 /* MainSideMenuController.swift */; };
+		802594FB1F8E07DC004F1F94 /* RightMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802594FA1F8E07DC004F1F94 /* RightMenuViewController.swift */; };
+		802594FF1F8E15B4004F1F94 /* MENU_ICON.png in Resources */ = {isa = PBXBuildFile; fileRef = 802594FC1F8E15B4004F1F94 /* MENU_ICON.png */; };
+		802595001F8E15B4004F1F94 /* MENU_ICON@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 802594FD1F8E15B4004F1F94 /* MENU_ICON@2x.png */; };
+		802595011F8E15B4004F1F94 /* MENU_ICON@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 802594FE1F8E15B4004F1F94 /* MENU_ICON@3x.png */; };
+		802595051F8E2063004F1F94 /* gems.png in Resources */ = {isa = PBXBuildFile; fileRef = 802595021F8E2063004F1F94 /* gems.png */; };
+		802595061F8E2063004F1F94 /* gems@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 802595031F8E2063004F1F94 /* gems@2x.png */; };
+		802595071F8E2063004F1F94 /* gems@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 802595041F8E2063004F1F94 /* gems@3x.png */; };
 		B702FBF51F8BF1AA00E0EFFB /* Emerald3@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B702FBEF1F8BF1AA00E0EFFB /* Emerald3@3x.png */; };
 		B702FBF61F8BF1AA00E0EFFB /* Emerald3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B702FBF01F8BF1AA00E0EFFB /* Emerald3@2x.png */; };
 		B702FBF71F8BF1AA00E0EFFB /* Emerald3.png in Resources */ = {isa = PBXBuildFile; fileRef = B702FBF11F8BF1AA00E0EFFB /* Emerald3.png */; };
@@ -79,6 +92,19 @@
 		57B91CECE2BC7AFBF438A85D /* Pods_Diamond_ReserveUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Diamond_ReserveUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		64D964D9B1E32AB2B44ADA98 /* Pods_Diamond_ReserveTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Diamond_ReserveTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BC3E480D2686B1F8881C7B6 /* Pods-Diamond Reserve.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diamond Reserve.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Diamond Reserve/Pods-Diamond Reserve.debug.xcconfig"; sourceTree = "<group>"; };
+		802594EC1F8DCDFD004F1F94 /* BLACK_IV_FMX.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BLACK_IV_FMX.png; sourceTree = "<group>"; };
+		802594ED1F8DCDFD004F1F94 /* BLACK_IV_FMX@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BLACK_IV_FMX@2x.png"; sourceTree = "<group>"; };
+		802594EE1F8DCDFD004F1F94 /* BLACK_IV_FMX@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BLACK_IV_FMX@3x.png"; sourceTree = "<group>"; };
+		802594F21F8E00B2004F1F94 /* MainDiamondsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainDiamondsViewController.swift; sourceTree = "<group>"; };
+		802594F51F8E0295004F1F94 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		802594F81F8E070A004F1F94 /* MainSideMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainSideMenuController.swift; sourceTree = "<group>"; };
+		802594FA1F8E07DC004F1F94 /* RightMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RightMenuViewController.swift; sourceTree = "<group>"; };
+		802594FC1F8E15B4004F1F94 /* MENU_ICON.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MENU_ICON.png; sourceTree = "<group>"; };
+		802594FD1F8E15B4004F1F94 /* MENU_ICON@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MENU_ICON@2x.png"; sourceTree = "<group>"; };
+		802594FE1F8E15B4004F1F94 /* MENU_ICON@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MENU_ICON@3x.png"; sourceTree = "<group>"; };
+		802595021F8E2063004F1F94 /* gems.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gems.png; sourceTree = "<group>"; };
+		802595031F8E2063004F1F94 /* gems@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gems@2x.png"; sourceTree = "<group>"; };
+		802595041F8E2063004F1F94 /* gems@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gems@3x.png"; sourceTree = "<group>"; };
 		A8CAEE2EB6C14FA1A4368963 /* Pods-Diamond ReserveUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diamond ReserveUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Diamond ReserveUITests/Pods-Diamond ReserveUITests.release.xcconfig"; sourceTree = "<group>"; };
 		B702FBEF1F8BF1AA00E0EFFB /* Emerald3@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Emerald3@3x.png"; sourceTree = "<group>"; };
 		B702FBF01F8BF1AA00E0EFFB /* Emerald3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Emerald3@2x.png"; sourceTree = "<group>"; };
@@ -172,6 +198,23 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		802594F41F8E0257004F1F94 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				802594F51F8E0295004F1F94 /* Constants.swift */,
+			);
+			name = Helper;
+			sourceTree = "<group>";
+		};
+		802594F71F8E06EB004F1F94 /* Side Menu */ = {
+			isa = PBXGroup;
+			children = (
+				802594F81F8E070A004F1F94 /* MainSideMenuController.swift */,
+				802594FA1F8E07DC004F1F94 /* RightMenuViewController.swift */,
+			);
+			name = "Side Menu";
+			sourceTree = "<group>";
+		};
 		B74D6B961F8AC48B00642619 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
@@ -216,6 +259,8 @@
 		B76D8D691F7ACD15000CDFC7 /* Diamond Reserve */ = {
 			isa = PBXGroup;
 			children = (
+				802594F71F8E06EB004F1F94 /* Side Menu */,
+				802594F41F8E0257004F1F94 /* Helper */,
 				B750FD161F8AA496004844BB /* Models */,
 				B750FD121F8AA262004844BB /* awsconfiguration.json */,
 				B76D8D6A1F7ACD15000CDFC7 /* AppDelegate.swift */,
@@ -231,6 +276,7 @@
 				B738C1691F7D94850097720C /* WelcomeViewController.swift */,
 				B7D603A21F865D7F00B94067 /* DiamondsViewController.swift */,
 				B750FD171F8AB72C004844BB /* BaseVC.swift */,
+				802594F21F8E00B2004F1F94 /* MainDiamondsViewController.swift */,
 			);
 			path = "Diamond Reserve";
 			sourceTree = "<group>";
@@ -265,6 +311,15 @@
 		B7DD64F31F7C3B3300858A6B /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				802595021F8E2063004F1F94 /* gems.png */,
+				802595031F8E2063004F1F94 /* gems@2x.png */,
+				802595041F8E2063004F1F94 /* gems@3x.png */,
+				802594FC1F8E15B4004F1F94 /* MENU_ICON.png */,
+				802594FD1F8E15B4004F1F94 /* MENU_ICON@2x.png */,
+				802594FE1F8E15B4004F1F94 /* MENU_ICON@3x.png */,
+				802594EC1F8DCDFD004F1F94 /* BLACK_IV_FMX.png */,
+				802594ED1F8DCDFD004F1F94 /* BLACK_IV_FMX@2x.png */,
+				802594EE1F8DCDFD004F1F94 /* BLACK_IV_FMX@3x.png */,
 				B702FBEF1F8BF1AA00E0EFFB /* Emerald3@3x.png */,
 				B702FBF01F8BF1AA00E0EFFB /* Emerald3@2x.png */,
 				B702FBF11F8BF1AA00E0EFFB /* Emerald3.png */,
@@ -379,7 +434,6 @@
 				TargetAttributes = {
 					B76D8D661F7ACD15000CDFC7 = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = QZJLD48KK6;
 						ProvisioningStyle = Automatic;
 					};
 					B76D8D7E1F7ACD15000CDFC7 = {
@@ -419,6 +473,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				802595071F8E2063004F1F94 /* gems@3x.png in Resources */,
 				B702FBFA1F8BF1AA00E0EFFB /* Emerald2@2x.png in Resources */,
 				B75C3E171F882F6600E759EC /* strip3.png in Resources */,
 				B7DD64EC1F7C346D00858A6B /* Merged Background 2.jpg in Resources */,
@@ -435,18 +490,26 @@
 				B7D603A01F86415300B94067 /* Emerald@3x.png in Resources */,
 				B7D6039F1F86415300B94067 /* Emerald@2x.png in Resources */,
 				B702FBF81F8BF1AA00E0EFFB /* Emerald2@3x.png in Resources */,
+				802595061F8E2063004F1F94 /* gems@2x.png in Resources */,
 				B738C1601F7D91290097720C /* strip2@2x.png in Resources */,
 				B76D8D761F7ACD15000CDFC7 /* Assets.xcassets in Resources */,
 				B738C1671F7D91610097720C /* strip1.png in Resources */,
+				802594F11F8DCDFD004F1F94 /* BLACK_IV_FMX@3x.png in Resources */,
 				B702FBF71F8BF1AA00E0EFFB /* Emerald3.png in Resources */,
+				802595051F8E2063004F1F94 /* gems.png in Resources */,
 				B750FD131F8AA262004844BB /* awsconfiguration.json in Resources */,
 				B702FBF61F8BF1AA00E0EFFB /* Emerald3@2x.png in Resources */,
 				B738C1611F7D91290097720C /* strip2@3x.png in Resources */,
+				802594EF1F8DCDFD004F1F94 /* BLACK_IV_FMX.png in Resources */,
 				B7DD64EA1F7C346700858A6B /* Merged Background 1.jpg in Resources */,
+				802594F01F8DCDFD004F1F94 /* BLACK_IV_FMX@2x.png in Resources */,
 				B702FBF51F8BF1AA00E0EFFB /* Emerald3@3x.png in Resources */,
 				B738C15A1F7D90B10097720C /* Stars.png in Resources */,
+				802594FF1F8E15B4004F1F94 /* MENU_ICON.png in Resources */,
 				B738C15B1F7D90B10097720C /* Stars@2x.png in Resources */,
+				802595011F8E15B4004F1F94 /* MENU_ICON@3x.png in Resources */,
 				B76D8D741F7ACD15000CDFC7 /* Main.storyboard in Resources */,
+				802595001F8E15B4004F1F94 /* MENU_ICON@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -527,6 +590,7 @@
 				"${BUILT_PRODUCTS_DIR}/AWSCore/AWSCore.framework",
 				"${BUILT_PRODUCTS_DIR}/AWSDynamoDB/AWSDynamoDB.framework",
 				"${BUILT_PRODUCTS_DIR}/AWSS3/AWSS3.framework",
+				"${BUILT_PRODUCTS_DIR}/LGSideMenuController/LGSideMenuController.framework",
 				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftHash/SwiftHash.framework",
 			);
@@ -537,6 +601,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCore.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSDynamoDB.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSS3.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LGSideMenuController.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftHash.framework",
 			);
@@ -636,13 +701,17 @@
 				B74D6B981F8B203C00642619 /* Diamonds.swift in Sources */,
 				B738C1501F7D01D80097720C /* LoginViewController.swift in Sources */,
 				B750FD181F8AB72C004844BB /* BaseVC.swift in Sources */,
+				802594F31F8E00B2004F1F94 /* MainDiamondsViewController.swift in Sources */,
 				B76D8D6B1F7ACD15000CDFC7 /* AppDelegate.swift in Sources */,
+				802594F91F8E070A004F1F94 /* MainSideMenuController.swift in Sources */,
 				B738C16C1F7DA0F80097720C /* TutorialViewController.swift in Sources */,
 				B7D603A31F865D7F00B94067 /* DiamondsViewController.swift in Sources */,
 				B76D8D9D1F7AE2C6000CDFC7 /* SplashViewController.swift in Sources */,
 				B738C1541F7D7F1D0097720C /* VerifyViewController.swift in Sources */,
+				802594FB1F8E07DC004F1F94 /* RightMenuViewController.swift in Sources */,
 				B738C1521F7D70130097720C /* RegisterViewController.swift in Sources */,
 				B738C1561F7D8BA00097720C /* ForgotViewController.swift in Sources */,
+				802594F61F8E0295004F1F94 /* Constants.swift in Sources */,
 				B750FD151F8AA48D004844BB /* Users.swift in Sources */,
 				B738C16A1F7D94850097720C /* WelcomeViewController.swift in Sources */,
 			);
@@ -799,7 +868,7 @@
 			baseConfigurationReference = 6BC3E480D2686B1F8881C7B6 /* Pods-Diamond Reserve.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = QZJLD48KK6;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Diamond Reserve/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -814,7 +883,7 @@
 			baseConfigurationReference = 55F797171FC34E0E93FA028F /* Pods-Diamond Reserve.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = QZJLD48KK6;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Diamond Reserve/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
