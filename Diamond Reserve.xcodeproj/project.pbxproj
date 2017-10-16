@@ -21,6 +21,21 @@
 		802595051F8E2063004F1F94 /* gems.png in Resources */ = {isa = PBXBuildFile; fileRef = 802595021F8E2063004F1F94 /* gems.png */; };
 		802595061F8E2063004F1F94 /* gems@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 802595031F8E2063004F1F94 /* gems@2x.png */; };
 		802595071F8E2063004F1F94 /* gems@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 802595041F8E2063004F1F94 /* gems@3x.png */; };
+		802595111F8EB55C004F1F94 /* jewelry.png in Resources */ = {isa = PBXBuildFile; fileRef = 8025950E1F8EB55C004F1F94 /* jewelry.png */; };
+		802595121F8EB55C004F1F94 /* jewelry@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8025950F1F8EB55C004F1F94 /* jewelry@2x.png */; };
+		802595131F8EB55C004F1F94 /* jewelry@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 802595101F8EB55C004F1F94 /* jewelry@3x.png */; };
+		802595171F8EB5DA004F1F94 /* stone.png in Resources */ = {isa = PBXBuildFile; fileRef = 802595141F8EB5DA004F1F94 /* stone.png */; };
+		802595181F8EB5DA004F1F94 /* stone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 802595151F8EB5DA004F1F94 /* stone@2x.png */; };
+		802595191F8EB5DA004F1F94 /* stone@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 802595161F8EB5DA004F1F94 /* stone@3x.png */; };
+		8025951D1F8EB63B004F1F94 /* search.png in Resources */ = {isa = PBXBuildFile; fileRef = 8025951A1F8EB63B004F1F94 /* search.png */; };
+		8025951E1F8EB63B004F1F94 /* search@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8025951B1F8EB63B004F1F94 /* search@2x.png */; };
+		8025951F1F8EB63B004F1F94 /* search@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8025951C1F8EB63B004F1F94 /* search@3x.png */; };
+		803C24D41F9321ED00895296 /* DiamondReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803C24D31F9321ED00895296 /* DiamondReviewViewController.swift */; };
+		803C24D61F9349B800895296 /* DiamondSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803C24D51F9349B800895296 /* DiamondSearchViewController.swift */; };
+		808B53DF1F91485500504607 /* TabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808B53DE1F91485500504607 /* TabbarViewController.swift */; };
+		808B53E31F92810E00504607 /* DiamondTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808B53E11F92810E00504607 /* DiamondTableViewCell.swift */; };
+		808B53E41F92810E00504607 /* DiamondTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 808B53E21F92810E00504607 /* DiamondTableViewCell.xib */; };
+		808B53E61F92B71C00504607 /* DiamondSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808B53E51F92B71C00504607 /* DiamondSelectionViewController.swift */; };
 		B702FBF51F8BF1AA00E0EFFB /* Emerald3@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B702FBEF1F8BF1AA00E0EFFB /* Emerald3@3x.png */; };
 		B702FBF61F8BF1AA00E0EFFB /* Emerald3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B702FBF01F8BF1AA00E0EFFB /* Emerald3@2x.png */; };
 		B702FBF71F8BF1AA00E0EFFB /* Emerald3.png in Resources */ = {isa = PBXBuildFile; fileRef = B702FBF11F8BF1AA00E0EFFB /* Emerald3.png */; };
@@ -60,7 +75,7 @@
 		B7D6039F1F86415300B94067 /* Emerald@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B7D6039C1F86415300B94067 /* Emerald@2x.png */; };
 		B7D603A01F86415300B94067 /* Emerald@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B7D6039D1F86415300B94067 /* Emerald@3x.png */; };
 		B7D603A11F86415300B94067 /* Emerald.png in Resources */ = {isa = PBXBuildFile; fileRef = B7D6039E1F86415300B94067 /* Emerald.png */; };
-		B7D603A31F865D7F00B94067 /* DiamondsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D603A21F865D7F00B94067 /* DiamondsViewController.swift */; };
+		B7D603A31F865D7F00B94067 /* CoverPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D603A21F865D7F00B94067 /* CoverPageViewController.swift */; };
 		B7DD64EA1F7C346700858A6B /* Merged Background 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B7DD64E91F7C346700858A6B /* Merged Background 1.jpg */; };
 		B7DD64EC1F7C346D00858A6B /* Merged Background 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B7DD64EB1F7C346C00858A6B /* Merged Background 2.jpg */; };
 		BAD6E01F41736826B1B4B7E6 /* Pods_Diamond_ReserveTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64D964D9B1E32AB2B44ADA98 /* Pods_Diamond_ReserveTests.framework */; };
@@ -105,6 +120,21 @@
 		802595021F8E2063004F1F94 /* gems.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gems.png; sourceTree = "<group>"; };
 		802595031F8E2063004F1F94 /* gems@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gems@2x.png"; sourceTree = "<group>"; };
 		802595041F8E2063004F1F94 /* gems@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gems@3x.png"; sourceTree = "<group>"; };
+		8025950E1F8EB55C004F1F94 /* jewelry.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jewelry.png; sourceTree = "<group>"; };
+		8025950F1F8EB55C004F1F94 /* jewelry@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "jewelry@2x.png"; sourceTree = "<group>"; };
+		802595101F8EB55C004F1F94 /* jewelry@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "jewelry@3x.png"; sourceTree = "<group>"; };
+		802595141F8EB5DA004F1F94 /* stone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stone.png; sourceTree = "<group>"; };
+		802595151F8EB5DA004F1F94 /* stone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "stone@2x.png"; sourceTree = "<group>"; };
+		802595161F8EB5DA004F1F94 /* stone@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "stone@3x.png"; sourceTree = "<group>"; };
+		8025951A1F8EB63B004F1F94 /* search.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = search.png; sourceTree = "<group>"; };
+		8025951B1F8EB63B004F1F94 /* search@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "search@2x.png"; sourceTree = "<group>"; };
+		8025951C1F8EB63B004F1F94 /* search@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "search@3x.png"; sourceTree = "<group>"; };
+		803C24D31F9321ED00895296 /* DiamondReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiamondReviewViewController.swift; sourceTree = "<group>"; };
+		803C24D51F9349B800895296 /* DiamondSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiamondSearchViewController.swift; sourceTree = "<group>"; };
+		808B53DE1F91485500504607 /* TabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarViewController.swift; sourceTree = "<group>"; };
+		808B53E11F92810E00504607 /* DiamondTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiamondTableViewCell.swift; sourceTree = "<group>"; };
+		808B53E21F92810E00504607 /* DiamondTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DiamondTableViewCell.xib; sourceTree = "<group>"; };
+		808B53E51F92B71C00504607 /* DiamondSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiamondSelectionViewController.swift; sourceTree = "<group>"; };
 		A8CAEE2EB6C14FA1A4368963 /* Pods-Diamond ReserveUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diamond ReserveUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Diamond ReserveUITests/Pods-Diamond ReserveUITests.release.xcconfig"; sourceTree = "<group>"; };
 		B702FBEF1F8BF1AA00E0EFFB /* Emerald3@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Emerald3@3x.png"; sourceTree = "<group>"; };
 		B702FBF01F8BF1AA00E0EFFB /* Emerald3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Emerald3@2x.png"; sourceTree = "<group>"; };
@@ -151,7 +181,7 @@
 		B7D6039C1F86415300B94067 /* Emerald@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Emerald@2x.png"; sourceTree = "<group>"; };
 		B7D6039D1F86415300B94067 /* Emerald@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Emerald@3x.png"; sourceTree = "<group>"; };
 		B7D6039E1F86415300B94067 /* Emerald.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Emerald.png; sourceTree = "<group>"; };
-		B7D603A21F865D7F00B94067 /* DiamondsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiamondsViewController.swift; sourceTree = "<group>"; };
+		B7D603A21F865D7F00B94067 /* CoverPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoverPageViewController.swift; sourceTree = "<group>"; };
 		B7DD64E91F7C346700858A6B /* Merged Background 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Merged Background 1.jpg"; sourceTree = "<group>"; };
 		B7DD64EB1F7C346C00858A6B /* Merged Background 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Merged Background 2.jpg"; sourceTree = "<group>"; };
 		DB07E7600359F9468BA31683 /* Pods-Diamond ReserveTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diamond ReserveTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Diamond ReserveTests/Pods-Diamond ReserveTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -215,6 +245,19 @@
 			name = "Side Menu";
 			sourceTree = "<group>";
 		};
+		808B53E01F9280B700504607 /* Diamond */ = {
+			isa = PBXGroup;
+			children = (
+				802594F21F8E00B2004F1F94 /* MainDiamondsViewController.swift */,
+				808B53E11F92810E00504607 /* DiamondTableViewCell.swift */,
+				808B53E21F92810E00504607 /* DiamondTableViewCell.xib */,
+				808B53E51F92B71C00504607 /* DiamondSelectionViewController.swift */,
+				803C24D31F9321ED00895296 /* DiamondReviewViewController.swift */,
+				803C24D51F9349B800895296 /* DiamondSearchViewController.swift */,
+			);
+			name = Diamond;
+			sourceTree = "<group>";
+		};
 		B74D6B961F8AC48B00642619 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
@@ -259,6 +302,7 @@
 		B76D8D691F7ACD15000CDFC7 /* Diamond Reserve */ = {
 			isa = PBXGroup;
 			children = (
+				808B53E01F9280B700504607 /* Diamond */,
 				802594F71F8E06EB004F1F94 /* Side Menu */,
 				802594F41F8E0257004F1F94 /* Helper */,
 				B750FD161F8AA496004844BB /* Models */,
@@ -274,9 +318,9 @@
 				B738C1531F7D7F1D0097720C /* VerifyViewController.swift */,
 				B738C1551F7D8BA00097720C /* ForgotViewController.swift */,
 				B738C1691F7D94850097720C /* WelcomeViewController.swift */,
-				B7D603A21F865D7F00B94067 /* DiamondsViewController.swift */,
+				B7D603A21F865D7F00B94067 /* CoverPageViewController.swift */,
 				B750FD171F8AB72C004844BB /* BaseVC.swift */,
-				802594F21F8E00B2004F1F94 /* MainDiamondsViewController.swift */,
+				808B53DE1F91485500504607 /* TabbarViewController.swift */,
 			);
 			path = "Diamond Reserve";
 			sourceTree = "<group>";
@@ -311,6 +355,15 @@
 		B7DD64F31F7C3B3300858A6B /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				802595141F8EB5DA004F1F94 /* stone.png */,
+				802595151F8EB5DA004F1F94 /* stone@2x.png */,
+				802595161F8EB5DA004F1F94 /* stone@3x.png */,
+				8025951A1F8EB63B004F1F94 /* search.png */,
+				8025951B1F8EB63B004F1F94 /* search@2x.png */,
+				8025951C1F8EB63B004F1F94 /* search@3x.png */,
+				8025950E1F8EB55C004F1F94 /* jewelry.png */,
+				8025950F1F8EB55C004F1F94 /* jewelry@2x.png */,
+				802595101F8EB55C004F1F94 /* jewelry@3x.png */,
 				802595021F8E2063004F1F94 /* gems.png */,
 				802595031F8E2063004F1F94 /* gems@2x.png */,
 				802595041F8E2063004F1F94 /* gems@3x.png */,
@@ -474,12 +527,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				802595071F8E2063004F1F94 /* gems@3x.png in Resources */,
+				8025951F1F8EB63B004F1F94 /* search@3x.png in Resources */,
 				B702FBFA1F8BF1AA00E0EFFB /* Emerald2@2x.png in Resources */,
 				B75C3E171F882F6600E759EC /* strip3.png in Resources */,
 				B7DD64EC1F7C346D00858A6B /* Merged Background 2.jpg in Resources */,
 				B738C1621F7D91290097720C /* strip2.png in Resources */,
 				B76D8D791F7ACD15000CDFC7 /* LaunchScreen.storyboard in Resources */,
 				B702FBF91F8BF1AA00E0EFFB /* Emerald2.png in Resources */,
+				8025951D1F8EB63B004F1F94 /* search.png in Resources */,
 				B75C3E151F882F6600E759EC /* strip3@3x.png in Resources */,
 				B738C15C1F7D90B10097720C /* Stars@3x.png in Resources */,
 				B738C1661F7D91610097720C /* strip1@3x.png in Resources */,
@@ -490,25 +545,33 @@
 				B7D603A01F86415300B94067 /* Emerald@3x.png in Resources */,
 				B7D6039F1F86415300B94067 /* Emerald@2x.png in Resources */,
 				B702FBF81F8BF1AA00E0EFFB /* Emerald2@3x.png in Resources */,
+				8025951E1F8EB63B004F1F94 /* search@2x.png in Resources */,
+				808B53E41F92810E00504607 /* DiamondTableViewCell.xib in Resources */,
 				802595061F8E2063004F1F94 /* gems@2x.png in Resources */,
+				802595191F8EB5DA004F1F94 /* stone@3x.png in Resources */,
 				B738C1601F7D91290097720C /* strip2@2x.png in Resources */,
 				B76D8D761F7ACD15000CDFC7 /* Assets.xcassets in Resources */,
 				B738C1671F7D91610097720C /* strip1.png in Resources */,
 				802594F11F8DCDFD004F1F94 /* BLACK_IV_FMX@3x.png in Resources */,
 				B702FBF71F8BF1AA00E0EFFB /* Emerald3.png in Resources */,
 				802595051F8E2063004F1F94 /* gems.png in Resources */,
+				802595111F8EB55C004F1F94 /* jewelry.png in Resources */,
 				B750FD131F8AA262004844BB /* awsconfiguration.json in Resources */,
 				B702FBF61F8BF1AA00E0EFFB /* Emerald3@2x.png in Resources */,
 				B738C1611F7D91290097720C /* strip2@3x.png in Resources */,
+				802595121F8EB55C004F1F94 /* jewelry@2x.png in Resources */,
 				802594EF1F8DCDFD004F1F94 /* BLACK_IV_FMX.png in Resources */,
 				B7DD64EA1F7C346700858A6B /* Merged Background 1.jpg in Resources */,
 				802594F01F8DCDFD004F1F94 /* BLACK_IV_FMX@2x.png in Resources */,
+				802595181F8EB5DA004F1F94 /* stone@2x.png in Resources */,
 				B702FBF51F8BF1AA00E0EFFB /* Emerald3@3x.png in Resources */,
+				802595171F8EB5DA004F1F94 /* stone.png in Resources */,
 				B738C15A1F7D90B10097720C /* Stars.png in Resources */,
 				802594FF1F8E15B4004F1F94 /* MENU_ICON.png in Resources */,
 				B738C15B1F7D90B10097720C /* Stars@2x.png in Resources */,
 				802595011F8E15B4004F1F94 /* MENU_ICON@3x.png in Resources */,
 				B76D8D741F7ACD15000CDFC7 /* Main.storyboard in Resources */,
+				802595131F8EB55C004F1F94 /* jewelry@3x.png in Resources */,
 				802595001F8E15B4004F1F94 /* MENU_ICON@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -592,6 +655,7 @@
 				"${BUILT_PRODUCTS_DIR}/AWSS3/AWSS3.framework",
 				"${BUILT_PRODUCTS_DIR}/LGSideMenuController/LGSideMenuController.framework",
 				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
+				"${BUILT_PRODUCTS_DIR}/RangeSeekSlider/RangeSeekSlider.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftHash/SwiftHash.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -603,6 +667,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSS3.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LGSideMenuController.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RangeSeekSlider.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftHash.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -701,11 +766,16 @@
 				B74D6B981F8B203C00642619 /* Diamonds.swift in Sources */,
 				B738C1501F7D01D80097720C /* LoginViewController.swift in Sources */,
 				B750FD181F8AB72C004844BB /* BaseVC.swift in Sources */,
+				808B53E61F92B71C00504607 /* DiamondSelectionViewController.swift in Sources */,
 				802594F31F8E00B2004F1F94 /* MainDiamondsViewController.swift in Sources */,
 				B76D8D6B1F7ACD15000CDFC7 /* AppDelegate.swift in Sources */,
 				802594F91F8E070A004F1F94 /* MainSideMenuController.swift in Sources */,
+				803C24D41F9321ED00895296 /* DiamondReviewViewController.swift in Sources */,
+				803C24D61F9349B800895296 /* DiamondSearchViewController.swift in Sources */,
+				808B53E31F92810E00504607 /* DiamondTableViewCell.swift in Sources */,
 				B738C16C1F7DA0F80097720C /* TutorialViewController.swift in Sources */,
-				B7D603A31F865D7F00B94067 /* DiamondsViewController.swift in Sources */,
+				808B53DF1F91485500504607 /* TabbarViewController.swift in Sources */,
+				B7D603A31F865D7F00B94067 /* CoverPageViewController.swift in Sources */,
 				B76D8D9D1F7AE2C6000CDFC7 /* SplashViewController.swift in Sources */,
 				B738C1541F7D7F1D0097720C /* VerifyViewController.swift in Sources */,
 				802594FB1F8E07DC004F1F94 /* RightMenuViewController.swift in Sources */,

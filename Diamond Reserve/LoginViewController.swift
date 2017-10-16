@@ -68,8 +68,8 @@ class LoginViewController: BaseVC {
     @IBAction func loginTapped(_ sender: Any) {
         
         // Temporarily
-//        self.performSegue(withIdentifier: "showWelcomeVC", sender: self)
-//        return
+        self.performSegue(withIdentifier: "showWelcomeVC", sender: self)
+        return
         
         
         if(emailText.text! == "" || passwordText.text! == "" ){

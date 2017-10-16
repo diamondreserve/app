@@ -7,12 +7,39 @@
 //
 
 import UIKit
+import AWSDynamoDB
 
-class MainDiamondsViewController: UIViewController {
+class MainDiamondsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    @IBOutlet var diamondButtons: [UIButton]!
+    @IBOutlet weak var tableView: UITableView!
+    
+    var lock:NSLock?
+    var lastEvaluatedKey:[String : AWSDynamoDBAttributeValue]!
+    var doneLoading = false
+//    var tableRows:Array<DDBTableRow>?
+    var diamonds = [Diamonds]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         setNavigationBar()
+        tableView.register(UINib(nibName: "DiamondTableViewCell", bundle: nil), forCellReuseIdentifier: "DiamondCell")
+        //generateTestData()
+        refreshList(false)
+        
+        
+//        insertSomeItems().continueWithBlock({
+//            (task: BFTask!) -> BFTask! in
+//
+//            if (task.error != nil) {
+//                NSLog(task.error.description)
+//            } else {
+//                NSLog("DynamoDB save succeeded")
+//            }
+//
+//            return nil;
+//        })
+        
     }
     
     func setNavigationBar() {
@@ -22,6 +49,7 @@ class MainDiamondsViewController: UIViewController {
        
         let rightBtn = UIBarButtonItem(title: "SELECT", style: .plain, target: self, action: #selector(showSelect))
         rightBtn.setTitleTextAttributes([NSFontAttributeName: UIFont(name: "Unica One", size: 17)! ,NSForegroundColorAttributeName: UIColor.white], for: .normal)
+        rightBtn.setTitleTextAttributes([NSFontAttributeName: UIFont(name: "Unica One", size: 17)! ,NSForegroundColorAttributeName: UIColor.white], for: .highlighted)
         navigationItem.rightBarButtonItem = rightBtn
     }
     
@@ -30,9 +58,139 @@ class MainDiamondsViewController: UIViewController {
     }
     
     func showSelect() {
-        
+        let diamondSelectionVC = self.storyboard?.instantiateViewController(withIdentifier: "DiamondSelectionVC") as! DiamondSelectionViewController
+        self.navigationController?.pushViewController(diamondSelectionVC, animated: true)
     }
     
+    @IBAction func didDiamondButtonSelected(_ sender: UIButton) {
+        sender.isSelected = !sender.isSelected
+    }
+    
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 10 //diamonds.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        var cell: DiamondTableViewCell? = tableView.dequeueReusableCell(withIdentifier: "DiamondCell", for: indexPath) as? DiamondTableViewCell
+        if cell == nil {
+            cell = DiamondTableViewCell(style: .default, reuseIdentifier: "DiamondCell")
+        }
+        //cell?.setData(diamond: diamonds[indexPath.row]);
+        return cell!
+    }
+    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        cell.backgroundColor = (indexPath.row % 2 == 0) ? UIColor(red: 25, green: 25, blue: 25).withAlphaComponent(0.8) : UIColor(red: 38, green: 38, blue: 38).withAlphaComponent(0.8)
+    }
+    
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 60
+    }
+    
+    func generateTestData() {
+        UIApplication.shared.isNetworkActivityIndicatorVisible = true
+        
+        var tasks = [AWSTask<AnyObject>]()
+        let mapper = AWSDynamoDBObjectMapper.default()
+        var item: Diamonds = Diamonds()!;
+        item.diamondId = "1"
+        item.shape  = "round"
+        item.price   = "2032"
+        item.weight   = "2.52"
+        item.color = "D"
+        item.clarity = "VS2"
+        tasks.append(mapper.save(item))
+        
+        item = Diamonds()!;
+        item.diamondId = "2"
+        item.shape  = "round"
+        item.price   = "2324"
+        item.weight   = "1.52"
+        item.color = "F"
+        item.clarity = "WS2"
+        tasks.append(mapper.save(item))
+      
+        AWSTask<AnyObject>(forCompletionOfAllTasks: Optional(tasks)).continueWith(executor: AWSExecutor.mainThread(), block: { (task: AWSTask) -> AnyObject? in
+            if let error = task.error as? NSError {
+                print("Error: \(error)")
+            }
+            
+            UIApplication.shared.isNetworkActivityIndicatorVisible = false
+            
+            self.refreshList(true)
+            return nil
+        })
+    }
+    
+    func refreshList(_ startFromBeginning: Bool)  {
+        if (self.lock?.try() != nil) {
+            if startFromBeginning {
+                self.lastEvaluatedKey = nil;
+                self.doneLoading = false
+            }
+            
+            UIApplication.shared.isNetworkActivityIndicatorVisible = true
+            
+            let dynamoDBObjectMapper = AWSDynamoDBObjectMapper.default()
+            let queryExpression = AWSDynamoDBScanExpression()
+            queryExpression.exclusiveStartKey = self.lastEvaluatedKey
+            queryExpression.limit = 20
+            dynamoDBObjectMapper.scan(Diamonds.self, expression: queryExpression).continueWith(executor: AWSExecutor.mainThread(), block: { (task:AWSTask!) -> AnyObject! in
+                
+                if self.lastEvaluatedKey == nil {
+                    self.diamonds.removeAll(keepingCapacity: true)
+                }
+                
+                if let paginatedOutput = task.result {
+                    for item in paginatedOutput.items as! [Diamonds] {
+                        self.diamonds.append(item)
+                    }
+                    
+                    self.lastEvaluatedKey = paginatedOutput.lastEvaluatedKey
+                    if paginatedOutput.lastEvaluatedKey == nil {
+                        self.doneLoading = true
+                    }
+                }
+                
+                UIApplication.shared.isNetworkActivityIndicatorVisible = false
+                self.tableView.reloadData()
+                
+                if let error = task.error as? NSError {
+                    print("Error: \(error)")
+                }
+                
+                return nil
+            })
+        }
+    }
+    
+
+    
+//    func insertSomeItems() -> BFTask! {
+//        let mapper = AWSDynamoDBObjectMapper.default()
+//        var item: Diamonds = Diamonds()!;
+//        item.shape  = "round"
+//        item.price   = 2032
+//        item.weight   = 2.52
+//        item.color = "D"
+//        item.clarity = "VS2"
+//        let task1 = mapper.save(item)
+//
+//        item = Diamonds()!;
+//        item.shape  = "round"
+//        item.price   = 2324
+//        item.weight   = 1.52
+//        item.color = "F"
+//        item.clarity = "WS2"
+//        let task2 = mapper.save(item)
+//
+//    }
     
 
    
