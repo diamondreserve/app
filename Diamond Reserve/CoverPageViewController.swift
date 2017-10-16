@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DiamondsViewController: UIViewController, UIScrollViewDelegate {
+class CoverPageViewController: UIViewController, UIScrollViewDelegate {
 
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var titleText: UILabel!
@@ -57,12 +57,10 @@ class DiamondsViewController: UIViewController, UIScrollViewDelegate {
     @IBAction func nextButtonTapped(_ sender: Any) {
         if(scrollView.contentOffset.x == self.view.frame.size.width*2) {
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let mainDiamondVC: MainDiamondsViewController? = storyboard.instantiateViewController(withIdentifier: "MainDiamondsVC") as? MainDiamondsViewController
-            let mainDiamondsNC = UINavigationController(rootViewController: mainDiamondVC!)
-            setAttributesFor(mainDiamondsNC)
+            let mainTabbarVC: TabbarViewController? = storyboard.instantiateViewController(withIdentifier: "TabbarVC") as? TabbarViewController
 
             let mainViewController: MainSideMenuController = (storyboard.instantiateViewController(withIdentifier: "MainSideMenuVC") as? MainSideMenuController)!
-            mainViewController.rootViewController = mainDiamondsNC
+            mainViewController.rootViewController = mainTabbarVC
             let window: UIWindow? = (UIApplication.shared.delegate?.window)!
             window?.rootViewController = mainViewController
             UIView.transition(with: window!, duration: 0.3, options: .transitionCrossDissolve, animations: nil, completion: { _ in })
@@ -73,17 +71,6 @@ class DiamondsViewController: UIViewController, UIScrollViewDelegate {
         }
     }
     
-    func setAttributesFor(_ navController: UINavigationController) {
-        navController.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
-        navController.navigationBar.isHidden = false
-        navController.navigationBar.shadowImage = UIImage()
-        navController.navigationBar.isTranslucent = false
-        navController.navigationBar.barTintColor = DIAMOND_THEME_COLOR
-        navController.navigationBar.tintColor = UIColor.white
-        navController.navigationBar.frame = CGRect(x: CGFloat(0), y: CGFloat(0), width: CGFloat(SCREEN_WIDTH), height: CGFloat(20))
-        navController.navigationBar.titleTextAttributes = [NSFontAttributeName: UIFont(name: "Unica One", size: 24)!, NSForegroundColorAttributeName: UIColor.white]
 
-        UIBarButtonItem.appearance().setBackButtonTitlePositionAdjustment(UIOffsetMake(-60, -60), for: UIBarMetrics.default)
-    }
 
 }

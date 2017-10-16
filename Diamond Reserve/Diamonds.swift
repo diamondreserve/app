@@ -14,8 +14,10 @@ class Diamonds: AWSDynamoDBObjectModel {
     var diamondId: String?
     var name: String?
     var price: String?
-    var type: String?
-    var category: String?
+    var clarity: String?
+    var weight: String?
+    var shape: String?
+    var color: String?
 
     
     class func dynamoDBTableName() -> String {
@@ -25,4 +27,8 @@ class Diamonds: AWSDynamoDBObjectModel {
     class func hashKeyAttribute() -> String {
         return "diamondId"
     }
+    
+    
+    
+    
 }
