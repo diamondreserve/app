@@ -87,6 +87,8 @@ class MainDiamondsViewController: UIViewController, UITableViewDelegate, UITable
     
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let diamondDetailVC = self.storyboard?.instantiateViewController(withIdentifier: "DiamondDetailVC") as! DiamondDetailViewController
+        self.navigationController?.pushViewController(diamondDetailVC, animated: true)
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
