@@ -27,7 +27,7 @@ class TabbarViewController: UIViewController {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
         diamondNVC = UINavigationController(rootViewController: storyboard.instantiateViewController(withIdentifier: "MainDiamondsVC"))
-        jewelryNVC = UINavigationController(rootViewController: storyboard.instantiateViewController(withIdentifier: "MainDiamondsVC"))
+        jewelryNVC = UINavigationController(rootViewController: storyboard.instantiateViewController(withIdentifier: "MainJewelryVC"))
         productionNVC = UINavigationController(rootViewController: storyboard.instantiateViewController(withIdentifier: "MainDiamondsVC"))
         searchNVC = UINavigationController(rootViewController: storyboard.instantiateViewController(withIdentifier: "DiamondSearchVC"))
         setAttributesFor(diamondNVC)

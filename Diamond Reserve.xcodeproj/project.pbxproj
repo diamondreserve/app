@@ -32,6 +32,12 @@
 		8025951F1F8EB63B004F1F94 /* search@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8025951C1F8EB63B004F1F94 /* search@3x.png */; };
 		803C24D41F9321ED00895296 /* DiamondReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803C24D31F9321ED00895296 /* DiamondReviewViewController.swift */; };
 		803C24D61F9349B800895296 /* DiamondSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803C24D51F9349B800895296 /* DiamondSearchViewController.swift */; };
+		803C24DA1F9704B500895296 /* MainJewelryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803C24D91F9704B500895296 /* MainJewelryViewController.swift */; };
+		803C24DC1F9748EF00895296 /* JewelryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803C24DB1F9748EF00895296 /* JewelryDetailViewController.swift */; };
+		803C24DE1F98974C00895296 /* JewelryDiamondSpecCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803C24DD1F98974C00895296 /* JewelryDiamondSpecCell.swift */; };
+		803C24E01F98A61F00895296 /* DiamondDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803C24DF1F98A61F00895296 /* DiamondDetailViewController.swift */; };
+		803C24E51F9D1CF000895296 /* ReserveListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803C24E41F9D1CF000895296 /* ReserveListViewController.swift */; };
+		803C24E71F9D954600895296 /* ReserveTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803C24E61F9D954600895296 /* ReserveTableViewCell.swift */; };
 		808B53DF1F91485500504607 /* TabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808B53DE1F91485500504607 /* TabbarViewController.swift */; };
 		808B53E31F92810E00504607 /* DiamondTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808B53E11F92810E00504607 /* DiamondTableViewCell.swift */; };
 		808B53E41F92810E00504607 /* DiamondTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 808B53E21F92810E00504607 /* DiamondTableViewCell.xib */; };
@@ -131,6 +137,12 @@
 		8025951C1F8EB63B004F1F94 /* search@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "search@3x.png"; sourceTree = "<group>"; };
 		803C24D31F9321ED00895296 /* DiamondReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiamondReviewViewController.swift; sourceTree = "<group>"; };
 		803C24D51F9349B800895296 /* DiamondSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiamondSearchViewController.swift; sourceTree = "<group>"; };
+		803C24D91F9704B500895296 /* MainJewelryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainJewelryViewController.swift; sourceTree = "<group>"; };
+		803C24DB1F9748EF00895296 /* JewelryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JewelryDetailViewController.swift; sourceTree = "<group>"; };
+		803C24DD1F98974C00895296 /* JewelryDiamondSpecCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JewelryDiamondSpecCell.swift; sourceTree = "<group>"; };
+		803C24DF1F98A61F00895296 /* DiamondDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiamondDetailViewController.swift; sourceTree = "<group>"; };
+		803C24E41F9D1CF000895296 /* ReserveListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReserveListViewController.swift; sourceTree = "<group>"; };
+		803C24E61F9D954600895296 /* ReserveTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReserveTableViewCell.swift; sourceTree = "<group>"; };
 		808B53DE1F91485500504607 /* TabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarViewController.swift; sourceTree = "<group>"; };
 		808B53E11F92810E00504607 /* DiamondTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiamondTableViewCell.swift; sourceTree = "<group>"; };
 		808B53E21F92810E00504607 /* DiamondTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DiamondTableViewCell.xib; sourceTree = "<group>"; };
@@ -245,6 +257,16 @@
 			name = "Side Menu";
 			sourceTree = "<group>";
 		};
+		803C24D71F97049000895296 /* Jewelry */ = {
+			isa = PBXGroup;
+			children = (
+				803C24D91F9704B500895296 /* MainJewelryViewController.swift */,
+				803C24DB1F9748EF00895296 /* JewelryDetailViewController.swift */,
+				803C24DD1F98974C00895296 /* JewelryDiamondSpecCell.swift */,
+			);
+			name = Jewelry;
+			sourceTree = "<group>";
+		};
 		808B53E01F9280B700504607 /* Diamond */ = {
 			isa = PBXGroup;
 			children = (
@@ -254,6 +276,9 @@
 				808B53E51F92B71C00504607 /* DiamondSelectionViewController.swift */,
 				803C24D31F9321ED00895296 /* DiamondReviewViewController.swift */,
 				803C24D51F9349B800895296 /* DiamondSearchViewController.swift */,
+				803C24DF1F98A61F00895296 /* DiamondDetailViewController.swift */,
+				803C24E41F9D1CF000895296 /* ReserveListViewController.swift */,
+				803C24E61F9D954600895296 /* ReserveTableViewCell.swift */,
 			);
 			name = Diamond;
 			sourceTree = "<group>";
@@ -302,6 +327,7 @@
 		B76D8D691F7ACD15000CDFC7 /* Diamond Reserve */ = {
 			isa = PBXGroup;
 			children = (
+				803C24D71F97049000895296 /* Jewelry */,
 				808B53E01F9280B700504607 /* Diamond */,
 				802594F71F8E06EB004F1F94 /* Side Menu */,
 				802594F41F8E0257004F1F94 /* Helper */,
@@ -763,19 +789,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				803C24DE1F98974C00895296 /* JewelryDiamondSpecCell.swift in Sources */,
 				B74D6B981F8B203C00642619 /* Diamonds.swift in Sources */,
+				803C24E01F98A61F00895296 /* DiamondDetailViewController.swift in Sources */,
 				B738C1501F7D01D80097720C /* LoginViewController.swift in Sources */,
 				B750FD181F8AB72C004844BB /* BaseVC.swift in Sources */,
 				808B53E61F92B71C00504607 /* DiamondSelectionViewController.swift in Sources */,
 				802594F31F8E00B2004F1F94 /* MainDiamondsViewController.swift in Sources */,
 				B76D8D6B1F7ACD15000CDFC7 /* AppDelegate.swift in Sources */,
+				803C24DC1F9748EF00895296 /* JewelryDetailViewController.swift in Sources */,
 				802594F91F8E070A004F1F94 /* MainSideMenuController.swift in Sources */,
 				803C24D41F9321ED00895296 /* DiamondReviewViewController.swift in Sources */,
 				803C24D61F9349B800895296 /* DiamondSearchViewController.swift in Sources */,
 				808B53E31F92810E00504607 /* DiamondTableViewCell.swift in Sources */,
 				B738C16C1F7DA0F80097720C /* TutorialViewController.swift in Sources */,
 				808B53DF1F91485500504607 /* TabbarViewController.swift in Sources */,
+				803C24E71F9D954600895296 /* ReserveTableViewCell.swift in Sources */,
+				803C24DA1F9704B500895296 /* MainJewelryViewController.swift in Sources */,
 				B7D603A31F865D7F00B94067 /* CoverPageViewController.swift in Sources */,
+				803C24E51F9D1CF000895296 /* ReserveListViewController.swift in Sources */,
 				B76D8D9D1F7AE2C6000CDFC7 /* SplashViewController.swift in Sources */,
 				B738C1541F7D7F1D0097720C /* VerifyViewController.swift in Sources */,
 				802594FB1F8E07DC004F1F94 /* RightMenuViewController.swift in Sources */,
