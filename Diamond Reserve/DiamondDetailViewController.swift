@@ -24,6 +24,7 @@ class DiamondDetailViewController: UIViewController, UITableViewDelegate, UITabl
     @IBOutlet weak var purchaseViewHeight: NSLayoutConstraint!
     @IBOutlet weak var reserveButton: UIButton!
     
+    @IBOutlet weak var purchaseView: UIView!
     var reserveState : ReserveState = .ready
     
     override func viewDidLoad() {
@@ -54,17 +55,22 @@ class DiamondDetailViewController: UIViewController, UITableViewDelegate, UITabl
             case .ready:
                 reserveButton.setTitle("RESERVE", for: .normal)
                 purchaseViewHeight.constant = 0
+                purchaseView.isHidden = true
 
                 break
             case .pending:
                 reserveButton.backgroundColor = UIColor(rgb : 0xb6b6b6)
                 reserveButton.setTitle("PENDING", for: .normal)
                 purchaseViewHeight.constant = 0
+                purchaseView.isHidden = true
+
                 break
             case .reserved:
                 reserveButton.setTitle("RESERVED", for: .normal)
                 reserveButton.backgroundColor = UIColor(rgb : 0x0FBB32)
                 purchaseViewHeight.constant = 110
+                purchaseView.isHidden = false
+
                 break
             
             default:
