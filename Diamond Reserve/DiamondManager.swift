@@ -13,6 +13,8 @@ class DiamondManager {
     static var sharedInstance = DiamondManager()
     
     var allDiamonds: [Diamond]?
+    var filteredDiamonds: [Diamond] = [Diamond]()
     var selectedDiamonds: [Diamond] = [Diamond]()
+    
     
 }

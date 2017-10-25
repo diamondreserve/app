@@ -80,9 +80,10 @@ class DiamondTableViewCell: UITableViewCell {
         priceLabel.text = diamond.price?.stringValue
         weightLabel.text = diamond.weight?.stringValue
         colorLabel.text = (diamond.color ?? "") + "," + (diamond.clarity ?? "")
-        iconView.image = defaultImage
         if diamond.image != nil {
             iconView.sd_setImage(with: URL(string: diamond.image!), placeholderImage: defaultImage)
+        } else {
+            iconView.image = defaultImage
         }
 
     }

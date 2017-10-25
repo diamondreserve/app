@@ -13,6 +13,7 @@ target 'Diamond Reserve' do
     pod 'LGSideMenuController'
     pod "RangeSeekSlider"
 	pod 'SDWebImage', '~> 4.0'
+    pod 'MBProgressHUD', '~> 1.0.0'
 
 target 'Diamond ReserveTests' do
     inherit! :search_paths

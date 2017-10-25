@@ -8,8 +8,9 @@
 
 import UIKit
 import AWSDynamoDB
+import MBProgressHUD
 
-class MainDiamondsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class MainDiamondsViewController: BaseVC, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet var diamondButtons: [UIButton]!
     @IBOutlet weak var tableView: UITableView!
@@ -19,6 +20,9 @@ class MainDiamondsViewController: UIViewController, UITableViewDelegate, UITable
     var doneLoading = false
 //    var tableRows:Array<DDBTableRow>?
     var diamonds = [Diamond]()
+    
+    var shapes = ["BR", "PS", "EM", "AS", "CU", "MO", "RA", "OV", "PR", "HS"]
+    var selectedShapes = [String]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,7 +48,7 @@ class MainDiamondsViewController: UIViewController, UITableViewDelegate, UITable
     }
     
     func showSelect() {
-        if diamonds.count == 0 {
+        if DiamondManager.sharedInstance.filteredDiamonds.count == 0 {
             return
         }
         let diamondSelectionVC = self.storyboard?.instantiateViewController(withIdentifier: "DiamondSelectionVC") as! DiamondSelectionViewController
@@ -52,7 +56,22 @@ class MainDiamondsViewController: UIViewController, UITableViewDelegate, UITable
     }
     
     @IBAction func didDiamondButtonSelected(_ sender: UIButton) {
+        
         sender.isSelected = !sender.isSelected
+        
+        self.selectedShapes.removeAll()
+        for button in diamondButtons {
+            if button.isSelected {
+                let shape = shapes[button.tag]
+                selectedShapes.append(shape)
+            }
+        }
+        
+        if DiamondManager.sharedInstance.allDiamonds != nil {
+            diamonds = DiamondManager.sharedInstance.allDiamonds!.filter({selectedShapes.contains($0.shape!)})
+            DiamondManager.sharedInstance.filteredDiamonds = diamonds
+            self.tableView.reloadData()
+        }
     }
     
     
@@ -133,7 +152,7 @@ class MainDiamondsViewController: UIViewController, UITableViewDelegate, UITable
             self.doneLoading = false
         }
         
-        UIApplication.shared.isNetworkActivityIndicatorVisible = true
+        MBProgressHUD.showAdded(to: self.view, animated: true)
         
         let dynamoDBObjectMapper = AWSDynamoDBObjectMapper.default()
         let queryExpression = AWSDynamoDBScanExpression()
@@ -158,6 +177,7 @@ class MainDiamondsViewController: UIViewController, UITableViewDelegate, UITable
             }
             
             UIApplication.shared.isNetworkActivityIndicatorVisible = false
+            MBProgressHUD.hide(for: self.view, animated: true)
             self.tableView.reloadData()
             
             if let error = task.error as NSError? {

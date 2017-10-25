@@ -41,7 +41,7 @@ class DiamondSelectionViewController: UIViewController, UITableViewDelegate, UIT
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return (DiamondManager.sharedInstance.allDiamonds?.count)!
+        return (DiamondManager.sharedInstance.filteredDiamonds.count)
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -51,7 +51,7 @@ class DiamondSelectionViewController: UIViewController, UITableViewDelegate, UIT
             cell = DiamondTableViewCell(style: .default, reuseIdentifier: "DiamondCell")
         }
         cell?.setSelectable(isSelectable: true)
-        cell?.setData(diamond: DiamondManager.sharedInstance.allDiamonds![indexPath.row]);
+        cell?.setData(diamond: DiamondManager.sharedInstance.filteredDiamonds[indexPath.row]);
         return cell!
     }
     
