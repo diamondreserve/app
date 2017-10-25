@@ -16,7 +16,7 @@ class DiamondSelectionViewController: UIViewController, UITableViewDelegate, UIT
         super.viewDidLoad()
         setNavigationBar()
         tableView.register(UINib(nibName: "DiamondTableViewCell", bundle: nil), forCellReuseIdentifier: "DiamondCell")
-
+        DiamondManager.sharedInstance.selectedDiamonds = [Diamond]()
     }
 
     func setNavigationBar() {
@@ -24,7 +24,7 @@ class DiamondSelectionViewController: UIViewController, UITableViewDelegate, UIT
         let menuBtn = UIBarButtonItem(image: UIImage(named:"MENU_ICON"), style: .plain, target: self, action: #selector(showSideMenu))
         navigationItem.leftBarButtonItem = menuBtn
         
-        let rightBtn = UIBarButtonItem(title: "CANCEL", style: .plain, target: self, action: #selector(showSelect))
+        let rightBtn = UIBarButtonItem(title: "CANCEL", style: .plain, target: self, action: #selector(cancelAction))
         rightBtn.setTitleTextAttributes([NSFontAttributeName: UIFont(name: "Unica One", size: 17)! ,NSForegroundColorAttributeName: UIColor.white], for: .normal)
         rightBtn.setTitleTextAttributes([NSFontAttributeName: UIFont(name: "Unica One", size: 17)! ,NSForegroundColorAttributeName: UIColor.white], for: .highlighted)
 
@@ -35,12 +35,13 @@ class DiamondSelectionViewController: UIViewController, UITableViewDelegate, UIT
         sideMenuController?.showLeftView(animated: true, completionHandler: nil)
     }
     
-    func showSelect() {
-        
+    func cancelAction() {
+        navigationController?.popViewController(animated: true)
+
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10 //diamonds.count
+        return (DiamondManager.sharedInstance.allDiamonds?.count)!
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -50,7 +51,7 @@ class DiamondSelectionViewController: UIViewController, UITableViewDelegate, UIT
             cell = DiamondTableViewCell(style: .default, reuseIdentifier: "DiamondCell")
         }
         cell?.setSelectable(isSelectable: true)
-        //cell?.setData(diamond: diamonds[indexPath.row]);
+        cell?.setData(diamond: DiamondManager.sharedInstance.allDiamonds![indexPath.row]);
         return cell!
     }
     

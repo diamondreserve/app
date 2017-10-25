@@ -17,8 +17,13 @@ enum ReserveState {
 
 class DiamondDetailViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    var diamond : Diamond?
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var titleLabel: UILabel!
+    
+    @IBOutlet weak var priceLabel: UILabel!
+    @IBOutlet weak var diamondImageView: UIImageView!
+    
     
     @IBOutlet weak var tableViewHeight: NSLayoutConstraint!
     @IBOutlet weak var purchaseViewHeight: NSLayoutConstraint!
@@ -30,12 +35,42 @@ class DiamondDetailViewController: UIViewController, UITableViewDelegate, UITabl
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        titleLabel.text = "2.52ct Round D, VS2 Round"
+        print((diamond?.image ?? "empty image link"))
+        
+        if diamond?.image != nil {
+            diamondImageView.sd_setImage(with: URL(string: (diamond?.image!)!), placeholderImage: UIImage(named: "diamond_detail_default"))
+        }
+        
+        var shape = diamond?.shape
+        if shape == "PR" {
+            shape = "PEAR"
+        } else if shape == "PS"{
+            shape = "PRINCESS"
+        } else if shape == "OV"{
+            shape = "OVAL"
+        } else if shape == "CU"{
+            shape = "CUSHION"
+        } else if shape == "EM"{
+            shape = "EMERALD"
+        } else if shape == "HS"{
+            shape = "HEART"
+        } else if shape == "RA"{
+            shape = "RADIANT"
+        } else if shape == "MO"{
+            shape = "MARQUISE"
+        } else if shape == "AS"{
+            shape = "ASSCHER"
+        } else if shape == "BR"{
+            shape = "ROUND"
+        }
+        
+        titleLabel.text = String.init(format: "%.2f %@ %@",(diamond?.weight?.floatValue ?? 0)!, (shape ?? ""), diamond?.color ?? "")
+        
+        priceLabel.text = (diamond?.price != nil) ? ("$" + (diamond?.price?.stringValue ?? "")) : ""
         setNavigationBar()
-        tableViewHeight.constant = 28 * 5
+        tableViewHeight.constant = 28 * 8
         purchaseViewHeight.constant = 0
         setUI()
-
     }
     
     func setNavigationBar() {
@@ -106,7 +141,7 @@ class DiamondDetailViewController: UIViewController, UITableViewDelegate, UITabl
     // MARK: - Table view data source
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5 //diamonds.count
+        return 8
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -114,6 +149,43 @@ class DiamondDetailViewController: UIViewController, UITableViewDelegate, UITabl
         var cell: JewelryDiamondSpecCell? = tableView.dequeueReusableCell(withIdentifier: "DiamondSpecCell", for: indexPath) as? JewelryDiamondSpecCell
         if cell == nil {
             cell = JewelryDiamondSpecCell(style: .default, reuseIdentifier: "DiamondSpecCell")
+        }
+        switch indexPath.row {
+        case 0:
+            cell?.keyLabel.text = "Weight"
+            cell?.valueLabel.text = diamond?.weight?.stringValue
+            break
+        case 1:
+            cell?.keyLabel.text = "Color"
+            cell?.valueLabel.text = diamond?.color
+            break
+        case 2:
+            cell?.keyLabel.text = "Clarity"
+            cell?.valueLabel.text = diamond?.clarity
+            break
+        case 3:
+            cell?.keyLabel.text = "Measurements"
+            cell?.valueLabel.text = diamond?.measurements
+            break
+        case 4:
+            cell?.keyLabel.text = "Cut Grade"
+            cell?.valueLabel.text = diamond?.cut_grade
+            break
+        case 5:
+            cell?.keyLabel.text = "Lab"
+            cell?.valueLabel.text = diamond?.lab
+            break
+        case 6:
+            cell?.keyLabel.text = "Price"
+            cell?.valueLabel.text = diamond?.price?.stringValue
+            break
+        case 7:
+            cell?.keyLabel.text = "Depth"
+            cell?.valueLabel.text = diamond?.depth?.stringValue
+            break
+        default:
+            cell?.keyLabel.text = "Depth"
+            cell?.valueLabel.text = diamond?.depth?.stringValue
         }
         return cell!
     }

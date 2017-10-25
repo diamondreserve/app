@@ -75,7 +75,7 @@ class DiamondReviewViewController: UIViewController, UITableViewDelegate, UITabl
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10 //diamonds.count
+        return DiamondManager.sharedInstance.selectedDiamonds.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -85,7 +85,7 @@ class DiamondReviewViewController: UIViewController, UITableViewDelegate, UITabl
             cell = DiamondTableViewCell(style: .default, reuseIdentifier: "DiamondCell")
         }
         cell?.disclosureView.isHidden = true
-        //cell?.setData(diamond: diamonds[indexPath.row]);
+        cell?.setData(diamond: DiamondManager.sharedInstance.selectedDiamonds[indexPath.row]);
         return cell!
     }
     

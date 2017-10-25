@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3C810FFD90232539F650E257 /* Pods_Diamond_Reserve.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15BA25770C46A51BCD57924B /* Pods_Diamond_Reserve.framework */; };
+		80057E751F9FD51D006540BC /* DiamondManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80057E741F9FD51D006540BC /* DiamondManager.swift */; };
 		802594EF1F8DCDFD004F1F94 /* BLACK_IV_FMX.png in Resources */ = {isa = PBXBuildFile; fileRef = 802594EC1F8DCDFD004F1F94 /* BLACK_IV_FMX.png */; };
 		802594F01F8DCDFD004F1F94 /* BLACK_IV_FMX@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 802594ED1F8DCDFD004F1F94 /* BLACK_IV_FMX@2x.png */; };
 		802594F11F8DCDFD004F1F94 /* BLACK_IV_FMX@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 802594EE1F8DCDFD004F1F94 /* BLACK_IV_FMX@3x.png */; };
@@ -63,7 +64,7 @@
 		B738C1681F7D91610097720C /* strip1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B738C1651F7D91610097720C /* strip1@2x.png */; };
 		B738C16A1F7D94850097720C /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B738C1691F7D94850097720C /* WelcomeViewController.swift */; };
 		B738C16C1F7DA0F80097720C /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B738C16B1F7DA0F80097720C /* TutorialViewController.swift */; };
-		B74D6B981F8B203C00642619 /* Diamonds.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74D6B971F8B203C00642619 /* Diamonds.swift */; };
+		B74D6B981F8B203C00642619 /* Diamond.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74D6B971F8B203C00642619 /* Diamond.swift */; };
 		B750FD131F8AA262004844BB /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = B750FD121F8AA262004844BB /* awsconfiguration.json */; };
 		B750FD151F8AA48D004844BB /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = B750FD141F8AA48D004844BB /* Users.swift */; };
 		B750FD181F8AB72C004844BB /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B750FD171F8AB72C004844BB /* BaseVC.swift */; };
@@ -113,6 +114,7 @@
 		57B91CECE2BC7AFBF438A85D /* Pods_Diamond_ReserveUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Diamond_ReserveUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		64D964D9B1E32AB2B44ADA98 /* Pods_Diamond_ReserveTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Diamond_ReserveTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BC3E480D2686B1F8881C7B6 /* Pods-Diamond Reserve.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diamond Reserve.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Diamond Reserve/Pods-Diamond Reserve.debug.xcconfig"; sourceTree = "<group>"; };
+		80057E741F9FD51D006540BC /* DiamondManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiamondManager.swift; sourceTree = "<group>"; };
 		802594EC1F8DCDFD004F1F94 /* BLACK_IV_FMX.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BLACK_IV_FMX.png; sourceTree = "<group>"; };
 		802594ED1F8DCDFD004F1F94 /* BLACK_IV_FMX@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BLACK_IV_FMX@2x.png"; sourceTree = "<group>"; };
 		802594EE1F8DCDFD004F1F94 /* BLACK_IV_FMX@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BLACK_IV_FMX@3x.png"; sourceTree = "<group>"; };
@@ -169,7 +171,7 @@
 		B738C1651F7D91610097720C /* strip1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "strip1@2x.png"; sourceTree = "<group>"; };
 		B738C1691F7D94850097720C /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		B738C16B1F7DA0F80097720C /* TutorialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
-		B74D6B971F8B203C00642619 /* Diamonds.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Diamonds.swift; sourceTree = "<group>"; };
+		B74D6B971F8B203C00642619 /* Diamond.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Diamond.swift; sourceTree = "<group>"; };
 		B750FD121F8AA262004844BB /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
 		B750FD141F8AA48D004844BB /* Users.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
 		B750FD171F8AB72C004844BB /* BaseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
@@ -244,6 +246,7 @@
 			isa = PBXGroup;
 			children = (
 				802594F51F8E0295004F1F94 /* Constants.swift */,
+				80057E741F9FD51D006540BC /* DiamondManager.swift */,
 			);
 			name = Helper;
 			sourceTree = "<group>";
@@ -296,7 +299,7 @@
 			isa = PBXGroup;
 			children = (
 				B750FD141F8AA48D004844BB /* Users.swift */,
-				B74D6B971F8B203C00642619 /* Diamonds.swift */,
+				B74D6B971F8B203C00642619 /* Diamond.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -682,6 +685,7 @@
 				"${BUILT_PRODUCTS_DIR}/LGSideMenuController/LGSideMenuController.framework",
 				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
 				"${BUILT_PRODUCTS_DIR}/RangeSeekSlider/RangeSeekSlider.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftHash/SwiftHash.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -694,6 +698,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LGSideMenuController.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RangeSeekSlider.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftHash.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -790,7 +795,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				803C24DE1F98974C00895296 /* JewelryDiamondSpecCell.swift in Sources */,
-				B74D6B981F8B203C00642619 /* Diamonds.swift in Sources */,
+				B74D6B981F8B203C00642619 /* Diamond.swift in Sources */,
 				803C24E01F98A61F00895296 /* DiamondDetailViewController.swift in Sources */,
 				B738C1501F7D01D80097720C /* LoginViewController.swift in Sources */,
 				B750FD181F8AB72C004844BB /* BaseVC.swift in Sources */,
@@ -815,6 +820,7 @@
 				B738C1561F7D8BA00097720C /* ForgotViewController.swift in Sources */,
 				802594F61F8E0295004F1F94 /* Constants.swift in Sources */,
 				B750FD151F8AA48D004844BB /* Users.swift in Sources */,
+				80057E751F9FD51D006540BC /* DiamondManager.swift in Sources */,
 				B738C16A1F7D94850097720C /* WelcomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

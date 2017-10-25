@@ -12,6 +12,7 @@ target 'Diamond Reserve' do
     pod 'SwiftHash', git: 'https://github.com/onmyway133/SwiftHash'
     pod 'LGSideMenuController'
     pod "RangeSeekSlider"
+	pod 'SDWebImage', '~> 4.0'
 
 target 'Diamond ReserveTests' do
     inherit! :search_paths

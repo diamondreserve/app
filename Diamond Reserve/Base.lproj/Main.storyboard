@@ -59,7 +59,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DIAMOND RESERVE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NPc-GX-96G">
-                                <rect key="frame" x="75" y="255" width="225.5" height="28"/>
+                                <rect key="frame" x="103.5" y="255" width="168.5" height="28"/>
                                 <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="24"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -79,7 +79,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tch-ml-Z4S">
-                                <rect key="frame" x="294" y="412" width="60" height="33"/>
+                                <rect key="frame" x="311" y="411" width="43" height="34"/>
                                 <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="18"/>
                                 <state key="normal" title="GUEST">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -151,13 +151,13 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DIAMOND RESERVE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lM9-hd-ScC">
-                                <rect key="frame" x="75" y="255" width="225.5" height="28"/>
+                                <rect key="frame" x="103.5" y="255" width="168.5" height="28"/>
                                 <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="24"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qfi-JV-IEL">
-                                <rect key="frame" x="21" y="629" width="207" height="15"/>
+                                <rect key="frame" x="21" y="629" width="151" height="15"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="15" id="MJQ-x4-B3v"/>
                                 </constraints>
@@ -492,7 +492,7 @@
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="REGISTER" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZL9-de-gmA">
-                                        <rect key="frame" x="123.5" y="10" width="87" height="21"/>
+                                        <rect key="frame" x="134.5" y="10" width="64.5" height="21"/>
                                         <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="18"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -545,7 +545,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Geb-cU-qu6">
-                                <rect key="frame" x="167" y="133" width="181" height="15"/>
+                                <rect key="frame" x="212" y="133" width="136" height="15"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="15" id="UhR-Dg-2ao"/>
                                 </constraints>
@@ -604,7 +604,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ON THE LIST?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EE0-2g-Hht">
-                                <rect key="frame" x="129.5" y="209" width="118" height="10.5"/>
+                                <rect key="frame" x="144" y="209" width="88.5" height="10.5"/>
                                 <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="18"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -643,7 +643,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(USE YOUR *PREMIER GEM HARMONY EMAIL)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C3t-jd-vX8">
-                                <rect key="frame" x="46.5" y="220" width="282" height="16"/>
+                                <rect key="frame" x="81" y="220" width="213" height="16"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="16" id="W8T-TA-FFW"/>
                                 </constraints>
@@ -652,7 +652,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Waiting to verify…" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="atd-p4-I8W">
-                                <rect key="frame" x="135" y="373" width="106" height="15.5"/>
+                                <rect key="frame" x="137.5" y="373" width="100.5" height="15.5"/>
                                 <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="13"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -731,7 +731,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DIAMOND RESERVE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HYj-WP-J6o">
-                                <rect key="frame" x="75" y="255" width="225.5" height="28"/>
+                                <rect key="frame" x="103.5" y="255" width="168.5" height="28"/>
                                 <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="24"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -799,13 +799,13 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WE WILL GET BACK TO YOU SHORTLY!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RuL-xU-hnB">
-                                <rect key="frame" x="59.5" y="568" width="257" height="17"/>
+                                <rect key="frame" x="94" y="568" width="187.5" height="17"/>
                                 <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="14"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FORGOT USER ID OR PASSWORD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bCq-A9-rAG">
-                                <rect key="frame" x="76" y="326" width="222.5" height="17"/>
+                                <rect key="frame" x="106" y="326" width="162.5" height="17"/>
                                 <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="14"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -868,7 +868,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WELCOME!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IR5-JO-V3c">
-                                <rect key="frame" x="92.5" y="178" width="191.5" height="42"/>
+                                <rect key="frame" x="118.5" y="178" width="139.5" height="43"/>
                                 <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="36"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -888,7 +888,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rrn-Qu-pvj">
-                                <rect key="frame" x="42.5" y="263" width="290" height="168"/>
+                                <rect key="frame" x="42.5" y="264" width="290" height="106.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="290" id="Jby-UQ-bKi"/>
                                 </constraints>
@@ -964,13 +964,13 @@ IN THE MEANTIME LET’S TAKE A TOUR!</string>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SEARCH &amp; ACCESS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uid-Wy-ymM">
-                                <rect key="frame" x="21.5" y="181" width="332" height="42"/>
+                                <rect key="frame" x="65" y="181" width="245" height="43"/>
                                 <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="36"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F65-e7-ldz">
-                                <rect key="frame" x="286.5" y="602" width="46" height="38"/>
+                                <rect key="frame" x="298.5" y="602" width="34" height="38"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="38" id="bIK-Nf-IyY"/>
                                 </constraints>
@@ -983,7 +983,7 @@ IN THE MEANTIME LET’S TAKE A TOUR!</string>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y9Y-W6-dFS">
-                                <rect key="frame" x="42.5" y="266" width="290" height="231"/>
+                                <rect key="frame" x="42.5" y="267" width="290" height="191.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="290" id="28G-pT-hSh"/>
                                 </constraints>
@@ -1064,13 +1064,13 @@ TO SEE IF YOU QUALIFY </string>
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </scrollView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DIAMONDS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0kY-5l-5jZ">
-                                <rect key="frame" x="38" y="417" width="299" height="28"/>
+                                <rect key="frame" x="38" y="439.5" width="299" height="28"/>
                                 <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="24"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fTA-q2-Czp">
-                                <rect key="frame" x="38" y="590" width="65" height="44"/>
+                                <rect key="frame" x="38" y="590" width="47" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="CIb-JD-qCW"/>
                                 </constraints>
@@ -1084,13 +1084,13 @@ TO SEE IF YOU QUALIFY </string>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SEARCH FOR THE MOST EXQUISITE DIAMONDS YOU WONT FIND ON RAPPNET" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gEG-Js-R2A">
-                                <rect key="frame" x="38" y="483" width="299" height="70"/>
+                                <rect key="frame" x="38" y="505.5" width="299" height="47.5"/>
                                 <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="20"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="80f-U9-bhq">
-                                <rect key="frame" x="38" y="463" width="93" height="1"/>
+                                <rect key="frame" x="38" y="485.5" width="93" height="1"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="93" id="4Ay-mh-nv0"/>
@@ -1098,7 +1098,7 @@ TO SEE IF YOU QUALIFY </string>
                                 </constraints>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Disclosure Indicator" translatesAutoresizingMaskIntoConstraints="NO" id="VtL-V5-Lu7">
-                                <rect key="frame" x="113" y="605.5" width="8" height="13"/>
+                                <rect key="frame" x="95" y="605.5" width="8" height="13"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="8" id="RzS-Je-aQF"/>
                                     <constraint firstAttribute="height" constant="13" id="xAt-81-egb"/>
@@ -1423,7 +1423,7 @@ TO SEE IF YOU QUALIFY </string>
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CONTACTS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m1i-bd-EyV">
-                                                <rect key="frame" x="45" y="22" width="69" height="15.5"/>
+                                                <rect key="frame" x="45" y="22" width="49" height="15.5"/>
                                                 <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="13"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -1469,7 +1469,7 @@ TO SEE IF YOU QUALIFY </string>
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MESSAGES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jH8-ny-p7v">
-                                                <rect key="frame" x="45" y="22" width="71" height="15.5"/>
+                                                <rect key="frame" x="45" y="22" width="52.5" height="15.5"/>
                                                 <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="13"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -1515,7 +1515,7 @@ TO SEE IF YOU QUALIFY </string>
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RESERVED" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fK4-cD-Vbo">
-                                                <rect key="frame" x="45" y="21.5" width="67" height="15.5"/>
+                                                <rect key="frame" x="45" y="21.5" width="49.5" height="15.5"/>
                                                 <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="13"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -1561,7 +1561,7 @@ TO SEE IF YOU QUALIFY </string>
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WISHLIST" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IiD-ez-e15">
-                                                <rect key="frame" x="45" y="22" width="60" height="15.5"/>
+                                                <rect key="frame" x="45" y="22" width="47" height="15.5"/>
                                                 <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="13"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -2262,7 +2262,7 @@ TO SEE IF YOU QUALIFY </string>
                                 <rect key="frame" x="0.0" y="538" width="375" height="65"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w63-WD-dO3">
-                                        <rect key="frame" x="299" y="12" width="61" height="40"/>
+                                        <rect key="frame" x="315" y="11.5" width="45" height="41"/>
                                         <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="24"/>
                                         <state key="normal" title="NEXT">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -2419,7 +2419,7 @@ TO SEE IF YOU QUALIFY </string>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V7E-dH-MnT">
-                                        <rect key="frame" x="86" y="12" width="202" height="40"/>
+                                        <rect key="frame" x="112" y="11.5" width="150" height="41"/>
                                         <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="24"/>
                                         <state key="normal" title="RETURN TO MAIN">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -2455,7 +2455,7 @@ TO SEE IF YOU QUALIFY </string>
                                 <rect key="frame" x="0.0" y="64" width="375" height="538"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SUCCESS!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Lz-IZ-ixL">
-                                        <rect key="frame" x="128.5" y="125" width="120" height="28"/>
+                                        <rect key="frame" x="143.5" y="125" width="89.5" height="28"/>
                                         <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="24"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
@@ -2464,7 +2464,7 @@ TO SEE IF YOU QUALIFY </string>
                                         <rect key="frame" x="147.5" y="178" width="79" height="80"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HANG TIGHT \nYOU WILL BE NOTIFIED SHORTLY" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4EV-7n-fCO">
-                                        <rect key="frame" x="-19" y="290" width="413.5" height="21"/>
+                                        <rect key="frame" x="32" y="290" width="311.5" height="21"/>
                                         <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="18"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
@@ -2969,7 +2969,7 @@ TO SEE IF YOU QUALIFY </string>
                                                 </constraints>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PRICE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y7e-dG-Mzp">
-                                                <rect key="frame" x="19" y="130" width="41" height="17"/>
+                                                <rect key="frame" x="19" y="130" width="31" height="17"/>
                                                 <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="14"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
@@ -3015,7 +3015,7 @@ TO SEE IF YOU QUALIFY </string>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WEIGHT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pQW-30-fT1" userLabel="WEIGHT">
-                                                <rect key="frame" x="19" y="220" width="54" height="17"/>
+                                                <rect key="frame" x="19" y="220" width="40.5" height="17"/>
                                                 <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="14"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
@@ -3061,7 +3061,7 @@ TO SEE IF YOU QUALIFY </string>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="COLOR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O2v-1L-gbK">
-                                                <rect key="frame" x="19" y="310" width="49" height="17"/>
+                                                <rect key="frame" x="19" y="310" width="33.5" height="17"/>
                                                 <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="14"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
@@ -3365,7 +3365,7 @@ TO SEE IF YOU QUALIFY </string>
                                                 </constraints>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CLARITY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GXx-oP-Pav">
-                                                <rect key="frame" x="19" y="400" width="57.5" height="17"/>
+                                                <rect key="frame" x="19" y="400" width="42" height="17"/>
                                                 <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="14"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
@@ -3785,7 +3785,7 @@ TO SEE IF YOU QUALIFY </string>
                                 <rect key="frame" x="60" y="15" width="255" height="20"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Yf-62-BoZ">
-                                        <rect key="frame" x="0.0" y="0.0" width="31" height="20"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="30" height="20"/>
                                         <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="10"/>
                                         <state key="normal" title="RINGS">
                                             <color key="titleColor" red="0.74509803921568629" green="0.74509803921568629" blue="0.74509803921568629" alpha="1" colorSpace="calibratedRGB"/>
@@ -3798,7 +3798,7 @@ TO SEE IF YOU QUALIFY </string>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KiJ-P4-tCY">
-                                        <rect key="frame" x="60" y="0.0" width="51" height="20"/>
+                                        <rect key="frame" x="69" y="0.0" width="38" height="20"/>
                                         <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="10"/>
                                         <state key="normal" title="EARRINGS">
                                             <color key="titleColor" red="0.74509803919999995" green="0.74509803919999995" blue="0.74509803919999995" alpha="1" colorSpace="calibratedRGB"/>
@@ -3811,7 +3811,7 @@ TO SEE IF YOU QUALIFY </string>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jaZ-8c-haK">
-                                        <rect key="frame" x="129.5" y="0.0" width="53" height="20"/>
+                                        <rect key="frame" x="141.5" y="0.0" width="39" height="20"/>
                                         <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="10"/>
                                         <state key="normal" title="PENDANTS">
                                             <color key="titleColor" red="0.74509803919999995" green="0.74509803919999995" blue="0.74509803919999995" alpha="1" colorSpace="calibratedRGB"/>
@@ -3824,7 +3824,7 @@ TO SEE IF YOU QUALIFY </string>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tro-4s-btO">
-                                        <rect key="frame" x="197" y="0.0" width="58" height="20"/>
+                                        <rect key="frame" x="213" y="0.0" width="42" height="20"/>
                                         <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="10"/>
                                         <state key="normal" title="BRACELETS">
                                             <color key="titleColor" red="0.74509803919999995" green="0.74509803919999995" blue="0.74509803919999995" alpha="1" colorSpace="calibratedRGB"/>
@@ -3858,7 +3858,7 @@ TO SEE IF YOU QUALIFY </string>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yGi-rn-eK3">
-                                        <rect key="frame" x="44" y="0.0" width="62" height="20"/>
+                                        <rect key="frame" x="56" y="0.0" width="49" height="20"/>
                                         <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="10"/>
                                         <state key="normal" title="SIGNIFICANT">
                                             <color key="titleColor" red="0.74509803919999995" green="0.74509803919999995" blue="0.74509803919999995" alpha="1" colorSpace="calibratedRGB"/>
@@ -3871,7 +3871,7 @@ TO SEE IF YOU QUALIFY </string>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dh1-gv-jgx">
-                                        <rect key="frame" x="120" y="0.0" width="43" height="20"/>
+                                        <rect key="frame" x="131" y="0.0" width="32" height="20"/>
                                         <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="10"/>
                                         <state key="normal" title="CLASSIC">
                                             <color key="titleColor" red="0.74509803919999995" green="0.74509803919999995" blue="0.74509803919999995" alpha="1" colorSpace="calibratedRGB"/>
@@ -3996,7 +3996,7 @@ TO SEE IF YOU QUALIFY </string>
                                                         <rect key="frame" x="60" y="15" width="255" height="20"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5e7-yi-Eqn">
-                                                                <rect key="frame" x="0.0" y="0.0" width="31" height="20"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="30" height="20"/>
                                                                 <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="10"/>
                                                                 <state key="normal" title="RINGS">
                                                                     <color key="titleColor" red="0.74509803919999995" green="0.74509803919999995" blue="0.74509803919999995" alpha="1" colorSpace="calibratedRGB"/>
@@ -4009,7 +4009,7 @@ TO SEE IF YOU QUALIFY </string>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5bg-yK-G6q">
-                                                                <rect key="frame" x="60" y="0.0" width="51" height="20"/>
+                                                                <rect key="frame" x="69" y="0.0" width="38" height="20"/>
                                                                 <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="10"/>
                                                                 <state key="normal" title="EARRINGS">
                                                                     <color key="titleColor" red="0.74509803919999995" green="0.74509803919999995" blue="0.74509803919999995" alpha="1" colorSpace="calibratedRGB"/>
@@ -4022,7 +4022,7 @@ TO SEE IF YOU QUALIFY </string>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VO2-W6-0sZ">
-                                                                <rect key="frame" x="129.5" y="0.0" width="53" height="20"/>
+                                                                <rect key="frame" x="141.5" y="0.0" width="39" height="20"/>
                                                                 <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="10"/>
                                                                 <state key="normal" title="PENDANTS">
                                                                     <color key="titleColor" red="0.74509803919999995" green="0.74509803919999995" blue="0.74509803919999995" alpha="1" colorSpace="calibratedRGB"/>
@@ -4035,7 +4035,7 @@ TO SEE IF YOU QUALIFY </string>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x6O-Ye-zjj">
-                                                                <rect key="frame" x="197" y="0.0" width="58" height="20"/>
+                                                                <rect key="frame" x="213" y="0.0" width="42" height="20"/>
                                                                 <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="10"/>
                                                                 <state key="normal" title="BRACELETS">
                                                                     <color key="titleColor" red="0.74509803919999995" green="0.74509803919999995" blue="0.74509803919999995" alpha="1" colorSpace="calibratedRGB"/>
@@ -4069,7 +4069,7 @@ TO SEE IF YOU QUALIFY </string>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="591-p4-2CY">
-                                                                <rect key="frame" x="55" y="0.0" width="62" height="20"/>
+                                                                <rect key="frame" x="67" y="0.0" width="49" height="20"/>
                                                                 <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="10"/>
                                                                 <state key="normal" title="SIGNIFICANT">
                                                                     <color key="titleColor" red="0.74509803919999995" green="0.74509803919999995" blue="0.74509803919999995" alpha="1" colorSpace="calibratedRGB"/>
@@ -4082,7 +4082,7 @@ TO SEE IF YOU QUALIFY </string>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FO6-aR-lCu">
-                                                                <rect key="frame" x="142" y="0.0" width="43" height="20"/>
+                                                                <rect key="frame" x="153" y="0.0" width="32" height="20"/>
                                                                 <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="10"/>
                                                                 <state key="normal" title="CLASSIC">
                                                                     <color key="titleColor" red="0.74509803919999995" green="0.74509803919999995" blue="0.74509803919999995" alpha="1" colorSpace="calibratedRGB"/>
@@ -4350,8 +4350,8 @@ TO SEE IF YOU QUALIFY </string>
                                                             <constraint firstAttribute="height" constant="1" id="UtG-Il-kS0"/>
                                                         </constraints>
                                                     </view>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jewelry_sample" translatesAutoresizingMaskIntoConstraints="NO" id="xYE-zD-AC3">
-                                                        <rect key="frame" x="50" y="20" width="275" height="201"/>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="diamond_detail_default" translatesAutoresizingMaskIntoConstraints="NO" id="xYE-zD-AC3">
+                                                        <rect key="frame" x="0.0" y="0.0" width="375" height="241"/>
                                                     </imageView>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jewelry_sample" translatesAutoresizingMaskIntoConstraints="NO" id="SkP-0a-rNv">
                                                         <rect key="frame" x="340" y="11" width="25" height="25"/>
@@ -4399,12 +4399,12 @@ TO SEE IF YOU QUALIFY </string>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
-                                                    <constraint firstItem="xYE-zD-AC3" firstAttribute="leading" secondItem="3PE-yB-XK1" secondAttribute="leading" constant="50" id="4DS-wY-mej"/>
+                                                    <constraint firstItem="xYE-zD-AC3" firstAttribute="leading" secondItem="3PE-yB-XK1" secondAttribute="leading" id="4DS-wY-mej"/>
                                                     <constraint firstItem="U51-AY-p4a" firstAttribute="top" secondItem="3PE-yB-XK1" secondAttribute="top" id="7GO-sS-lD8"/>
                                                     <constraint firstItem="SkP-0a-rNv" firstAttribute="top" secondItem="U51-AY-p4a" secondAttribute="bottom" constant="10" id="BdF-Bi-ItI"/>
                                                     <constraint firstAttribute="bottom" secondItem="NdL-G5-ljo" secondAttribute="bottom" constant="17" id="E02-xe-YrT"/>
-                                                    <constraint firstAttribute="trailing" secondItem="xYE-zD-AC3" secondAttribute="trailing" constant="50" id="FJv-cw-n9A"/>
-                                                    <constraint firstItem="xYE-zD-AC3" firstAttribute="top" secondItem="3PE-yB-XK1" secondAttribute="top" constant="20" id="KPL-Zy-Bsb"/>
+                                                    <constraint firstAttribute="trailing" secondItem="xYE-zD-AC3" secondAttribute="trailing" id="FJv-cw-n9A"/>
+                                                    <constraint firstItem="xYE-zD-AC3" firstAttribute="top" secondItem="3PE-yB-XK1" secondAttribute="top" id="KPL-Zy-Bsb"/>
                                                     <constraint firstAttribute="trailing" secondItem="5HD-WM-s8G" secondAttribute="trailing" id="KsP-CD-6kv"/>
                                                     <constraint firstItem="U51-AY-p4a" firstAttribute="leading" secondItem="3PE-yB-XK1" secondAttribute="leading" id="Npt-cf-XNz"/>
                                                     <constraint firstAttribute="bottom" secondItem="5HD-WM-s8G" secondAttribute="bottom" id="TOK-JV-rU7"/>
@@ -4412,7 +4412,7 @@ TO SEE IF YOU QUALIFY </string>
                                                     <constraint firstAttribute="trailing" secondItem="U51-AY-p4a" secondAttribute="trailing" id="bde-ln-Ho8"/>
                                                     <constraint firstItem="5HD-WM-s8G" firstAttribute="leading" secondItem="3PE-yB-XK1" secondAttribute="leading" id="e0B-9D-Of3"/>
                                                     <constraint firstItem="NdL-G5-ljo" firstAttribute="leading" secondItem="3PE-yB-XK1" secondAttribute="leading" constant="22" id="kls-Aa-wDM"/>
-                                                    <constraint firstAttribute="bottom" secondItem="xYE-zD-AC3" secondAttribute="bottom" constant="20" id="ld0-vA-a86"/>
+                                                    <constraint firstAttribute="bottom" secondItem="xYE-zD-AC3" secondAttribute="bottom" id="ld0-vA-a86"/>
                                                     <constraint firstAttribute="height" constant="241" id="zPc-c6-OlM"/>
                                                 </constraints>
                                             </view>
@@ -4526,6 +4526,10 @@ TO SEE IF YOU QUALIFY </string>
                                                                 <constraint firstAttribute="trailing" secondItem="PoH-DI-clc" secondAttribute="trailing" id="zpb-im-QdB"/>
                                                             </constraints>
                                                         </tableViewCellContentView>
+                                                        <connections>
+                                                            <outlet property="keyLabel" destination="4XO-l7-VcS" id="FbG-mj-qJM"/>
+                                                            <outlet property="valueLabel" destination="PoH-DI-clc" id="dtz-gM-GHq"/>
+                                                        </connections>
                                                     </tableViewCell>
                                                 </prototypes>
                                                 <userDefinedRuntimeAttributes>
@@ -4681,6 +4685,8 @@ TO SEE IF YOU QUALIFY </string>
                     </view>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <connections>
+                        <outlet property="diamondImageView" destination="xYE-zD-AC3" id="IDr-Ea-uJn"/>
+                        <outlet property="priceLabel" destination="8dM-Kq-kgg" id="J1G-M2-2dU"/>
                         <outlet property="purchaseView" destination="uEA-hY-ytQ" id="Rda-jp-KK1"/>
                         <outlet property="purchaseViewHeight" destination="a4e-zs-QQk" id="m0y-Bi-fVE"/>
                         <outlet property="reserveButton" destination="v6R-X8-fjc" id="EtW-uB-RBS"/>
@@ -4716,7 +4722,7 @@ TO SEE IF YOU QUALIFY </string>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RESERVED" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aD4-92-2ce">
-                                        <rect key="frame" x="44" y="2" width="124" height="28"/>
+                                        <rect key="frame" x="44" y="2" width="91" height="28"/>
                                         <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="24"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
@@ -4730,7 +4736,7 @@ TO SEE IF YOU QUALIFY </string>
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[DIAMONDS CAN BE RESERVED FOR 48 HOURS]" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wp2-P8-lK5">
-                                        <rect key="frame" x="12" y="39" width="318" height="17"/>
+                                        <rect key="frame" x="50" y="39" width="242" height="17"/>
                                         <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="14"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="0.45000000000000001" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -4772,7 +4778,7 @@ TO SEE IF YOU QUALIFY </string>
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PENDING OR REJECTED" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bll-8f-YZu">
-                                            <rect key="frame" x="44" y="27" width="275.5" height="28"/>
+                                            <rect key="frame" x="44" y="27" width="201" height="28"/>
                                             <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="24"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
@@ -4840,25 +4846,25 @@ TO SEE IF YOU QUALIFY </string>
                                                             <rect key="frame" x="60" y="0.0" width="167" height="61"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ROUND" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uf3-55-QsK">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="43.5" height="61"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="31" height="61"/>
                                                                     <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="12"/>
                                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$20.308" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kn6-YM-gkp">
-                                                                    <rect key="frame" x="43.5" y="0.0" width="43.5" height="61"/>
+                                                                    <rect key="frame" x="41.5" y="0.0" width="40" height="61"/>
                                                                     <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="12"/>
                                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2.52" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hWV-F2-PeZ">
-                                                                    <rect key="frame" x="97" y="0.0" width="23.5" height="61"/>
+                                                                    <rect key="frame" x="96.5" y="0.0" width="21.5" height="61"/>
                                                                     <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="12"/>
                                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="D,SV3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IgY-Vn-zWK">
-                                                                    <rect key="frame" x="133" y="0.0" width="34" height="61"/>
+                                                                    <rect key="frame" x="139.5" y="0.0" width="27.5" height="61"/>
                                                                     <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="12"/>
                                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                     <nil key="highlightedColor"/>
@@ -4869,7 +4875,7 @@ TO SEE IF YOU QUALIFY </string>
                                                             <rect key="frame" x="250" y="20.5" width="20" height="20"/>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="17:31:05" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hec-0J-OmW">
-                                                            <rect key="frame" x="280" y="21" width="70.5" height="21"/>
+                                                            <rect key="frame" x="280" y="20.5" width="64.5" height="21.5"/>
                                                             <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="18"/>
                                                             <color key="textColor" red="0.019607843137254902" green="0.81568627450980391" blue="0.15686274509803921" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
@@ -4944,25 +4950,25 @@ TO SEE IF YOU QUALIFY </string>
                                                             <rect key="frame" x="75" y="0.0" width="220" height="61"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ROUND" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wav-GL-1Oq">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="43.5" height="61"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="31" height="61"/>
                                                                     <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="12"/>
                                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$20.308" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Oc-Ws-wZq">
-                                                                    <rect key="frame" x="60.5" y="0.0" width="43.5" height="61"/>
+                                                                    <rect key="frame" x="59" y="0.0" width="40" height="61"/>
                                                                     <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="12"/>
                                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2.52" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HEO-jU-DDK">
-                                                                    <rect key="frame" x="131" y="0.0" width="23.5" height="61"/>
+                                                                    <rect key="frame" x="132" y="0.0" width="21.5" height="61"/>
                                                                     <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="12"/>
                                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="D,SV3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LIn-7w-zJT">
-                                                                    <rect key="frame" x="186" y="0.0" width="34" height="61"/>
+                                                                    <rect key="frame" x="192.5" y="0.0" width="27.5" height="61"/>
                                                                     <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="12"/>
                                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                     <nil key="highlightedColor"/>
@@ -5036,25 +5042,25 @@ TO SEE IF YOU QUALIFY </string>
                                                             <rect key="frame" x="75" y="0.0" width="215" height="61"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ROUND" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YLa-UH-d3u">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="43.5" height="61"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="31" height="61"/>
                                                                     <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="12"/>
                                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$20.308" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hIM-WW-kTI">
-                                                                    <rect key="frame" x="59" y="0.0" width="43.5" height="61"/>
+                                                                    <rect key="frame" x="57.5" y="0.0" width="40" height="61"/>
                                                                     <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="12"/>
                                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2.52" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cY8-Z1-tCb">
-                                                                    <rect key="frame" x="127.5" y="0.0" width="23.5" height="61"/>
+                                                                    <rect key="frame" x="128.5" y="0.0" width="21.5" height="61"/>
                                                                     <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="12"/>
                                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="D,SV3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hHC-bV-taj">
-                                                                    <rect key="frame" x="181" y="0.0" width="34" height="61"/>
+                                                                    <rect key="frame" x="187.5" y="0.0" width="27.5" height="61"/>
                                                                     <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="12"/>
                                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                     <nil key="highlightedColor"/>
@@ -5147,6 +5153,7 @@ TO SEE IF YOU QUALIFY </string>
         <image name="diamond_button_background_normal.png" width="62" height="37"/>
         <image name="diamond_button_bg_normal" width="62" height="37"/>
         <image name="diamond_button_bg_selected" width="62" height="37"/>
+        <image name="diamond_detail_default" width="375" height="254"/>
         <image name="diamond_success" width="79" height="80"/>
         <image name="emerald_normal" width="19" height="25"/>
         <image name="emerald_selected" width="18" height="24"/>

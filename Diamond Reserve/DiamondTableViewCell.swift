@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import SDWebImage
+
 
 class DiamondTableViewCell: UITableViewCell {
     
@@ -18,14 +20,13 @@ class DiamondTableViewCell: UITableViewCell {
     @IBOutlet weak var selectionButton: UIButton!
     @IBOutlet weak var disclosureView: UIImageView!
     
-    var isSelectable: Bool = false
-    
-    var diamond:Diamonds?
+    var diamond:Diamond?
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        disclosureView.isHidden = isSelectable
-        selectionButton.isHidden = !isSelectable
+
+        iconView.layer.cornerRadius = iconView.bounds.width / 2.0
+        iconView.clipsToBounds = true
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -35,18 +36,66 @@ class DiamondTableViewCell: UITableViewCell {
     }
     
     func setSelectable(isSelectable: Bool){
-        self.isSelectable = isSelectable
         disclosureView.isHidden = isSelectable
         selectionButton.isHidden = !isSelectable
+        selectionButton.isSelected = false
     }
     
-    func setData(diamond: Diamonds){
+    func setData(diamond: Diamond){
         self.diamond = diamond
-        shapeLabel.text = diamond.shape
+        var shape = diamond.shape
+        var defaultImage = UIImage(named: "round_normal")
+        if shape == "PR" {
+            shape = "PEAR"
+            defaultImage = UIImage(named: "pear_normal")
+        } else if shape == "PS"{
+            shape = "PRINCESS"
+            defaultImage = UIImage(named: "princess_normal")
+        } else if shape == "OV"{
+            shape = "OVAL"
+            defaultImage = UIImage(named: "oval_normal")
+        } else if shape == "CU"{
+            shape = "CUSHION"
+            defaultImage = UIImage(named: "cushion_normal")
+        } else if shape == "EM"{
+            shape = "EMERALD"
+            defaultImage = UIImage(named: "emerald_normal")
+        } else if shape == "HS"{
+            shape = "HEART"
+            defaultImage = UIImage(named: "heart_normal")
+        } else if shape == "RA"{
+            shape = "RADIANT"
+            defaultImage = UIImage(named: "radiant_normal")
+        } else if shape == "MO"{
+            shape = "MARQUISE"
+            defaultImage = UIImage(named: "marquise_normal")
+        } else if shape == "AS"{
+            shape = "ASSCHER"
+            defaultImage = UIImage(named: "asscher_normal")
+        } else if shape == "BR"{
+            shape = "ROUND"
+            defaultImage = UIImage(named: "round_normal")
+        }
+        shapeLabel.text = shape
+        priceLabel.text = diamond.price?.stringValue
+        weightLabel.text = diamond.weight?.stringValue
+        colorLabel.text = (diamond.color ?? "") + "," + (diamond.clarity ?? "")
+        iconView.image = defaultImage
+        if diamond.image != nil {
+            iconView.sd_setImage(with: URL(string: diamond.image!), placeholderImage: defaultImage)
+        }
 
     }
+    
     @IBAction func selectAction(_ sender: UIButton) {
         sender.isSelected = !sender.isSelected
+        if sender.isSelected {
+            DiamondManager.sharedInstance.selectedDiamonds.append(self.diamond!)
+        } else {
+            if let index = DiamondManager.sharedInstance.selectedDiamonds.index(of:self.diamond!) {
+                DiamondManager.sharedInstance.selectedDiamonds.remove(at: index)
+            }
+        }
     }
     
 }
