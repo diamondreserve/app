@@ -21,12 +21,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="menu_logo" translatesAutoresizingMaskIntoConstraints="NO" id="dMB-bD-wdy">
-                                <rect key="frame" x="163" y="307" width="48" height="53"/>
-                                <autoresizingMask key="autoresizingMask"/>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" image="menu_logo" translatesAutoresizingMaskIntoConstraints="NO" id="dMB-bD-wdy">
+                                <rect key="frame" x="149.5" y="296" width="75" height="75"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="dMB-bD-wdy" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="0ep-Le-rYA"/>
+                            <constraint firstItem="dMB-bD-wdy" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="vxu-n2-yBH"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
