@@ -15,7 +15,7 @@ class TabbarViewController: UIViewController {
     
     var diamondNVC: UINavigationController!
     var jewelryNVC: UINavigationController!
-    var productionNVC: UINavigationController!
+    var messagesNVC: UINavigationController!
     var searchNVC: UINavigationController!
     
     var viewControllers: [UINavigationController]!
@@ -28,13 +28,13 @@ class TabbarViewController: UIViewController {
         
         diamondNVC = UINavigationController(rootViewController: storyboard.instantiateViewController(withIdentifier: "MainDiamondsVC"))
         jewelryNVC = UINavigationController(rootViewController: storyboard.instantiateViewController(withIdentifier: "MainJewelryVC"))
-        productionNVC = UINavigationController(rootViewController: storyboard.instantiateViewController(withIdentifier: "MainDiamondsVC"))
+        messagesNVC = UINavigationController(rootViewController: storyboard.instantiateViewController(withIdentifier: "MessagesVC"))
         searchNVC = UINavigationController(rootViewController: storyboard.instantiateViewController(withIdentifier: "DiamondSearchVC"))
         setAttributesFor(diamondNVC)
         setAttributesFor(jewelryNVC)
-        setAttributesFor(productionNVC)
+        setAttributesFor(messagesNVC)
         setAttributesFor(searchNVC)
-        viewControllers = [diamondNVC, jewelryNVC, productionNVC, searchNVC]
+        viewControllers = [diamondNVC, jewelryNVC, messagesNVC, searchNVC]
         
         tabButtons[selectedIndex].isSelected = true
         didPressTab(tabButtons[selectedIndex])

@@ -17,7 +17,7 @@ class CoverPageViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var backgroundImageView2: UIImageView!
     
     
-    let images: [UIImage] = [UIImage(named: "Emerald.png")!, UIImage(named: "Emerald2.png")!, UIImage(named: "Emerald3.png")!]
+    let images: [UIImage] = [UIImage(named: "cover_full1")!, UIImage(named: "cover_full2")!, UIImage(named: "cover_full3")!]
     
     
     var currentPageNumber : Int = -1
@@ -79,15 +79,15 @@ class CoverPageViewController: UIViewController, UIScrollViewDelegate {
         
         if( currentPage == 0) {
             self.titleText.text = "DIAMONDS"
-            self.mainText.text = "SEARCH FOR THE MOST EXQUISITE\nDIAMONDS YOU WONT FIND ON RAPPNET"
+            self.mainText.text = "DISCOVER THE MOST EXQUISITE & CURRENT DIAMONDS YOU WONT FIND ON RAPPNET"
         }
         if(currentPage == 1){
             self.titleText.text = "JEWELRY"
-            self.mainText.text = "DISCOVER & RESERVE ONE-OF-A-KIND\nDIAMOND JEWELRY"
+            self.mainText.text = "EXPLORE AND RESERVE RARE DIAMOND ENGAGEMENT RINGS, EARRINGS AND PENDANTS"
         }
         else if (currentPage == 2) {
-            self.titleText.text = "PRODUCTION"
-            self.mainText.text = "FOLLOW EXCEPTIONAL DIAMONDS BEFORE\nTHEY HIT THE MARKET"
+            self.titleText.text = "SEARCH"
+            self.mainText.text = "SEARCH FOR SPECIFIC DIAMONDS AND DIAMOND JEWELRY BEFORE THEY HIT THE MARKET"
         }
     }
     
@@ -95,7 +95,7 @@ class CoverPageViewController: UIViewController, UIScrollViewDelegate {
         
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let mainTabbarVC: TabbarViewController? = storyboard.instantiateViewController(withIdentifier: "TabbarVC") as? TabbarViewController
-        mainTabbarVC?.selectedIndex = currentPageNumber
+        mainTabbarVC?.selectedIndex = (currentPageNumber != 2) ? currentPageNumber : 3
         
         let mainViewController: MainSideMenuController = (storyboard.instantiateViewController(withIdentifier: "MainSideMenuVC") as? MainSideMenuController)!
         mainViewController.rootViewController = mainTabbarVC

@@ -44,6 +44,9 @@ class MainDiamondsViewController: UIViewController, UITableViewDelegate, UITable
     }
     
     func showSelect() {
+        if diamonds.count == 0 {
+            return
+        }
         let diamondSelectionVC = self.storyboard?.instantiateViewController(withIdentifier: "DiamondSelectionVC") as! DiamondSelectionViewController
         self.navigationController?.pushViewController(diamondSelectionVC, animated: true)
     }

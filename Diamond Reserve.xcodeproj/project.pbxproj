@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3C810FFD90232539F650E257 /* Pods_Diamond_Reserve.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15BA25770C46A51BCD57924B /* Pods_Diamond_Reserve.framework */; };
 		80057E751F9FD51D006540BC /* DiamondManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80057E741F9FD51D006540BC /* DiamondManager.swift */; };
+		80057E771FA08639006540BC /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80057E761FA08638006540BC /* MessagesViewController.swift */; };
 		802594EF1F8DCDFD004F1F94 /* BLACK_IV_FMX.png in Resources */ = {isa = PBXBuildFile; fileRef = 802594EC1F8DCDFD004F1F94 /* BLACK_IV_FMX.png */; };
 		802594F01F8DCDFD004F1F94 /* BLACK_IV_FMX@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 802594ED1F8DCDFD004F1F94 /* BLACK_IV_FMX@2x.png */; };
 		802594F11F8DCDFD004F1F94 /* BLACK_IV_FMX@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 802594EE1F8DCDFD004F1F94 /* BLACK_IV_FMX@3x.png */; };
@@ -115,6 +116,7 @@
 		64D964D9B1E32AB2B44ADA98 /* Pods_Diamond_ReserveTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Diamond_ReserveTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BC3E480D2686B1F8881C7B6 /* Pods-Diamond Reserve.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diamond Reserve.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Diamond Reserve/Pods-Diamond Reserve.debug.xcconfig"; sourceTree = "<group>"; };
 		80057E741F9FD51D006540BC /* DiamondManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiamondManager.swift; sourceTree = "<group>"; };
+		80057E761FA08638006540BC /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
 		802594EC1F8DCDFD004F1F94 /* BLACK_IV_FMX.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BLACK_IV_FMX.png; sourceTree = "<group>"; };
 		802594ED1F8DCDFD004F1F94 /* BLACK_IV_FMX@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BLACK_IV_FMX@2x.png"; sourceTree = "<group>"; };
 		802594EE1F8DCDFD004F1F94 /* BLACK_IV_FMX@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BLACK_IV_FMX@3x.png"; sourceTree = "<group>"; };
@@ -278,6 +280,7 @@
 				808B53E21F92810E00504607 /* DiamondTableViewCell.xib */,
 				808B53E51F92B71C00504607 /* DiamondSelectionViewController.swift */,
 				803C24D31F9321ED00895296 /* DiamondReviewViewController.swift */,
+				80057E761FA08638006540BC /* MessagesViewController.swift */,
 				803C24D51F9349B800895296 /* DiamondSearchViewController.swift */,
 				803C24DF1F98A61F00895296 /* DiamondDetailViewController.swift */,
 				803C24E41F9D1CF000895296 /* ReserveListViewController.swift */,
@@ -813,6 +816,7 @@
 				803C24DA1F9704B500895296 /* MainJewelryViewController.swift in Sources */,
 				B7D603A31F865D7F00B94067 /* CoverPageViewController.swift in Sources */,
 				803C24E51F9D1CF000895296 /* ReserveListViewController.swift in Sources */,
+				80057E771FA08639006540BC /* MessagesViewController.swift in Sources */,
 				B76D8D9D1F7AE2C6000CDFC7 /* SplashViewController.swift in Sources */,
 				B738C1541F7D7F1D0097720C /* VerifyViewController.swift in Sources */,
 				802594FB1F8E07DC004F1F94 /* RightMenuViewController.swift in Sources */,
