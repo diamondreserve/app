@@ -43,18 +43,18 @@ class DiamondDetailViewController: UIViewController, UITableViewDelegate, UITabl
         
         var shape = diamond?.shape
         if shape == "PR" {
-            shape = "PEAR"
-        } else if shape == "PS"{
             shape = "PRINCESS"
+        } else if shape == "PS"{
+            shape = "PEAR"
         } else if shape == "OV"{
             shape = "OVAL"
-        } else if shape == "CU"{
+        } else if (shape == "CU" || shape == "CB"){
             shape = "CUSHION"
         } else if shape == "EM"{
             shape = "EMERALD"
         } else if shape == "HS"{
             shape = "HEART"
-        } else if shape == "RA"{
+        } else if (shape == "RA" || shape == "SB"){
             shape = "RADIANT"
         } else if shape == "MO"{
             shape = "MARQUISE"

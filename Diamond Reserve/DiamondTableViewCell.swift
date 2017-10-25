@@ -46,15 +46,15 @@ class DiamondTableViewCell: UITableViewCell {
         var shape = diamond.shape
         var defaultImage = UIImage(named: "round_normal")
         if shape == "PR" {
-            shape = "PEAR"
-            defaultImage = UIImage(named: "pear_normal")
-        } else if shape == "PS"{
             shape = "PRINCESS"
             defaultImage = UIImage(named: "princess_normal")
+        } else if shape == "PS"{
+            shape = "PEAR"
+            defaultImage = UIImage(named: "pear_normal")
         } else if shape == "OV"{
             shape = "OVAL"
             defaultImage = UIImage(named: "oval_normal")
-        } else if shape == "CU"{
+        } else if (shape == "CU" || shape == "CB"){
             shape = "CUSHION"
             defaultImage = UIImage(named: "cushion_normal")
         } else if shape == "EM"{
@@ -63,7 +63,7 @@ class DiamondTableViewCell: UITableViewCell {
         } else if shape == "HS"{
             shape = "HEART"
             defaultImage = UIImage(named: "heart_normal")
-        } else if shape == "RA"{
+        } else if (shape == "RA" || shape == "SB"){
             shape = "RADIANT"
             defaultImage = UIImage(named: "radiant_normal")
         } else if shape == "MO"{
@@ -81,9 +81,19 @@ class DiamondTableViewCell: UITableViewCell {
         weightLabel.text = diamond.weight?.stringValue
         colorLabel.text = (diamond.color ?? "") + "," + (diamond.clarity ?? "")
         if diamond.image != nil {
+            iconView.image = nil
             iconView.sd_setImage(with: URL(string: diamond.image!), placeholderImage: defaultImage)
+            iconView.layer.borderColor = UIColor.white.cgColor
+            iconView.layer.borderWidth = 1.8
+            iconView.transform = CGAffineTransform(scaleX: 1, y: 1)
+            iconView.contentMode = .scaleAspectFill
         } else {
+            iconView.image = nil
             iconView.image = defaultImage
+            iconView.layer.borderWidth = 0
+            iconView.transform = CGAffineTransform(scaleX: 0.8, y: 0.8)
+            iconView.contentMode = .scaleAspectFit
+
         }
 
     }

@@ -62,8 +62,39 @@ class MainDiamondsViewController: BaseVC, UITableViewDelegate, UITableViewDataSo
         self.selectedShapes.removeAll()
         for button in diamondButtons {
             if button.isSelected {
-                let shape = shapes[button.tag]
-                selectedShapes.append(shape)
+                switch (button.tag){
+                case 0:
+                    selectedShapes.append("BR")
+                    break
+                case 1:
+                    selectedShapes.append("PR")
+                    break
+                case 2:
+                    selectedShapes.append("EM")
+                    break
+                case 3:
+                    selectedShapes.append("AS")
+                    break
+                case 4:
+                    selectedShapes.append("CU")
+                    selectedShapes.append("CB")
+                    break
+                case 5:
+                    selectedShapes.append("MO")
+                    break
+                case 6:
+                    selectedShapes.append("RA")
+                    selectedShapes.append("SB")
+                    break
+                case 7:
+                    selectedShapes.append("OV")
+                    break
+                case 8:
+                    selectedShapes.append("PS")
+                    break
+                default:
+                    selectedShapes.append("HS")
+                }
             }
         }
         

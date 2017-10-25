@@ -33,7 +33,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X0P-Yq-LCM">
                                         <rect key="frame" x="0.0" y="0.0" width="70" height="60"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="round_normal" translatesAutoresizingMaskIntoConstraints="NO" id="D1j-kk-UIL">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="round_normal" translatesAutoresizingMaskIntoConstraints="NO" id="D1j-kk-UIL">
                                                 <rect key="frame" x="15" y="10" width="40" height="40"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 <constraints>
