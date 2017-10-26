@@ -11,7 +11,7 @@ import MBProgressHUD
 
 class RotationDiamondViewController: UIViewController, UIWebViewDelegate {
     
-    var diamondLink: String = "https://www.apple.com"
+    var diamondLink: String = "https://server.v360.in/vision360.html?d=262795767&surl=https://bluenile.v360.in/22/imaged/262795767/1"
 
     @IBOutlet weak var webView: UIWebView!
     

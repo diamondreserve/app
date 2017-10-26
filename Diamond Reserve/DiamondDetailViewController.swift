@@ -28,6 +28,8 @@ class DiamondDetailViewController: UIViewController, UITableViewDelegate, UITabl
     @IBOutlet weak var tableViewHeight: NSLayoutConstraint!
     @IBOutlet weak var purchaseViewHeight: NSLayoutConstraint!
     @IBOutlet weak var reserveButton: UIButton!
+    @IBOutlet weak var rotateButtonHeight: NSLayoutConstraint!
+    
     
     @IBOutlet weak var purchaseView: UIView!
     var reserveState : ReserveState = .ready
@@ -39,6 +41,8 @@ class DiamondDetailViewController: UIViewController, UITableViewDelegate, UITabl
         
         if diamond?.image != nil {
             diamondImageView.sd_setImage(with: URL(string: (diamond?.image!)!), placeholderImage: UIImage(named: "diamond_detail_default"))
+        } else {
+            rotateButtonHeight.constant = 0
         }
         
         var shape = diamond?.shape
@@ -139,7 +143,7 @@ class DiamondDetailViewController: UIViewController, UITableViewDelegate, UITabl
     
     @IBAction func showRotation360(_ sender: Any) {
         let rotationVC: RotationDiamondViewController = (storyboard?.instantiateViewController(withIdentifier: "RotationDiamondVC") as! RotationDiamondViewController)
-        rotationVC.diamondLink = "https://server.v360.in/vision360.html?d=262795767&surl=https://bluenile.v360.in/22/imaged/262795767/1"
+        rotationVC.diamondLink = (diamond?.diamond360!)!
         self.navigationController?.pushViewController(rotationVC, animated: true)
     }
     

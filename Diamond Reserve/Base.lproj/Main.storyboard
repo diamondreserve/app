@@ -4721,6 +4721,7 @@ TO SEE IF YOU QUALIFY </string>
                         <outlet property="purchaseView" destination="uEA-hY-ytQ" id="Rda-jp-KK1"/>
                         <outlet property="purchaseViewHeight" destination="a4e-zs-QQk" id="m0y-Bi-fVE"/>
                         <outlet property="reserveButton" destination="v6R-X8-fjc" id="EtW-uB-RBS"/>
+                        <outlet property="rotateButtonHeight" destination="6cs-pE-arl" id="xD5-Rk-rBE"/>
                         <outlet property="tableView" destination="4kP-fO-7iS" id="d2Z-3G-wK6"/>
                         <outlet property="tableViewHeight" destination="jOh-PI-pkB" id="cIA-7M-bEw"/>
                         <outlet property="titleLabel" destination="jCG-fC-4Mj" id="vAY-ha-U1d"/>
