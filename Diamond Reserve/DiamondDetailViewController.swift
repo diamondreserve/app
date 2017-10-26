@@ -126,7 +126,6 @@ class DiamondDetailViewController: UIViewController, UITableViewDelegate, UITabl
         switch reserveState {
             case .ready:
                 reserveState = .pending
-                
                 break
             case .pending:
                 reserveState = .reserved
@@ -137,6 +136,13 @@ class DiamondDetailViewController: UIViewController, UITableViewDelegate, UITabl
         }
         setUI()
     }
+    
+    @IBAction func showRotation360(_ sender: Any) {
+        let rotationVC: RotationDiamondViewController = (storyboard?.instantiateViewController(withIdentifier: "RotationDiamondVC") as! RotationDiamondViewController)
+        rotationVC.diamondLink = "https://server.v360.in/vision360.html?d=262795767&surl=https://bluenile.v360.in/22/imaged/262795767/1"
+        self.navigationController?.pushViewController(rotationVC, animated: true)
+    }
+    
     
     // MARK: - Table view data source
     
