@@ -9,11 +9,14 @@
 import UIKit
 import AWSDynamoDB
 import MBProgressHUD
+import SwiftGifOrigin
 
 class MainDiamondsViewController: BaseVC, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet var diamondButtons: [UIButton]!
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var loadingView: UIImageView!
+    
     
     var lock:NSLock?
     var lastEvaluatedKey:[String : AWSDynamoDBAttributeValue]!
