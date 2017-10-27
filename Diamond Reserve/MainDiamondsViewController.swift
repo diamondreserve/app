@@ -48,10 +48,11 @@ class MainDiamondsViewController: BaseVC, UITableViewDelegate, UITableViewDataSo
     }
     
     func showSelect() {
-        if DiamondManager.sharedInstance.filteredDiamonds.count == 0 {
+        if diamonds.count == 0 {
             return
         }
         let diamondSelectionVC = self.storyboard?.instantiateViewController(withIdentifier: "DiamondSelectionVC") as! DiamondSelectionViewController
+        diamondSelectionVC.filteredDiamonds = diamonds
         self.navigationController?.pushViewController(diamondSelectionVC, animated: true)
     }
     
@@ -100,7 +101,6 @@ class MainDiamondsViewController: BaseVC, UITableViewDelegate, UITableViewDataSo
         
         if DiamondManager.sharedInstance.allDiamonds != nil {
             diamonds = DiamondManager.sharedInstance.allDiamonds!.filter({selectedShapes.contains($0.shape!)})
-            DiamondManager.sharedInstance.filteredDiamonds = diamonds
             self.tableView.reloadData()
         }
     }
@@ -199,6 +199,7 @@ class MainDiamondsViewController: BaseVC, UITableViewDelegate, UITableViewDataSo
                 for item in paginatedOutput.items as! [Diamond] {
                     self.diamonds.append(item)
                 }
+                self.diamonds = self.diamonds.sorted(by: {($0.weight?.floatValue ?? 0) > ($1.weight?.floatValue ?? 0)})
                 DiamondManager.sharedInstance.allDiamonds = self.diamonds
                 
                 self.lastEvaluatedKey = paginatedOutput.lastEvaluatedKey

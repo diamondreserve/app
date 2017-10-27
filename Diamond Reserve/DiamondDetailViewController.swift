@@ -68,9 +68,14 @@ class DiamondDetailViewController: UIViewController, UITableViewDelegate, UITabl
             shape = "ROUND"
         }
         
-        titleLabel.text = String.init(format: "%.2f %@ %@",(diamond?.weight?.floatValue ?? 0)!, (shape ?? ""), diamond?.color ?? "")
+        titleLabel.text = String.init(format: "%.2fct %@ %@, %@",(diamond?.weight?.floatValue ?? 0)!, (shape ?? ""), diamond?.color ?? "", diamond?.clarity ?? "")
         
-        priceLabel.text = (diamond?.price != nil) ? ("$" + (diamond?.price?.stringValue ?? "")) : ""
+        let price = (diamond?.price?.floatValue ?? 0) * (diamond?.weight?.floatValue ?? 0) * 2
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .currency
+        formatter.maximumFractionDigits = 0
+        priceLabel.text = (price == 0) ? "" : formatter.string(from: NSNumber(value: price))
+        
         setNavigationBar()
         tableViewHeight.constant = 28 * 8
         purchaseViewHeight.constant = 0

@@ -20,6 +20,8 @@ class DiamondTableViewCell: UITableViewCell {
     @IBOutlet weak var selectionButton: UIButton!
     @IBOutlet weak var disclosureView: UIImageView!
     
+    var delegate: DiamondSelectionViewController?
+    
     var diamond:Diamond?
 
     override func awakeFromNib() {
@@ -77,8 +79,12 @@ class DiamondTableViewCell: UITableViewCell {
             defaultImage = UIImage(named: "round_normal")
         }
         shapeLabel.text = shape
-        priceLabel.text = diamond.price?.stringValue
-        weightLabel.text = diamond.weight?.stringValue
+        let price = (diamond.price?.floatValue ?? 0) * (diamond.weight?.floatValue ?? 0) * 2
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .currency
+        formatter.maximumFractionDigits = 0
+        priceLabel.text = formatter.string(from: NSNumber(value: price))
+        weightLabel.text = (diamond.weight?.stringValue ?? "") + "ct"
         colorLabel.text = (diamond.color ?? "") + "," + (diamond.clarity ?? "")
         if diamond.image != nil {
             iconView.image = nil
@@ -100,13 +106,16 @@ class DiamondTableViewCell: UITableViewCell {
     
     @IBAction func selectAction(_ sender: UIButton) {
         sender.isSelected = !sender.isSelected
-        if sender.isSelected {
-            DiamondManager.sharedInstance.selectedDiamonds.append(self.diamond!)
-        } else {
-            if let index = DiamondManager.sharedInstance.selectedDiamonds.index(of:self.diamond!) {
-                DiamondManager.sharedInstance.selectedDiamonds.remove(at: index)
+        if delegate != nil {
+            if sender.isSelected {
+                delegate!.selectedDiamonds.append(self.diamond!)
+            } else {
+                if let index = delegate!.selectedDiamonds.index(of:self.diamond!) {
+                    delegate!.selectedDiamonds.remove(at: index)
+                }
             }
         }
+
     }
     
 }

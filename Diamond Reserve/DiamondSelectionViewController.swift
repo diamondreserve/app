@@ -11,12 +11,13 @@ import UIKit
 class DiamondSelectionViewController: UIViewController, UITableViewDelegate, UITableViewDataSource  {
 
     @IBOutlet weak var tableView: UITableView!
+    var filteredDiamonds = [Diamond]()
+    var selectedDiamonds = [Diamond]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setNavigationBar()
         tableView.register(UINib(nibName: "DiamondTableViewCell", bundle: nil), forCellReuseIdentifier: "DiamondCell")
-        DiamondManager.sharedInstance.selectedDiamonds = [Diamond]()
     }
 
     func setNavigationBar() {
@@ -41,7 +42,7 @@ class DiamondSelectionViewController: UIViewController, UITableViewDelegate, UIT
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return (DiamondManager.sharedInstance.filteredDiamonds.count)
+        return (filteredDiamonds.count)
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -51,7 +52,8 @@ class DiamondSelectionViewController: UIViewController, UITableViewDelegate, UIT
             cell = DiamondTableViewCell(style: .default, reuseIdentifier: "DiamondCell")
         }
         cell?.setSelectable(isSelectable: true)
-        cell?.setData(diamond: DiamondManager.sharedInstance.filteredDiamonds[indexPath.row]);
+        cell?.delegate = self
+        cell?.setData(diamond: filteredDiamonds[indexPath.row]);
         return cell!
     }
     
@@ -69,6 +71,7 @@ class DiamondSelectionViewController: UIViewController, UITableViewDelegate, UIT
     
     @IBAction func nextAction(_ sender: Any) {
         let diamondReviewVC = self.storyboard?.instantiateViewController(withIdentifier: "DiamondReviewVC") as! DiamondReviewViewController
+        diamondReviewVC.selectedDiamonds = selectedDiamonds
         self.navigationController?.pushViewController(diamondReviewVC, animated: true)
     }
     
