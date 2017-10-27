@@ -15,7 +15,7 @@ let DIAMOND_THEME_COLOR =           UIColor(red: 0, green: 0, blue: 0)
 let SCREEN_WIDTH : CGFloat =        UIScreen.main.bounds.width
 let SCREEN_HEIGHT : CGFloat =       UIScreen.main.bounds.height
 
-
+var scale : Float = 2
 
 extension UIColor {
     convenience init(red: Int, green: Int, blue: Int) {

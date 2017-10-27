@@ -9,18 +9,39 @@
 import UIKit
 
 class WelcomeViewController: UIViewController {
+    
+    @IBOutlet var buttons : [UIButton]!
 
     @IBOutlet weak var continueButton: UIButton!
+    
+    var selectedIndex: Int = 0
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        continueButton.layer.borderWidth = 1
-        continueButton.layer.borderColor = UIColor.white.cgColor
+        
+        percentButtonTapped(buttons[selectedIndex])
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resourcenglish  es that can be recreated.
+    @IBAction func percentButtonTapped(_ sender: UIButton) {
+        
+        let previousIndex = selectedIndex
+        selectedIndex = sender.tag
+        buttons[previousIndex].backgroundColor = UIColor.clear
+        sender.backgroundColor = UIColor(rgb: 0x018662)
+        
+        switch sender.tag {
+            case 0:
+                scale = 2
+                break
+            case 1:
+                scale = 2.5
+                break
+            default:
+                scale = 3
+        }
+        
     }
+    
     
 }

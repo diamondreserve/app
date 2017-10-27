@@ -40,6 +40,10 @@
 		803C24E01F98A61F00895296 /* DiamondDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803C24DF1F98A61F00895296 /* DiamondDetailViewController.swift */; };
 		803C24E51F9D1CF000895296 /* ReserveListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803C24E41F9D1CF000895296 /* ReserveListViewController.swift */; };
 		803C24E71F9D954600895296 /* ReserveTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803C24E61F9D954600895296 /* ReserveTableViewCell.swift */; };
+		80566DED1FA3BC92009FC556 /* tutorial_1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 80566DEB1FA3B5AE009FC556 /* tutorial_1.gif */; };
+		80566DEE1FA3BC96009FC556 /* tutorial_2.gif in Resources */ = {isa = PBXBuildFile; fileRef = 80566DEA1FA3B5A5009FC556 /* tutorial_2.gif */; };
+		80566DEF1FA3BC99009FC556 /* tutorial_3.gif in Resources */ = {isa = PBXBuildFile; fileRef = 80566DEC1FA3B5B6009FC556 /* tutorial_3.gif */; };
+		80566DF11FA3CF38009FC556 /* loading.gif in Resources */ = {isa = PBXBuildFile; fileRef = 80566DF01FA3CF22009FC556 /* loading.gif */; };
 		808B53DF1F91485500504607 /* TabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808B53DE1F91485500504607 /* TabbarViewController.swift */; };
 		808B53E31F92810E00504607 /* DiamondTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808B53E11F92810E00504607 /* DiamondTableViewCell.swift */; };
 		808B53E41F92810E00504607 /* DiamondTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 808B53E21F92810E00504607 /* DiamondTableViewCell.xib */; };
@@ -148,6 +152,10 @@
 		803C24DF1F98A61F00895296 /* DiamondDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiamondDetailViewController.swift; sourceTree = "<group>"; };
 		803C24E41F9D1CF000895296 /* ReserveListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReserveListViewController.swift; sourceTree = "<group>"; };
 		803C24E61F9D954600895296 /* ReserveTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReserveTableViewCell.swift; sourceTree = "<group>"; };
+		80566DEA1FA3B5A5009FC556 /* tutorial_2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = tutorial_2.gif; sourceTree = "<group>"; };
+		80566DEB1FA3B5AE009FC556 /* tutorial_1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = tutorial_1.gif; sourceTree = "<group>"; };
+		80566DEC1FA3B5B6009FC556 /* tutorial_3.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = tutorial_3.gif; sourceTree = "<group>"; };
+		80566DF01FA3CF22009FC556 /* loading.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = loading.gif; sourceTree = "<group>"; };
 		808B53DE1F91485500504607 /* TabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarViewController.swift; sourceTree = "<group>"; };
 		808B53E11F92810E00504607 /* DiamondTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiamondTableViewCell.swift; sourceTree = "<group>"; };
 		808B53E21F92810E00504607 /* DiamondTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DiamondTableViewCell.xib; sourceTree = "<group>"; };
@@ -393,7 +401,11 @@
 				802595141F8EB5DA004F1F94 /* stone.png */,
 				802595151F8EB5DA004F1F94 /* stone@2x.png */,
 				802595161F8EB5DA004F1F94 /* stone@3x.png */,
+				80566DF01FA3CF22009FC556 /* loading.gif */,
 				8025951A1F8EB63B004F1F94 /* search.png */,
+				80566DEB1FA3B5AE009FC556 /* tutorial_1.gif */,
+				80566DEA1FA3B5A5009FC556 /* tutorial_2.gif */,
+				80566DEC1FA3B5B6009FC556 /* tutorial_3.gif */,
 				8025951B1F8EB63B004F1F94 /* search@2x.png */,
 				8025951C1F8EB63B004F1F94 /* search@3x.png */,
 				8025950E1F8EB55C004F1F94 /* jewelry.png */,
@@ -567,6 +579,7 @@
 				B75C3E171F882F6600E759EC /* strip3.png in Resources */,
 				B7DD64EC1F7C346D00858A6B /* Merged Background 2.jpg in Resources */,
 				B738C1621F7D91290097720C /* strip2.png in Resources */,
+				80566DEF1FA3BC99009FC556 /* tutorial_3.gif in Resources */,
 				B76D8D791F7ACD15000CDFC7 /* LaunchScreen.storyboard in Resources */,
 				B702FBF91F8BF1AA00E0EFFB /* Emerald2.png in Resources */,
 				8025951D1F8EB63B004F1F94 /* search.png in Resources */,
@@ -583,9 +596,11 @@
 				8025951E1F8EB63B004F1F94 /* search@2x.png in Resources */,
 				808B53E41F92810E00504607 /* DiamondTableViewCell.xib in Resources */,
 				802595061F8E2063004F1F94 /* gems@2x.png in Resources */,
+				80566DED1FA3BC92009FC556 /* tutorial_1.gif in Resources */,
 				802595191F8EB5DA004F1F94 /* stone@3x.png in Resources */,
 				B738C1601F7D91290097720C /* strip2@2x.png in Resources */,
 				B76D8D761F7ACD15000CDFC7 /* Assets.xcassets in Resources */,
+				80566DF11FA3CF38009FC556 /* loading.gif in Resources */,
 				B738C1671F7D91610097720C /* strip1.png in Resources */,
 				802594F11F8DCDFD004F1F94 /* BLACK_IV_FMX@3x.png in Resources */,
 				B702FBF71F8BF1AA00E0EFFB /* Emerald3.png in Resources */,
@@ -602,6 +617,7 @@
 				B702FBF51F8BF1AA00E0EFFB /* Emerald3@3x.png in Resources */,
 				802595171F8EB5DA004F1F94 /* stone.png in Resources */,
 				B738C15A1F7D90B10097720C /* Stars.png in Resources */,
+				80566DEE1FA3BC96009FC556 /* tutorial_2.gif in Resources */,
 				802594FF1F8E15B4004F1F94 /* MENU_ICON.png in Resources */,
 				B738C15B1F7D90B10097720C /* Stars@2x.png in Resources */,
 				802595011F8E15B4004F1F94 /* MENU_ICON@3x.png in Resources */,
@@ -693,6 +709,7 @@
 				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
 				"${BUILT_PRODUCTS_DIR}/RangeSeekSlider/RangeSeekSlider.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftGifOrigin/SwiftGifOrigin.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftHash/SwiftHash.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -707,6 +724,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RangeSeekSlider.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftGifOrigin.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftHash.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;

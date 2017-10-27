@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftGifOrigin
 
 class TutorialViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var mainText: UILabel!
@@ -30,17 +31,16 @@ class TutorialViewController: UIViewController, UIScrollViewDelegate {
         
         //initShow()
         let firstImageView = UIImageView(frame: CGRect(x: 0, y: 0, width: SCREEN_WIDTH, height: SCREEN_HEIGHT))
-        firstImageView.image = images[0]
-        firstImageView.contentMode = .scaleAspectFill
+        firstImageView.loadGif(name: "tutorial_1")
         scrollView.addSubview(firstImageView)
 
         let secondImageView = UIImageView(frame: CGRect(x: SCREEN_WIDTH, y: 0, width: SCREEN_WIDTH, height: SCREEN_HEIGHT))
-        secondImageView.image = images[1]
+        secondImageView.loadGif(name: "tutorial_2")
         secondImageView.contentMode = .scaleAspectFill
         scrollView.addSubview(secondImageView)
 
         let thirdImageView = UIImageView(frame: CGRect(x: SCREEN_WIDTH*2, y: 0, width: SCREEN_WIDTH, height: SCREEN_HEIGHT))
-        thirdImageView.image = images[2]
+        thirdImageView.loadGif(name: "tutorial_3")
         thirdImageView.contentMode = .scaleAspectFill
         scrollView.addSubview(thirdImageView)
     }
