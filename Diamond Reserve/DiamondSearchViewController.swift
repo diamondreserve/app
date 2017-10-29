@@ -193,9 +193,18 @@ class DiamondSearchViewController: UIViewController {
                                                                                   ($0.weight?.floatValue ?? 0) >= Float(weightSlider.selectedMinValue) &&
                                                                                   ($0.weight?.floatValue ?? 0) < Float(weightSlider.selectedMaxValue)
             })
+            
+            DiamondManager.sharedInstance.filteredDiamonds = searchedDiamonds
+
+            let tabbarVC:TabbarViewController = self.navigationController!.parent as! TabbarViewController
+            let diamondNavVC = tabbarVC.viewControllers[0] as UINavigationController
+            diamondNavVC.popToRootViewController(animated: false)
+            
             let diamondSelectionVC = self.storyboard?.instantiateViewController(withIdentifier: "DiamondSelectionVC") as! DiamondSelectionViewController
-            diamondSelectionVC.filteredDiamonds = searchedDiamonds
-            self.navigationController?.pushViewController(diamondSelectionVC, animated: true)
+            diamondNavVC.pushViewController(diamondSelectionVC, animated: true)
+            
+            tabbarVC.tabButtons[0].isSelected = true
+            tabbarVC.didPressTab(tabbarVC.tabButtons[0])
         }
 
             }

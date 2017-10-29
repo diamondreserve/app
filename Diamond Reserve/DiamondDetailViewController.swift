@@ -70,14 +70,14 @@ class DiamondDetailViewController: UIViewController, UITableViewDelegate, UITabl
         
         titleLabel.text = String.init(format: "%.2fct %@ %@, %@",(diamond?.weight?.floatValue ?? 0)!, (shape ?? ""), diamond?.color ?? "", diamond?.clarity ?? "")
         
-        let price = (diamond?.price?.floatValue ?? 0) * (diamond?.weight?.floatValue ?? 0) * 2
+        let price = (diamond?.price?.floatValue ?? 0) * (diamond?.weight?.floatValue ?? 0) * scale
         let formatter = NumberFormatter()
         formatter.numberStyle = .currency
         formatter.maximumFractionDigits = 0
         priceLabel.text = (price == 0) ? "" : formatter.string(from: NSNumber(value: price))
         
         setNavigationBar()
-        tableViewHeight.constant = 28 * 8
+        tableViewHeight.constant = 28 * 7
         purchaseViewHeight.constant = 0
         setUI()
     }
@@ -156,7 +156,7 @@ class DiamondDetailViewController: UIViewController, UITableViewDelegate, UITabl
     // MARK: - Table view data source
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 8
+        return 7
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -191,10 +191,6 @@ class DiamondDetailViewController: UIViewController, UITableViewDelegate, UITabl
             cell?.valueLabel.text = diamond?.lab
             break
         case 6:
-            cell?.keyLabel.text = "Price"
-            cell?.valueLabel.text = diamond?.price?.stringValue
-            break
-        case 7:
             cell?.keyLabel.text = "Depth"
             cell?.valueLabel.text = diamond?.depth?.stringValue
             break

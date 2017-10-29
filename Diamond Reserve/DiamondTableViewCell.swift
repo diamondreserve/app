@@ -79,11 +79,11 @@ class DiamondTableViewCell: UITableViewCell {
             defaultImage = UIImage(named: "round_normal")
         }
         shapeLabel.text = shape
-        let price = (diamond.price?.floatValue ?? 0) * (diamond.weight?.floatValue ?? 0) * 2
+        let price = (diamond.price?.floatValue ?? 0) * (diamond.weight?.floatValue ?? 0) * scale
         let formatter = NumberFormatter()
         formatter.numberStyle = .currency
         formatter.maximumFractionDigits = 0
-        priceLabel.text = formatter.string(from: NSNumber(value: price))
+        priceLabel.text = (price == 0) ? "N/A" : formatter.string(from: NSNumber(value: price))
         weightLabel.text = (diamond.weight?.stringValue ?? "") + "ct"
         colorLabel.text = (diamond.color ?? "") + "," + (diamond.clarity ?? "")
         if diamond.image != nil {
@@ -101,21 +101,19 @@ class DiamondTableViewCell: UITableViewCell {
             iconView.contentMode = .scaleAspectFit
 
         }
+        selectionButton.isSelected = DiamondManager.sharedInstance.selectedDiamonds.contains(diamond)
 
     }
     
     @IBAction func selectAction(_ sender: UIButton) {
         sender.isSelected = !sender.isSelected
-        if delegate != nil {
-            if sender.isSelected {
-                delegate!.selectedDiamonds.append(self.diamond!)
-            } else {
-                if let index = delegate!.selectedDiamonds.index(of:self.diamond!) {
-                    delegate!.selectedDiamonds.remove(at: index)
-                }
+        if sender.isSelected {
+            DiamondManager.sharedInstance.selectedDiamonds.append(self.diamond!)
+        } else {
+            if let index = DiamondManager.sharedInstance.selectedDiamonds.index(of:self.diamond!) {
+                DiamondManager.sharedInstance.selectedDiamonds.remove(at: index)
             }
         }
-
     }
     
 }

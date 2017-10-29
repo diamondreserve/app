@@ -24,8 +24,7 @@ class MainDiamondsViewController: BaseVC, UITableViewDelegate, UITableViewDataSo
 //    var tableRows:Array<DDBTableRow>?
     var diamonds = [Diamond]()
     
-    var shapes = ["BR", "PS", "EM", "AS", "CU", "MO", "RA", "OV", "PR", "HS"]
-    var selectedShapes = [String]()
+    var selectedShapes = ["BR", "PR", "EM", "AS", "CU", "CB", "MO", "RA", "SB", "OV", "PS", "HS"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,6 +32,8 @@ class MainDiamondsViewController: BaseVC, UITableViewDelegate, UITableViewDataSo
         tableView.register(UINib(nibName: "DiamondTableViewCell", bundle: nil), forCellReuseIdentifier: "DiamondCell")
         //generateTestData()
         refreshList(false)
+        loadingView.loadGif(name: "loading")
+        
     }
     
     func setNavigationBar() {
@@ -55,7 +56,6 @@ class MainDiamondsViewController: BaseVC, UITableViewDelegate, UITableViewDataSo
             return
         }
         let diamondSelectionVC = self.storyboard?.instantiateViewController(withIdentifier: "DiamondSelectionVC") as! DiamondSelectionViewController
-        diamondSelectionVC.filteredDiamonds = diamonds
         self.navigationController?.pushViewController(diamondSelectionVC, animated: true)
     }
     
@@ -102,8 +102,13 @@ class MainDiamondsViewController: BaseVC, UITableViewDelegate, UITableViewDataSo
             }
         }
         
+        if selectedShapes.count == 0 {
+            selectedShapes = ["BR", "PR", "EM", "AS", "CU", "CB", "MO", "RA", "SB", "OV", "PS", "HS"]
+        }
+        
         if DiamondManager.sharedInstance.allDiamonds != nil {
             diamonds = DiamondManager.sharedInstance.allDiamonds!.filter({selectedShapes.contains($0.shape!)})
+            DiamondManager.sharedInstance.filteredDiamonds = diamonds
             self.tableView.reloadData()
         }
     }
@@ -186,7 +191,7 @@ class MainDiamondsViewController: BaseVC, UITableViewDelegate, UITableViewDataSo
             self.doneLoading = false
         }
         
-        MBProgressHUD.showAdded(to: self.view, animated: true)
+        //MBProgressHUD.showAdded(to: self.view, animated: true)
         
         let dynamoDBObjectMapper = AWSDynamoDBObjectMapper.default()
         let queryExpression = AWSDynamoDBScanExpression()
@@ -204,7 +209,8 @@ class MainDiamondsViewController: BaseVC, UITableViewDelegate, UITableViewDataSo
                 }
                 self.diamonds = self.diamonds.sorted(by: {($0.weight?.floatValue ?? 0) > ($1.weight?.floatValue ?? 0)})
                 DiamondManager.sharedInstance.allDiamonds = self.diamonds
-                
+                DiamondManager.sharedInstance.filteredDiamonds = self.diamonds
+
                 self.lastEvaluatedKey = paginatedOutput.lastEvaluatedKey
                 if paginatedOutput.lastEvaluatedKey == nil {
                     self.doneLoading = true
@@ -212,7 +218,8 @@ class MainDiamondsViewController: BaseVC, UITableViewDelegate, UITableViewDataSo
             }
             
             UIApplication.shared.isNetworkActivityIndicatorVisible = false
-            MBProgressHUD.hide(for: self.view, animated: true)
+            self.loadingView.isHidden = true
+            //MBProgressHUD.hide(for: self.view, animated: true)
             self.tableView.reloadData()
             
             if let error = task.error as NSError? {

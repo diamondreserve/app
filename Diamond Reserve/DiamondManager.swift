@@ -15,7 +15,7 @@ class DiamondManager {
     var allDiamonds: [Diamond]?
     var filteredDiamonds: [Diamond] = [Diamond]()
     var selectedDiamonds: [Diamond] = [Diamond]()
-    var searchedDiamonds: [Diamond] = [Diamond]()
-    var searchSelectedDiamonds: [Diamond] = [Diamond]()
+    
+    var scale: Float = 2
     
 }
