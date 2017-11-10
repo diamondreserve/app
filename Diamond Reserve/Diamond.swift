@@ -19,7 +19,7 @@ class Diamond: AWSDynamoDBObjectModel {
     var color: String?
     var price: NSNumber?
     var image: String?
-    var certificate_number: String?
+    var certificate: String?
     var comments : String?
     var culet_size: String?
     var cut_grade: String?
@@ -31,6 +31,10 @@ class Diamond: AWSDynamoDBObjectModel {
     var polish: String?
     var symmetry: String?
     var depth: NSNumber?
+    var status: String?
+    var user: String?
+    var reserved_date_timestamp: NSNumber?
+    var reject_reason: String?
     
     
     class func dynamoDBTableName() -> String {

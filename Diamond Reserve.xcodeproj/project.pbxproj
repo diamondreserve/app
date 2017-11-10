@@ -32,6 +32,7 @@
 		8025951D1F8EB63B004F1F94 /* search.png in Resources */ = {isa = PBXBuildFile; fileRef = 8025951A1F8EB63B004F1F94 /* search.png */; };
 		8025951E1F8EB63B004F1F94 /* search@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8025951B1F8EB63B004F1F94 /* search@2x.png */; };
 		8025951F1F8EB63B004F1F94 /* search@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8025951C1F8EB63B004F1F94 /* search@3x.png */; };
+		802998DE1FB330A400A84D86 /* loading_refresh.gif in Resources */ = {isa = PBXBuildFile; fileRef = 802998DD1FB330A000A84D86 /* loading_refresh.gif */; };
 		803C24D41F9321ED00895296 /* DiamondReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803C24D31F9321ED00895296 /* DiamondReviewViewController.swift */; };
 		803C24D61F9349B800895296 /* DiamondSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803C24D51F9349B800895296 /* DiamondSearchViewController.swift */; };
 		803C24DA1F9704B500895296 /* MainJewelryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803C24D91F9704B500895296 /* MainJewelryViewController.swift */; };
@@ -40,6 +41,11 @@
 		803C24E01F98A61F00895296 /* DiamondDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803C24DF1F98A61F00895296 /* DiamondDetailViewController.swift */; };
 		803C24E51F9D1CF000895296 /* ReserveListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803C24E41F9D1CF000895296 /* ReserveListViewController.swift */; };
 		803C24E71F9D954600895296 /* ReserveTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803C24E61F9D954600895296 /* ReserveTableViewCell.swift */; };
+		805352171FB1DBBF00FA1924 /* Diamonds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805352161FB1DBBE00FA1924 /* Diamonds.swift */; };
+		805352191FB1E6BC00FA1924 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805352181FB1E6BB00FA1924 /* User.swift */; };
+		8053521E1FB1F09B00FA1924 /* BaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8053521C1FB1F09A00FA1924 /* BaseManager.swift */; };
+		8053521F1FB1F09B00FA1924 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8053521D1FB1F09A00FA1924 /* UserManager.swift */; };
+		805352211FB1F22E00FA1924 /* CommonMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805352201FB1F22E00FA1924 /* CommonMethods.swift */; };
 		80566DED1FA3BC92009FC556 /* tutorial_1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 80566DEB1FA3B5AE009FC556 /* tutorial_1.gif */; };
 		80566DEE1FA3BC96009FC556 /* tutorial_2.gif in Resources */ = {isa = PBXBuildFile; fileRef = 80566DEA1FA3B5A5009FC556 /* tutorial_2.gif */; };
 		80566DEF1FA3BC99009FC556 /* tutorial_3.gif in Resources */ = {isa = PBXBuildFile; fileRef = 80566DEC1FA3B5B6009FC556 /* tutorial_3.gif */; };
@@ -49,6 +55,7 @@
 		808B53E41F92810E00504607 /* DiamondTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 808B53E21F92810E00504607 /* DiamondTableViewCell.xib */; };
 		808B53E61F92B71C00504607 /* DiamondSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808B53E51F92B71C00504607 /* DiamondSelectionViewController.swift */; };
 		80CBAD6C1FA11BA600D83E2B /* RotationDiamondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CBAD6B1FA11BA600D83E2B /* RotationDiamondViewController.swift */; };
+		A6B42BDC26D660BC9E1B026E /* Pods_Diamond_on_Tap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5D75FD33DD76717E75E3077 /* Pods_Diamond_on_Tap.framework */; };
 		B702FBF51F8BF1AA00E0EFFB /* Emerald3@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B702FBEF1F8BF1AA00E0EFFB /* Emerald3@3x.png */; };
 		B702FBF61F8BF1AA00E0EFFB /* Emerald3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B702FBF01F8BF1AA00E0EFFB /* Emerald3@2x.png */; };
 		B702FBF71F8BF1AA00E0EFFB /* Emerald3.png in Resources */ = {isa = PBXBuildFile; fileRef = B702FBF11F8BF1AA00E0EFFB /* Emerald3.png */; };
@@ -115,11 +122,13 @@
 /* Begin PBXFileReference section */
 		078BB1686C7C774DC8B73C3C /* Pods-Diamond ReserveTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diamond ReserveTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Diamond ReserveTests/Pods-Diamond ReserveTests.release.xcconfig"; sourceTree = "<group>"; };
 		15BA25770C46A51BCD57924B /* Pods_Diamond_Reserve.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Diamond_Reserve.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F84CEBF271DBDAC9F4701FB /* Pods-Diamond on Tap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diamond on Tap.release.xcconfig"; path = "Pods/Target Support Files/Pods-Diamond on Tap/Pods-Diamond on Tap.release.xcconfig"; sourceTree = "<group>"; };
 		24668A01A8F5C2A783B2C3D2 /* Pods-Diamond ReserveUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diamond ReserveUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Diamond ReserveUITests/Pods-Diamond ReserveUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		55F797171FC34E0E93FA028F /* Pods-Diamond Reserve.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diamond Reserve.release.xcconfig"; path = "Pods/Target Support Files/Pods-Diamond Reserve/Pods-Diamond Reserve.release.xcconfig"; sourceTree = "<group>"; };
 		57B91CECE2BC7AFBF438A85D /* Pods_Diamond_ReserveUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Diamond_ReserveUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		64D964D9B1E32AB2B44ADA98 /* Pods_Diamond_ReserveTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Diamond_ReserveTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BC3E480D2686B1F8881C7B6 /* Pods-Diamond Reserve.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diamond Reserve.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Diamond Reserve/Pods-Diamond Reserve.debug.xcconfig"; sourceTree = "<group>"; };
+		6FDC07C33E60097F2DAD8341 /* Pods-Diamond on Tap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diamond on Tap.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Diamond on Tap/Pods-Diamond on Tap.debug.xcconfig"; sourceTree = "<group>"; };
 		80057E741F9FD51D006540BC /* DiamondManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiamondManager.swift; sourceTree = "<group>"; };
 		80057E761FA08638006540BC /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
 		802594EC1F8DCDFD004F1F94 /* BLACK_IV_FMX.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BLACK_IV_FMX.png; sourceTree = "<group>"; };
@@ -144,6 +153,7 @@
 		8025951A1F8EB63B004F1F94 /* search.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = search.png; sourceTree = "<group>"; };
 		8025951B1F8EB63B004F1F94 /* search@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "search@2x.png"; sourceTree = "<group>"; };
 		8025951C1F8EB63B004F1F94 /* search@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "search@3x.png"; sourceTree = "<group>"; };
+		802998DD1FB330A000A84D86 /* loading_refresh.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = loading_refresh.gif; sourceTree = "<group>"; };
 		803C24D31F9321ED00895296 /* DiamondReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiamondReviewViewController.swift; sourceTree = "<group>"; };
 		803C24D51F9349B800895296 /* DiamondSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiamondSearchViewController.swift; sourceTree = "<group>"; };
 		803C24D91F9704B500895296 /* MainJewelryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainJewelryViewController.swift; sourceTree = "<group>"; };
@@ -152,15 +162,22 @@
 		803C24DF1F98A61F00895296 /* DiamondDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiamondDetailViewController.swift; sourceTree = "<group>"; };
 		803C24E41F9D1CF000895296 /* ReserveListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReserveListViewController.swift; sourceTree = "<group>"; };
 		803C24E61F9D954600895296 /* ReserveTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReserveTableViewCell.swift; sourceTree = "<group>"; };
+		805352161FB1DBBE00FA1924 /* Diamonds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diamonds.swift; sourceTree = "<group>"; };
+		805352181FB1E6BB00FA1924 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		8053521C1FB1F09A00FA1924 /* BaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseManager.swift; sourceTree = "<group>"; };
+		8053521D1FB1F09A00FA1924 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		805352201FB1F22E00FA1924 /* CommonMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonMethods.swift; sourceTree = "<group>"; };
 		80566DEA1FA3B5A5009FC556 /* tutorial_2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = tutorial_2.gif; sourceTree = "<group>"; };
 		80566DEB1FA3B5AE009FC556 /* tutorial_1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = tutorial_1.gif; sourceTree = "<group>"; };
 		80566DEC1FA3B5B6009FC556 /* tutorial_3.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = tutorial_3.gif; sourceTree = "<group>"; };
 		80566DF01FA3CF22009FC556 /* loading.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = loading.gif; sourceTree = "<group>"; };
+		80566DF21FA85E98009FC556 /* Diamond Reserve.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Diamond Reserve.entitlements"; sourceTree = "<group>"; };
 		808B53DE1F91485500504607 /* TabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarViewController.swift; sourceTree = "<group>"; };
 		808B53E11F92810E00504607 /* DiamondTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiamondTableViewCell.swift; sourceTree = "<group>"; };
 		808B53E21F92810E00504607 /* DiamondTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DiamondTableViewCell.xib; sourceTree = "<group>"; };
 		808B53E51F92B71C00504607 /* DiamondSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiamondSelectionViewController.swift; sourceTree = "<group>"; };
 		80CBAD6B1FA11BA600D83E2B /* RotationDiamondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotationDiamondViewController.swift; sourceTree = "<group>"; };
+		A5D75FD33DD76717E75E3077 /* Pods_Diamond_on_Tap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Diamond_on_Tap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8CAEE2EB6C14FA1A4368963 /* Pods-Diamond ReserveUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diamond ReserveUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Diamond ReserveUITests/Pods-Diamond ReserveUITests.release.xcconfig"; sourceTree = "<group>"; };
 		B702FBEF1F8BF1AA00E0EFFB /* Emerald3@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Emerald3@3x.png"; sourceTree = "<group>"; };
 		B702FBF01F8BF1AA00E0EFFB /* Emerald3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Emerald3@2x.png"; sourceTree = "<group>"; };
@@ -190,7 +207,7 @@
 		B75C3E121F882F6600E759EC /* strip3@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "strip3@3x.png"; sourceTree = "<group>"; };
 		B75C3E131F882F6600E759EC /* strip3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "strip3@2x.png"; sourceTree = "<group>"; };
 		B75C3E141F882F6600E759EC /* strip3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = strip3.png; sourceTree = "<group>"; };
-		B76D8D671F7ACD15000CDFC7 /* Diamond Reserve.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Diamond Reserve.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B76D8D671F7ACD15000CDFC7 /* Diamond on Tap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Diamond on Tap.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B76D8D6A1F7ACD15000CDFC7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B76D8D731F7ACD15000CDFC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B76D8D751F7ACD15000CDFC7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -219,6 +236,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C810FFD90232539F650E257 /* Pods_Diamond_Reserve.framework in Frameworks */,
+				A6B42BDC26D660BC9E1B026E /* Pods_Diamond_on_Tap.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,6 +268,8 @@
 				078BB1686C7C774DC8B73C3C /* Pods-Diamond ReserveTests.release.xcconfig */,
 				24668A01A8F5C2A783B2C3D2 /* Pods-Diamond ReserveUITests.debug.xcconfig */,
 				A8CAEE2EB6C14FA1A4368963 /* Pods-Diamond ReserveUITests.release.xcconfig */,
+				6FDC07C33E60097F2DAD8341 /* Pods-Diamond on Tap.debug.xcconfig */,
+				1F84CEBF271DBDAC9F4701FB /* Pods-Diamond on Tap.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -257,7 +277,10 @@
 		802594F41F8E0257004F1F94 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				805352201FB1F22E00FA1924 /* CommonMethods.swift */,
 				802594F51F8E0295004F1F94 /* Constants.swift */,
+				8053521C1FB1F09A00FA1924 /* BaseManager.swift */,
+				8053521D1FB1F09A00FA1924 /* UserManager.swift */,
 				80057E741F9FD51D006540BC /* DiamondManager.swift */,
 			);
 			name = Helper;
@@ -312,7 +335,9 @@
 		B750FD161F8AA496004844BB /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				805352181FB1E6BB00FA1924 /* User.swift */,
 				B750FD141F8AA48D004844BB /* Users.swift */,
+				805352161FB1DBBE00FA1924 /* Diamonds.swift */,
 				B74D6B971F8B203C00642619 /* Diamond.swift */,
 			);
 			name = Models;
@@ -334,7 +359,7 @@
 		B76D8D681F7ACD15000CDFC7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B76D8D671F7ACD15000CDFC7 /* Diamond Reserve.app */,
+				B76D8D671F7ACD15000CDFC7 /* Diamond on Tap.app */,
 				B76D8D7F1F7ACD15000CDFC7 /* Diamond ReserveTests.xctest */,
 				B76D8D8A1F7ACD15000CDFC7 /* Diamond ReserveUITests.xctest */,
 			);
@@ -344,6 +369,7 @@
 		B76D8D691F7ACD15000CDFC7 /* Diamond Reserve */ = {
 			isa = PBXGroup;
 			children = (
+				80566DF21FA85E98009FC556 /* Diamond Reserve.entitlements */,
 				803C24D71F97049000895296 /* Jewelry */,
 				808B53E01F9280B700504607 /* Diamond */,
 				802594F71F8E06EB004F1F94 /* Side Menu */,
@@ -402,6 +428,7 @@
 				802595151F8EB5DA004F1F94 /* stone@2x.png */,
 				802595161F8EB5DA004F1F94 /* stone@3x.png */,
 				80566DF01FA3CF22009FC556 /* loading.gif */,
+				802998DD1FB330A000A84D86 /* loading_refresh.gif */,
 				8025951A1F8EB63B004F1F94 /* search.png */,
 				80566DEB1FA3B5AE009FC556 /* tutorial_1.gif */,
 				80566DEA1FA3B5A5009FC556 /* tutorial_2.gif */,
@@ -453,6 +480,7 @@
 				15BA25770C46A51BCD57924B /* Pods_Diamond_Reserve.framework */,
 				64D964D9B1E32AB2B44ADA98 /* Pods_Diamond_ReserveTests.framework */,
 				57B91CECE2BC7AFBF438A85D /* Pods_Diamond_ReserveUITests.framework */,
+				A5D75FD33DD76717E75E3077 /* Pods_Diamond_on_Tap.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -460,9 +488,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B76D8D661F7ACD15000CDFC7 /* Diamond Reserve */ = {
+		B76D8D661F7ACD15000CDFC7 /* Diamond on Tap */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B76D8D931F7ACD15000CDFC7 /* Build configuration list for PBXNativeTarget "Diamond Reserve" */;
+			buildConfigurationList = B76D8D931F7ACD15000CDFC7 /* Build configuration list for PBXNativeTarget "Diamond on Tap" */;
 			buildPhases = (
 				A0B2C15AF62DBA466447498A /* [CP] Check Pods Manifest.lock */,
 				B76D8D631F7ACD15000CDFC7 /* Sources */,
@@ -475,9 +503,9 @@
 			);
 			dependencies = (
 			);
-			name = "Diamond Reserve";
+			name = "Diamond on Tap";
 			productName = "Diamond Reserve";
-			productReference = B76D8D671F7ACD15000CDFC7 /* Diamond Reserve.app */;
+			productReference = B76D8D671F7ACD15000CDFC7 /* Diamond on Tap.app */;
 			productType = "com.apple.product-type.application";
 		};
 		B76D8D7E1F7ACD15000CDFC7 /* Diamond ReserveTests */ = {
@@ -534,7 +562,13 @@
 				TargetAttributes = {
 					B76D8D661F7ACD15000CDFC7 = {
 						CreatedOnToolsVersion = 8.3.2;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = QZJLD48KK6;
+						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					B76D8D7E1F7ACD15000CDFC7 = {
 						CreatedOnToolsVersion = 8.3.2;
@@ -561,7 +595,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B76D8D661F7ACD15000CDFC7 /* Diamond Reserve */,
+				B76D8D661F7ACD15000CDFC7 /* Diamond on Tap */,
 				B76D8D7E1F7ACD15000CDFC7 /* Diamond ReserveTests */,
 				B76D8D891F7ACD15000CDFC7 /* Diamond ReserveUITests */,
 			);
@@ -612,6 +646,7 @@
 				802595121F8EB55C004F1F94 /* jewelry@2x.png in Resources */,
 				802594EF1F8DCDFD004F1F94 /* BLACK_IV_FMX.png in Resources */,
 				B7DD64EA1F7C346700858A6B /* Merged Background 1.jpg in Resources */,
+				802998DE1FB330A400A84D86 /* loading_refresh.gif in Resources */,
 				802594F01F8DCDFD004F1F94 /* BLACK_IV_FMX@2x.png in Resources */,
 				802595181F8EB5DA004F1F94 /* stone@2x.png in Resources */,
 				B702FBF51F8BF1AA00E0EFFB /* Emerald3@3x.png in Resources */,
@@ -656,7 +691,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Diamond Reserve/Pods-Diamond Reserve-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Diamond on Tap/Pods-Diamond on Tap-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		3028CAEB3D0568E586D21707 /* [CP] Check Pods Manifest.lock */ = {
@@ -698,12 +733,16 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Diamond Reserve/Pods-Diamond Reserve-frameworks.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-Diamond on Tap/Pods-Diamond on Tap-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AWSAuthCore/AWSAuthCore.framework",
 				"${BUILT_PRODUCTS_DIR}/AWSCognito/AWSCognito.framework",
 				"${BUILT_PRODUCTS_DIR}/AWSCore/AWSCore.framework",
 				"${BUILT_PRODUCTS_DIR}/AWSDynamoDB/AWSDynamoDB.framework",
 				"${BUILT_PRODUCTS_DIR}/AWSS3/AWSS3.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSSNS/AWSSNS.framework",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/GIFRefreshControl/GIFRefreshControl.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/LGSideMenuController/LGSideMenuController.framework",
 				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
@@ -711,6 +750,7 @@
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftGifOrigin/SwiftGifOrigin.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftHash/SwiftHash.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -719,6 +759,10 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCore.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSDynamoDB.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSS3.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSSNS.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GIFRefreshControl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LGSideMenuController.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
@@ -726,10 +770,11 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftGifOrigin.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftHash.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Diamond Reserve/Pods-Diamond Reserve-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Diamond on Tap/Pods-Diamond on Tap-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		77808BDB4F98CB6B7C950587 /* [CP] Embed Pods Frameworks */ = {
@@ -773,7 +818,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Diamond Reserve-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Diamond on Tap-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -824,6 +869,7 @@
 				B74D6B981F8B203C00642619 /* Diamond.swift in Sources */,
 				803C24E01F98A61F00895296 /* DiamondDetailViewController.swift in Sources */,
 				B738C1501F7D01D80097720C /* LoginViewController.swift in Sources */,
+				805352191FB1E6BC00FA1924 /* User.swift in Sources */,
 				B750FD181F8AB72C004844BB /* BaseVC.swift in Sources */,
 				80CBAD6C1FA11BA600D83E2B /* RotationDiamondViewController.swift in Sources */,
 				808B53E61F92B71C00504607 /* DiamondSelectionViewController.swift in Sources */,
@@ -835,15 +881,19 @@
 				803C24D61F9349B800895296 /* DiamondSearchViewController.swift in Sources */,
 				808B53E31F92810E00504607 /* DiamondTableViewCell.swift in Sources */,
 				B738C16C1F7DA0F80097720C /* TutorialViewController.swift in Sources */,
+				8053521F1FB1F09B00FA1924 /* UserManager.swift in Sources */,
 				808B53DF1F91485500504607 /* TabbarViewController.swift in Sources */,
 				803C24E71F9D954600895296 /* ReserveTableViewCell.swift in Sources */,
+				805352211FB1F22E00FA1924 /* CommonMethods.swift in Sources */,
 				803C24DA1F9704B500895296 /* MainJewelryViewController.swift in Sources */,
 				B7D603A31F865D7F00B94067 /* CoverPageViewController.swift in Sources */,
 				803C24E51F9D1CF000895296 /* ReserveListViewController.swift in Sources */,
 				80057E771FA08639006540BC /* MessagesViewController.swift in Sources */,
 				B76D8D9D1F7AE2C6000CDFC7 /* SplashViewController.swift in Sources */,
 				B738C1541F7D7F1D0097720C /* VerifyViewController.swift in Sources */,
+				8053521E1FB1F09B00FA1924 /* BaseManager.swift in Sources */,
 				802594FB1F8E07DC004F1F94 /* RightMenuViewController.swift in Sources */,
+				805352171FB1DBBF00FA1924 /* Diamonds.swift in Sources */,
 				B738C1521F7D70130097720C /* RegisterViewController.swift in Sources */,
 				B738C1561F7D8BA00097720C /* ForgotViewController.swift in Sources */,
 				802594F61F8E0295004F1F94 /* Constants.swift in Sources */,
@@ -874,12 +924,12 @@
 /* Begin PBXTargetDependency section */
 		B76D8D811F7ACD15000CDFC7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B76D8D661F7ACD15000CDFC7 /* Diamond Reserve */;
+			target = B76D8D661F7ACD15000CDFC7 /* Diamond on Tap */;
 			targetProxy = B76D8D801F7ACD15000CDFC7 /* PBXContainerItemProxy */;
 		};
 		B76D8D8C1F7ACD15000CDFC7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B76D8D661F7ACD15000CDFC7 /* Diamond Reserve */;
+			target = B76D8D661F7ACD15000CDFC7 /* Diamond on Tap */;
 			targetProxy = B76D8D8B1F7ACD15000CDFC7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -1001,30 +1051,41 @@
 		};
 		B76D8D941F7ACD15000CDFC7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6BC3E480D2686B1F8881C7B6 /* Pods-Diamond Reserve.debug.xcconfig */;
+			baseConfigurationReference = 6FDC07C33E60097F2DAD8341 /* Pods-Diamond on Tap.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_ENTITLEMENTS = "Diamond Reserve/Diamond Reserve.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Glass Hat Productions LLC (QZJLD48KK6)";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = QZJLD48KK6;
 				INFOPLIST_FILE = "Diamond Reserve/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.diamond-reserve";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "6b2cc199-8f68-4b4a-b71a-c684376d8b08";
+				PROVISIONING_PROFILE_SPECIFIER = diamond_product;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		B76D8D951F7ACD15000CDFC7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 55F797171FC34E0E93FA028F /* Pods-Diamond Reserve.release.xcconfig */;
+			baseConfigurationReference = 1F84CEBF271DBDAC9F4701FB /* Pods-Diamond on Tap.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_ENTITLEMENTS = "Diamond Reserve/Diamond Reserve.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Glass Hat Productions LLC (QZJLD48KK6)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Glass Hat Productions LLC (QZJLD48KK6)";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = QZJLD48KK6;
 				INFOPLIST_FILE = "Diamond Reserve/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.diamond-reserve";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "6b2cc199-8f68-4b4a-b71a-c684376d8b08";
+				PROVISIONING_PROFILE_SPECIFIER = diamond_product;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -1099,7 +1160,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B76D8D931F7ACD15000CDFC7 /* Build configuration list for PBXNativeTarget "Diamond Reserve" */ = {
+		B76D8D931F7ACD15000CDFC7 /* Build configuration list for PBXNativeTarget "Diamond on Tap" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B76D8D941F7ACD15000CDFC7 /* Debug */,

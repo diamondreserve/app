@@ -7,83 +7,101 @@
 //
 
 import UIKit
+import GIFRefreshControl
 
 class ReserveListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var tableView: UITableView!
-    
     @IBOutlet weak var pendingHeader: UIView!
+    @IBOutlet weak var loadingView: UIImageView!
     
+    let refreshControl = GIFRefreshControl()
+    
+    var reservations: [Diamonds] = [Diamonds]()
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        navigationItem.title = "RESERVE"
         let backItem = UIBarButtonItem(title: "BACK", style: .plain, target: self, action: #selector(backAction))
         backItem.setTitleTextAttributes([NSFontAttributeName: UIFont(name: "Unica One", size: 17)! ,NSForegroundColorAttributeName: UIColor.white], for: .normal)
-        navigationItem.leftBarButtonItem = backItem
+ 
+        addRefreshControl()
+        loadingView.loadGif(name: "loading")
+
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        refreshList()
+    }
+    
+    func addRefreshControl(){
+        let url = Bundle.main.url(forResource: "loading_refresh", withExtension: "gif")
+        do {
+            let data = try Data(contentsOf: url!)
+            refreshControl.animatedImage = GIFAnimatedImage(data: data)
+            refreshControl.contentMode = .center
+            refreshControl.addTarget(self, action: #selector(refreshList), for: .valueChanged)
+            tableView.addSubview(refreshControl)
+        } catch {
+        }
+    }
+    
+    func refreshList()  {
+        
+        self.loadingView.isHidden = false
+        DiamondManager.sharedInstance.getAllReservations { (_ success: Bool, reservations: [Diamonds]?) in
+            self.loadingView.isHidden = true
+            if success {
+                self.reservations = reservations!
+                self.tableView.reloadData()
+                self.refreshControl.endRefreshing()
+            }
+        }
+        
     }
     
     func backAction() {
         navigationController?.popViewController(animated: true)
     }
     
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 3
-    }
-    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2 //diamonds.count
+        return reservations.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        if indexPath.section == 0 {
-            var cell: ReserveTableViewCell? = tableView.dequeueReusableCell(withIdentifier: "ReservedCell", for: indexPath) as? ReserveTableViewCell
-            if cell == nil {
-                cell = ReserveTableViewCell(style: .default, reuseIdentifier: "ReservedCell")
-            }
-            return cell!
-
-        } else if (indexPath.section == 1){
-            var cell: ReserveTableViewCell? = tableView.dequeueReusableCell(withIdentifier: "PendingCell", for: indexPath) as? ReserveTableViewCell
-            if cell == nil {
-                cell = ReserveTableViewCell(style: .default, reuseIdentifier: "PendingCell")
-            }
-            return cell!
-        } else {
-            var cell: ReserveTableViewCell? = tableView.dequeueReusableCell(withIdentifier: "RejectedCell", for: indexPath) as? ReserveTableViewCell
-            if cell == nil {
-                cell = ReserveTableViewCell(style: .default, reuseIdentifier: "RejectedCell")
-            }
-            return cell!
+        var cell: ReserveTableViewCell? = tableView.dequeueReusableCell(withIdentifier: "ReserveCell", for: indexPath) as? ReserveTableViewCell
+        if cell == nil {
+            cell = ReserveTableViewCell(style: .default, reuseIdentifier: "ReservedCell")
         }
+        cell?.setData(diamond: reservations[indexPath.row]);
+        return cell!
 
-        //cell?.setSelectable(isSelectable: true)
-        //cell?.setData(diamond: diamonds[indexPath.row]);
+    }
+    
+    
+    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        cell.backgroundColor = .clear
     }
     
     
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let diamondDetailVC = self.storyboard?.instantiateViewController(withIdentifier: "DiamondDetailVC") as! DiamondDetailViewController
+        diamondDetailVC.diamond = reservations[indexPath.row]
+        diamondDetailVC.isFromDiamondList = false
+        self.navigationController?.pushViewController(diamondDetailVC, animated: true)
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 85
+        return 120
     }
     
-    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        if section == 1 {
-            return pendingHeader
-        } else {
-            return nil
-        }
-        
-    }
     
-    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        if section == 1 {
-            return 82
-        } else {
-            return 0
-        }
-    }
+
 
 }

@@ -19,6 +19,7 @@ class TabbarViewController: UIViewController {
     var searchNVC: UINavigationController!
     
     var viewControllers: [UINavigationController]!
+    var fromNotification : Bool = false
     var selectedIndex: Int = 0
 
     override func viewDidLoad() {
@@ -28,16 +29,35 @@ class TabbarViewController: UIViewController {
         
         diamondNVC = UINavigationController(rootViewController: storyboard.instantiateViewController(withIdentifier: "MainDiamondsVC"))
         jewelryNVC = UINavigationController(rootViewController: storyboard.instantiateViewController(withIdentifier: "MainJewelryVC"))
-        messagesNVC = UINavigationController(rootViewController: storyboard.instantiateViewController(withIdentifier: "MessagesVC"))
+        messagesNVC = UINavigationController(rootViewController: storyboard.instantiateViewController(withIdentifier: "ReserveListVC"))
         searchNVC = UINavigationController(rootViewController: storyboard.instantiateViewController(withIdentifier: "DiamondSearchVC"))
         setAttributesFor(diamondNVC)
         setAttributesFor(jewelryNVC)
         setAttributesFor(messagesNVC)
         setAttributesFor(searchNVC)
-        viewControllers = [diamondNVC, jewelryNVC, messagesNVC, searchNVC]
+        viewControllers = [diamondNVC, messagesNVC, searchNVC]
         
         tabButtons[selectedIndex].isSelected = true
         didPressTab(tabButtons[selectedIndex])
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(receiveNotification), name: NSNotification.Name("diamond_notification"), object: nil)
+    }
+    
+    func receiveNotification(notification: Notification){
+        
+        DispatchQueue.main.async(execute: {
+            
+            self.messagesNVC.popToRootViewController(animated: false)
+            
+            let diamondDetailVC = self.storyboard?.instantiateViewController(withIdentifier: "DiamondDetailVC") as! DiamondDetailViewController
+            let data = notification.object as! [String : Any]
+            diamondDetailVC.diamond = data["object"] as! Diamonds
+            diamondDetailVC.isFromDiamondList = false
+            diamondDetailVC.isFromNotification = true
+            self.messagesNVC.pushViewController(diamondDetailVC, animated: true)
+            
+            self.didPressTab(self.tabButtons[1])
+        })
     }
    
 

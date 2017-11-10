@@ -16,7 +16,7 @@ class DiamondSelectionViewController: UIViewController, UITableViewDelegate, UIT
         super.viewDidLoad()
         setNavigationBar()
         tableView.register(UINib(nibName: "DiamondTableViewCell", bundle: nil), forCellReuseIdentifier: "DiamondCell")
-        DiamondManager.sharedInstance.selectedDiamonds = [Diamond]()
+        DiamondManager.sharedInstance.selectedDiamonds = [Diamonds]()
     }
 
     func setNavigationBar() {

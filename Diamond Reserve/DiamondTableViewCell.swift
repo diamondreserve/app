@@ -22,7 +22,7 @@ class DiamondTableViewCell: UITableViewCell {
     
     var delegate: DiamondSelectionViewController?
     
-    var diamond:Diamond?
+    var diamond:Diamonds?
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -43,7 +43,7 @@ class DiamondTableViewCell: UITableViewCell {
         selectionButton.isSelected = false
     }
     
-    func setData(diamond: Diamond){
+    func setData(diamond: Diamonds){
         self.diamond = diamond
         var shape = diamond.shape
         var defaultImage = UIImage(named: "round_normal")
@@ -79,14 +79,14 @@ class DiamondTableViewCell: UITableViewCell {
             defaultImage = UIImage(named: "round_normal")
         }
         shapeLabel.text = shape
-        let price = (diamond.price?.floatValue ?? 0) * (diamond.weight?.floatValue ?? 0) * scale
+        let price = DiamondManager.sharedInstance.getMarkedUpPrice(origin: diamond.price?.floatValue ?? 0) * (diamond.weight?.floatValue ?? 0)
         let formatter = NumberFormatter()
         formatter.numberStyle = .currency
         formatter.maximumFractionDigits = 0
         priceLabel.text = (price == 0) ? "N/A" : formatter.string(from: NSNumber(value: price))
         weightLabel.text = (diamond.weight?.stringValue ?? "") + "ct"
         colorLabel.text = (diamond.color ?? "") + "," + (diamond.clarity ?? "")
-        if diamond.image != nil {
+        if diamond.image != nil && diamond.image! != "" {
             iconView.image = nil
             iconView.sd_setImage(with: URL(string: diamond.image!), placeholderImage: defaultImage)
             iconView.layer.borderColor = UIColor.white.cgColor

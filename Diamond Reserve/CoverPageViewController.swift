@@ -79,15 +79,15 @@ class CoverPageViewController: UIViewController, UIScrollViewDelegate {
         
         if( currentPage == 0) {
             self.titleText.text = "DIAMONDS"
-            self.mainText.text = "DISCOVER THE MOST EXQUISITE & CURRENT DIAMONDS YOU WONT FIND ON RAPPNET"
+            self.mainText.text = "TAP \"DIAMONDS\" AND PULL TO REFRESH PERIODICALLY TO BROWSE THE DIAMONDS IN REAL TIME"
         }
         if(currentPage == 1){
-            self.titleText.text = "JEWELRY"
-            self.mainText.text = "EXPLORE AND RESERVE RARE DIAMOND ENGAGEMENT RINGS, EARRINGS AND PENDANTS"
+            self.titleText.text = "RESERVE"
+            self.mainText.text = "TAP \"RESERVE\" TO HOLD A DIAMOND FOR 24HOURS AS YOUR VIEW OWN"
         }
         else if (currentPage == 2) {
             self.titleText.text = "SEARCH"
-            self.mainText.text = "SEARCH FOR SPECIFIC DIAMONDS AND DIAMOND JEWELRY BEFORE THEY HIT THE MARKET"
+            self.mainText.text = "TAP \"SEARCH\" TO FILTER SPEICIFICDIAMONDS AND RARE DIAMOND JEWELRY"
         }
     }
     
@@ -95,7 +95,7 @@ class CoverPageViewController: UIViewController, UIScrollViewDelegate {
         
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let mainTabbarVC: TabbarViewController? = storyboard.instantiateViewController(withIdentifier: "TabbarVC") as? TabbarViewController
-        mainTabbarVC?.selectedIndex = (currentPageNumber != 2) ? currentPageNumber : 3
+        mainTabbarVC?.selectedIndex = currentPageNumber
         
         let mainViewController: MainSideMenuController = (storyboard.instantiateViewController(withIdentifier: "MainSideMenuVC") as? MainSideMenuController)!
         mainViewController.rootViewController = mainTabbarVC

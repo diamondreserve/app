@@ -21,7 +21,7 @@ class DiamondSearchViewController: UIViewController {
     var selectedColors = [String]()
     var selectedClarities = [String]()
     
-    var searchedDiamonds = [Diamond]()
+    var searchedDiamonds = [Diamonds]()
 
     
     override func viewDidLoad() {
@@ -188,8 +188,8 @@ class DiamondSearchViewController: UIViewController {
             searchedDiamonds = DiamondManager.sharedInstance.allDiamonds!.filter({selectedShapes.contains($0.shape!) &&
                                                                                   selectedColors.contains($0.color ?? "") &&
                                                                                   selectedClarities.contains($0.clarity ?? "") &&
-                                                                                  ($0.price?.floatValue ?? 0) >= Float(priceSlider.selectedMinValue) &&
-                                                                                  ($0.price?.floatValue ?? 0) < Float(priceSlider.selectedMaxValue) &&
+                                                                                  DiamondManager.sharedInstance.getMarkedUpPrice(origin:($0.price?.floatValue ?? 0)) >= Float(priceSlider.selectedMinValue) &&
+                                                                                  DiamondManager.sharedInstance.getMarkedUpPrice(origin:($0.price?.floatValue ?? 0)) < Float(priceSlider.selectedMaxValue) &&
                                                                                   ($0.weight?.floatValue ?? 0) >= Float(weightSlider.selectedMinValue) &&
                                                                                   ($0.weight?.floatValue ?? 0) < Float(weightSlider.selectedMaxValue)
             })

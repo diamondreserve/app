@@ -10,6 +10,9 @@ import UIKit
 import AWSCore
 import AWSDynamoDB
 import SwiftHash
+import MBProgressHUD
+import SwiftyJSON
+
 class RegisterViewController: BaseVC {
 
     @IBOutlet weak var fullNameText: UITextField!
@@ -26,10 +29,10 @@ class RegisterViewController: BaseVC {
         submitButton.layer.borderColor = UIColor.white.cgColor
         frameView.layer.borderWidth = 1
         frameView.layer.borderColor = UIColor.white.cgColor
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
-        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
-        view.addGestureRecognizer(tap)
+//        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
+//        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
+//        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+//        view.addGestureRecognizer(tap)
     }
 
     override func didReceiveMemoryWarning() {
@@ -68,33 +71,37 @@ class RegisterViewController: BaseVC {
             displayAlert(message: "Passwords do not match!")
             return
         }
-        let dynamoDbObjectMapper = AWSDynamoDBObjectMapper.default()
-        let newUser: Users = Users()!;
-        newUser.userId = emailText.text!
-        newUser.email = emailText.text!
-        newUser.password = MD5(passwordText.text!)
-        newUser.full_name = fullNameText.text!
-        newUser.company_name = companyText.text!
-        newUser.city = cityCountryText.text!
-        newUser.isVerified = false
+        
+        let arn:String? = UserDefaults.standard.string(forKey: "endpointArn")
+        
+        let params = [
+            "id": emailText.text!,
+            "email": emailText.text!,
+            "password": MD5(passwordText.text!),
+            "full_name": fullNameText.text!,
+            "company_name": companyText.text!,
+            "city": cityCountryText.text!,
+            "arn": arn ?? ""
+        ]
         
         let successAlert = UIAlertController(title: "Success", message: "Successfully registered", preferredStyle: UIAlertControllerStyle.alert)
         successAlert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: { action in
-            
             self.navigationController?.popViewController(animated: true)
-            
         }))
-        self.showIndicator()
-        dynamoDbObjectMapper.save(newUser, completionHandler: {
-            (error: Error?) -> Void in
-            
-            if error != nil {
-                self.displayAlert(message: "Connection problem, please try later")
-                return
+        
+        MBProgressHUD.showAdded(to: self.view, animated: true)
+        UserManager.sharedInstance.registerUser(bodyParams: params) { (_ success: Bool, _ userJson: JSON?) in
+            if success {
+                DispatchQueue.main.async(execute: {
+                    MBProgressHUD.hide(for: self.view, animated: true)
+                    UserManager.sharedInstance.user = User(userJson!)
+                    UserManager.sharedInstance.saveCurrentUser(userJson: userJson!)
+                    self.present(successAlert, animated: true, completion: nil)
+                })
             }
-        })
-        self.hideIndicator()
-        self.present(successAlert, animated: true, completion: nil)
+        }
+        
+
     }
     
     @IBAction func backTapped(_ sender: Any) {

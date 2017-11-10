@@ -1,4 +1,5 @@
 PODS:
+  - Alamofire (4.5.1)
   - AWSAuthCore (2.6.2):
     - AWSCore (= 2.6.2)
   - AWSCognito (2.6.2):
@@ -8,6 +9,10 @@ PODS:
     - AWSCore (= 2.6.2)
   - AWSS3 (2.6.2):
     - AWSCore (= 2.6.2)
+  - AWSSNS (2.6.2):
+    - AWSCore (= 2.6.2)
+  - GIFRefreshControl (1.4.0)
+  - IQKeyboardManagerSwift (5.0.3)
   - LGSideMenuController (2.1.1)
   - MBProgressHUD (1.0.0)
   - NVActivityIndicatorView (4.0.0):
@@ -19,12 +24,17 @@ PODS:
   - SDWebImage/Core (4.1.2)
   - SwiftGifOrigin (1.6.1)
   - SwiftHash (2.0.1)
+  - SwiftyJSON (3.1.4)
 
 DEPENDENCIES:
+  - Alamofire
   - AWSAuthCore (~> 2.6.1)
   - AWSCognito (~> 2.6.1)
   - AWSDynamoDB (~> 2.6.1)
   - AWSS3 (~> 2.6.1)
+  - AWSSNS (~> 2.6.1)
+  - GIFRefreshControl
+  - IQKeyboardManagerSwift
   - LGSideMenuController
   - MBProgressHUD (~> 1.0.0)
   - NVActivityIndicatorView
@@ -32,6 +42,7 @@ DEPENDENCIES:
   - SDWebImage (~> 4.0)
   - SwiftGifOrigin (~> 1.6.1)
   - SwiftHash (from `https://github.com/onmyway133/SwiftHash`)
+  - SwiftyJSON
 
 EXTERNAL SOURCES:
   SwiftHash:
@@ -43,11 +54,15 @@ CHECKOUT OPTIONS:
     :git: https://github.com/onmyway133/SwiftHash
 
 SPEC CHECKSUMS:
+  Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
   AWSAuthCore: 41155990fc5b10d84667c237a8757799edbf6267
   AWSCognito: e8db76ef485fbbc1c90617217451301b1477ce45
   AWSCore: 8f458961a4967be219162108f5be7df1c935639a
   AWSDynamoDB: 29e1d8775b13a18033b6064e1563e5769fdfe024
   AWSS3: b3e2c4aca868cae06b5b88337ceabee25709fcc5
+  AWSSNS: 8dd8972ea374391dc61f04d19cd496c523708748
+  GIFRefreshControl: 2c5d5be135988f32000f20179d410d69c104a6bd
+  IQKeyboardManagerSwift: e257e513744cf32123eca7061272acea0246fc83
   LGSideMenuController: ae40c80983ab8b8801c7cef0a6804d43aaa72d45
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
   NVActivityIndicatorView: 54c9b93b6f25a4f467512680c0c90c09a1095cf2
@@ -55,7 +70,8 @@ SPEC CHECKSUMS:
   SDWebImage: cb6f9f266a9977741efcbc21e618e8be3734c774
   SwiftGifOrigin: d6679d3ebe9df2e049a84bc52582635107b581f6
   SwiftHash: 62691a0d6b09b958d21ab1ea0014b83d56f58e8f
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
 
-PODFILE CHECKSUM: 48943fdc8a07a00610acf3cec1f3fea0fa2f7e83
+PODFILE CHECKSUM: cbf1c7c1f4b69e84d87ce9852c96bff0fb715ee7
 
 COCOAPODS: 1.3.1
