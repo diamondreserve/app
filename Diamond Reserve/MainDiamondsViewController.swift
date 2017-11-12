@@ -57,7 +57,7 @@ class MainDiamondsViewController: BaseVC, UITableViewDelegate, UITableViewDataSo
     
     func refreshByControl(){
         DiamondManager.sharedInstance.allDiamonds = nil
-        refreshList(false)
+        refreshList(true)
     }
 
     
@@ -199,7 +199,7 @@ class MainDiamondsViewController: BaseVC, UITableViewDelegate, UITableViewDataSo
     }
     
     
-    func refreshList(_ startFromBeginning: Bool)  {
+    func refreshList(_ isPullToRefresh: Bool = false)  {
         
         if DiamondManager.sharedInstance.allDiamonds != nil {
             self.diamonds = DiamondManager.sharedInstance.allDiamonds!
@@ -207,8 +207,9 @@ class MainDiamondsViewController: BaseVC, UITableViewDelegate, UITableViewDataSo
             return
         }
  
-        
-        loadingView.isHidden = false
+        if !isPullToRefresh {
+            loadingView.isHidden = false
+        }
         DiamondManager.sharedInstance.getAllDiamonds { (_ success: Bool, diamonds: [Diamonds]?) in
             self.loadingView.isHidden = true
             if success {

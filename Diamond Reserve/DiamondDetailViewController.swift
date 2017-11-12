@@ -116,7 +116,7 @@ class DiamondDetailViewController: UIViewController, UITableViewDelegate, UITabl
             shapeImageView.image = defaultImage
         }
         
-        if diamond?.diamond360 == nil {
+        if diamond?.diamond360 == nil || diamond!.diamond360! == "" {
             rotateButtonHeight.constant = 0
         }
         

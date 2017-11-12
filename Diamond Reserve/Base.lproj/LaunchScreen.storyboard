@@ -21,8 +21,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="dMB-bD-wdy">
-                                <rect key="frame" x="164.5" y="306" width="45" height="55"/>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" insetsLayoutMarginsFromSafeArea="NO" image="final_logo" translatesAutoresizingMaskIntoConstraints="NO" id="dMB-bD-wdy">
+                                <rect key="frame" x="-57.5" y="316" width="489" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="4mE-JX-vSg"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -38,6 +41,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Logo" width="45" height="55"/>
+        <image name="final_logo" width="489" height="57"/>
     </resources>
 </document>

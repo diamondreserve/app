@@ -14,6 +14,7 @@ class ReserveListViewController: UIViewController, UITableViewDelegate, UITableV
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var pendingHeader: UIView!
     @IBOutlet weak var loadingView: UIImageView!
+    @IBOutlet weak var noReserveLabel: UILabel!
     
     let refreshControl = GIFRefreshControl()
     
@@ -42,19 +43,26 @@ class ReserveListViewController: UIViewController, UITableViewDelegate, UITableV
             let data = try Data(contentsOf: url!)
             refreshControl.animatedImage = GIFAnimatedImage(data: data)
             refreshControl.contentMode = .center
-            refreshControl.addTarget(self, action: #selector(refreshList), for: .valueChanged)
+            refreshControl.addTarget(self, action: #selector(pullToRefresh), for: .valueChanged)
             tableView.addSubview(refreshControl)
         } catch {
         }
     }
     
-    func refreshList()  {
+    func pullToRefresh(){
+        refreshList(pullToRefresh: true)
+    }
+    
+    func refreshList(pullToRefresh: Bool = false)  {
         
-        self.loadingView.isHidden = false
+        if (!pullToRefresh) {
+            self.loadingView.isHidden = false
+        }
         DiamondManager.sharedInstance.getAllReservations { (_ success: Bool, reservations: [Diamonds]?) in
             self.loadingView.isHidden = true
             if success {
                 self.reservations = reservations!
+                self.noReserveLabel.isHidden = (self.reservations.count > 0)
                 self.tableView.reloadData()
                 self.refreshControl.endRefreshing()
             }

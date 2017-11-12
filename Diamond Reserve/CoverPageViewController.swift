@@ -31,6 +31,13 @@ class CoverPageViewController: UIViewController, UIScrollViewDelegate {
     }
     
     func initShow(){
+        
+        if scrollView.contentOffset.x > 2 * SCREEN_WIDTH + 10 {
+            currentPageNumber = 0
+            nextButtonTapped(0)
+            return
+        }
+        
         let scrollNumber = max(0, min(images.count-1, (Int)(scrollView.contentOffset.x / SCREEN_WIDTH)))
         
         if scrollNumber != currentPageNumber {
@@ -83,11 +90,11 @@ class CoverPageViewController: UIViewController, UIScrollViewDelegate {
         }
         if(currentPage == 1){
             self.titleText.text = "RESERVE"
-            self.mainText.text = "TAP \"RESERVE\" TO HOLD A DIAMOND FOR 24HOURS AS YOUR VIEW OWN"
+            self.mainText.text = "TAP \"RESERVE\" TO HOLD A DIAMOND FOR 24 HOURS AS YOUR VIEW OWN"
         }
         else if (currentPage == 2) {
             self.titleText.text = "SEARCH"
-            self.mainText.text = "TAP \"SEARCH\" TO FILTER SPEICIFICDIAMONDS AND RARE DIAMOND JEWELRY"
+            self.mainText.text = "TAP \"SEARCH\" TO FILTER SPECIFIC DIAMONDS AND RARE DIAMOND JEWELRY"
         }
     }
     
