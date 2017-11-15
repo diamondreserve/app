@@ -11,7 +11,6 @@ import AWSAuthCore
 import UserNotifications
 import AWSSNS
 import AWSDynamoDB
-import IQKeyboardManagerSwift
 import SwiftyJSON
 
 @UIApplicationMain
@@ -39,8 +38,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         AWSServiceManager.default().defaultServiceConfiguration = configuration
         
         getAdminARN()
-        
-       IQKeyboardManager.sharedManager().enable = true
         
         UNUserNotificationCenter.current().delegate = self
         

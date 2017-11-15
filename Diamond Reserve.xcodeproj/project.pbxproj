@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		275569D71273116983DE68C7 /* Pods_Diamond_ReserveUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F6EEBECF13E7D9E81232A23 /* Pods_Diamond_ReserveUITests.framework */; };
 		80057E751F9FD51D006540BC /* DiamondManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80057E741F9FD51D006540BC /* DiamondManager.swift */; };
 		80057E771FA08639006540BC /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80057E761FA08638006540BC /* MessagesViewController.swift */; };
 		802594EF1F8DCDFD004F1F94 /* BLACK_IV_FMX.png in Resources */ = {isa = PBXBuildFile; fileRef = 802594EC1F8DCDFD004F1F94 /* BLACK_IV_FMX.png */; };
@@ -31,9 +32,11 @@
 		8025951D1F8EB63B004F1F94 /* search.png in Resources */ = {isa = PBXBuildFile; fileRef = 8025951A1F8EB63B004F1F94 /* search.png */; };
 		8025951E1F8EB63B004F1F94 /* search@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8025951B1F8EB63B004F1F94 /* search@2x.png */; };
 		8025951F1F8EB63B004F1F94 /* search@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8025951C1F8EB63B004F1F94 /* search@3x.png */; };
-		802B60011FB8CFAB008B3202 /* loading_refresh.gif in Resources */ = {isa = PBXBuildFile; fileRef = 802B60001FB8CD9A008B3202 /* loading_refresh.gif */; };
 		802B60041FB8D6E7008B3202 /* down_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 802B60021FB8D692008B3202 /* down_arrow.png */; };
 		802B60061FB8D705008B3202 /* up_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 802B60051FB8D6FF008B3202 /* up_arrow.png */; };
+		802B60091FBA2832008B3202 /* loading_refresh.gif in Resources */ = {isa = PBXBuildFile; fileRef = 802B60071FBA282E008B3202 /* loading_refresh.gif */; };
+		802B600A1FBA2836008B3202 /* loading.gif in Resources */ = {isa = PBXBuildFile; fileRef = 802B60081FBA282E008B3202 /* loading.gif */; };
+		802B600C1FBB8D39008B3202 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 802B600B1FBB8D2B008B3202 /* GoogleService-Info.plist */; };
 		803C24D41F9321ED00895296 /* DiamondReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803C24D31F9321ED00895296 /* DiamondReviewViewController.swift */; };
 		803C24D61F9349B800895296 /* DiamondSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803C24D51F9349B800895296 /* DiamondSearchViewController.swift */; };
 		803C24DA1F9704B500895296 /* MainJewelryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803C24D91F9704B500895296 /* MainJewelryViewController.swift */; };
@@ -50,7 +53,6 @@
 		80566DED1FA3BC92009FC556 /* tutorial_1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 80566DEB1FA3B5AE009FC556 /* tutorial_1.gif */; };
 		80566DEE1FA3BC96009FC556 /* tutorial_2.gif in Resources */ = {isa = PBXBuildFile; fileRef = 80566DEA1FA3B5A5009FC556 /* tutorial_2.gif */; };
 		80566DEF1FA3BC99009FC556 /* tutorial_3.gif in Resources */ = {isa = PBXBuildFile; fileRef = 80566DEC1FA3B5B6009FC556 /* tutorial_3.gif */; };
-		80566DF11FA3CF38009FC556 /* loading.gif in Resources */ = {isa = PBXBuildFile; fileRef = 80566DF01FA3CF22009FC556 /* loading.gif */; };
 		808B53DF1F91485500504607 /* TabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808B53DE1F91485500504607 /* TabbarViewController.swift */; };
 		808B53E31F92810E00504607 /* DiamondTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808B53E11F92810E00504607 /* DiamondTableViewCell.swift */; };
 		808B53E41F92810E00504607 /* DiamondTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 808B53E21F92810E00504607 /* DiamondTableViewCell.xib */; };
@@ -99,6 +101,7 @@
 		B7D603A31F865D7F00B94067 /* CoverPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D603A21F865D7F00B94067 /* CoverPageViewController.swift */; };
 		B7DD64EA1F7C346700858A6B /* Merged Background 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B7DD64E91F7C346700858A6B /* Merged Background 1.jpg */; };
 		B7DD64EC1F7C346D00858A6B /* Merged Background 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B7DD64EB1F7C346C00858A6B /* Merged Background 2.jpg */; };
+		BA3324AA0F1890C8A428E3C6 /* Pods_Diamond_ReserveTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E11C5E43C156192A78E7A364 /* Pods_Diamond_ReserveTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -147,9 +150,11 @@
 		8025951A1F8EB63B004F1F94 /* search.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = search.png; sourceTree = "<group>"; };
 		8025951B1F8EB63B004F1F94 /* search@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "search@2x.png"; sourceTree = "<group>"; };
 		8025951C1F8EB63B004F1F94 /* search@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "search@3x.png"; sourceTree = "<group>"; };
-		802B60001FB8CD9A008B3202 /* loading_refresh.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = loading_refresh.gif; sourceTree = "<group>"; };
 		802B60021FB8D692008B3202 /* down_arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = down_arrow.png; sourceTree = "<group>"; };
 		802B60051FB8D6FF008B3202 /* up_arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = up_arrow.png; sourceTree = "<group>"; };
+		802B60071FBA282E008B3202 /* loading_refresh.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = loading_refresh.gif; sourceTree = "<group>"; };
+		802B60081FBA282E008B3202 /* loading.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = loading.gif; sourceTree = "<group>"; };
+		802B600B1FBB8D2B008B3202 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		803C24D31F9321ED00895296 /* DiamondReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiamondReviewViewController.swift; sourceTree = "<group>"; };
 		803C24D51F9349B800895296 /* DiamondSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiamondSearchViewController.swift; sourceTree = "<group>"; };
 		803C24D91F9704B500895296 /* MainJewelryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainJewelryViewController.swift; sourceTree = "<group>"; };
@@ -166,13 +171,13 @@
 		80566DEA1FA3B5A5009FC556 /* tutorial_2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = tutorial_2.gif; sourceTree = "<group>"; };
 		80566DEB1FA3B5AE009FC556 /* tutorial_1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = tutorial_1.gif; sourceTree = "<group>"; };
 		80566DEC1FA3B5B6009FC556 /* tutorial_3.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = tutorial_3.gif; sourceTree = "<group>"; };
-		80566DF01FA3CF22009FC556 /* loading.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = loading.gif; sourceTree = "<group>"; };
 		80566DF21FA85E98009FC556 /* Diamond Reserve.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Diamond Reserve.entitlements"; sourceTree = "<group>"; };
 		808B53DE1F91485500504607 /* TabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarViewController.swift; sourceTree = "<group>"; };
 		808B53E11F92810E00504607 /* DiamondTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiamondTableViewCell.swift; sourceTree = "<group>"; };
 		808B53E21F92810E00504607 /* DiamondTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DiamondTableViewCell.xib; sourceTree = "<group>"; };
 		808B53E51F92B71C00504607 /* DiamondSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiamondSelectionViewController.swift; sourceTree = "<group>"; };
 		80CBAD6B1FA11BA600D83E2B /* RotationDiamondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotationDiamondViewController.swift; sourceTree = "<group>"; };
+		8F6EEBECF13E7D9E81232A23 /* Pods_Diamond_ReserveUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Diamond_ReserveUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5D75FD33DD76717E75E3077 /* Pods_Diamond_on_Tap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Diamond_on_Tap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8CAEE2EB6C14FA1A4368963 /* Pods-Diamond ReserveUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diamond ReserveUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Diamond ReserveUITests/Pods-Diamond ReserveUITests.release.xcconfig"; sourceTree = "<group>"; };
 		B702FBEF1F8BF1AA00E0EFFB /* Emerald3@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Emerald3@3x.png"; sourceTree = "<group>"; };
@@ -224,6 +229,7 @@
 		B7DD64E91F7C346700858A6B /* Merged Background 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Merged Background 1.jpg"; sourceTree = "<group>"; };
 		B7DD64EB1F7C346C00858A6B /* Merged Background 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Merged Background 2.jpg"; sourceTree = "<group>"; };
 		DB07E7600359F9468BA31683 /* Pods-Diamond ReserveTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diamond ReserveTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Diamond ReserveTests/Pods-Diamond ReserveTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E11C5E43C156192A78E7A364 /* Pods_Diamond_ReserveTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Diamond_ReserveTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -239,6 +245,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA3324AA0F1890C8A428E3C6 /* Pods_Diamond_ReserveTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,6 +253,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				275569D71273116983DE68C7 /* Pods_Diamond_ReserveUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,6 +379,7 @@
 				B74D6B961F8AC48B00642619 /* Authentication */,
 				B76D8D721F7ACD15000CDFC7 /* Main.storyboard */,
 				B738C16B1F7DA0F80097720C /* TutorialViewController.swift */,
+				802B600B1FBB8D2B008B3202 /* GoogleService-Info.plist */,
 				B76D8D751F7ACD15000CDFC7 /* Assets.xcassets */,
 				B76D8D771F7ACD15000CDFC7 /* LaunchScreen.storyboard */,
 				B76D8D7A1F7ACD15000CDFC7 /* Info.plist */,
@@ -425,6 +434,8 @@
 				B702FBF41F8BF1AA00E0EFFB /* Emerald2@2x.png */,
 				B702FBF21F8BF1AA00E0EFFB /* Emerald2@3x.png */,
 				B702FBF11F8BF1AA00E0EFFB /* Emerald3.png */,
+				802B60071FBA282E008B3202 /* loading_refresh.gif */,
+				802B60081FBA282E008B3202 /* loading.gif */,
 				B702FBF01F8BF1AA00E0EFFB /* Emerald3@2x.png */,
 				B702FBEF1F8BF1AA00E0EFFB /* Emerald3@3x.png */,
 				802595021F8E2063004F1F94 /* gems.png */,
@@ -433,8 +444,6 @@
 				8025950E1F8EB55C004F1F94 /* jewelry.png */,
 				8025950F1F8EB55C004F1F94 /* jewelry@2x.png */,
 				802595101F8EB55C004F1F94 /* jewelry@3x.png */,
-				802B60001FB8CD9A008B3202 /* loading_refresh.gif */,
-				80566DF01FA3CF22009FC556 /* loading.gif */,
 				802594FC1F8E15B4004F1F94 /* MENU_ICON.png */,
 				802594FD1F8E15B4004F1F94 /* MENU_ICON@2x.png */,
 				802594FE1F8E15B4004F1F94 /* MENU_ICON@3x.png */,
@@ -471,6 +480,8 @@
 			isa = PBXGroup;
 			children = (
 				A5D75FD33DD76717E75E3077 /* Pods_Diamond_on_Tap.framework */,
+				E11C5E43C156192A78E7A364 /* Pods_Diamond_ReserveTests.framework */,
+				8F6EEBECF13E7D9E81232A23 /* Pods_Diamond_ReserveUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -597,6 +608,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				802B60091FBA2832008B3202 /* loading_refresh.gif in Resources */,
 				802595071F8E2063004F1F94 /* gems@3x.png in Resources */,
 				8025951F1F8EB63B004F1F94 /* search@3x.png in Resources */,
 				B702FBFA1F8BF1AA00E0EFFB /* Emerald2@2x.png in Resources */,
@@ -611,6 +623,7 @@
 				B738C15C1F7D90B10097720C /* Stars@3x.png in Resources */,
 				B738C1661F7D91610097720C /* strip1@3x.png in Resources */,
 				B738C1681F7D91610097720C /* strip1@2x.png in Resources */,
+				802B600A1FBA2836008B3202 /* loading.gif in Resources */,
 				B7D603A11F86415300B94067 /* Emerald.png in Resources */,
 				B76D8DA11F7AE849000CDFC7 /* UnicaOne-Regular.ttf in Resources */,
 				B75C3E161F882F6600E759EC /* strip3@2x.png in Resources */,
@@ -624,7 +637,6 @@
 				802595191F8EB5DA004F1F94 /* stone@3x.png in Resources */,
 				B738C1601F7D91290097720C /* strip2@2x.png in Resources */,
 				B76D8D761F7ACD15000CDFC7 /* Assets.xcassets in Resources */,
-				80566DF11FA3CF38009FC556 /* loading.gif in Resources */,
 				B738C1671F7D91610097720C /* strip1.png in Resources */,
 				802594F11F8DCDFD004F1F94 /* BLACK_IV_FMX@3x.png in Resources */,
 				B702FBF71F8BF1AA00E0EFFB /* Emerald3.png in Resources */,
@@ -636,7 +648,6 @@
 				802595121F8EB55C004F1F94 /* jewelry@2x.png in Resources */,
 				802594EF1F8DCDFD004F1F94 /* BLACK_IV_FMX.png in Resources */,
 				B7DD64EA1F7C346700858A6B /* Merged Background 1.jpg in Resources */,
-				802B60011FB8CFAB008B3202 /* loading_refresh.gif in Resources */,
 				802594F01F8DCDFD004F1F94 /* BLACK_IV_FMX@2x.png in Resources */,
 				802595181F8EB5DA004F1F94 /* stone@2x.png in Resources */,
 				B702FBF51F8BF1AA00E0EFFB /* Emerald3@3x.png in Resources */,
@@ -649,6 +660,7 @@
 				B76D8D741F7ACD15000CDFC7 /* Main.storyboard in Resources */,
 				802595131F8EB55C004F1F94 /* jewelry@3x.png in Resources */,
 				802595001F8E15B4004F1F94 /* MENU_ICON@2x.png in Resources */,
+				802B600C1FBB8D39008B3202 /* GoogleService-Info.plist in Resources */,
 				802B60041FB8D6E7008B3202 /* down_arrow.png in Resources */,
 				802B60061FB8D705008B3202 /* up_arrow.png in Resources */,
 			);
@@ -734,7 +746,6 @@
 				"${BUILT_PRODUCTS_DIR}/AWSSNS/AWSSNS.framework",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/GIFRefreshControl/GIFRefreshControl.framework",
-				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/LGSideMenuController/LGSideMenuController.framework",
 				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
@@ -754,7 +765,6 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSSNS.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GIFRefreshControl.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LGSideMenuController.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
@@ -1058,6 +1068,7 @@
 				PROVISIONING_PROFILE = "6b2cc199-8f68-4b4a-b71a-c684376d8b08";
 				PROVISIONING_PROFILE_SPECIFIER = diamond_product;
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -1079,6 +1090,7 @@
 				PROVISIONING_PROFILE = "6b2cc199-8f68-4b4a-b71a-c684376d8b08";
 				PROVISIONING_PROFILE_SPECIFIER = diamond_product;
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

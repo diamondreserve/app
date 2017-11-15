@@ -11,12 +11,16 @@ import UIKit
 class DiamondSelectionViewController: UIViewController, UITableViewDelegate, UITableViewDataSource  {
 
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var loadingView: UIView!
+    @IBOutlet weak var gifLoadImageView: UIImageView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setNavigationBar()
         tableView.register(UINib(nibName: "DiamondTableViewCell", bundle: nil), forCellReuseIdentifier: "DiamondCell")
         DiamondManager.sharedInstance.selectedDiamonds = [Diamonds]()
+        gifLoadImageView.loadGif(name: "loading")
     }
 
     func setNavigationBar() {
@@ -61,7 +65,24 @@ class DiamondSelectionViewController: UIViewController, UITableViewDelegate, UIT
     
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        selectDiamond(diamond: DiamondManager.sharedInstance.filteredDiamonds[indexPath.row])
     }
+    
+    func selectDiamond(diamond: Diamonds) {
+        
+        self.loadingView.isHidden = false
+        DiamondManager.sharedInstance.getDiamond(diamondId: diamond.id ?? "") { (_ success: Bool, _ diamond : Diamonds?) in
+            self.loadingView.isHidden = true
+            if success {
+                DispatchQueue.main.async(execute: {
+                    let diamondDetailVC = self.storyboard?.instantiateViewController(withIdentifier: "DiamondDetailVC") as! DiamondDetailViewController
+                    diamondDetailVC.diamond = diamond!
+                    self.navigationController?.pushViewController(diamondDetailVC, animated: true)
+                })
+            }
+        }
+    }
+    
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 60

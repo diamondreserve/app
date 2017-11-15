@@ -16,7 +16,6 @@ target 'Diamond on Tap' do
 	pod 'SDWebImage', '~> 4.0'
     pod 'MBProgressHUD', '~> 1.0.0'
     pod 'SwiftGifOrigin', '~> 1.6.1'
-    pod 'IQKeyboardManagerSwift'
     pod 'GIFRefreshControl'
     pod 'SwiftyJSON'
     pod 'Alamofire'

@@ -90,7 +90,7 @@ class CoverPageViewController: UIViewController, UIScrollViewDelegate {
         }
         if(currentPage == 1){
             self.titleText.text = "RESERVE"
-            self.mainText.text = "TAP \"RESERVE\" TO HOLD A DIAMOND FOR 24 HOURS AS YOUR VIEW OWN"
+            self.mainText.text = "TAP \"RESERVE\" TO HOLD A DIAMOND FOR 24 HOURS AS YOUR VERY OWN"
         }
         else if (currentPage == 2) {
             self.titleText.text = "SEARCH"

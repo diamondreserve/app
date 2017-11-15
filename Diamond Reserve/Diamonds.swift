@@ -31,6 +31,7 @@ class Diamonds: NSObject {
     var polish: String?
     var symmetry: String?
     var depth: NSNumber?
+    var table_number: NSNumber?
     var total_reserved: Bool?
     var user: String?
     var status: String?
@@ -53,7 +54,7 @@ class Diamonds: NSObject {
         comments = json["comments"].string
         culet_size = json["culet_size"].string
         cut_grade = json["cut_grade"].string
-        fluorescence_intensity = json["fluorescence_intensity"].string
+        fluorescence_intensity = json["fluorescene_intensity"].string
         girdle_thin = json["girdle_thin"].string
         girdle_thick = json["girdle_thick"].string
         lab = json["lab"].string
@@ -61,6 +62,7 @@ class Diamonds: NSObject {
         symmetry = json["symmetry"].stringValue
         certificate_image = json["certificate_image"].stringValue
         depth = json["depth"].number
+        table_number = json["table_number"].number
         total_reserved = json["total_reserved"].boolValue
         user = json["user"].string
         status = json["user_state"].string

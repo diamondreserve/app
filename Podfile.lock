@@ -12,7 +12,6 @@ PODS:
   - AWSSNS (2.6.2):
     - AWSCore (= 2.6.2)
   - GIFRefreshControl (1.4.0)
-  - IQKeyboardManagerSwift (5.0.3)
   - LGSideMenuController (2.1.1)
   - MBProgressHUD (1.0.0)
   - NVActivityIndicatorView (4.0.0):
@@ -34,7 +33,6 @@ DEPENDENCIES:
   - AWSS3 (~> 2.6.1)
   - AWSSNS (~> 2.6.1)
   - GIFRefreshControl
-  - IQKeyboardManagerSwift
   - LGSideMenuController
   - MBProgressHUD (~> 1.0.0)
   - NVActivityIndicatorView
@@ -62,7 +60,6 @@ SPEC CHECKSUMS:
   AWSS3: b3e2c4aca868cae06b5b88337ceabee25709fcc5
   AWSSNS: 8dd8972ea374391dc61f04d19cd496c523708748
   GIFRefreshControl: 2c5d5be135988f32000f20179d410d69c104a6bd
-  IQKeyboardManagerSwift: e257e513744cf32123eca7061272acea0246fc83
   LGSideMenuController: ae40c80983ab8b8801c7cef0a6804d43aaa72d45
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
   NVActivityIndicatorView: 54c9b93b6f25a4f467512680c0c90c09a1095cf2
@@ -72,6 +69,6 @@ SPEC CHECKSUMS:
   SwiftHash: 62691a0d6b09b958d21ab1ea0014b83d56f58e8f
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
 
-PODFILE CHECKSUM: cbf1c7c1f4b69e84d87ce9852c96bff0fb715ee7
+PODFILE CHECKSUM: cf4b22540fd728552f9816785df74ff40c6ade99
 
 COCOAPODS: 1.3.1

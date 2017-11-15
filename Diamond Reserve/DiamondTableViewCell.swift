@@ -84,7 +84,7 @@ class DiamondTableViewCell: UITableViewCell {
         formatter.numberStyle = .currency
         formatter.maximumFractionDigits = 0
         priceLabel.text = (price == 0) ? "N/A" : formatter.string(from: NSNumber(value: price))
-        weightLabel.text = (diamond.weight?.stringValue ?? "") + "ct"
+        weightLabel.text =  String(format: "%.2f", (diamond.weight?.floatValue ?? 0)) + " CT"  //(diamond.weight?.stringValue ?? "") + "ct"
         colorLabel.text = (diamond.color ?? "") + "," + (diamond.clarity ?? "")
         if diamond.image != nil && diamond.image! != "" {
             iconView.image = nil

@@ -17,6 +17,7 @@ class DiamondSearchViewController: UIViewController {
     @IBOutlet var colorButtons: [UIButton]!
     @IBOutlet var clarityButtons: [UIButton]!
     
+       
     var selectedShapes = [String]()
     var selectedColors = [String]()
     var selectedClarities = [String]()
@@ -35,13 +36,16 @@ class DiamondSearchViewController: UIViewController {
         let menuBtn = UIBarButtonItem(image: UIImage(named:"MENU_ICON"), style: .plain, target: self, action: #selector(showSideMenu))
         navigationItem.leftBarButtonItem = menuBtn
         
-        let rightBtn = UIBarButtonItem(title: "DONE", style: .plain, target: self, action: #selector(doneAction))
+        let rightBtn = UIBarButtonItem(title: "SUBMIT", style: .plain, target: self, action: #selector(doneAction))
         rightBtn.setTitleTextAttributes([NSFontAttributeName: UIFont(name: "Unica One", size: 17)! ,NSForegroundColorAttributeName: UIColor.white], for: .normal)
         rightBtn.setTitleTextAttributes([NSFontAttributeName: UIFont(name: "Unica One", size: 17)! ,NSForegroundColorAttributeName: UIColor.white], for: .highlighted)
 
         navigationItem.rightBarButtonItem = rightBtn
         
-//        priceSlider.numberFormatter = NSNumberFormatterCurrencyStyle
+        weightSlider.numberFormatter.numberStyle = .decimal
+        weightSlider.numberFormatter.maximumFractionDigits = 2
+        weightSlider.numberFormatter.maximumFractionDigits = 2
+
     }
     
     func showSideMenu() {

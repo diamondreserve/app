@@ -12,6 +12,8 @@ import AWSDynamoDB
 import AWSCore
 import AWSS3
 import SwiftyJSON
+import Messages
+import MessageUI
 
 
 enum ReserveState {
@@ -21,7 +23,7 @@ enum ReserveState {
     case rejected
 }
 
-class DiamondDetailViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class DiamondDetailViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UIImagePickerControllerDelegate, UINavigationControllerDelegate, MFMailComposeViewControllerDelegate {
     
     
     var isFromDiamondList: Bool = true
@@ -66,8 +68,8 @@ class DiamondDetailViewController: UIViewController, UITableViewDelegate, UITabl
     
     
     var isAdmin = (UserManager.sharedInstance.user?.is_admin)!
+    let featureCount = 16;
     
-    let dynamoDbObjectMapper = AWSDynamoDBObjectMapper.default()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -129,7 +131,7 @@ class DiamondDetailViewController: UIViewController, UITableViewDelegate, UITabl
         priceLabel.text = (price == 0) ? "" : formatter.string(from: NSNumber(value: price))
         
         setNavigationBar()
-        tableViewHeight.constant = 28 * 7
+        tableViewHeight.constant = CGFloat(28 * featureCount)
         purchaseViewHeight.constant = 0
         
         if isAdmin {
@@ -191,7 +193,7 @@ class DiamondDetailViewController: UIViewController, UITableViewDelegate, UITabl
             case "reserved":
                 reserveButton.setTitle("RESERVED", for: .normal)
                 reserveButton.backgroundColor = UIColor(rgb : 0x0FBB32)
-                purchaseViewHeight.constant = 110
+                purchaseViewHeight.constant = 65
                 purchaseView.isHidden = false
                 break
             
@@ -243,11 +245,52 @@ class DiamondDetailViewController: UIViewController, UITableViewDelegate, UITabl
     }
     
     func backAction() {
-        navigationController?.popToRootViewController(animated: true)
+        navigationController?.popViewController(animated: true)
     }
     
-    func shareAction() {
-        
+    
+    @IBAction func purchaseAction(_ sender: Any) {
+        shareAction(isPurchase: true)
+    }
+    
+    func shareAction(isPurchase: Bool = false) {
+
+        if MFMailComposeViewController.canSendMail() {
+            let mail = MFMailComposeViewController()
+            mail.mailComposeDelegate = self;
+            mail.setCcRecipients(["asher@premiergem.com"])
+            if isPurchase {
+                mail.setSubject("I'd like to purchase this diamond")
+            } else {
+                mail.setSubject("Share diamond")
+            }
+            mail.setMessageBody("Testing", isHTML: false)
+            let image = takeScreenshot(view: self.view)
+            let imageData: NSData = UIImagePNGRepresentation(image)! as NSData
+            mail.addAttachmentData(imageData as Data, mimeType: "image/png", fileName: "imageName")
+            self.present(mail, animated: true, completion: nil)
+        } else {
+            let alert = UIAlertController(title: "Error", message: "Please register email in the device", preferredStyle: .alert)
+            let ok = UIAlertAction(title: "OK", style: .default, handler: {(_ action: UIAlertAction) -> Void in
+            })
+            alert.addAction(ok)
+            present(alert, animated: true, completion: nil)
+        }
+    }
+
+    
+    func mailComposeController(_ controller: MFMailComposeViewController,
+                               didFinishWith result: MFMailComposeResult, error: Error?) {
+        controller.dismiss(animated: true, completion: nil)
+    }
+    
+    func takeScreenshot(view: UIView) -> UIImage {
+        UIGraphicsBeginImageContext(view.frame.size)
+        view.layer.render(in: UIGraphicsGetCurrentContext()!)
+        let image = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+       
+        return image!
     }
     
     
@@ -430,7 +473,7 @@ class DiamondDetailViewController: UIViewController, UITableViewDelegate, UITabl
     // MARK: - Table view data source
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 7
+        return featureCount
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -441,8 +484,8 @@ class DiamondDetailViewController: UIViewController, UITableViewDelegate, UITabl
         }
         switch indexPath.row {
         case 0:
-            cell?.keyLabel.text = "Weight"
-            cell?.valueLabel.text = diamond?.weight?.stringValue
+            cell?.keyLabel.text = "Vendor #"
+            cell?.valueLabel.text = diamond?.id
             break
         case 1:
             cell?.keyLabel.text = "Color"
@@ -457,8 +500,8 @@ class DiamondDetailViewController: UIViewController, UITableViewDelegate, UITabl
             cell?.valueLabel.text = diamond?.measurements
             break
         case 4:
-            cell?.keyLabel.text = "Cut Grade"
-            cell?.valueLabel.text = diamond?.cut_grade
+            cell?.keyLabel.text = "Weight"
+            cell?.valueLabel.text = diamond?.weight?.stringValue
             break
         case 5:
             cell?.keyLabel.text = "Lab"
@@ -468,9 +511,44 @@ class DiamondDetailViewController: UIViewController, UITableViewDelegate, UITabl
             cell?.keyLabel.text = "Depth"
             cell?.valueLabel.text = diamond?.depth?.stringValue
             break
+        case 7:
+            cell?.keyLabel.text = "Girdle Thin"
+            cell?.valueLabel.text = diamond?.girdle_thin
+            break
+        case 8:
+            cell?.keyLabel.text = "Girdle Thick"
+            cell?.valueLabel.text = diamond?.girdle_thick
+            break
+        case 9:
+            cell?.keyLabel.text = "Culet Size"
+            cell?.valueLabel.text = diamond?.culet_size
+            break
+        case 10:
+            cell?.keyLabel.text = "Polish"
+            cell?.valueLabel.text = diamond?.polish
+            break
+        case 11:
+            cell?.keyLabel.text = "Symmetry"
+            cell?.valueLabel.text = diamond?.symmetry
+            break
+        case 12:
+            cell?.keyLabel.text = "Fluorescene Intensity"
+            cell?.valueLabel.text = diamond?.fluorescence_intensity
+            break
+        case 13:
+            cell?.keyLabel.text = "Certificate Number"
+            cell?.valueLabel.text = diamond?.certificate
+            break
+        case 14:
+            cell?.keyLabel.text = "Table"
+            cell?.valueLabel.text = diamond?.table_number?.stringValue
+            break
         default:
-            cell?.keyLabel.text = "Depth"
-            cell?.valueLabel.text = diamond?.depth?.stringValue
+            cell?.keyLabel.text = "Cut Grade"
+            cell?.valueLabel.text = diamond?.cut_grade
+        }
+        if cell?.valueLabel.text == ""  {
+            cell?.valueLabel.text = "N/A"
         }
         return cell!
     }

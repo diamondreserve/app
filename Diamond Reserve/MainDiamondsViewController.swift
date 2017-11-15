@@ -163,8 +163,8 @@ class MainDiamondsViewController: BaseVC, UITableViewDelegate, UITableViewDataSo
     }
     
     func selectDiamond(diamond: Diamonds) {
-        self.loadingView.isHidden = false
         
+        self.loadingView.isHidden = false
         DiamondManager.sharedInstance.getDiamond(diamondId: diamond.id ?? "") { (_ success: Bool, _ diamond : Diamonds?) in
             self.loadingView.isHidden = true
             if success {
@@ -175,23 +175,6 @@ class MainDiamondsViewController: BaseVC, UITableViewDelegate, UITableViewDataSo
                 })
             }
         }
-        
-        
-//        dynamoDBObjectMapper.load(Diamond.self, hashKey: diamond.id ?? "", rangeKey:nil).continueWith(block: { (task:AWSTask<AnyObject>!) -> Any? in
-//            self.loadingView.isHidden = true
-//            if let error = task.error as NSError? {
-//                print(error)
-//            } else if (task.result as? Diamond) != nil {
-//                let updatedDiamond: Diamond = task.result as! Diamond
-//
-//            }
-//            else if (task.result as? Diamond) == nil {
-//                print("There is no user for this id")
-//            }
-//            return nil
-//        })
-        
-
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
