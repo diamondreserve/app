@@ -15,7 +15,7 @@ class RightMenuViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        bottomLabel.text = "CONTACT A DIAMOND RESERVE EXPERT AT: \ninfo@premiergem.com"
+        bottomLabel.text = "CONTACT A DIAMOND RESERVE EXPERT AT: \nINFO@PREMIERGEM.COM"
         nameLabel.text = UserDefaults.standard.string(forKey: "fullname")
     }
 

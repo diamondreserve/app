@@ -7,8 +7,10 @@
 //
 
 import UIKit
+import MessageUI
+import Messages
 
-class DiamondReviewViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class DiamondReviewViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, MFMailComposeViewControllerDelegate {
     
     @IBOutlet weak var submitButton: UIButton!
     @IBOutlet weak var returnMainButton: UIButton!
@@ -61,13 +63,49 @@ class DiamondReviewViewController: UIViewController, UITableViewDelegate, UITabl
     }
  
     @IBAction func submitAction(_ sender: Any) {
-        returnMainButton.isHidden = false
-        submitButton.isHidden = true
-        navigationItem.leftBarButtonItem = nil
-        navigationItem.rightBarButtonItem = nil
-        navigationItem.hidesBackButton = true
-        navigationItem.title = ""
-        successView.isHidden = false
+//        returnMainButton.isHidden = false
+//        submitButton.isHidden = true
+//        navigationItem.leftBarButtonItem = nil
+//        navigationItem.rightBarButtonItem = nil
+//        navigationItem.hidesBackButton = true
+//        navigationItem.title = ""
+//        successView.isHidden = false
+        
+        shareAction()
+    }
+    
+    func shareAction() {
+        
+        if MFMailComposeViewController.canSendMail() {
+            let mail = MFMailComposeViewController()
+            mail.mailComposeDelegate = self;
+            mail.setToRecipients(["info@premiergem.com"])
+            mail.setCcRecipients(["asher@premiergem.com"])
+            mail.setSubject("Send list of diamonds")
+            
+            var listDiamondId = ""
+            for diamond in DiamondManager.sharedInstance.selectedDiamonds {
+                listDiamondId += "\n" + (diamond.id ?? "")
+            }
+           
+            mail.setMessageBody(listDiamondId, isHTML: false)
+            self.present(mail, animated: true, completion: nil)
+        } else {
+            let alert = UIAlertController(title: "Error", message: "Please register email in the device", preferredStyle: .alert)
+            let ok = UIAlertAction(title: "OK", style: .default, handler: {(_ action: UIAlertAction) -> Void in
+            })
+            alert.addAction(ok)
+            present(alert, animated: true, completion: nil)
+        }
+    }
+    
+    
+    func mailComposeController(_ controller: MFMailComposeViewController,
+                               didFinishWith result: MFMailComposeResult, error: Error?) {
+
+        controller.dismiss(animated: true) {
+            self.navigationController?.popToRootViewController(animated: true)
+        }
     }
     
     @IBAction func returnMainAction(_ sender: Any) {

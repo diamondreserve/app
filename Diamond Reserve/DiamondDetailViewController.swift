@@ -260,6 +260,7 @@ class DiamondDetailViewController: UIViewController, UITableViewDelegate, UITabl
             mail.mailComposeDelegate = self;
             mail.setCcRecipients(["asher@premiergem.com"])
             if isPurchase {
+                mail.setToRecipients(["info@premiergem.com"])
                 mail.setSubject("I'd like to purchase this diamond")
             } else {
                 mail.setSubject("Share diamond")

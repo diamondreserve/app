@@ -27,7 +27,7 @@ class RotationDiamondViewController: UIViewController, UIWebViewDelegate {
     }
     
     func setNavigationBar() {
-        navigationItem.title = "360 Degree"
+        navigationItem.title = "360 DEGREE"
         
         let backItem = UIBarButtonItem(title: "BACK", style: .plain, target: self, action: #selector(backAction))
         backItem.setTitleTextAttributes([NSFontAttributeName: UIFont(name: "Unica One", size: 17)! ,NSForegroundColorAttributeName: UIColor.white], for: .normal)
