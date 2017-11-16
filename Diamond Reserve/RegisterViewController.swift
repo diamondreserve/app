@@ -12,6 +12,7 @@ import AWSDynamoDB
 import SwiftHash
 import MBProgressHUD
 import SwiftyJSON
+import Firebase
 
 class RegisterViewController: BaseVC, UITextFieldDelegate {
 
@@ -110,36 +111,60 @@ class RegisterViewController: BaseVC, UITextFieldDelegate {
             return
         }
         
-        let arn:String? = UserDefaults.standard.string(forKey: "endpointArn")
         
+        MBProgressHUD.showAdded(to: self.view, animated: true)
+        Auth.auth().createUser(withEmail: emailText.text!, password: passwordText.text!) { (user, error) in
+            if ((error) != nil) {
+                MBProgressHUD.hide(for: self.view, animated: true)
+                CommonMethods.showAlert(withTitle: "Diamond Deserve", message: (error?.localizedDescription)!, andCancelButtonTitle: "OK", with: nil)
+                return
+            }
+            self.registerUserOnServer()
+        }
+    }
+    
+    func registerUserOnServer() {
+        
+        let arn:String? = UserDefaults.standard.string(forKey: "endpointArn")
         let params = [
             "id": emailText.text!,
             "email": emailText.text!,
-            "password": MD5(passwordText.text!),
+            "password": passwordText.text!,
             "full_name": fullNameText.text!,
             "company_name": companyText.text!,
             "city": cityCountryText.text!,
             "arn": arn ?? ""
         ]
-        
-        let successAlert = UIAlertController(title: "Success", message: "Successfully registered", preferredStyle: UIAlertControllerStyle.alert)
-        successAlert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: { action in
-            self.navigationController?.popViewController(animated: true)
-        }))
-        
-        MBProgressHUD.showAdded(to: self.view, animated: true)
         UserManager.sharedInstance.registerUser(bodyParams: params) { (_ success: Bool, _ userJson: JSON?) in
+            
             if success {
-                DispatchQueue.main.async(execute: {
+                let user = User(userJson!)
+                UserDefaults.standard.set(user.userId, forKey: "userId")
+                UserDefaults.standard.set(user.full_name, forKey: "fullname")
+                
+                let arn:String? = UserDefaults.standard.string(forKey: "endpointArn")
+                user.arn = arn
+                UserManager.sharedInstance.user = user
+                UserManager.sharedInstance.saveCurrentUser(userJson: userJson!)
+                
+                let parameters = [
+                    "arn": arn ?? ""
+                ]
+                UserManager.sharedInstance.updateUser(user_id: (user.userId)!, bodyParams: parameters, completion: { (_ success: Bool, _ user: User?) in
+                   
                     MBProgressHUD.hide(for: self.view, animated: true)
-                    UserManager.sharedInstance.user = User(userJson!)
-                    UserManager.sharedInstance.saveCurrentUser(userJson: userJson!)
-                    self.present(successAlert, animated: true, completion: nil)
+                    if success {
+                        DispatchQueue.main.async(execute: {
+                            let welcomeVC: WelcomeViewController = (self.storyboard!.instantiateViewController(withIdentifier: "welcomeVC") as? WelcomeViewController)!
+                            self.navigationController?.present(welcomeVC, animated: true, completion: nil)
+                        })
+                    }
                 })
+            } else {
+                MBProgressHUD.hide(for: self.view, animated: true)
             }
+            
         }
-        
-
     }
     
     @IBAction func backTapped(_ sender: Any) {

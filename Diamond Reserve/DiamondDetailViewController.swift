@@ -121,6 +121,7 @@ class DiamondDetailViewController: UIViewController, UITableViewDelegate, UITabl
         if diamond?.diamond360 == nil || diamond!.diamond360! == "" {
             rotateButtonHeight.constant = 0
         }
+        cameraButton.isHidden = !isAdmin
         
         titleLabel.text = String.init(format: "%.2fct %@ %@, %@",(diamond?.weight?.floatValue ?? 0)!, (shape ?? ""), diamond?.color ?? "", diamond?.clarity ?? "")
         

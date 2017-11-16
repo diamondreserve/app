@@ -204,42 +204,7 @@ class MainDiamondsViewController: BaseVC, UITableViewDelegate, UITableViewDataSo
             }
         }
         
-        /*
-        let queryExpression = AWSDynamoDBScanExpression()
-        queryExpression.exclusiveStartKey = self.lastEvaluatedKey
-        //queryExpression.limit = 20
-        dynamoDBObjectMapper.scan(Diamond.self, expression: queryExpression).continueWith(executor: AWSExecutor.mainThread(), block: { (task:AWSTask!) -> AnyObject! in
-            
-            if self.lastEvaluatedKey == nil {
-                self.diamonds.removeAll(keepingCapacity: true)
-            }
-            
-            if let paginatedOutput = task.result {
-                for item in paginatedOutput.items as! [Diamond] {
-                    self.diamonds.append(item)
-                }
-                self.diamonds = self.diamonds.sorted(by: {($0.weight?.floatValue ?? 0) > ($1.weight?.floatValue ?? 0)})
-                DiamondManager.sharedInstance.allDiamonds = self.diamonds
-                DiamondManager.sharedInstance.filteredDiamonds = self.diamonds
 
-                self.lastEvaluatedKey = paginatedOutput.lastEvaluatedKey
-                if paginatedOutput.lastEvaluatedKey == nil {
-                    self.doneLoading = true
-                }
-            }
-            
-            UIApplication.shared.isNetworkActivityIndicatorVisible = false
-            self.loadingView.isHidden = true
-            self.tableView.reloadData()
-            self.refreshControl.endRefreshing()
-            
-            if let error = task.error as NSError? {
-                print("Error: \(error)")
-            }
-            
-            return nil
-        })
- */
         
     }
     

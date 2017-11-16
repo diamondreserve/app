@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class RightMenuViewController: UIViewController {
     
@@ -43,10 +44,22 @@ class RightMenuViewController: UIViewController {
     }
     
     @IBAction func logoutAction(_ sender: Any) {
+        let firebaseAuth = Auth.auth()
+        do {
+            try firebaseAuth.signOut()
+        } catch let signOutError as NSError {
+            print ("Error signing out: %@", signOutError)
+            return
+        }
         moveToLogin()
+
+        
     }
     
     func moveToLogin(){
+        
+        DiamondManager.sharedInstance.allDiamonds = nil
+        
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let splashVC: SplashViewController = (storyboard.instantiateViewController(withIdentifier: "splashVC") as? SplashViewController)!
         let startNC: UINavigationController = storyboard.instantiateViewController(withIdentifier: "startNC") as! UINavigationController

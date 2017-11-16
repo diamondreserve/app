@@ -141,7 +141,7 @@ class UserManager: BaseManager {
                 if let data = response.result.value {
                     let json = JSON(data)
                     if json["code"] == 404 {
-                        CommonMethods.showAlert(withTitle: "Diamond Deserve", message: "Wrong User ID", andCancelButtonTitle: "OK", with: nil)
+                        CommonMethods.showAlert(withTitle: "Diamond Deserve", message: "User is already registered", andCancelButtonTitle: "OK", with: nil)
                         completion(false, nil)
                     } else {
                         completion(true, json)

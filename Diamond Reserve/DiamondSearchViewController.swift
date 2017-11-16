@@ -8,6 +8,7 @@
 
 import UIKit
 import RangeSeekSlider
+import MBProgressHUD
 
 class DiamondSearchViewController: UIViewController {
     
@@ -189,29 +190,42 @@ class DiamondSearchViewController: UIViewController {
         }
         
         if DiamondManager.sharedInstance.allDiamonds != nil {
-            searchedDiamonds = DiamondManager.sharedInstance.allDiamonds!.filter({selectedShapes.contains($0.shape!) &&
-                                                                                  selectedColors.contains($0.color ?? "") &&
-                                                                                  selectedClarities.contains($0.clarity ?? "") &&
-                                                                                  DiamondManager.sharedInstance.getMarkedUpPrice(origin:($0.price?.floatValue ?? 0)) >= Float(priceSlider.selectedMinValue) &&
-                                                                                  DiamondManager.sharedInstance.getMarkedUpPrice(origin:($0.price?.floatValue ?? 0)) < Float(priceSlider.selectedMaxValue) &&
-                                                                                  ($0.weight?.floatValue ?? 0) >= Float(weightSlider.selectedMinValue) &&
-                                                                                  ($0.weight?.floatValue ?? 0) < Float(weightSlider.selectedMaxValue)
-            })
-            
-            DiamondManager.sharedInstance.filteredDiamonds = searchedDiamonds
-
-            let tabbarVC:TabbarViewController = self.navigationController!.parent as! TabbarViewController
-            let diamondNavVC = tabbarVC.viewControllers[0] as UINavigationController
-            diamondNavVC.popToRootViewController(animated: false)
-            
-            let diamondSelectionVC = self.storyboard?.instantiateViewController(withIdentifier: "DiamondSelectionVC") as! DiamondSelectionViewController
-            diamondNavVC.pushViewController(diamondSelectionVC, animated: true)
-            
-            tabbarVC.tabButtons[0].isSelected = true
-            tabbarVC.didPressTab(tabbarVC.tabButtons[0])
+           filterAndMove()
+        } else {
+            MBProgressHUD.showAdded(to: view, animated: true)
+            DiamondManager.sharedInstance.getAllDiamonds { (_ success: Bool, diamonds: [Diamonds]?) in
+                MBProgressHUD.hide(for: self.view, animated: true)
+                if success {
+                    DiamondManager.sharedInstance.allDiamonds = diamonds
+                    self.filterAndMove()
+                }
+            }
         }
 
-            }
+    }
+    
+    func filterAndMove(){
+        searchedDiamonds = DiamondManager.sharedInstance.allDiamonds!.filter({selectedShapes.contains($0.shape!) &&
+            selectedColors.contains($0.color ?? "") &&
+            selectedClarities.contains($0.clarity ?? "") &&
+            DiamondManager.sharedInstance.getMarkedUpPrice(origin:($0.price?.floatValue ?? 0)) >= Float(priceSlider.selectedMinValue) &&
+            DiamondManager.sharedInstance.getMarkedUpPrice(origin:($0.price?.floatValue ?? 0)) < Float(priceSlider.selectedMaxValue) &&
+            ($0.weight?.floatValue ?? 0) >= Float(weightSlider.selectedMinValue) &&
+            ($0.weight?.floatValue ?? 0) < Float(weightSlider.selectedMaxValue)
+        })
+        
+        DiamondManager.sharedInstance.filteredDiamonds = searchedDiamonds
+        
+        let tabbarVC:TabbarViewController = self.navigationController!.parent as! TabbarViewController
+        let diamondNavVC = tabbarVC.viewControllers[0] as UINavigationController
+        diamondNavVC.popToRootViewController(animated: false)
+        
+        let diamondSelectionVC = self.storyboard?.instantiateViewController(withIdentifier: "DiamondSelectionVC") as! DiamondSelectionViewController
+        diamondNavVC.pushViewController(diamondSelectionVC, animated: true)
+        
+        tabbarVC.tabButtons[0].isSelected = true
+        tabbarVC.didPressTab(tabbarVC.tabButtons[0])
+    }
     
     @IBAction func didDiamondButtonSelected(_ sender: UIButton) {
         sender.isSelected = !sender.isSelected

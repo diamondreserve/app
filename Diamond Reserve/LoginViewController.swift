@@ -12,9 +12,10 @@ import AWSDynamoDB
 import SwiftHash
 import MBProgressHUD
 import SwiftyJSON
+import Firebase
 
 
-class LoginViewController: BaseVC {
+class LoginViewController: BaseVC, UITextFieldDelegate {
     
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var rememberMeButton: UIButton!
@@ -36,11 +37,19 @@ class LoginViewController: BaseVC {
 
     }
     
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    override func viewDidAppear(_ animated: Bool) {
+
+        super.viewDidAppear(animated)
+        view.endEditing(true)
+
     }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        view.endEditing(true)
+    }
+    
+
     
     func keyboardWillShow(notification: NSNotification) {
         if let keyboardSize = (notification.userInfo?[UIKeyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
@@ -53,7 +62,7 @@ class LoginViewController: BaseVC {
     func keyboardWillHide(notification: NSNotification) {
         if let keyboardSize = (notification.userInfo?[UIKeyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
             if self.view.frame.origin.y != 0{
-                self.view.frame.origin.y += keyboardSize.height
+                self.view.frame.origin.y = 0
             }
         }
     }
@@ -79,75 +88,52 @@ class LoginViewController: BaseVC {
         
         MBProgressHUD.showAdded(to: self.view, animated: true)
         
+        Auth.auth().signIn(withEmail: emailText.text!, password: passwordText.text!) { (user, error) in
+            if ((error) != nil) {
+                MBProgressHUD.hide(for: self.view, animated: true)
+                CommonMethods.showAlert(withTitle: "Diamond Deserve", message: (error?.localizedDescription)!, andCancelButtonTitle: "OK", with: nil)
+                return
+            }
+            self.getUserDataFromServer()
+        }
+    }
+    
+    func getUserDataFromServer(){
+        
         UserManager.sharedInstance.login(id: emailText.text!, completion: {(_ success : Bool, _ userJson: JSON?) in
             
             MBProgressHUD.hide(for: self.view, animated: true)
             if success {
                 let user = User(userJson!)
-                if(user.password == MD5(self.passwordText.text!)) {
-                    UserDefaults.standard.set(user.userId, forKey: "userId")
-                    UserDefaults.standard.set(user.full_name, forKey: "fullname")
-                    
-                    let arn:String? = UserDefaults.standard.string(forKey: "endpointArn")
-                    user.arn = arn
-                    UserManager.sharedInstance.user = user
-                    UserManager.sharedInstance.saveCurrentUser(userJson: userJson!)
-                    
-                    let parameters = [
-                        "arn": arn ?? ""
-                    ]
-                    UserManager.sharedInstance.updateUser(user_id: (user.userId)!, bodyParams: parameters, completion: { (_ success: Bool, _ user: User?) in
-                        if success {
-                            DispatchQueue.main.async(execute: {
-                                self.performSegue(withIdentifier: "showWelcomeVC", sender: self)
-                            })
-                        }
-                    })
-                }
-                else {
-                    self.displayAlert(message: "Incorrect credentials, please try again.")
-                }
-            }
-        })
-        
-        /*
-        let dynamoDbObjectMapper = AWSDynamoDBObjectMapper.default()
-        
-        dynamoDbObjectMapper.load(Users.self, hashKey: emailText.text ?? "", rangeKey:nil).continueWith(block: { (task:AWSTask<AnyObject>!) -> Any? in
-            if let error = task.error as NSError? {
-                self.displayAlert(message: "Connection problem, please try later")
-            } else if (task.result as? Users) != nil {
-                let user: Users = task.result as! Users
+                UserDefaults.standard.set(user.userId, forKey: "userId")
+                UserDefaults.standard.set(user.full_name, forKey: "fullname")
                 
-                if(user.password == MD5(self.passwordText.text!)) {
-                    DiamondManager.sharedInstance.user = user
-                    UserDefaults.standard.set(user.userId, forKey: "userId")
-                    UserDefaults.standard.set(user.full_name, forKey: "fullname")
-                    
-                    let arn:String? = UserDefaults.standard.string(forKey: "endpointArn")
-                    user.arn = arn
-                    dynamoDbObjectMapper.save(user, completionHandler: {(error: Error?) -> Void in
-                        if let error = error {
-                            print(" Amazon DynamoDB Save Error: \(error)")
-                            return
-                        }
-                        print("ARN was updated.")
+                let arn:String? = UserDefaults.standard.string(forKey: "endpointArn")
+                user.arn = arn
+                UserManager.sharedInstance.user = user
+                UserManager.sharedInstance.saveCurrentUser(userJson: userJson!)
+                
+                let parameters = [
+                    "arn": arn ?? ""
+                ]
+                UserManager.sharedInstance.updateUser(user_id: (user.userId)!, bodyParams: parameters, completion: { (_ success: Bool, _ user: User?) in
+                    if success {
                         DispatchQueue.main.async(execute: {
                             self.performSegue(withIdentifier: "showWelcomeVC", sender: self)
                         })
-                    })
-                }
-                else {
-                    self.displayAlert(message: "Incorrect credentials, please try again.")
-                }
+                    }
+                })
             }
-            else if (task.result as? Users) == nil {
-                self.displayAlert(message: "Incorrect credentials, please try again.")
-            }
-            return nil
         })
- 
- */
     }
+    
+//    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+////        let lowercaseCharRagne = string.rangeOfCharacter(from: NSCharacterSet.lowercaseLetters)
+////        if (lowercaseCharRagne.location != NSNotFound) {
+////
+////            return false;
+////        }
+//        reutnr
+//    }
     
 }

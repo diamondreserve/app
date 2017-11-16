@@ -326,6 +326,7 @@
 			isa = PBXGroup;
 			children = (
 				B738C1511F7D70130097720C /* RegisterViewController.swift */,
+				B738C1551F7D8BA00097720C /* ForgotViewController.swift */,
 				B738C14F1F7D01D80097720C /* LoginViewController.swift */,
 			);
 			name = Authentication;
@@ -385,7 +386,6 @@
 				B76D8D7A1F7ACD15000CDFC7 /* Info.plist */,
 				B76D8D9C1F7AE2C6000CDFC7 /* SplashViewController.swift */,
 				B738C1531F7D7F1D0097720C /* VerifyViewController.swift */,
-				B738C1551F7D8BA00097720C /* ForgotViewController.swift */,
 				B738C1691F7D94850097720C /* WelcomeViewController.swift */,
 				B7D603A21F865D7F00B94067 /* CoverPageViewController.swift */,
 				B750FD171F8AB72C004844BB /* BaseVC.swift */,
@@ -746,6 +746,8 @@
 				"${BUILT_PRODUCTS_DIR}/AWSSNS/AWSSNS.framework",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/GIFRefreshControl/GIFRefreshControl.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/LGSideMenuController/LGSideMenuController.framework",
 				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
@@ -754,6 +756,7 @@
 				"${BUILT_PRODUCTS_DIR}/SwiftGifOrigin/SwiftGifOrigin.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftHash/SwiftHash.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -765,6 +768,8 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSSNS.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GIFRefreshControl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LGSideMenuController.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
@@ -773,6 +778,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftGifOrigin.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftHash.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1057,7 +1063,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Diamond Reserve/Diamond Reserve.entitlements";
-				CODE_SIGN_IDENTITY = "iPhone Developer: Charles Fok (4JL79RH5N7)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Glass Hat Productions LLC (QZJLD48KK6)";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = QZJLD48KK6;
 				INFOPLIST_FILE = "Diamond Reserve/Info.plist";
@@ -1065,8 +1071,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.diamond-reserve";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "33dd1ea1-5213-42e7-a720-265fb336c564";
-				PROVISIONING_PROFILE_SPECIFIER = diamond_develop;
+				PROVISIONING_PROFILE = "6b2cc199-8f68-4b4a-b71a-c684376d8b08";
+				PROVISIONING_PROFILE_SPECIFIER = diamond_product;
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1078,7 +1084,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Diamond Reserve/Diamond Reserve.entitlements";
-				CODE_SIGN_IDENTITY = "iPhone Developer: Charles Fok (4JL79RH5N7)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Glass Hat Productions LLC (QZJLD48KK6)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Glass Hat Productions LLC (QZJLD48KK6)";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = QZJLD48KK6;
@@ -1087,8 +1093,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.diamond-reserve";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "33dd1ea1-5213-42e7-a720-265fb336c564";
-				PROVISIONING_PROFILE_SPECIFIER = diamond_develop;
+				PROVISIONING_PROFILE = "6b2cc199-8f68-4b4a-b71a-c684376d8b08";
+				PROVISIONING_PROFILE_SPECIFIER = diamond_product;
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

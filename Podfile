@@ -19,7 +19,8 @@ target 'Diamond on Tap' do
     pod 'GIFRefreshControl'
     pod 'SwiftyJSON'
     pod 'Alamofire'
-
+    pod 'Firebase/Core'
+    pod 'Firebase/Auth'
 
 target 'Diamond ReserveTests' do
     inherit! :search_paths

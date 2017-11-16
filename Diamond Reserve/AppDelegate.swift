@@ -12,6 +12,7 @@ import UserNotifications
 import AWSSNS
 import AWSDynamoDB
 import SwiftyJSON
+import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -21,6 +22,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         let didFinishLaunching = AWSSignInManager.sharedInstance().interceptApplication(
             application, didFinishLaunchingWithOptions: launchOptions)
+        
+        FirebaseApp.configure()
         
         registerForPushNotifications()
         
@@ -41,10 +44,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         UNUserNotificationCenter.current().delegate = self
         
-        if UserDefaults.standard.object(forKey: "userJson") != nil {
+        if  let user = Auth.auth().currentUser {
             UserManager.sharedInstance.loadCurrentUser()
             DiamondManager.sharedInstance.loadMarkupValues()
-            UserManager.sharedInstance.login(id: UserManager.sharedInstance.user!.userId!, completion: { (_ success: Bool, _ userJson: JSON?) in
+            UserManager.sharedInstance.login(id: user.email!, completion: { (_ success: Bool, _ userJson: JSON?) in
                 if (success) {
                     print(userJson!)
                     UserManager.sharedInstance.user = User(userJson!)
@@ -58,6 +61,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         return didFinishLaunching
     }
+ 
+ 
 
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
@@ -149,42 +154,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
 
-        /*
-        let queryExpression = AWSDynamoDBScanExpression()
-        queryExpression.filterExpression = "is_admin = :is_admin"
-        
-        queryExpression.expressionAttributeValues = [
-            ":is_admin": true
-        ]
-        
-        let dynamoDbObjectMapper = AWSDynamoDBObjectMapper.default()
-        
-        dynamoDbObjectMapper.scan(Users.self, expression: queryExpression) { (output: AWSDynamoDBPaginatedOutput?, error: Error?) in
-            if error != nil {
-                print("The request failed. Error: \(String(describing: error))")
-            }
-            if output != nil {
-                let admin = output!.items.first as? Users
-                print("Admin: \(String(describing: admin?.full_name))")
-                print("Admin's ARN: \(String(describing: admin?.arn))")
-                UserDefaults.standard.set(admin?.arn, forKey: "adminEndpointArn")
-                DiamondManager.sharedInstance.adminId = admin?.userId
-            }
-        }
- */
     }
     
     func moveToMainScreen() {
-        
-        /*
-        print("Go to main screen");
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let welcomeVC: WelcomeViewController = (storyboard.instantiateViewController(withIdentifier: "welcomeVC") as? WelcomeViewController)!
-        let startNC: UINavigationController = storyboard.instantiateViewController(withIdentifier: "startNC") as! UINavigationController
-        startNC.viewControllers = [welcomeVC]
-        let window: UIWindow? = (UIApplication.shared.delegate?.window)!
-        window?.rootViewController = startNC
-        */
         
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let mainTabbarVC: TabbarViewController? = storyboard.instantiateViewController(withIdentifier: "TabbarVC") as? TabbarViewController
@@ -194,7 +166,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         mainViewController.rootViewController = mainTabbarVC
         let window: UIWindow? = (UIApplication.shared.delegate?.window)!
         window?.rootViewController = mainViewController
-//        UIView.transition(with: window!, duration: 0.3, options: .transitionCrossDissolve, animations: nil, completion: { _ in })
+
     }
     
     
