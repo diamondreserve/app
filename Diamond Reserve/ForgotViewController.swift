@@ -58,7 +58,21 @@ class ForgotViewController: UIViewController {
             
             MBProgressHUD.hide(for: self.view, animated: true)
             if (error != nil) {
-                CommonMethods.showAlert(withTitle: "Diamond Deserve", message: (error?.localizedDescription)!, andCancelButtonTitle: "OK", with: nil)
+                var message = (error?.localizedDescription)!
+                MBProgressHUD.hide(for: self.view, animated: true)
+                if let errCode = AuthErrorCode(rawValue: error!._code) {
+                    switch errCode {
+                    case .invalidEmail:
+                        message = "Please make sure to use a valid email"
+                        break
+                    case .userNotFound:
+                        message = "We couldn't find that email"
+                        break
+                    default:
+                        message = (error?.localizedDescription)!
+                    }
+                }
+                CommonMethods.showAlert(withTitle: "Hmm...", message: message, andCancelButtonTitle: "OK", with: nil)
             } else {
                 let successAlert = UIAlertController(title: "Success", message: "Sent, please check your email", preferredStyle: UIAlertControllerStyle.alert)
                 successAlert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: { action in

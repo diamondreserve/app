@@ -91,7 +91,23 @@ class LoginViewController: BaseVC, UITextFieldDelegate {
         Auth.auth().signIn(withEmail: emailText.text!, password: passwordText.text!) { (user, error) in
             if ((error) != nil) {
                 MBProgressHUD.hide(for: self.view, animated: true)
-                CommonMethods.showAlert(withTitle: "Diamond Deserve", message: (error?.localizedDescription)!, andCancelButtonTitle: "OK", with: nil)
+                var message = (error?.localizedDescription)!
+                if let errCode = AuthErrorCode(rawValue: error!._code) {
+                    switch errCode {
+                    case .invalidEmail:
+                        message = "Please make sure to use a valid email"
+                        break
+                    case .userNotFound:
+                        message = "We couldn't find that email"
+                        break
+                    case .wrongPassword:
+                        message = "Wrong password"
+                        break
+                    default:
+                        message = (error?.localizedDescription)!
+                    }
+                }
+                CommonMethods.showAlert(withTitle: "Hmm...", message: message, andCancelButtonTitle: "OK", with: nil)
                 return
             }
             self.getUserDataFromServer()

@@ -80,7 +80,7 @@ class DiamondManager: BaseManager {
                     print(JSON(data))
                     let json = JSON(data)
                     if json["code"] == 404 {
-                        CommonMethods.showAlert(withTitle: "Diamond Deserve", message: "Diamond is already reserved, please refresh the list", andCancelButtonTitle: "OK", with: nil)
+                        CommonMethods.showAlert(withTitle: "Hmm...", message: "Diamond is already reserved, please refresh the list", andCancelButtonTitle: "OK", with: nil)
                         completion(false, nil)
                     } else {
                         let diamond = Diamonds(json)

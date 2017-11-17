@@ -41,7 +41,7 @@
         <!--Splash View Controller-->
         <scene sceneID="zJb-il-WCW">
             <objects>
-                <viewController storyboardIdentifier="splashVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="EA0-Ss-ZJJ" customClass="SplashViewController" customModule="Diamond_on_Tap" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="splashVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="EA0-Ss-ZJJ" customClass="SplashViewController" customModule="Diamonds_on_Tap" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8TW-qo-AxP"/>
                         <viewControllerLayoutGuide type="bottom" id="EDx-RL-el6"/>
@@ -133,7 +133,7 @@
         <!--Login View Controller-->
         <scene sceneID="bfd-sM-iBx">
             <objects>
-                <viewController id="TTA-Pv-jBQ" customClass="LoginViewController" customModule="Diamond_on_Tap" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="TTA-Pv-jBQ" customClass="LoginViewController" customModule="Diamonds_on_Tap" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hIX-gA-j7c"/>
                         <viewControllerLayoutGuide type="bottom" id="hLj-qK-2Dc"/>
@@ -348,7 +348,7 @@
         <!--Register View Controller-->
         <scene sceneID="PK1-Hr-JGm">
             <objects>
-                <viewController id="lUc-2p-JYU" customClass="RegisterViewController" customModule="Diamond_on_Tap" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="lUc-2p-JYU" customClass="RegisterViewController" customModule="Diamonds_on_Tap" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="dON-py-6ZB"/>
                         <viewControllerLayoutGuide type="bottom" id="RAn-nZ-xUu"/>
@@ -660,7 +660,7 @@
         <!--Verify View Controller-->
         <scene sceneID="3Em-2E-xrX">
             <objects>
-                <viewController id="IJm-cd-IYf" customClass="VerifyViewController" customModule="Diamond_on_Tap" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="IJm-cd-IYf" customClass="VerifyViewController" customModule="Diamonds_on_Tap" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="OFp-k4-ChN"/>
                         <viewControllerLayoutGuide type="bottom" id="h8H-Sk-25X"/>
@@ -780,7 +780,7 @@
         <!--Forgot View Controller-->
         <scene sceneID="4EC-CG-qAn">
             <objects>
-                <viewController id="NLg-et-HiM" customClass="ForgotViewController" customModule="Diamond_on_Tap" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="NLg-et-HiM" customClass="ForgotViewController" customModule="Diamonds_on_Tap" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Vy9-lC-mZe"/>
                         <viewControllerLayoutGuide type="bottom" id="5fz-Hu-UOn"/>
@@ -917,7 +917,7 @@
         <!--Welcome View Controller-->
         <scene sceneID="67Q-rQ-uTN">
             <objects>
-                <viewController storyboardIdentifier="welcomeVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Dwe-VJ-7ib" customClass="WelcomeViewController" customModule="Diamond_on_Tap" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="welcomeVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Dwe-VJ-7ib" customClass="WelcomeViewController" customModule="Diamonds_on_Tap" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="YBz-se-UFP"/>
                         <viewControllerLayoutGuide type="bottom" id="vmj-Sd-j2t"/>
@@ -1377,7 +1377,7 @@
         <!--Tutorial View Controller-->
         <scene sceneID="Xdu-tV-hB6">
             <objects>
-                <viewController id="fHW-Am-1Gr" customClass="TutorialViewController" customModule="Diamond_on_Tap" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="fHW-Am-1Gr" customClass="TutorialViewController" customModule="Diamonds_on_Tap" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ip1-Z3-1nw"/>
                         <viewControllerLayoutGuide type="bottom" id="fSy-1h-InI"/>
@@ -1506,7 +1506,7 @@ TO SEE IF YOU QUALIFY </string>
         <!--Cover Page View Controller-->
         <scene sceneID="RY3-Tx-p5d">
             <objects>
-                <viewController id="Pvt-ZD-MH5" customClass="CoverPageViewController" customModule="Diamond_on_Tap" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Pvt-ZD-MH5" customClass="CoverPageViewController" customModule="Diamonds_on_Tap" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="mKe-5p-Z3q"/>
                         <viewControllerLayoutGuide type="bottom" id="1F1-8B-sOl"/>
@@ -1575,6 +1575,23 @@ TO SEE IF YOU QUALIFY </string>
                                     <action selector="nextButtonTapped:" destination="Pvt-ZD-MH5" eventType="touchUpInside" id="CBp-Ua-anb"/>
                                 </connections>
                             </button>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mNs-c7-cYe" userLabel="loadingView">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Pht-k6-xbO">
+                                        <rect key="frame" x="87" y="233" width="200" height="200"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="Pht-k6-xbO" secondAttribute="height" multiplier="1:1" id="8a2-rO-0vA"/>
+                                            <constraint firstAttribute="width" constant="200" id="Uvn-Cn-VCb"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="Pht-k6-xbO" firstAttribute="centerY" secondItem="mNs-c7-cYe" secondAttribute="centerY" id="1IW-fQ-Dmx"/>
+                                    <constraint firstItem="Pht-k6-xbO" firstAttribute="centerX" secondItem="mNs-c7-cYe" secondAttribute="centerX" id="xdo-wS-ZQS"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -1587,6 +1604,7 @@ TO SEE IF YOU QUALIFY </string>
                             <constraint firstItem="fTA-q2-Czp" firstAttribute="leading" secondItem="0kY-5l-5jZ" secondAttribute="leading" id="6nZ-h0-l3R"/>
                             <constraint firstItem="cqR-8Q-wWU" firstAttribute="bottom" secondItem="YKk-2g-u5F" secondAttribute="bottom" id="AFD-Ea-RQl"/>
                             <constraint firstItem="fTA-q2-Czp" firstAttribute="trailing" secondItem="VtL-V5-Lu7" secondAttribute="trailing" constant="10" id="ARv-8E-xQg"/>
+                            <constraint firstItem="mNs-c7-cYe" firstAttribute="top" secondItem="2Aa-mg-DsV" secondAttribute="top" id="C6r-DF-R3m"/>
                             <constraint firstItem="g9z-27-B5G" firstAttribute="top" secondItem="2Aa-mg-DsV" secondAttribute="top" id="DCW-BK-GoM"/>
                             <constraint firstAttribute="trailing" secondItem="Z4F-l0-oTX" secondAttribute="trailing" id="DIA-Vw-I7p"/>
                             <constraint firstItem="1F1-8B-sOl" firstAttribute="top" secondItem="g9z-27-B5G" secondAttribute="bottom" id="Dcc-Un-X3z"/>
@@ -1597,8 +1615,10 @@ TO SEE IF YOU QUALIFY </string>
                             <constraint firstItem="YKk-2g-u5F" firstAttribute="centerX" secondItem="2Aa-mg-DsV" secondAttribute="centerX" id="OJh-3e-WZL"/>
                             <constraint firstItem="0kY-5l-5jZ" firstAttribute="leading" secondItem="gEG-Js-R2A" secondAttribute="leading" id="PeQ-2r-68e"/>
                             <constraint firstItem="cqR-8Q-wWU" firstAttribute="leading" secondItem="YKk-2g-u5F" secondAttribute="leading" id="Twg-YC-fpY"/>
+                            <constraint firstAttribute="trailing" secondItem="mNs-c7-cYe" secondAttribute="trailing" id="Zue-87-WLW"/>
                             <constraint firstItem="1F1-8B-sOl" firstAttribute="top" secondItem="Z4F-l0-oTX" secondAttribute="bottom" id="bmX-3t-UZo"/>
                             <constraint firstItem="gEG-Js-R2A" firstAttribute="top" secondItem="80f-U9-bhq" secondAttribute="bottom" constant="15" id="cJ7-DJ-Uej"/>
+                            <constraint firstItem="mNs-c7-cYe" firstAttribute="leading" secondItem="2Aa-mg-DsV" secondAttribute="leading" id="cet-9x-Ejq"/>
                             <constraint firstItem="VtL-V5-Lu7" firstAttribute="leading" secondItem="0kY-5l-5jZ" secondAttribute="trailing" constant="-8" id="cm0-cm-ddO"/>
                             <constraint firstItem="YKk-2g-u5F" firstAttribute="height" secondItem="2Aa-mg-DsV" secondAttribute="height" id="d4G-Wh-Ey1"/>
                             <constraint firstItem="fTA-q2-Czp" firstAttribute="centerY" secondItem="0kY-5l-5jZ" secondAttribute="centerY" id="eC9-QA-vxU"/>
@@ -1608,12 +1628,15 @@ TO SEE IF YOU QUALIFY </string>
                             <constraint firstItem="1F1-8B-sOl" firstAttribute="top" secondItem="gFs-Ai-6Gv" secondAttribute="bottom" constant="20" id="n3h-bF-jbC"/>
                             <constraint firstItem="Z4F-l0-oTX" firstAttribute="leading" secondItem="2Aa-mg-DsV" secondAttribute="leading" id="pe1-WD-S3N"/>
                             <constraint firstItem="80f-U9-bhq" firstAttribute="leading" secondItem="gEG-Js-R2A" secondAttribute="leading" id="pxP-TS-ReN"/>
+                            <constraint firstItem="1F1-8B-sOl" firstAttribute="top" secondItem="mNs-c7-cYe" secondAttribute="bottom" id="soa-vz-J04"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="1dg-uD-yvT"/>
                     <connections>
                         <outlet property="backgroundImageView1" destination="cqR-8Q-wWU" id="Zt2-mb-wh9"/>
                         <outlet property="backgroundImageView2" destination="g9z-27-B5G" id="98g-MP-72A"/>
+                        <outlet property="gifView" destination="Pht-k6-xbO" id="BIK-zP-DP2"/>
+                        <outlet property="loadingView" destination="mNs-c7-cYe" id="vyq-ba-HeB"/>
                         <outlet property="mainText" destination="gEG-Js-R2A" id="5MD-D5-c6y"/>
                         <outlet property="scrollView" destination="Z4F-l0-oTX" id="hnW-Sj-BWj"/>
                         <outlet property="titleText" destination="0kY-5l-5jZ" id="aez-rh-2nN"/>
@@ -1626,7 +1649,7 @@ TO SEE IF YOU QUALIFY </string>
         <!--Main Side Menu Controller-->
         <scene sceneID="P7R-o1-mgG">
             <objects>
-                <viewController storyboardIdentifier="MainSideMenuVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="iG7-ZJ-vTu" customClass="MainSideMenuController" customModule="Diamond_on_Tap" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainSideMenuVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="iG7-ZJ-vTu" customClass="MainSideMenuController" customModule="Diamonds_on_Tap" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="gEd-ya-E0y"/>
                         <viewControllerLayoutGuide type="bottom" id="Jtf-n1-cKF"/>
@@ -1652,7 +1675,7 @@ TO SEE IF YOU QUALIFY </string>
         <!--Tabbar View Controller-->
         <scene sceneID="zLm-gD-bUH">
             <objects>
-                <viewController storyboardIdentifier="TabbarVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="hla-lO-TXy" customClass="TabbarViewController" customModule="Diamond_on_Tap" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TabbarVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="hla-lO-TXy" customClass="TabbarViewController" customModule="Diamonds_on_Tap" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="x9Y-9L-nVr"/>
                         <viewControllerLayoutGuide type="bottom" id="r44-fH-BUH"/>
@@ -1801,7 +1824,7 @@ TO SEE IF YOU QUALIFY </string>
         <!--Right Menu View Controller-->
         <scene sceneID="ojI-ee-cR5">
             <objects>
-                <viewController id="HWu-yU-4Bl" customClass="RightMenuViewController" customModule="Diamond_on_Tap" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="HWu-yU-4Bl" customClass="RightMenuViewController" customModule="Diamonds_on_Tap" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="djd-Qd-0Jd"/>
                         <viewControllerLayoutGuide type="bottom" id="f6r-ut-HX1"/>
@@ -1940,7 +1963,7 @@ TO SEE IF YOU QUALIFY </string>
         <!--Main Diamonds View Controller-->
         <scene sceneID="a1c-aa-mIQ">
             <objects>
-                <viewController storyboardIdentifier="MainDiamondsVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="fOL-pc-est" customClass="MainDiamondsViewController" customModule="Diamond_on_Tap" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainDiamondsVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="fOL-pc-est" customClass="MainDiamondsViewController" customModule="Diamonds_on_Tap" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="XFe-Hm-j9z"/>
                         <viewControllerLayoutGuide type="bottom" id="m6d-ud-12i"/>
@@ -2495,7 +2518,7 @@ TO SEE IF YOU QUALIFY </string>
         <!--Diamond Selection View Controller-->
         <scene sceneID="ENt-Sq-OWI">
             <objects>
-                <viewController storyboardIdentifier="DiamondSelectionVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="re0-Lo-BCU" customClass="DiamondSelectionViewController" customModule="Diamond_on_Tap" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DiamondSelectionVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="re0-Lo-BCU" customClass="DiamondSelectionViewController" customModule="Diamonds_on_Tap" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Vd9-oK-gfk"/>
                         <viewControllerLayoutGuide type="bottom" id="Nsw-jW-P9M"/>
@@ -2662,7 +2685,7 @@ TO SEE IF YOU QUALIFY </string>
         <!--Diamond Review View Controller-->
         <scene sceneID="Uxr-2N-Cof">
             <objects>
-                <viewController storyboardIdentifier="DiamondReviewVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="v54-O6-lOr" customClass="DiamondReviewViewController" customModule="Diamond_on_Tap" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DiamondReviewVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="v54-O6-lOr" customClass="DiamondReviewViewController" customModule="Diamonds_on_Tap" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Zl3-l0-2O5"/>
                         <viewControllerLayoutGuide type="bottom" id="f8U-jT-2bd"/>
@@ -2860,7 +2883,7 @@ TO SEE IF YOU QUALIFY </string>
         <!--Diamond Search View Controller-->
         <scene sceneID="jRP-Ps-Xi7">
             <objects>
-                <viewController storyboardIdentifier="DiamondSearchVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Gro-Ef-esA" customClass="DiamondSearchViewController" customModule="Diamond_on_Tap" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DiamondSearchVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Gro-Ef-esA" customClass="DiamondSearchViewController" customModule="Diamonds_on_Tap" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="BxO-yr-gIg"/>
                         <viewControllerLayoutGuide type="bottom" id="uFZ-s8-ULH"/>
@@ -3364,7 +3387,7 @@ TO SEE IF YOU QUALIFY </string>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rxB-cG-HdO" customClass="RangeSeekSlider" customModule="RangeSeekSlider">
+                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rxB-cG-HdO" customClass="RangeSeekSlider" customModule="RangeSeekSlider">
                                                 <rect key="frame" x="19" y="179" width="337" height="65"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 <color key="tintColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
@@ -3404,19 +3427,19 @@ TO SEE IF YOU QUALIFY </string>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="COLOR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O2v-1L-gbK">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="COLOR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O2v-1L-gbK">
                                                 <rect key="frame" x="19" y="244" width="33.5" height="17"/>
                                                 <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="14"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s48-dI-xyf" userLabel="Color Container">
+                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="s48-dI-xyf" userLabel="Color Container">
                                                 <rect key="frame" x="19" y="261" width="337" height="65"/>
                                                 <subviews>
-                                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zxT-br-tkY" userLabel="first line">
+                                                    <view clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zxT-br-tkY" userLabel="first line">
                                                         <rect key="frame" x="0.0" y="0.0" width="337" height="30"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3df-OD-zKx">
+                                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3df-OD-zKx">
                                                                 <rect key="frame" x="0.0" y="0.0" width="56" height="30"/>
                                                                 <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="10"/>
                                                                 <state key="normal" title="D"/>
@@ -3441,7 +3464,7 @@ TO SEE IF YOU QUALIFY </string>
                                                                     <action selector="didColorButtonSelected:" destination="Gro-Ef-esA" eventType="touchUpInside" id="Kfe-Ri-zLL"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MxL-hF-Fu2">
+                                                            <button opaque="NO" tag="1" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MxL-hF-Fu2">
                                                                 <rect key="frame" x="56" y="0.0" width="56.5" height="30"/>
                                                                 <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="10"/>
                                                                 <state key="normal" title="E"/>
@@ -3460,7 +3483,7 @@ TO SEE IF YOU QUALIFY </string>
                                                                     <action selector="didColorButtonSelected:" destination="Gro-Ef-esA" eventType="touchUpInside" id="N2t-uW-ZhX"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qds-nf-zzT">
+                                                            <button opaque="NO" tag="2" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qds-nf-zzT">
                                                                 <rect key="frame" x="112.5" y="0.0" width="56" height="30"/>
                                                                 <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="10"/>
                                                                 <state key="normal" title="F"/>
@@ -3479,7 +3502,7 @@ TO SEE IF YOU QUALIFY </string>
                                                                     <action selector="didColorButtonSelected:" destination="Gro-Ef-esA" eventType="touchUpInside" id="ePV-ba-36M"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fED-eP-uO8">
+                                                            <button opaque="NO" tag="3" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fED-eP-uO8">
                                                                 <rect key="frame" x="168.5" y="0.0" width="56" height="30"/>
                                                                 <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="10"/>
                                                                 <state key="normal" title="G"/>
@@ -3498,7 +3521,7 @@ TO SEE IF YOU QUALIFY </string>
                                                                     <action selector="didColorButtonSelected:" destination="Gro-Ef-esA" eventType="touchUpInside" id="5OS-0U-oNR"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J6Z-ri-ZNE">
+                                                            <button opaque="NO" tag="4" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J6Z-ri-ZNE">
                                                                 <rect key="frame" x="224.5" y="0.0" width="55.5" height="30"/>
                                                                 <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="10"/>
                                                                 <state key="normal" title="H"/>
@@ -3517,7 +3540,7 @@ TO SEE IF YOU QUALIFY </string>
                                                                     <action selector="didColorButtonSelected:" destination="Gro-Ef-esA" eventType="touchUpInside" id="Jl1-en-Ipf"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5uW-ri-njo">
+                                                            <button opaque="NO" tag="5" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5uW-ri-njo">
                                                                 <rect key="frame" x="279" y="0.0" width="55.5" height="30"/>
                                                                 <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="10"/>
                                                                 <state key="normal" title="I"/>
@@ -3578,10 +3601,10 @@ TO SEE IF YOU QUALIFY </string>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
-                                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6I6-xS-KJ1" userLabel="second line">
+                                                    <view clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6I6-xS-KJ1" userLabel="second line">
                                                         <rect key="frame" x="0.0" y="35" width="337" height="30"/>
                                                         <subviews>
-                                                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hXt-MB-zzP">
+                                                            <button opaque="NO" tag="6" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hXt-MB-zzP">
                                                                 <rect key="frame" x="0.0" y="0.5" width="56" height="30"/>
                                                                 <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="10"/>
                                                                 <state key="normal" title="J"/>
@@ -3606,7 +3629,7 @@ TO SEE IF YOU QUALIFY </string>
                                                                     <action selector="didColorButtonSelected:" destination="Gro-Ef-esA" eventType="touchUpInside" id="Zbs-ah-3f5"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vvF-41-Ph3">
+                                                            <button opaque="NO" tag="7" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vvF-41-Ph3">
                                                                 <rect key="frame" x="56" y="0.5" width="56.5" height="30"/>
                                                                 <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="10"/>
                                                                 <state key="normal" title="K"/>
@@ -3625,7 +3648,7 @@ TO SEE IF YOU QUALIFY </string>
                                                                     <action selector="didColorButtonSelected:" destination="Gro-Ef-esA" eventType="touchUpInside" id="4Kd-nn-HGL"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QPJ-XS-TWw">
+                                                            <button opaque="NO" tag="8" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QPJ-XS-TWw">
                                                                 <rect key="frame" x="112.5" y="0.5" width="57" height="30"/>
                                                                 <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="10"/>
                                                                 <state key="normal" title="L"/>
@@ -3644,7 +3667,7 @@ TO SEE IF YOU QUALIFY </string>
                                                                     <action selector="didColorButtonSelected:" destination="Gro-Ef-esA" eventType="touchUpInside" id="lGL-5W-NKz"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h1H-sj-Dgz">
+                                                            <button opaque="NO" tag="9" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h1H-sj-Dgz">
                                                                 <rect key="frame" x="169.5" y="0.5" width="57" height="30"/>
                                                                 <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="10"/>
                                                                 <state key="normal" title="M"/>
@@ -3663,7 +3686,7 @@ TO SEE IF YOU QUALIFY </string>
                                                                     <action selector="didColorButtonSelected:" destination="Gro-Ef-esA" eventType="touchUpInside" id="hq3-y3-hDo"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E9q-va-7yW">
+                                                            <button opaque="NO" tag="10" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E9q-va-7yW">
                                                                 <rect key="frame" x="226.5" y="0.5" width="57.5" height="30"/>
                                                                 <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="10"/>
                                                                 <state key="normal" title="N"/>
@@ -3682,7 +3705,7 @@ TO SEE IF YOU QUALIFY </string>
                                                                     <action selector="didColorButtonSelected:" destination="Gro-Ef-esA" eventType="touchUpInside" id="eWg-ZE-DdO"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h3k-VM-50M">
+                                                            <button opaque="NO" tag="11" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h3k-VM-50M">
                                                                 <rect key="frame" x="283" y="0.5" width="57.5" height="30"/>
                                                                 <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="10"/>
                                                                 <state key="normal" title="O"/>
@@ -3754,19 +3777,19 @@ TO SEE IF YOU QUALIFY </string>
                                                     <constraint firstAttribute="trailing" secondItem="zxT-br-tkY" secondAttribute="trailing" id="yIW-bh-ym0"/>
                                                 </constraints>
                                             </view>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CLARITY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GXx-oP-Pav">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="CLARITY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GXx-oP-Pav">
                                                 <rect key="frame" x="19" y="334" width="42" height="17"/>
                                                 <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="14"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="agb-Qq-ioD" userLabel="Clarity Container">
+                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="agb-Qq-ioD" userLabel="Clarity Container">
                                                 <rect key="frame" x="19" y="359" width="337" height="100"/>
                                                 <subviews>
-                                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w6t-JE-xuS" userLabel="first line">
+                                                    <view clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w6t-JE-xuS" userLabel="first line">
                                                         <rect key="frame" x="0.0" y="0.0" width="337" height="30"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m0L-2X-OSm">
+                                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m0L-2X-OSm">
                                                                 <rect key="frame" x="0.0" y="0.0" width="112.5" height="30"/>
                                                                 <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="10"/>
                                                                 <state key="normal" title="FLAWLESS"/>
@@ -3791,7 +3814,7 @@ TO SEE IF YOU QUALIFY </string>
                                                                     <action selector="didClarityButtonSelected:" destination="Gro-Ef-esA" eventType="touchUpInside" id="ivj-Hs-DLH"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K9e-4u-pae">
+                                                            <button opaque="NO" tag="1" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K9e-4u-pae">
                                                                 <rect key="frame" x="112.5" y="0.0" width="112" height="30"/>
                                                                 <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="10"/>
                                                                 <state key="normal" title="IF"/>
@@ -3810,7 +3833,7 @@ TO SEE IF YOU QUALIFY </string>
                                                                     <action selector="didClarityButtonSelected:" destination="Gro-Ef-esA" eventType="touchUpInside" id="iTP-Pz-CcP"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zg7-mX-RnP">
+                                                            <button opaque="NO" tag="2" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zg7-mX-RnP">
                                                                 <rect key="frame" x="224.5" y="0.0" width="112.5" height="30"/>
                                                                 <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="10"/>
                                                                 <state key="normal" title="VVS1"/>
@@ -3859,10 +3882,10 @@ TO SEE IF YOU QUALIFY </string>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
-                                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GmV-Gq-GHu" userLabel="second line">
+                                                    <view clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GmV-Gq-GHu" userLabel="second line">
                                                         <rect key="frame" x="0.0" y="35" width="337" height="30"/>
                                                         <subviews>
-                                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HVC-GT-MIA">
+                                                            <button opaque="NO" tag="3" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HVC-GT-MIA">
                                                                 <rect key="frame" x="0.0" y="0.0" width="112.5" height="30"/>
                                                                 <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="10"/>
                                                                 <state key="normal" title="VVS2"/>
@@ -3887,7 +3910,7 @@ TO SEE IF YOU QUALIFY </string>
                                                                     <action selector="didClarityButtonSelected:" destination="Gro-Ef-esA" eventType="touchUpInside" id="h2W-Ox-4c6"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jpW-gi-gDG">
+                                                            <button opaque="NO" tag="4" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jpW-gi-gDG">
                                                                 <rect key="frame" x="112.5" y="0.0" width="112" height="30"/>
                                                                 <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="10"/>
                                                                 <state key="normal" title="VS1"/>
@@ -3906,7 +3929,7 @@ TO SEE IF YOU QUALIFY </string>
                                                                     <action selector="didClarityButtonSelected:" destination="Gro-Ef-esA" eventType="touchUpInside" id="P1S-uR-wz1"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5yY-2e-XIg">
+                                                            <button opaque="NO" tag="5" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5yY-2e-XIg">
                                                                 <rect key="frame" x="224.5" y="0.0" width="112.5" height="30"/>
                                                                 <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="10"/>
                                                                 <state key="normal" title="VS2"/>
@@ -3953,10 +3976,10 @@ TO SEE IF YOU QUALIFY </string>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
-                                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xEF-Pb-Fa7" userLabel="third line">
+                                                    <view clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xEF-Pb-Fa7" userLabel="third line">
                                                         <rect key="frame" x="0.0" y="70" width="337" height="30"/>
                                                         <subviews>
-                                                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zse-m9-IhB">
+                                                            <button opaque="NO" tag="6" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zse-m9-IhB">
                                                                 <rect key="frame" x="0.0" y="0.0" width="112.5" height="30"/>
                                                                 <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="10"/>
                                                                 <state key="normal" title="SI1"/>
@@ -3981,7 +4004,7 @@ TO SEE IF YOU QUALIFY </string>
                                                                     <action selector="didClarityButtonSelected:" destination="Gro-Ef-esA" eventType="touchUpInside" id="7Q0-iN-fTm"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BBh-ww-UlI">
+                                                            <button opaque="NO" tag="7" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BBh-ww-UlI">
                                                                 <rect key="frame" x="112.5" y="0.0" width="112" height="30"/>
                                                                 <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="10"/>
                                                                 <state key="normal" title="SI2"/>
@@ -4000,7 +4023,7 @@ TO SEE IF YOU QUALIFY </string>
                                                                     <action selector="didClarityButtonSelected:" destination="Gro-Ef-esA" eventType="touchUpInside" id="4re-43-Xb7"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rnH-yB-SH3">
+                                                            <button opaque="NO" tag="8" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rnH-yB-SH3">
                                                                 <rect key="frame" x="224.5" y="0.0" width="112.5" height="30"/>
                                                                 <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="10"/>
                                                                 <state key="normal" title="SI3"/>
@@ -4161,7 +4184,7 @@ TO SEE IF YOU QUALIFY </string>
         <!--Main Jewelry View Controller-->
         <scene sceneID="KnX-MC-q5f">
             <objects>
-                <viewController storyboardIdentifier="MainJewelryVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="uti-Ka-J8g" customClass="MainJewelryViewController" customModule="Diamond_on_Tap" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainJewelryVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="uti-Ka-J8g" customClass="MainJewelryViewController" customModule="Diamonds_on_Tap" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="H9f-DJ-ILo"/>
                         <viewControllerLayoutGuide type="bottom" id="cNg-Vi-twY"/>
@@ -4363,7 +4386,7 @@ TO SEE IF YOU QUALIFY </string>
         <!--Jewelry Detail View Controller-->
         <scene sceneID="hXS-hE-3bL">
             <objects>
-                <viewController storyboardIdentifier="JewelryDetailVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="CdH-gS-gRi" customClass="JewelryDetailViewController" customModule="Diamond_on_Tap" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="JewelryDetailVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="CdH-gS-gRi" customClass="JewelryDetailViewController" customModule="Diamonds_on_Tap" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="HON-EZ-jtl"/>
                         <viewControllerLayoutGuide type="bottom" id="QpV-pe-AaQ"/>
@@ -4615,7 +4638,7 @@ TO SEE IF YOU QUALIFY </string>
                                                 <rect key="frame" x="20" y="426" width="335" height="179"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <prototypes>
-                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DiamondSpecCell" rowHeight="28" id="pZ8-Tf-O2e" customClass="JewelryDiamondSpecCell" customModule="Diamond_on_Tap" customModuleProvider="target">
+                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DiamondSpecCell" rowHeight="28" id="pZ8-Tf-O2e" customClass="JewelryDiamondSpecCell" customModule="Diamonds_on_Tap" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="28" width="335" height="28"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pZ8-Tf-O2e" id="2Im-eJ-SdD">
@@ -4713,7 +4736,7 @@ TO SEE IF YOU QUALIFY </string>
         <!--Diamond Detail View Controller-->
         <scene sceneID="Ax1-fE-Csz">
             <objects>
-                <viewController storyboardIdentifier="DiamondDetailVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="cEU-GD-ZEP" customClass="DiamondDetailViewController" customModule="Diamond_on_Tap" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DiamondDetailVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="cEU-GD-ZEP" customClass="DiamondDetailViewController" customModule="Diamonds_on_Tap" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fi6-2L-Z4y"/>
                         <viewControllerLayoutGuide type="bottom" id="2z2-H4-R75"/>
@@ -4951,7 +4974,7 @@ TO SEE IF YOU QUALIFY </string>
                                                     <constraint firstAttribute="height" constant="100" id="jOh-PI-pkB"/>
                                                 </constraints>
                                                 <prototypes>
-                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DiamondSpecCell" rowHeight="28" id="tIJ-Td-UGc" customClass="JewelryDiamondSpecCell" customModule="Diamond_on_Tap" customModuleProvider="target">
+                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DiamondSpecCell" rowHeight="28" id="tIJ-Td-UGc" customClass="JewelryDiamondSpecCell" customModule="Diamonds_on_Tap" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="28" width="335" height="28"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="tIJ-Td-UGc" id="WbI-5O-oM1">
@@ -5479,7 +5502,7 @@ TO SEE IF YOU QUALIFY </string>
         <!--Reserve List View Controller-->
         <scene sceneID="JZB-eC-mig">
             <objects>
-                <viewController storyboardIdentifier="ReserveListVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="5Tc-my-drt" customClass="ReserveListViewController" customModule="Diamond_on_Tap" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ReserveListVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="5Tc-my-drt" customClass="ReserveListViewController" customModule="Diamonds_on_Tap" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="UeP-PA-V24"/>
                         <viewControllerLayoutGuide type="bottom" id="4Wi-xv-Rv4"/>
@@ -5544,7 +5567,7 @@ TO SEE IF YOU QUALIFY </string>
                                 <rect key="frame" x="8" y="37" width="359" height="566"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="ReserveCell" rowHeight="80" id="Pjf-AP-2rF" userLabel="reserved cell" customClass="ReserveTableViewCell" customModule="Diamond_on_Tap" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="ReserveCell" rowHeight="80" id="Pjf-AP-2rF" userLabel="reserved cell" customClass="ReserveTableViewCell" customModule="Diamonds_on_Tap" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="359" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Pjf-AP-2rF" id="Acj-58-yNb">
@@ -5717,7 +5740,7 @@ TO SEE IF YOU QUALIFY </string>
         <!--Rotation Diamond View Controller-->
         <scene sceneID="zr1-Jl-wWD">
             <objects>
-                <viewController storyboardIdentifier="RotationDiamondVC" id="pOB-3f-YYd" customClass="RotationDiamondViewController" customModule="Diamond_on_Tap" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RotationDiamondVC" id="pOB-3f-YYd" customClass="RotationDiamondViewController" customModule="Diamonds_on_Tap" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="cZ8-hY-usV"/>
                         <viewControllerLayoutGuide type="bottom" id="D5y-jb-dNA"/>
@@ -5754,7 +5777,7 @@ TO SEE IF YOU QUALIFY </string>
         <!--Messages View Controller-->
         <scene sceneID="nkU-zf-2dV">
             <objects>
-                <viewController storyboardIdentifier="MessagesVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vSf-Li-qiE" customClass="MessagesViewController" customModule="Diamond_on_Tap" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MessagesVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vSf-Li-qiE" customClass="MessagesViewController" customModule="Diamonds_on_Tap" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ucu-eE-7so"/>
                         <viewControllerLayoutGuide type="bottom" id="xfr-Ck-chW"/>

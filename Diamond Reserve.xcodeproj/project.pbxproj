@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		275569D71273116983DE68C7 /* Pods_Diamond_ReserveUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F6EEBECF13E7D9E81232A23 /* Pods_Diamond_ReserveUITests.framework */; };
+		8003655E1FBF5F64007A0B17 /* loading2.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8003655D1FBF5F54007A0B17 /* loading2.gif */; };
 		80057E751F9FD51D006540BC /* DiamondManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80057E741F9FD51D006540BC /* DiamondManager.swift */; };
 		80057E771FA08639006540BC /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80057E761FA08638006540BC /* MessagesViewController.swift */; };
 		802594EF1F8DCDFD004F1F94 /* BLACK_IV_FMX.png in Resources */ = {isa = PBXBuildFile; fileRef = 802594EC1F8DCDFD004F1F94 /* BLACK_IV_FMX.png */; };
@@ -126,6 +127,7 @@
 		1F84CEBF271DBDAC9F4701FB /* Pods-Diamond on Tap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diamond on Tap.release.xcconfig"; path = "Pods/Target Support Files/Pods-Diamond on Tap/Pods-Diamond on Tap.release.xcconfig"; sourceTree = "<group>"; };
 		24668A01A8F5C2A783B2C3D2 /* Pods-Diamond ReserveUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diamond ReserveUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Diamond ReserveUITests/Pods-Diamond ReserveUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		6FDC07C33E60097F2DAD8341 /* Pods-Diamond on Tap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diamond on Tap.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Diamond on Tap/Pods-Diamond on Tap.debug.xcconfig"; sourceTree = "<group>"; };
+		8003655D1FBF5F54007A0B17 /* loading2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = loading2.gif; sourceTree = "<group>"; };
 		80057E741F9FD51D006540BC /* DiamondManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiamondManager.swift; sourceTree = "<group>"; };
 		80057E761FA08638006540BC /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
 		802594EC1F8DCDFD004F1F94 /* BLACK_IV_FMX.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BLACK_IV_FMX.png; sourceTree = "<group>"; };
@@ -208,7 +210,7 @@
 		B75C3E121F882F6600E759EC /* strip3@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "strip3@3x.png"; sourceTree = "<group>"; };
 		B75C3E131F882F6600E759EC /* strip3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "strip3@2x.png"; sourceTree = "<group>"; };
 		B75C3E141F882F6600E759EC /* strip3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = strip3.png; sourceTree = "<group>"; };
-		B76D8D671F7ACD15000CDFC7 /* Diamond on Tap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Diamond on Tap.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B76D8D671F7ACD15000CDFC7 /* Diamonds on Tap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Diamonds on Tap.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B76D8D6A1F7ACD15000CDFC7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B76D8D731F7ACD15000CDFC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B76D8D751F7ACD15000CDFC7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -359,7 +361,7 @@
 		B76D8D681F7ACD15000CDFC7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B76D8D671F7ACD15000CDFC7 /* Diamond on Tap.app */,
+				B76D8D671F7ACD15000CDFC7 /* Diamonds on Tap.app */,
 				B76D8D7F1F7ACD15000CDFC7 /* Diamond ReserveTests.xctest */,
 				B76D8D8A1F7ACD15000CDFC7 /* Diamond ReserveUITests.xctest */,
 			);
@@ -424,6 +426,7 @@
 		B7DD64F31F7C3B3300858A6B /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				8003655D1FBF5F54007A0B17 /* loading2.gif */,
 				802594EC1F8DCDFD004F1F94 /* BLACK_IV_FMX.png */,
 				802594ED1F8DCDFD004F1F94 /* BLACK_IV_FMX@2x.png */,
 				802594EE1F8DCDFD004F1F94 /* BLACK_IV_FMX@3x.png */,
@@ -489,9 +492,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B76D8D661F7ACD15000CDFC7 /* Diamond on Tap */ = {
+		B76D8D661F7ACD15000CDFC7 /* Diamonds on Tap */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B76D8D931F7ACD15000CDFC7 /* Build configuration list for PBXNativeTarget "Diamond on Tap" */;
+			buildConfigurationList = B76D8D931F7ACD15000CDFC7 /* Build configuration list for PBXNativeTarget "Diamonds on Tap" */;
 			buildPhases = (
 				A0B2C15AF62DBA466447498A /* [CP] Check Pods Manifest.lock */,
 				B76D8D631F7ACD15000CDFC7 /* Sources */,
@@ -504,9 +507,9 @@
 			);
 			dependencies = (
 			);
-			name = "Diamond on Tap";
+			name = "Diamonds on Tap";
 			productName = "Diamond Reserve";
-			productReference = B76D8D671F7ACD15000CDFC7 /* Diamond on Tap.app */;
+			productReference = B76D8D671F7ACD15000CDFC7 /* Diamonds on Tap.app */;
 			productType = "com.apple.product-type.application";
 		};
 		B76D8D7E1F7ACD15000CDFC7 /* Diamond ReserveTests */ = {
@@ -596,7 +599,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B76D8D661F7ACD15000CDFC7 /* Diamond on Tap */,
+				B76D8D661F7ACD15000CDFC7 /* Diamonds on Tap */,
 				B76D8D7E1F7ACD15000CDFC7 /* Diamond ReserveTests */,
 				B76D8D891F7ACD15000CDFC7 /* Diamond ReserveUITests */,
 			);
@@ -656,6 +659,7 @@
 				80566DEE1FA3BC96009FC556 /* tutorial_2.gif in Resources */,
 				802594FF1F8E15B4004F1F94 /* MENU_ICON.png in Resources */,
 				B738C15B1F7D90B10097720C /* Stars@2x.png in Resources */,
+				8003655E1FBF5F64007A0B17 /* loading2.gif in Resources */,
 				802595011F8E15B4004F1F94 /* MENU_ICON@3x.png in Resources */,
 				B76D8D741F7ACD15000CDFC7 /* Main.storyboard in Resources */,
 				802595131F8EB55C004F1F94 /* jewelry@3x.png in Resources */,
@@ -932,12 +936,12 @@
 /* Begin PBXTargetDependency section */
 		B76D8D811F7ACD15000CDFC7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B76D8D661F7ACD15000CDFC7 /* Diamond on Tap */;
+			target = B76D8D661F7ACD15000CDFC7 /* Diamonds on Tap */;
 			targetProxy = B76D8D801F7ACD15000CDFC7 /* PBXContainerItemProxy */;
 		};
 		B76D8D8C1F7ACD15000CDFC7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B76D8D661F7ACD15000CDFC7 /* Diamond on Tap */;
+			target = B76D8D661F7ACD15000CDFC7 /* Diamonds on Tap */;
 			targetProxy = B76D8D8B1F7ACD15000CDFC7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -1171,7 +1175,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B76D8D931F7ACD15000CDFC7 /* Build configuration list for PBXNativeTarget "Diamond on Tap" */ = {
+		B76D8D931F7ACD15000CDFC7 /* Build configuration list for PBXNativeTarget "Diamonds on Tap" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B76D8D941F7ACD15000CDFC7 /* Debug */,

@@ -115,8 +115,24 @@ class RegisterViewController: BaseVC, UITextFieldDelegate {
         MBProgressHUD.showAdded(to: self.view, animated: true)
         Auth.auth().createUser(withEmail: emailText.text!, password: passwordText.text!) { (user, error) in
             if ((error) != nil) {
+                var message = (error?.localizedDescription)!
                 MBProgressHUD.hide(for: self.view, animated: true)
-                CommonMethods.showAlert(withTitle: "Diamond Deserve", message: (error?.localizedDescription)!, andCancelButtonTitle: "OK", with: nil)
+                if let errCode = AuthErrorCode(rawValue: error!._code) {
+                    switch errCode {
+                    case .invalidEmail:
+                        message = "Please make sure to use a valid email"
+                        break
+                    case .emailAlreadyInUse:
+                        message = "Email was used in another account"
+                        break
+                    case .weakPassword:
+                        message = "Password is weak"
+                        break
+                    default:
+                        message = (error?.localizedDescription)!
+                    }
+                }
+                CommonMethods.showAlert(withTitle: "Hmm...", message: message, andCancelButtonTitle: "OK", with: nil)
                 return
             }
             self.registerUserOnServer()

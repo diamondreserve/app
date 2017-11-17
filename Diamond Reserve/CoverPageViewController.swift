@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftGifOrigin
 
 class CoverPageViewController: UIViewController, UIScrollViewDelegate {
 
@@ -16,6 +17,8 @@ class CoverPageViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var backgroundImageView1: UIImageView!
     @IBOutlet weak var backgroundImageView2: UIImageView!
     
+    @IBOutlet weak var loadingView: UIView!
+    @IBOutlet weak var gifView: UIImageView!
     
     let images: [UIImage] = [UIImage(named: "cover_full1")!, UIImage(named: "cover_full2")!, UIImage(named: "cover_full3")!]
     
@@ -28,6 +31,8 @@ class CoverPageViewController: UIViewController, UIScrollViewDelegate {
         scrollView.delegate = self as UIScrollViewDelegate
         scrollView.contentSize = CGSize(width: SCREEN_WIDTH * 3, height: SCREEN_HEIGHT)
         initShow()
+        gifView.loadGif(name: "loading2")
+        
     }
     
     func initShow(){
@@ -100,15 +105,27 @@ class CoverPageViewController: UIViewController, UIScrollViewDelegate {
     
     @IBAction func nextButtonTapped(_ sender: Any) {
         
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let mainTabbarVC: TabbarViewController? = storyboard.instantiateViewController(withIdentifier: "TabbarVC") as? TabbarViewController
-        mainTabbarVC?.selectedIndex = currentPageNumber
+        self.loadingView.isHidden = false
+        DiamondManager.sharedInstance.getAllDiamonds { (_ success: Bool, diamonds: [Diamonds]?) in
+            self.loadingView.isHidden = true
+            if success {
+                DiamondManager.sharedInstance.allDiamonds = diamonds
+                DiamondManager.sharedInstance.filteredDiamonds = diamonds!
+                
+                let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                let mainTabbarVC: TabbarViewController? = storyboard.instantiateViewController(withIdentifier: "TabbarVC") as? TabbarViewController
+                mainTabbarVC?.selectedIndex = self.currentPageNumber
+                
+                let mainViewController: MainSideMenuController = (storyboard.instantiateViewController(withIdentifier: "MainSideMenuVC") as? MainSideMenuController)!
+                mainViewController.rootViewController = mainTabbarVC
+                let window: UIWindow? = (UIApplication.shared.delegate?.window)!
+                window?.rootViewController = mainViewController
+                UIView.transition(with: window!, duration: 0.3, options: .transitionCrossDissolve, animations: nil, completion: { _ in })
+
+            }
+        }
         
-        let mainViewController: MainSideMenuController = (storyboard.instantiateViewController(withIdentifier: "MainSideMenuVC") as? MainSideMenuController)!
-        mainViewController.rootViewController = mainTabbarVC
-        let window: UIWindow? = (UIApplication.shared.delegate?.window)!
-        window?.rootViewController = mainViewController
-        UIView.transition(with: window!, duration: 0.3, options: .transitionCrossDissolve, animations: nil, completion: { _ in })
+
 
     }
     
