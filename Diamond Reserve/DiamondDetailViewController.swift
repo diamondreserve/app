@@ -264,9 +264,9 @@ class DiamondDetailViewController: UIViewController, UITableViewDelegate, UITabl
                 mail.setToRecipients(["info@premiergem.com"])
                 mail.setSubject("I'd like to purchase this diamond")
             } else {
-                mail.setSubject("Share diamond")
+                mail.setSubject("Sharing a Diamond On Tap")
             }
-            mail.setMessageBody("Testing", isHTML: false)
+            mail.setMessageBody("Diamond on tap info below...", isHTML: false)
             let image = takeScreenshot(view: self.view)
             let imageData: NSData = UIImagePNGRepresentation(image)! as NSData
             mail.addAttachmentData(imageData as Data, mimeType: "image/png", fileName: "imageName")
