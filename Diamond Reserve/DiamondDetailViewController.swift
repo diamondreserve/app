@@ -123,7 +123,7 @@ class DiamondDetailViewController: UIViewController, UITableViewDelegate, UITabl
         }
         cameraButton.isHidden = !isAdmin
         
-        titleLabel.text = String.init(format: "%.2fct %@ %@, %@",(diamond?.weight?.floatValue ?? 0)!, (shape ?? ""), diamond?.color ?? "", diamond?.clarity ?? "")
+        titleLabel.text = String.init(format: "%.2fct %@ %@, %@",(diamond?.weight?.floatValue ?? 0)!, (shape ?? ""), diamond?.color ?? "Fancy Color", diamond?.clarity ?? "")
         
         let price = DiamondManager.sharedInstance.getMarkedUpPrice(origin: diamond?.price?.floatValue ?? 0) * (diamond?.weight?.floatValue ?? 0)
         let formatter = NumberFormatter()

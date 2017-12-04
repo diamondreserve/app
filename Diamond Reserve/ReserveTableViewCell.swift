@@ -68,7 +68,7 @@ class ReserveTableViewCell: UITableViewCell {
         formatter.maximumFractionDigits = 0
         priceLabel.text = (price == 0) ? "N/A" : formatter.string(from: NSNumber(value: price))
         weightLabel.text = (diamond.weight?.stringValue ?? "") + "ct"
-        colorLabel.text = (diamond.color ?? "") + "," + (diamond.clarity ?? "")
+        colorLabel.text = (diamond.color ?? "Fancy Color") + "," + (diamond.clarity ?? "")
 //        if diamond.image != nil && diamond.image! != "" {
 //            iconView.image = nil
 //            iconView.sd_setImage(with: URL(string: diamond.image!), placeholderImage: defaultImage)

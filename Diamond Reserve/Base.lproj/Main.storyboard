@@ -3387,10 +3387,13 @@ TO SEE IF YOU QUALIFY </string>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rxB-cG-HdO" customClass="RangeSeekSlider" customModule="RangeSeekSlider">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rxB-cG-HdO" customClass="RangeSeekSlider" customModule="RangeSeekSlider">
                                                 <rect key="frame" x="19" y="179" width="337" height="65"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 <color key="tintColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="65" id="eTE-gM-rzj"/>
+                                                </constraints>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="minValue">
                                                         <real key="value" value="0.01"/>
@@ -3427,19 +3430,19 @@ TO SEE IF YOU QUALIFY </string>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="COLOR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O2v-1L-gbK">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="COLOR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O2v-1L-gbK">
                                                 <rect key="frame" x="19" y="244" width="33.5" height="17"/>
                                                 <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="14"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="s48-dI-xyf" userLabel="Color Container">
-                                                <rect key="frame" x="19" y="261" width="337" height="65"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s48-dI-xyf" userLabel="Color Container">
+                                                <rect key="frame" x="19" y="263" width="337" height="100"/>
                                                 <subviews>
-                                                    <view clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zxT-br-tkY" userLabel="first line">
+                                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zxT-br-tkY" userLabel="first line">
                                                         <rect key="frame" x="0.0" y="0.0" width="337" height="30"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3df-OD-zKx">
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3df-OD-zKx">
                                                                 <rect key="frame" x="0.0" y="0.0" width="56" height="30"/>
                                                                 <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="10"/>
                                                                 <state key="normal" title="D"/>
@@ -3464,7 +3467,7 @@ TO SEE IF YOU QUALIFY </string>
                                                                     <action selector="didColorButtonSelected:" destination="Gro-Ef-esA" eventType="touchUpInside" id="Kfe-Ri-zLL"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" tag="1" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MxL-hF-Fu2">
+                                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MxL-hF-Fu2">
                                                                 <rect key="frame" x="56" y="0.0" width="56.5" height="30"/>
                                                                 <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="10"/>
                                                                 <state key="normal" title="E"/>
@@ -3483,7 +3486,7 @@ TO SEE IF YOU QUALIFY </string>
                                                                     <action selector="didColorButtonSelected:" destination="Gro-Ef-esA" eventType="touchUpInside" id="N2t-uW-ZhX"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" tag="2" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qds-nf-zzT">
+                                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qds-nf-zzT">
                                                                 <rect key="frame" x="112.5" y="0.0" width="56" height="30"/>
                                                                 <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="10"/>
                                                                 <state key="normal" title="F"/>
@@ -3502,7 +3505,7 @@ TO SEE IF YOU QUALIFY </string>
                                                                     <action selector="didColorButtonSelected:" destination="Gro-Ef-esA" eventType="touchUpInside" id="ePV-ba-36M"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" tag="3" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fED-eP-uO8">
+                                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fED-eP-uO8">
                                                                 <rect key="frame" x="168.5" y="0.0" width="56" height="30"/>
                                                                 <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="10"/>
                                                                 <state key="normal" title="G"/>
@@ -3521,7 +3524,7 @@ TO SEE IF YOU QUALIFY </string>
                                                                     <action selector="didColorButtonSelected:" destination="Gro-Ef-esA" eventType="touchUpInside" id="5OS-0U-oNR"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" tag="4" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J6Z-ri-ZNE">
+                                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J6Z-ri-ZNE">
                                                                 <rect key="frame" x="224.5" y="0.0" width="55.5" height="30"/>
                                                                 <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="10"/>
                                                                 <state key="normal" title="H"/>
@@ -3540,7 +3543,7 @@ TO SEE IF YOU QUALIFY </string>
                                                                     <action selector="didColorButtonSelected:" destination="Gro-Ef-esA" eventType="touchUpInside" id="Jl1-en-Ipf"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" tag="5" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5uW-ri-njo">
+                                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5uW-ri-njo">
                                                                 <rect key="frame" x="279" y="0.0" width="55.5" height="30"/>
                                                                 <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="10"/>
                                                                 <state key="normal" title="I"/>
@@ -3601,10 +3604,10 @@ TO SEE IF YOU QUALIFY </string>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
-                                                    <view clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6I6-xS-KJ1" userLabel="second line">
+                                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6I6-xS-KJ1" userLabel="second line">
                                                         <rect key="frame" x="0.0" y="35" width="337" height="30"/>
                                                         <subviews>
-                                                            <button opaque="NO" tag="6" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hXt-MB-zzP">
+                                                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hXt-MB-zzP">
                                                                 <rect key="frame" x="0.0" y="0.5" width="56" height="30"/>
                                                                 <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="10"/>
                                                                 <state key="normal" title="J"/>
@@ -3629,7 +3632,7 @@ TO SEE IF YOU QUALIFY </string>
                                                                     <action selector="didColorButtonSelected:" destination="Gro-Ef-esA" eventType="touchUpInside" id="Zbs-ah-3f5"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" tag="7" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vvF-41-Ph3">
+                                                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vvF-41-Ph3">
                                                                 <rect key="frame" x="56" y="0.5" width="56.5" height="30"/>
                                                                 <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="10"/>
                                                                 <state key="normal" title="K"/>
@@ -3648,7 +3651,7 @@ TO SEE IF YOU QUALIFY </string>
                                                                     <action selector="didColorButtonSelected:" destination="Gro-Ef-esA" eventType="touchUpInside" id="4Kd-nn-HGL"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" tag="8" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QPJ-XS-TWw">
+                                                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QPJ-XS-TWw">
                                                                 <rect key="frame" x="112.5" y="0.5" width="57" height="30"/>
                                                                 <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="10"/>
                                                                 <state key="normal" title="L"/>
@@ -3667,7 +3670,7 @@ TO SEE IF YOU QUALIFY </string>
                                                                     <action selector="didColorButtonSelected:" destination="Gro-Ef-esA" eventType="touchUpInside" id="lGL-5W-NKz"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" tag="9" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h1H-sj-Dgz">
+                                                            <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h1H-sj-Dgz">
                                                                 <rect key="frame" x="169.5" y="0.5" width="57" height="30"/>
                                                                 <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="10"/>
                                                                 <state key="normal" title="M"/>
@@ -3686,7 +3689,7 @@ TO SEE IF YOU QUALIFY </string>
                                                                     <action selector="didColorButtonSelected:" destination="Gro-Ef-esA" eventType="touchUpInside" id="hq3-y3-hDo"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" tag="10" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E9q-va-7yW">
+                                                            <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E9q-va-7yW">
                                                                 <rect key="frame" x="226.5" y="0.5" width="57.5" height="30"/>
                                                                 <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="10"/>
                                                                 <state key="normal" title="N"/>
@@ -3705,7 +3708,7 @@ TO SEE IF YOU QUALIFY </string>
                                                                     <action selector="didColorButtonSelected:" destination="Gro-Ef-esA" eventType="touchUpInside" id="eWg-ZE-DdO"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" tag="11" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h3k-VM-50M">
+                                                            <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h3k-VM-50M">
                                                                 <rect key="frame" x="283" y="0.5" width="57.5" height="30"/>
                                                                 <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="10"/>
                                                                 <state key="normal" title="O"/>
@@ -3764,32 +3767,199 @@ TO SEE IF YOU QUALIFY </string>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
+                                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aTT-26-lj7" userLabel="third line">
+                                                        <rect key="frame" x="0.0" y="70" width="337" height="30"/>
+                                                        <subviews>
+                                                            <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vpR-K5-28E">
+                                                                <rect key="frame" x="0.0" y="0.5" width="56" height="30"/>
+                                                                <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="10"/>
+                                                                <state key="normal" title="FIY"/>
+                                                                <state key="selected">
+                                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                                        <integer key="value" value="1"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+                                                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                        <real key="value" value="1"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="didColorButtonSelected:" destination="Gro-Ef-esA" eventType="touchUpInside" id="Xnr-aJ-hJX"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a3V-Zu-iUa">
+                                                                <rect key="frame" x="56" y="0.5" width="56.5" height="30"/>
+                                                                <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="10"/>
+                                                                <state key="normal" title="FVY"/>
+                                                                <state key="selected">
+                                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                        <real key="value" value="1"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="didColorButtonSelected:" destination="Gro-Ef-esA" eventType="touchUpInside" id="dIv-m0-cXs"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" tag="14" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3p5-bR-RVm">
+                                                                <rect key="frame" x="112.5" y="0.5" width="57" height="30"/>
+                                                                <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="10"/>
+                                                                <state key="normal" title="FY"/>
+                                                                <state key="selected">
+                                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                        <real key="value" value="1"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="didColorButtonSelected:" destination="Gro-Ef-esA" eventType="touchUpInside" id="uAL-xq-Bvc"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" tag="15" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zNc-3b-RNI">
+                                                                <rect key="frame" x="169.5" y="0.5" width="57" height="30"/>
+                                                                <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="10"/>
+                                                                <state key="normal" title="FLY"/>
+                                                                <state key="selected">
+                                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                        <real key="value" value="1"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="didColorButtonSelected:" destination="Gro-Ef-esA" eventType="touchUpInside" id="W3l-i2-u2F"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" tag="16" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ahv-4Y-elE">
+                                                                <rect key="frame" x="226.5" y="0.5" width="57.5" height="30"/>
+                                                                <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="10"/>
+                                                                <state key="normal" title="FDBY"/>
+                                                                <state key="selected">
+                                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                        <real key="value" value="1"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="didColorButtonSelected:" destination="Gro-Ef-esA" eventType="touchUpInside" id="b9E-1b-Pwo"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" tag="17" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hG8-QZ-Rut">
+                                                                <rect key="frame" x="283" y="0.5" width="57.5" height="30"/>
+                                                                <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="10"/>
+                                                                <state key="normal" title="Fancy Color"/>
+                                                                <state key="selected">
+                                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                        <real key="value" value="1"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="didColorButtonSelected:" destination="Gro-Ef-esA" eventType="touchUpInside" id="1nO-3u-j0w"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstItem="vpR-K5-28E" firstAttribute="width" secondItem="aTT-26-lj7" secondAttribute="width" multiplier="1:6" id="0l6-67-y6a"/>
+                                                            <constraint firstItem="ahv-4Y-elE" firstAttribute="width" secondItem="zNc-3b-RNI" secondAttribute="width" id="A83-AL-b0z"/>
+                                                            <constraint firstItem="3p5-bR-RVm" firstAttribute="leading" secondItem="a3V-Zu-iUa" secondAttribute="trailing" id="BXg-WO-bRb"/>
+                                                            <constraint firstItem="ahv-4Y-elE" firstAttribute="leading" secondItem="zNc-3b-RNI" secondAttribute="trailing" id="DYS-VO-Zic"/>
+                                                            <constraint firstAttribute="bottom" secondItem="zNc-3b-RNI" secondAttribute="bottom" id="F32-O3-j79"/>
+                                                            <constraint firstAttribute="bottom" secondItem="3p5-bR-RVm" secondAttribute="bottom" id="IQ7-ag-P3w"/>
+                                                            <constraint firstItem="zNc-3b-RNI" firstAttribute="leading" secondItem="3p5-bR-RVm" secondAttribute="trailing" id="IkC-8m-SE2"/>
+                                                            <constraint firstItem="hG8-QZ-Rut" firstAttribute="top" secondItem="aTT-26-lj7" secondAttribute="top" id="IqE-s8-kmW"/>
+                                                            <constraint firstItem="ahv-4Y-elE" firstAttribute="top" secondItem="aTT-26-lj7" secondAttribute="top" id="KKa-yr-q4H"/>
+                                                            <constraint firstItem="a3V-Zu-iUa" firstAttribute="width" secondItem="vpR-K5-28E" secondAttribute="width" id="Lgd-QJ-hiR"/>
+                                                            <constraint firstAttribute="bottom" secondItem="vpR-K5-28E" secondAttribute="bottom" id="RdG-yl-fB8"/>
+                                                            <constraint firstItem="hG8-QZ-Rut" firstAttribute="width" secondItem="ahv-4Y-elE" secondAttribute="width" id="UKf-tz-XXf"/>
+                                                            <constraint firstAttribute="bottom" secondItem="hG8-QZ-Rut" secondAttribute="bottom" id="bAl-tJ-YXT"/>
+                                                            <constraint firstAttribute="bottom" secondItem="ahv-4Y-elE" secondAttribute="bottom" id="bny-1F-mdc"/>
+                                                            <constraint firstItem="vpR-K5-28E" firstAttribute="leading" secondItem="aTT-26-lj7" secondAttribute="leading" id="eKg-UY-yMb"/>
+                                                            <constraint firstItem="vpR-K5-28E" firstAttribute="top" secondItem="aTT-26-lj7" secondAttribute="top" id="h90-Yz-6p6"/>
+                                                            <constraint firstItem="hG8-QZ-Rut" firstAttribute="leading" secondItem="ahv-4Y-elE" secondAttribute="trailing" constant="-1" id="hR7-Dg-Pam"/>
+                                                            <constraint firstItem="a3V-Zu-iUa" firstAttribute="top" secondItem="aTT-26-lj7" secondAttribute="top" id="nNg-yE-VKo"/>
+                                                            <constraint firstItem="zNc-3b-RNI" firstAttribute="top" secondItem="aTT-26-lj7" secondAttribute="top" id="njT-YT-lop"/>
+                                                            <constraint firstItem="a3V-Zu-iUa" firstAttribute="leading" secondItem="vpR-K5-28E" secondAttribute="trailing" id="r1V-q3-Mdy"/>
+                                                            <constraint firstItem="3p5-bR-RVm" firstAttribute="width" secondItem="a3V-Zu-iUa" secondAttribute="width" id="urb-Wn-iB4"/>
+                                                            <constraint firstItem="3p5-bR-RVm" firstAttribute="top" secondItem="aTT-26-lj7" secondAttribute="top" id="vW9-86-7hf"/>
+                                                            <constraint firstItem="zNc-3b-RNI" firstAttribute="width" secondItem="3p5-bR-RVm" secondAttribute="width" id="wGL-mF-lKM"/>
+                                                            <constraint firstAttribute="bottom" secondItem="a3V-Zu-iUa" secondAttribute="bottom" id="xDl-6L-gbM"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="5"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="1"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="bottom" secondItem="6I6-xS-KJ1" secondAttribute="bottom" id="4Lk-UN-5dq"/>
+                                                    <constraint firstItem="aTT-26-lj7" firstAttribute="height" secondItem="zxT-br-tkY" secondAttribute="height" id="9gF-yk-x2o"/>
                                                     <constraint firstItem="6I6-xS-KJ1" firstAttribute="leading" secondItem="s48-dI-xyf" secondAttribute="leading" id="FQa-4I-l70"/>
                                                     <constraint firstItem="6I6-xS-KJ1" firstAttribute="top" secondItem="zxT-br-tkY" secondAttribute="bottom" constant="5" id="LnZ-kq-s9K"/>
                                                     <constraint firstItem="zxT-br-tkY" firstAttribute="leading" secondItem="s48-dI-xyf" secondAttribute="leading" id="NGo-M4-jvj"/>
+                                                    <constraint firstItem="aTT-26-lj7" firstAttribute="top" secondItem="6I6-xS-KJ1" secondAttribute="bottom" constant="5" id="RVp-2T-nXu"/>
                                                     <constraint firstAttribute="trailing" secondItem="6I6-xS-KJ1" secondAttribute="trailing" id="YEe-F8-vEE"/>
+                                                    <constraint firstItem="aTT-26-lj7" firstAttribute="leading" secondItem="s48-dI-xyf" secondAttribute="leading" id="hAu-lD-o3Q"/>
+                                                    <constraint firstAttribute="trailing" secondItem="aTT-26-lj7" secondAttribute="trailing" id="mC3-VK-sUb"/>
+                                                    <constraint firstAttribute="bottom" secondItem="aTT-26-lj7" secondAttribute="bottom" id="mtv-Nm-d5P"/>
                                                     <constraint firstItem="6I6-xS-KJ1" firstAttribute="height" secondItem="zxT-br-tkY" secondAttribute="height" id="mvb-TQ-1Bd"/>
                                                     <constraint firstItem="zxT-br-tkY" firstAttribute="top" secondItem="s48-dI-xyf" secondAttribute="top" id="qon-hC-2zQ"/>
                                                     <constraint firstAttribute="trailing" secondItem="zxT-br-tkY" secondAttribute="trailing" id="yIW-bh-ym0"/>
                                                 </constraints>
                                             </view>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="CLARITY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GXx-oP-Pav">
-                                                <rect key="frame" x="19" y="334" width="42" height="17"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CLARITY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GXx-oP-Pav">
+                                                <rect key="frame" x="19" y="371" width="42" height="17"/>
                                                 <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="14"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="agb-Qq-ioD" userLabel="Clarity Container">
-                                                <rect key="frame" x="19" y="359" width="337" height="100"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="agb-Qq-ioD" userLabel="Clarity Container">
+                                                <rect key="frame" x="19" y="396" width="337" height="135"/>
                                                 <subviews>
-                                                    <view clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w6t-JE-xuS" userLabel="first line">
+                                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w6t-JE-xuS" userLabel="first line">
                                                         <rect key="frame" x="0.0" y="0.0" width="337" height="30"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m0L-2X-OSm">
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m0L-2X-OSm">
                                                                 <rect key="frame" x="0.0" y="0.0" width="112.5" height="30"/>
                                                                 <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="10"/>
                                                                 <state key="normal" title="FLAWLESS"/>
@@ -3814,7 +3984,7 @@ TO SEE IF YOU QUALIFY </string>
                                                                     <action selector="didClarityButtonSelected:" destination="Gro-Ef-esA" eventType="touchUpInside" id="ivj-Hs-DLH"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" tag="1" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K9e-4u-pae">
+                                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K9e-4u-pae">
                                                                 <rect key="frame" x="112.5" y="0.0" width="112" height="30"/>
                                                                 <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="10"/>
                                                                 <state key="normal" title="IF"/>
@@ -3833,7 +4003,7 @@ TO SEE IF YOU QUALIFY </string>
                                                                     <action selector="didClarityButtonSelected:" destination="Gro-Ef-esA" eventType="touchUpInside" id="iTP-Pz-CcP"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" tag="2" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zg7-mX-RnP">
+                                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zg7-mX-RnP">
                                                                 <rect key="frame" x="224.5" y="0.0" width="112.5" height="30"/>
                                                                 <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="10"/>
                                                                 <state key="normal" title="VVS1"/>
@@ -3882,10 +4052,10 @@ TO SEE IF YOU QUALIFY </string>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
-                                                    <view clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GmV-Gq-GHu" userLabel="second line">
+                                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GmV-Gq-GHu" userLabel="second line">
                                                         <rect key="frame" x="0.0" y="35" width="337" height="30"/>
                                                         <subviews>
-                                                            <button opaque="NO" tag="3" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HVC-GT-MIA">
+                                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HVC-GT-MIA">
                                                                 <rect key="frame" x="0.0" y="0.0" width="112.5" height="30"/>
                                                                 <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="10"/>
                                                                 <state key="normal" title="VVS2"/>
@@ -3910,7 +4080,7 @@ TO SEE IF YOU QUALIFY </string>
                                                                     <action selector="didClarityButtonSelected:" destination="Gro-Ef-esA" eventType="touchUpInside" id="h2W-Ox-4c6"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" tag="4" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jpW-gi-gDG">
+                                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jpW-gi-gDG">
                                                                 <rect key="frame" x="112.5" y="0.0" width="112" height="30"/>
                                                                 <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="10"/>
                                                                 <state key="normal" title="VS1"/>
@@ -3929,7 +4099,7 @@ TO SEE IF YOU QUALIFY </string>
                                                                     <action selector="didClarityButtonSelected:" destination="Gro-Ef-esA" eventType="touchUpInside" id="P1S-uR-wz1"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" tag="5" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5yY-2e-XIg">
+                                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5yY-2e-XIg">
                                                                 <rect key="frame" x="224.5" y="0.0" width="112.5" height="30"/>
                                                                 <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="10"/>
                                                                 <state key="normal" title="VS2"/>
@@ -3976,10 +4146,10 @@ TO SEE IF YOU QUALIFY </string>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
-                                                    <view clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xEF-Pb-Fa7" userLabel="third line">
+                                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xEF-Pb-Fa7" userLabel="third line">
                                                         <rect key="frame" x="0.0" y="70" width="337" height="30"/>
                                                         <subviews>
-                                                            <button opaque="NO" tag="6" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zse-m9-IhB">
+                                                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zse-m9-IhB">
                                                                 <rect key="frame" x="0.0" y="0.0" width="112.5" height="30"/>
                                                                 <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="10"/>
                                                                 <state key="normal" title="SI1"/>
@@ -4004,7 +4174,7 @@ TO SEE IF YOU QUALIFY </string>
                                                                     <action selector="didClarityButtonSelected:" destination="Gro-Ef-esA" eventType="touchUpInside" id="7Q0-iN-fTm"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" tag="7" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BBh-ww-UlI">
+                                                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BBh-ww-UlI">
                                                                 <rect key="frame" x="112.5" y="0.0" width="112" height="30"/>
                                                                 <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="10"/>
                                                                 <state key="normal" title="SI2"/>
@@ -4023,7 +4193,7 @@ TO SEE IF YOU QUALIFY </string>
                                                                     <action selector="didClarityButtonSelected:" destination="Gro-Ef-esA" eventType="touchUpInside" id="4re-43-Xb7"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" tag="8" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rnH-yB-SH3">
+                                                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rnH-yB-SH3">
                                                                 <rect key="frame" x="224.5" y="0.0" width="112.5" height="30"/>
                                                                 <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="10"/>
                                                                 <state key="normal" title="SI3"/>
@@ -4070,30 +4240,140 @@ TO SEE IF YOU QUALIFY </string>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
+                                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gLF-0V-7of" userLabel="fourth line">
+                                                        <rect key="frame" x="0.0" y="105" width="337" height="30"/>
+                                                        <subviews>
+                                                            <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="whX-Mb-Iwz">
+                                                                <rect key="frame" x="0.0" y="0.0" width="112.5" height="30"/>
+                                                                <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="10"/>
+                                                                <state key="normal" title="I1"/>
+                                                                <state key="selected">
+                                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                                        <integer key="value" value="1"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+                                                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                        <real key="value" value="1"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="didClarityButtonSelected:" destination="Gro-Ef-esA" eventType="touchUpInside" id="phc-8R-vvX"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="slS-Ka-0Fo">
+                                                                <rect key="frame" x="112.5" y="0.0" width="112" height="30"/>
+                                                                <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="10"/>
+                                                                <state key="normal" title="I2"/>
+                                                                <state key="selected">
+                                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                        <real key="value" value="1"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="didClarityButtonSelected:" destination="Gro-Ef-esA" eventType="touchUpInside" id="Zok-3j-8S1"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z4M-0C-JDe">
+                                                                <rect key="frame" x="224.5" y="0.0" width="112.5" height="30"/>
+                                                                <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="10"/>
+                                                                <state key="normal" title="I3"/>
+                                                                <state key="selected">
+                                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                        <real key="value" value="1"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="didClarityButtonSelected:" destination="Gro-Ef-esA" eventType="touchUpInside" id="sHm-1r-PDF"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstItem="z4M-0C-JDe" firstAttribute="leading" secondItem="slS-Ka-0Fo" secondAttribute="trailing" id="9Tu-bf-Ta7"/>
+                                                            <constraint firstItem="z4M-0C-JDe" firstAttribute="width" secondItem="slS-Ka-0Fo" secondAttribute="width" id="HIc-jz-E5b"/>
+                                                            <constraint firstAttribute="bottom" secondItem="whX-Mb-Iwz" secondAttribute="bottom" id="Kb1-2d-mod"/>
+                                                            <constraint firstItem="whX-Mb-Iwz" firstAttribute="leading" secondItem="gLF-0V-7of" secondAttribute="leading" id="Nvi-7m-sQq"/>
+                                                            <constraint firstAttribute="bottom" secondItem="slS-Ka-0Fo" secondAttribute="bottom" id="Uz6-au-86O"/>
+                                                            <constraint firstItem="whX-Mb-Iwz" firstAttribute="top" secondItem="gLF-0V-7of" secondAttribute="top" id="hEI-FV-ZJI"/>
+                                                            <constraint firstAttribute="bottom" secondItem="z4M-0C-JDe" secondAttribute="bottom" id="lGW-gP-veE"/>
+                                                            <constraint firstItem="slS-Ka-0Fo" firstAttribute="leading" secondItem="whX-Mb-Iwz" secondAttribute="trailing" id="lKy-Y4-3Bu"/>
+                                                            <constraint firstItem="z4M-0C-JDe" firstAttribute="top" secondItem="gLF-0V-7of" secondAttribute="top" id="mtF-pc-MJ2"/>
+                                                            <constraint firstItem="slS-Ka-0Fo" firstAttribute="width" secondItem="whX-Mb-Iwz" secondAttribute="width" id="nJq-tH-cng"/>
+                                                            <constraint firstItem="slS-Ka-0Fo" firstAttribute="top" secondItem="gLF-0V-7of" secondAttribute="top" id="oYO-e9-e8j"/>
+                                                            <constraint firstItem="whX-Mb-Iwz" firstAttribute="width" secondItem="gLF-0V-7of" secondAttribute="width" multiplier="1:3" id="wLI-12-VH1"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="5"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="1"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="gLF-0V-7of" secondAttribute="bottom" id="2iT-3E-buZ"/>
                                                     <constraint firstAttribute="trailing" secondItem="GmV-Gq-GHu" secondAttribute="trailing" id="4Ix-hu-LFn"/>
+                                                    <constraint firstItem="gLF-0V-7of" firstAttribute="height" secondItem="w6t-JE-xuS" secondAttribute="height" id="93h-Wp-fMe"/>
                                                     <constraint firstItem="xEF-Pb-Fa7" firstAttribute="height" secondItem="w6t-JE-xuS" secondAttribute="height" id="Qqq-vM-kOe"/>
                                                     <constraint firstItem="GmV-Gq-GHu" firstAttribute="height" secondItem="w6t-JE-xuS" secondAttribute="height" id="UEx-K3-3aB"/>
                                                     <constraint firstItem="GmV-Gq-GHu" firstAttribute="top" secondItem="w6t-JE-xuS" secondAttribute="bottom" constant="5" id="XhX-7d-3Lc"/>
                                                     <constraint firstItem="w6t-JE-xuS" firstAttribute="leading" secondItem="agb-Qq-ioD" secondAttribute="leading" id="bvb-YA-UsC"/>
                                                     <constraint firstAttribute="trailing" secondItem="xEF-Pb-Fa7" secondAttribute="trailing" id="dii-Jp-S8W"/>
+                                                    <constraint firstItem="gLF-0V-7of" firstAttribute="leading" secondItem="agb-Qq-ioD" secondAttribute="leading" id="f47-OK-9r0"/>
                                                     <constraint firstItem="xEF-Pb-Fa7" firstAttribute="top" secondItem="GmV-Gq-GHu" secondAttribute="bottom" constant="5" id="hMR-y1-WZ8"/>
+                                                    <constraint firstAttribute="trailing" secondItem="gLF-0V-7of" secondAttribute="trailing" id="neu-c5-ha1"/>
                                                     <constraint firstItem="w6t-JE-xuS" firstAttribute="top" secondItem="agb-Qq-ioD" secondAttribute="top" id="oYO-cb-BJ8"/>
-                                                    <constraint firstAttribute="bottom" secondItem="xEF-Pb-Fa7" secondAttribute="bottom" id="opu-u5-50t"/>
                                                     <constraint firstItem="xEF-Pb-Fa7" firstAttribute="leading" secondItem="agb-Qq-ioD" secondAttribute="leading" id="v5d-v9-ipW"/>
                                                     <constraint firstAttribute="trailing" secondItem="w6t-JE-xuS" secondAttribute="trailing" id="vMr-o2-8Dy"/>
+                                                    <constraint firstItem="gLF-0V-7of" firstAttribute="top" secondItem="xEF-Pb-Fa7" secondAttribute="bottom" constant="5" id="wDA-Zf-FHC"/>
                                                     <constraint firstItem="GmV-Gq-GHu" firstAttribute="leading" secondItem="agb-Qq-ioD" secondAttribute="leading" id="znC-tq-wmQ"/>
                                                 </constraints>
                                             </view>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cPu-20-Zek">
+                                                <rect key="frame" x="293" y="541" width="49" height="33"/>
+                                                <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="17"/>
+                                                <state key="normal" title="SUBMIT">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="submitTapped:" destination="Gro-Ef-esA" eventType="touchUpInside" id="ojv-QL-yWm"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="cPu-20-Zek" secondAttribute="trailing" constant="33" id="0z1-kY-8SS"/>
                                             <constraint firstItem="lkr-2M-lRP" firstAttribute="top" secondItem="Y7e-dG-Mzp" secondAttribute="bottom" constant="8" id="23i-5v-KVV"/>
                                             <constraint firstItem="cfZ-p9-Dsk" firstAttribute="top" secondItem="oqV-KH-6GN" secondAttribute="top" constant="12" id="4Sh-Qm-ipz"/>
                                             <constraint firstItem="Y7e-dG-Mzp" firstAttribute="top" secondItem="cfZ-p9-Dsk" secondAttribute="bottom" constant="10" id="8EZ-tR-bSx"/>
                                             <constraint firstItem="agb-Qq-ioD" firstAttribute="top" secondItem="GXx-oP-Pav" secondAttribute="bottom" constant="8" id="9o2-Lp-U87"/>
+                                            <constraint firstItem="cPu-20-Zek" firstAttribute="top" secondItem="agb-Qq-ioD" secondAttribute="bottom" constant="10" id="HrG-wb-zch"/>
                                             <constraint firstItem="rxB-cG-HdO" firstAttribute="top" secondItem="pQW-30-fT1" secondAttribute="bottom" constant="20" id="IPj-WP-Clz"/>
                                             <constraint firstItem="O2v-1L-gbK" firstAttribute="leading" secondItem="oqV-KH-6GN" secondAttribute="leading" constant="19" id="JPD-OT-4cf"/>
                                             <constraint firstItem="GXx-oP-Pav" firstAttribute="leading" secondItem="oqV-KH-6GN" secondAttribute="leading" constant="19" id="QR4-I0-D8c"/>
@@ -4101,7 +4381,7 @@ TO SEE IF YOU QUALIFY </string>
                                             <constraint firstItem="cfZ-p9-Dsk" firstAttribute="leading" secondItem="oqV-KH-6GN" secondAttribute="leading" constant="8" id="T6T-gV-HaX"/>
                                             <constraint firstAttribute="trailing" secondItem="lkr-2M-lRP" secondAttribute="trailing" constant="19" id="V5R-WS-WYS"/>
                                             <constraint firstItem="O2v-1L-gbK" firstAttribute="top" secondItem="rxB-cG-HdO" secondAttribute="bottom" id="Z1c-qQ-vsx"/>
-                                            <constraint firstItem="s48-dI-xyf" firstAttribute="top" secondItem="O2v-1L-gbK" secondAttribute="bottom" id="b5K-F1-dK6"/>
+                                            <constraint firstItem="s48-dI-xyf" firstAttribute="top" secondItem="O2v-1L-gbK" secondAttribute="bottom" constant="2" id="b5K-F1-dK6"/>
                                             <constraint firstItem="s48-dI-xyf" firstAttribute="leading" secondItem="oqV-KH-6GN" secondAttribute="leading" constant="19" id="eMU-fI-heg"/>
                                             <constraint firstAttribute="trailing" secondItem="rxB-cG-HdO" secondAttribute="trailing" constant="19" id="fVo-C4-YYS"/>
                                             <constraint firstItem="pQW-30-fT1" firstAttribute="leading" secondItem="oqV-KH-6GN" secondAttribute="leading" constant="19" id="gHq-dR-fVo"/>

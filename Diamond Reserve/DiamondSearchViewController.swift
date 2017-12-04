@@ -37,7 +37,7 @@ class DiamondSearchViewController: UIViewController {
         let menuBtn = UIBarButtonItem(image: UIImage(named:"MENU_ICON"), style: .plain, target: self, action: #selector(showSideMenu))
         navigationItem.leftBarButtonItem = menuBtn
         
-        let rightBtn = UIBarButtonItem(title: "SUBMIT", style: .plain, target: self, action: #selector(doneAction))
+        let rightBtn = UIBarButtonItem(title: "CANCEL", style: .plain, target: self, action: #selector(cancelAction))
         rightBtn.setTitleTextAttributes([NSFontAttributeName: UIFont(name: "Unica One", size: 17)! ,NSForegroundColorAttributeName: UIColor.white], for: .normal)
         rightBtn.setTitleTextAttributes([NSFontAttributeName: UIFont(name: "Unica One", size: 17)! ,NSForegroundColorAttributeName: UIColor.white], for: .highlighted)
 
@@ -51,6 +51,12 @@ class DiamondSearchViewController: UIViewController {
     
     func showSideMenu() {
         sideMenuController?.showLeftView(animated: true, completionHandler: nil)
+    }
+    
+    func cancelAction() {
+        let tabbarVC:TabbarViewController = self.navigationController!.parent as! TabbarViewController
+        tabbarVC.tabButtons[0].isSelected = true
+        tabbarVC.didPressTab(tabbarVC.tabButtons[0])
     }
     
     func doneAction() {
@@ -134,8 +140,26 @@ class DiamondSearchViewController: UIViewController {
                 case 10:
                     selectedColors.append("N")
                     break
-                default:
+                case 11:
                     selectedColors.append("O")
+                    break
+                case 12:
+                    selectedColors.append("FIY")
+                    break
+                case 13:
+                    selectedColors.append("FVY")
+                    break
+                case 14:
+                    selectedColors.append("FY")
+                    break
+                case 15:
+                    selectedColors.append("FLY")
+                    break
+                case 16:
+                    selectedColors.append("FDBY")
+                    break
+                default:
+                    selectedColors.append("Fancy Color")
                 }
             }
         }
@@ -241,6 +265,9 @@ class DiamondSearchViewController: UIViewController {
         sender.backgroundColor = sender.isSelected ? UIColor.white : UIColor.clear
     }
     
+    @IBAction func submitTapped(_ sender: Any) {
+        doneAction()
+    }
     
     
 }
