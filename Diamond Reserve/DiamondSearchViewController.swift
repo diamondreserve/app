@@ -164,7 +164,7 @@ class DiamondSearchViewController: UIViewController {
             }
         }
         if selectedColors.count == 0 {
-            selectedColors = ["D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O"]
+            selectedColors = ["D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "FIY", "FVY", "FY", "FLY", "FDBY"]
         }
         
         self.selectedClarities.removeAll()

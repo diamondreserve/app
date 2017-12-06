@@ -26,6 +26,9 @@ class Diamonds: NSObject {
     var fluorescence_intensity: String?
     var girdle_thick: String?
     var girdle_thin: String?
+    var fancy_color: String?
+    var fancy_color_intensity: String?
+    var fancy_color_overtone: String?
     var lab: String?
     var measurements: String?
     var polish: String?
@@ -38,6 +41,7 @@ class Diamonds: NSObject {
     var user_reserved_date: Date?
     var total_reserved_date: Date?
     var user_reject_reason: String?
+    
     
     init(_ json: JSON) {
         
@@ -58,6 +62,9 @@ class Diamonds: NSObject {
         girdle_thin = json["girdle_thin"].string
         girdle_thick = json["girdle_thick"].string
         lab = json["lab"].string
+        fancy_color = json["fancy_color"].string
+        fancy_color_intensity = json["fancy_color_intensity"].string
+        fancy_color_overtone = json["fancy_color_overtone"].string
         polish = json["polish"].string
         symmetry = json["symmetry"].stringValue
         certificate_image = json["certificate_image"].stringValue
@@ -75,6 +82,15 @@ class Diamonds: NSObject {
         }
         if let cdate = json["total_reserved_date"].string {
             total_reserved_date = formatter.date(from: cdate)!
+        }
+        
+        if (color == nil || json["color"].string == "") {
+            color = (fancy_color_intensity ?? "") + (fancy_color ?? "")
+            let mainFancyColors = ["FIY", "FVY", "FY", "FLY", "FDBY"]
+            let fancy = json["fancy_color"].string ?? ""
+            if !mainFancyColors.contains(color!) && fancy != ""  {
+                color = "Fancy Color"
+            }
         }
     }
     

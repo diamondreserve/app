@@ -37,6 +37,7 @@ class DiamondDetailViewController: UIViewController, UITableViewDelegate, UITabl
     @IBOutlet weak var priceLabel: UILabel!
     @IBOutlet weak var diamondImageView: UIImageView!
     @IBOutlet weak var shapeImageView: UIImageView!
+    @IBOutlet weak var certificateImageView: UIImageView!
     
     @IBOutlet weak var tableViewHeight: NSLayoutConstraint!
     @IBOutlet weak var purchaseViewHeight: NSLayoutConstraint!
@@ -121,6 +122,13 @@ class DiamondDetailViewController: UIViewController, UITableViewDelegate, UITabl
         if diamond?.diamond360 == nil || diamond!.diamond360! == "" {
             rotateButtonHeight.constant = 0
         }
+        
+        certificateImageView.isHidden = true
+        if diamond?.certificate_image != nil && diamond!.certificate_image != "" {
+            let imageUrl = diamond!.certificate_image!
+            certificateImageView.sd_setImage(with: URL(string: imageUrl), placeholderImage: UIImage(named: "gia"))
+            certificateImageView.isHidden = false
+        }
         cameraButton.isHidden = !isAdmin
         
         titleLabel.text = String.init(format: "%.2fct %@ %@, %@",(diamond?.weight?.floatValue ?? 0)!, (shape ?? ""), diamond?.color ?? "Fancy Color", diamond?.clarity ?? "")
@@ -169,8 +177,8 @@ class DiamondDetailViewController: UIViewController, UITableViewDelegate, UITabl
         navigationItem.leftBarButtonItem = backItem
         
         
-        let rightBtn = UIBarButtonItem(image: UIImage(named:"share"), style: .plain, target: self, action: #selector(shareAction))
-        navigationItem.rightBarButtonItem = rightBtn
+//        let rightBtn = UIBarButtonItem(image: UIImage(named:"share"), style: .plain, target: self, action: #selector(shareAction))
+//        navigationItem.rightBarButtonItem = rightBtn
     }
     
     func updateReserveButton() {
@@ -200,7 +208,7 @@ class DiamondDetailViewController: UIViewController, UITableViewDelegate, UITabl
             
             default:
                 reserveButton.setTitle("RESERVE", for: .normal)
-                reserveButton.backgroundColor = .white
+                reserveButton.backgroundColor = .black
                 purchaseViewHeight.constant = 0
                 purchaseView.isHidden = true
                 break
@@ -392,6 +400,11 @@ class DiamondDetailViewController: UIViewController, UITableViewDelegate, UITabl
     @IBAction func backRejectAction(_ sender: Any) {
         self.popupView.isHidden = false
         self.rejectView.isHidden = true
+    }
+    
+    
+    @IBAction func shareAction(_ sender: Any) {
+        shareAction()
     }
     
     
