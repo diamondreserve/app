@@ -106,29 +106,30 @@ class CoverPageViewController: UIViewController, UIScrollViewDelegate {
     @IBAction func nextButtonTapped(_ sender: Any) {
         
         self.loadingView.isHidden = false
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let homeVC: HomeViewController? = storyboard.instantiateViewController(withIdentifier: "HomeVC") as? HomeViewController
+        
         DiamondManager.sharedInstance.getAllDiamonds { (_ success: Bool, diamonds: [Diamonds]?) in
             self.loadingView.isHidden = true
             if success {
                 DiamondManager.sharedInstance.allDiamonds = diamonds
                 DiamondManager.sharedInstance.filteredDiamonds = diamonds!
-                
-                let storyboard = UIStoryboard(name: "Main", bundle: nil)
-                let mainTabbarVC: TabbarViewController? = storyboard.instantiateViewController(withIdentifier: "TabbarVC") as? TabbarViewController
-                mainTabbarVC?.selectedIndex = self.currentPageNumber
-                
-                let mainViewController: MainSideMenuController = (storyboard.instantiateViewController(withIdentifier: "MainSideMenuVC") as? MainSideMenuController)!
-                mainViewController.rootViewController = mainTabbarVC
-                let window: UIWindow? = (UIApplication.shared.delegate?.window)!
-                window?.rootViewController = mainViewController
-                UIView.transition(with: window!, duration: 0.3, options: .transitionCrossDissolve, animations: nil, completion: { _ in })
-
             }
+            self.present(homeVC!, animated: true, completion: nil)
         }
         
-
+/*
+        UserManager.sharedInstance.getHomeText { (_ success: Bool, title: String?) in
+            self.loadingView.isHidden = false
+            if success {
+                homeVC?.home_title = title
+            }
+            self.present(homeVC!, animated: true, completion: nil)
+        }
+ */
+        
 
     }
     
-
-
 }

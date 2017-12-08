@@ -171,13 +171,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func moveToMainScreen() {
         
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let mainTabbarVC: TabbarViewController? = storyboard.instantiateViewController(withIdentifier: "TabbarVC") as? TabbarViewController
-        mainTabbarVC?.selectedIndex = 0
-        
-        let mainViewController: MainSideMenuController = (storyboard.instantiateViewController(withIdentifier: "MainSideMenuVC") as? MainSideMenuController)!
-        mainViewController.rootViewController = mainTabbarVC
+        let homeVC: HomeViewController? = storyboard.instantiateViewController(withIdentifier: "HomeVC") as? HomeViewController
         let window: UIWindow? = (UIApplication.shared.delegate?.window)!
-        window?.rootViewController = mainViewController
+        window?.rootViewController = homeVC
 
     }
     

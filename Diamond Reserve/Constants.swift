@@ -15,8 +15,8 @@ let S3BucketUrl = "https://s3.amazonaws.com/diamondreserve-userfiles-mobilehub-9
 let SNSPlatformApplicationArn = "arn:aws:sns:us-east-1:247454595621:app/APNS/DiamondProduction"
 //let SNSPlatformApplicationArn = "arn:aws:sns:us-east-1:247454595621:app/APNS_SANDBOX/diamond_develop2"
 
-//let API_BASE_URL = "http://localhost:5000/api/"
-    let API_BASE_URL = "https://diamond-reserve.herokuapp.com/api/"
+let API_BASE_URL = "http://localhost:5000/api/"
+//    let API_BASE_URL = "https://diamond-reserve.herokuapp.com/api/"
 
 let DIAMOND_THEME_COLOR =           UIColor(red: 0, green: 0, blue: 0)
 let SCREEN_WIDTH : CGFloat =        UIScreen.main.bounds.width

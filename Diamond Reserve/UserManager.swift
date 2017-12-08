@@ -96,6 +96,62 @@ class UserManager: BaseManager {
         }
     }
     
+    func getHomeText(completion: @escaping (_ success : Bool, _ homeText: String?) -> Void) {
+        
+        let url = User_URL + "home_text"
+        manager!.request(url, method: .get, parameters: nil).responseJSON { (response) in
+            switch response.result {
+            case .success:
+                if response.result.error != nil {
+                    print(response.result.error as Any)
+                    completion(false, nil)
+                    return
+                }
+                if let data = response.result.value {
+                    let json = JSON(data)
+                    let homeText = json["home_title"].string
+                    completion(true, homeText)
+                }
+                
+            case .failure(let error):
+                print(error)
+                completion(false, nil)
+            }
+        }
+    }
+    
+    func updateHomeText(text: String, completion: @escaping (_ success : Bool) -> Void) {
+        
+        let parameters: Parameters = [
+            "home_title": text
+        ]
+        
+        let url = User_URL + "home_text"
+        Alamofire.request(url, method: .put, parameters: parameters, encoding: JSONEncoding.default).responseJSON { (response) in
+            switch response.result {
+            case .success:
+                if response.result.error != nil {
+                    print(response.result.error as Any)
+                    completion(false)
+                    return
+                }
+                if let data = response.result.value {
+                    let json = JSON(data)
+                    print(json)
+                    if json == "success" {
+                        completion(true)
+                    } else {
+                        completion(false)
+                    }
+                }
+                
+            case .failure(let error):
+                print(error)
+                completion(false)
+            }
+        }
+    }
+    
     
     func updateUser(user_id: String, bodyParams: Parameters, completion: @escaping (_ success : Bool, _ user: User?) -> Void) {
         

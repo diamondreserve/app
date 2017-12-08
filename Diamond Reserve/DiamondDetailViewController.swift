@@ -31,6 +31,8 @@ class DiamondDetailViewController: UIViewController, UITableViewDelegate, UITabl
     var reserveState: String = ""
     
     var diamond : Diamonds?
+    
+    @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var titleLabel: UILabel!
     
@@ -39,6 +41,7 @@ class DiamondDetailViewController: UIViewController, UITableViewDelegate, UITabl
     @IBOutlet weak var shapeImageView: UIImageView!
     @IBOutlet weak var certificateImageView: UIImageView!
     
+    @IBOutlet weak var rotateButton: UIButton!
     @IBOutlet weak var tableViewHeight: NSLayoutConstraint!
     @IBOutlet weak var purchaseViewHeight: NSLayoutConstraint!
     @IBOutlet weak var reserveButton: UIButton!
@@ -120,7 +123,7 @@ class DiamondDetailViewController: UIViewController, UITableViewDelegate, UITabl
         }
         
         if diamond?.diamond360 == nil || diamond!.diamond360! == "" {
-            rotateButtonHeight.constant = 0
+            rotateButton.isEnabled = false
         }
         
         certificateImageView.isHidden = true
@@ -484,6 +487,17 @@ class DiamondDetailViewController: UIViewController, UITableViewDelegate, UITabl
             setupAlertCtrl()
             present(alertCtrl!, animated: true, completion: nil)
     }
+    
+    @IBAction func scrollDownAction(_ sender: Any) {
+        let bottomOffset : CGPoint = CGPoint(x: 0, y: scrollView.contentSize.height - scrollView.bounds.size.height + scrollView.contentInset.bottom)
+        scrollView.setContentOffset(bottomOffset, animated: true)
+//        dispatch_async(dispatch_get_main_queue()) {
+//            UIView.animateWithDuration(2, delay: 0, options: UIViewAnimationOptions.CurveLinear, animations: {
+//                self.scrollView.contentOffset.x = 200
+//            }, completion: nil)
+//        }
+    }
+    
     
     // MARK: - Table view data source
     

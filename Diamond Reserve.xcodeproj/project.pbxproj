@@ -39,6 +39,10 @@
 		8025951D1F8EB63B004F1F94 /* search.png in Resources */ = {isa = PBXBuildFile; fileRef = 8025951A1F8EB63B004F1F94 /* search.png */; };
 		8025951E1F8EB63B004F1F94 /* search@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8025951B1F8EB63B004F1F94 /* search@2x.png */; };
 		8025951F1F8EB63B004F1F94 /* search@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8025951C1F8EB63B004F1F94 /* search@3x.png */; };
+		802992E61FD820C8007EFC9E /* white_edit_circle.png in Resources */ = {isa = PBXBuildFile; fileRef = 802992E51FD820C2007EFC9E /* white_edit_circle.png */; };
+		802992E71FD820C8007EFC9E /* white_edit_circle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 802992E31FD820AD007EFC9E /* white_edit_circle@2x.png */; };
+		802992E81FD820C8007EFC9E /* white_edit_circle@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 802992E41FD820B4007EFC9E /* white_edit_circle@3x.png */; };
+		802992EA1FD85459007EFC9E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802992E91FD85458007EFC9E /* HomeViewController.swift */; };
 		802B60041FB8D6E7008B3202 /* down_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 802B60021FB8D692008B3202 /* down_arrow.png */; };
 		802B60061FB8D705008B3202 /* up_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 802B60051FB8D6FF008B3202 /* up_arrow.png */; };
 		802B60091FBA2832008B3202 /* loading_refresh.gif in Resources */ = {isa = PBXBuildFile; fileRef = 802B60071FBA282E008B3202 /* loading_refresh.gif */; };
@@ -60,6 +64,9 @@
 		80566DED1FA3BC92009FC556 /* tutorial_1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 80566DEB1FA3B5AE009FC556 /* tutorial_1.gif */; };
 		80566DEE1FA3BC96009FC556 /* tutorial_2.gif in Resources */ = {isa = PBXBuildFile; fileRef = 80566DEA1FA3B5A5009FC556 /* tutorial_2.gif */; };
 		80566DEF1FA3BC99009FC556 /* tutorial_3.gif in Resources */ = {isa = PBXBuildFile; fileRef = 80566DEC1FA3B5B6009FC556 /* tutorial_3.gif */; };
+		808203D71FDABEFA00DB0F4A /* white-camera.png in Resources */ = {isa = PBXBuildFile; fileRef = 808203D61FDABEF400DB0F4A /* white-camera.png */; };
+		808203D81FDABEFA00DB0F4A /* white-camera@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 808203D41FDABEF300DB0F4A /* white-camera@2x.png */; };
+		808203D91FDABEFA00DB0F4A /* white-camera@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 808203D51FDABEF400DB0F4A /* white-camera@3x.png */; };
 		808B53DF1F91485500504607 /* TabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808B53DE1F91485500504607 /* TabbarViewController.swift */; };
 		808B53E31F92810E00504607 /* DiamondTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808B53E11F92810E00504607 /* DiamondTableViewCell.swift */; };
 		808B53E41F92810E00504607 /* DiamondTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 808B53E21F92810E00504607 /* DiamondTableViewCell.xib */; };
@@ -164,6 +171,10 @@
 		8025951A1F8EB63B004F1F94 /* search.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = search.png; sourceTree = "<group>"; };
 		8025951B1F8EB63B004F1F94 /* search@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "search@2x.png"; sourceTree = "<group>"; };
 		8025951C1F8EB63B004F1F94 /* search@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "search@3x.png"; sourceTree = "<group>"; };
+		802992E31FD820AD007EFC9E /* white_edit_circle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "white_edit_circle@2x.png"; sourceTree = "<group>"; };
+		802992E41FD820B4007EFC9E /* white_edit_circle@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "white_edit_circle@3x.png"; sourceTree = "<group>"; };
+		802992E51FD820C2007EFC9E /* white_edit_circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = white_edit_circle.png; sourceTree = "<group>"; };
+		802992E91FD85458007EFC9E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		802B60021FB8D692008B3202 /* down_arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = down_arrow.png; sourceTree = "<group>"; };
 		802B60051FB8D6FF008B3202 /* up_arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = up_arrow.png; sourceTree = "<group>"; };
 		802B60071FBA282E008B3202 /* loading_refresh.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = loading_refresh.gif; sourceTree = "<group>"; };
@@ -186,6 +197,9 @@
 		80566DEB1FA3B5AE009FC556 /* tutorial_1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = tutorial_1.gif; sourceTree = "<group>"; };
 		80566DEC1FA3B5B6009FC556 /* tutorial_3.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = tutorial_3.gif; sourceTree = "<group>"; };
 		80566DF21FA85E98009FC556 /* Diamond Reserve.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Diamond Reserve.entitlements"; sourceTree = "<group>"; };
+		808203D41FDABEF300DB0F4A /* white-camera@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "white-camera@2x.png"; sourceTree = "<group>"; };
+		808203D51FDABEF400DB0F4A /* white-camera@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "white-camera@3x.png"; sourceTree = "<group>"; };
+		808203D61FDABEF400DB0F4A /* white-camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "white-camera.png"; sourceTree = "<group>"; };
 		808B53DE1F91485500504607 /* TabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarViewController.swift; sourceTree = "<group>"; };
 		808B53E11F92810E00504607 /* DiamondTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiamondTableViewCell.swift; sourceTree = "<group>"; };
 		808B53E21F92810E00504607 /* DiamondTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DiamondTableViewCell.xib; sourceTree = "<group>"; };
@@ -404,6 +418,7 @@
 				B7D603A21F865D7F00B94067 /* CoverPageViewController.swift */,
 				B750FD171F8AB72C004844BB /* BaseVC.swift */,
 				808B53DE1F91485500504607 /* TabbarViewController.swift */,
+				802992E91FD85458007EFC9E /* HomeViewController.swift */,
 			);
 			path = "Diamond Reserve";
 			sourceTree = "<group>";
@@ -441,6 +456,12 @@
 				801C31251FD7F14A0004D566 /* gia.png */,
 				801C31261FD7F14D0004D566 /* gia@2x.png */,
 				801C31271FD7F1510004D566 /* gia@3x.png */,
+				802992E51FD820C2007EFC9E /* white_edit_circle.png */,
+				802992E31FD820AD007EFC9E /* white_edit_circle@2x.png */,
+				802992E41FD820B4007EFC9E /* white_edit_circle@3x.png */,
+				808203D61FDABEF400DB0F4A /* white-camera.png */,
+				808203D41FDABEF300DB0F4A /* white-camera@2x.png */,
+				808203D51FDABEF400DB0F4A /* white-camera@3x.png */,
 				8003655D1FBF5F54007A0B17 /* loading2.gif */,
 				802594EC1F8DCDFD004F1F94 /* BLACK_IV_FMX.png */,
 				802594ED1F8DCDFD004F1F94 /* BLACK_IV_FMX@2x.png */,
@@ -652,7 +673,9 @@
 				B7D6039F1F86415300B94067 /* Emerald@2x.png in Resources */,
 				B702FBF81F8BF1AA00E0EFFB /* Emerald2@3x.png in Resources */,
 				8025951E1F8EB63B004F1F94 /* search@2x.png in Resources */,
+				802992E61FD820C8007EFC9E /* white_edit_circle.png in Resources */,
 				808B53E41F92810E00504607 /* DiamondTableViewCell.xib in Resources */,
+				802992E81FD820C8007EFC9E /* white_edit_circle@3x.png in Resources */,
 				801C31281FD7F15C0004D566 /* gia.png in Resources */,
 				801C31301FD7F83A0004D566 /* down_arrow@3x.png in Resources */,
 				802595061F8E2063004F1F94 /* gems@2x.png in Resources */,
@@ -666,12 +689,16 @@
 				B702FBF71F8BF1AA00E0EFFB /* Emerald3.png in Resources */,
 				802595051F8E2063004F1F94 /* gems.png in Resources */,
 				802595111F8EB55C004F1F94 /* jewelry.png in Resources */,
+				808203D81FDABEFA00DB0F4A /* white-camera@2x.png in Resources */,
 				B750FD131F8AA262004844BB /* awsconfiguration.json in Resources */,
+				808203D71FDABEFA00DB0F4A /* white-camera.png in Resources */,
 				B702FBF61F8BF1AA00E0EFFB /* Emerald3@2x.png in Resources */,
 				B738C1611F7D91290097720C /* strip2@3x.png in Resources */,
 				801C31291FD7F15C0004D566 /* gia@2x.png in Resources */,
 				802595121F8EB55C004F1F94 /* jewelry@2x.png in Resources */,
 				802594EF1F8DCDFD004F1F94 /* BLACK_IV_FMX.png in Resources */,
+				802992E71FD820C8007EFC9E /* white_edit_circle@2x.png in Resources */,
+				808203D91FDABEFA00DB0F4A /* white-camera@3x.png in Resources */,
 				B7DD64EA1F7C346700858A6B /* Merged Background 1.jpg in Resources */,
 				802594F01F8DCDFD004F1F94 /* BLACK_IV_FMX@2x.png in Resources */,
 				802595181F8EB5DA004F1F94 /* stone@2x.png in Resources */,
@@ -924,6 +951,7 @@
 				803C24DA1F9704B500895296 /* MainJewelryViewController.swift in Sources */,
 				B7D603A31F865D7F00B94067 /* CoverPageViewController.swift in Sources */,
 				803C24E51F9D1CF000895296 /* ReserveListViewController.swift in Sources */,
+				802992EA1FD85459007EFC9E /* HomeViewController.swift in Sources */,
 				80057E771FA08639006540BC /* MessagesViewController.swift in Sources */,
 				B76D8D9D1F7AE2C6000CDFC7 /* SplashViewController.swift in Sources */,
 				B738C1541F7D7F1D0097720C /* VerifyViewController.swift in Sources */,
