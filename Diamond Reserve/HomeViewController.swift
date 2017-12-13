@@ -31,12 +31,19 @@ class HomeViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        editButton.isHidden = false// !(UserManager.sharedInstance.user?.is_admin)!
+        editButton.isHidden = !(UserManager.sharedInstance.user?.is_admin)!
         if home_title != nil {
             editTextView.text = home_title!
         }
         let url = S3BucketUrl + "home.jpg"
-        imageView.sd_setImage(with: URL(string: url), placeholderImage: UIImage(named: "BLACK_IV_FMX"))
+        
+        shapeImageView.isHidden = false
+        shapeImageView.loadGif(name: "loading")
+        SDImageCache.shared().removeImage(forKey: url) {
+            self.imageView.sd_setImage(with: URL(string: url), placeholderImage: UIImage(color: .black), options: SDWebImageOptions(rawValue: 0), completed: { (_ image, _ error, _ cacheType, _ url) in
+                self.shapeImageView.isHidden = true
+            })
+        }
         
         UserManager.sharedInstance.getHomeText { (_ success: Bool, title: String?) in
             if success {
@@ -233,4 +240,18 @@ class HomeViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     }
     
 
+}
+
+public extension UIImage {
+    public convenience init?(color: UIColor, size: CGSize = CGSize(width: 1, height: 1)) {
+        let rect = CGRect(origin: .zero, size: size)
+        UIGraphicsBeginImageContextWithOptions(rect.size, false, 0.0)
+        color.setFill()
+        UIRectFill(rect)
+        let image = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        
+        guard let cgImage = image?.cgImage else { return nil }
+        self.init(cgImage: cgImage)
+    }
 }

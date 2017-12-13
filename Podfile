@@ -1,7 +1,7 @@
 # Uncomment the next line to define a global platform for your project
 # platform :ios, '9.0'
 
-target 'Diamond on Tap' do
+target 'Diamonds on Tap' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
     pod 'AWSCognito', '~> 2.6.1'    #For data sync
@@ -21,6 +21,7 @@ target 'Diamond on Tap' do
     pod 'Alamofire'
     pod 'Firebase/Core'
     pod 'Firebase/Auth'
+    pod 'SimpleImageViewer'
 
 target 'Diamond ReserveTests' do
     inherit! :search_paths

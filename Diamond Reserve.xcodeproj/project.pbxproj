@@ -72,6 +72,7 @@
 		808B53E41F92810E00504607 /* DiamondTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 808B53E21F92810E00504607 /* DiamondTableViewCell.xib */; };
 		808B53E61F92B71C00504607 /* DiamondSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808B53E51F92B71C00504607 /* DiamondSelectionViewController.swift */; };
 		80CBAD6C1FA11BA600D83E2B /* RotationDiamondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CBAD6B1FA11BA600D83E2B /* RotationDiamondViewController.swift */; };
+		8D30EFBE1536DD95BCF26386 /* Pods_Diamonds_on_Tap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A1ADA354198C3E0BAAAD1C9 /* Pods_Diamonds_on_Tap.framework */; };
 		A6B42BDC26D660BC9E1B026E /* Pods_Diamond_on_Tap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5D75FD33DD76717E75E3077 /* Pods_Diamond_on_Tap.framework */; };
 		B702FBF51F8BF1AA00E0EFFB /* Emerald3@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B702FBEF1F8BF1AA00E0EFFB /* Emerald3@3x.png */; };
 		B702FBF61F8BF1AA00E0EFFB /* Emerald3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B702FBF01F8BF1AA00E0EFFB /* Emerald3@2x.png */; };
@@ -139,6 +140,8 @@
 		078BB1686C7C774DC8B73C3C /* Pods-Diamond ReserveTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diamond ReserveTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Diamond ReserveTests/Pods-Diamond ReserveTests.release.xcconfig"; sourceTree = "<group>"; };
 		1F84CEBF271DBDAC9F4701FB /* Pods-Diamond on Tap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diamond on Tap.release.xcconfig"; path = "Pods/Target Support Files/Pods-Diamond on Tap/Pods-Diamond on Tap.release.xcconfig"; sourceTree = "<group>"; };
 		24668A01A8F5C2A783B2C3D2 /* Pods-Diamond ReserveUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diamond ReserveUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Diamond ReserveUITests/Pods-Diamond ReserveUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4A1ADA354198C3E0BAAAD1C9 /* Pods_Diamonds_on_Tap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Diamonds_on_Tap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		63525D420580524E055407F2 /* Pods-Diamonds on Tap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diamonds on Tap.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Diamonds on Tap/Pods-Diamonds on Tap.debug.xcconfig"; sourceTree = "<group>"; };
 		6FDC07C33E60097F2DAD8341 /* Pods-Diamond on Tap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diamond on Tap.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Diamond on Tap/Pods-Diamond on Tap.debug.xcconfig"; sourceTree = "<group>"; };
 		8003655D1FBF5F54007A0B17 /* loading2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = loading2.gif; sourceTree = "<group>"; };
 		80057E741F9FD51D006540BC /* DiamondManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiamondManager.swift; sourceTree = "<group>"; };
@@ -258,6 +261,7 @@
 		B7DD64EB1F7C346C00858A6B /* Merged Background 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Merged Background 2.jpg"; sourceTree = "<group>"; };
 		DB07E7600359F9468BA31683 /* Pods-Diamond ReserveTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diamond ReserveTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Diamond ReserveTests/Pods-Diamond ReserveTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E11C5E43C156192A78E7A364 /* Pods_Diamond_ReserveTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Diamond_ReserveTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE8B9448CFAEEBDDCC70337A /* Pods-Diamonds on Tap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diamonds on Tap.release.xcconfig"; path = "Pods/Target Support Files/Pods-Diamonds on Tap/Pods-Diamonds on Tap.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -266,6 +270,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A6B42BDC26D660BC9E1B026E /* Pods_Diamond_on_Tap.framework in Frameworks */,
+				8D30EFBE1536DD95BCF26386 /* Pods_Diamonds_on_Tap.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,6 +302,8 @@
 				A8CAEE2EB6C14FA1A4368963 /* Pods-Diamond ReserveUITests.release.xcconfig */,
 				6FDC07C33E60097F2DAD8341 /* Pods-Diamond on Tap.debug.xcconfig */,
 				1F84CEBF271DBDAC9F4701FB /* Pods-Diamond on Tap.release.xcconfig */,
+				63525D420580524E055407F2 /* Pods-Diamonds on Tap.debug.xcconfig */,
+				EE8B9448CFAEEBDDCC70337A /* Pods-Diamonds on Tap.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -524,6 +531,7 @@
 				A5D75FD33DD76717E75E3077 /* Pods_Diamond_on_Tap.framework */,
 				E11C5E43C156192A78E7A364 /* Pods_Diamond_ReserveTests.framework */,
 				8F6EEBECF13E7D9E81232A23 /* Pods_Diamond_ReserveUITests.framework */,
+				4A1ADA354198C3E0BAAAD1C9 /* Pods_Diamonds_on_Tap.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -750,7 +758,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Diamond on Tap/Pods-Diamond on Tap-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Diamonds on Tap/Pods-Diamonds on Tap-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		3028CAEB3D0568E586D21707 /* [CP] Check Pods Manifest.lock */ = {
@@ -792,7 +800,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Diamond on Tap/Pods-Diamond on Tap-frameworks.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-Diamonds on Tap/Pods-Diamonds on Tap-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AWSAuthCore/AWSAuthCore.framework",
 				"${BUILT_PRODUCTS_DIR}/AWSCognito/AWSCognito.framework",
 				"${BUILT_PRODUCTS_DIR}/AWSCore/AWSCore.framework",
@@ -808,6 +816,7 @@
 				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
 				"${BUILT_PRODUCTS_DIR}/RangeSeekSlider/RangeSeekSlider.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SimpleImageViewer/SimpleImageViewer.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftGifOrigin/SwiftGifOrigin.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftHash/SwiftHash.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
@@ -830,6 +839,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RangeSeekSlider.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SimpleImageViewer.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftGifOrigin.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftHash.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
@@ -837,7 +847,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Diamond on Tap/Pods-Diamond on Tap-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Diamonds on Tap/Pods-Diamonds on Tap-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		77808BDB4F98CB6B7C950587 /* [CP] Embed Pods Frameworks */ = {
@@ -881,7 +891,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Diamond on Tap-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Diamonds on Tap-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1115,7 +1125,7 @@
 		};
 		B76D8D941F7ACD15000CDFC7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6FDC07C33E60097F2DAD8341 /* Pods-Diamond on Tap.debug.xcconfig */;
+			baseConfigurationReference = 63525D420580524E055407F2 /* Pods-Diamonds on Tap.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Diamond Reserve/Diamond Reserve.entitlements";
@@ -1128,8 +1138,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.diamond-reserve";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "6b2cc199-8f68-4b4a-b71a-c684376d8b08";
-				PROVISIONING_PROFILE_SPECIFIER = diamond_product;
+				PROVISIONING_PROFILE = "f2824c4a-75f8-4771-934d-b310e0616019";
+				PROVISIONING_PROFILE_SPECIFIER = charles_diamond_production;
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1137,7 +1147,7 @@
 		};
 		B76D8D951F7ACD15000CDFC7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1F84CEBF271DBDAC9F4701FB /* Pods-Diamond on Tap.release.xcconfig */;
+			baseConfigurationReference = EE8B9448CFAEEBDDCC70337A /* Pods-Diamonds on Tap.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Diamond Reserve/Diamond Reserve.entitlements";
@@ -1150,8 +1160,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.diamond-reserve";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "6b2cc199-8f68-4b4a-b71a-c684376d8b08";
-				PROVISIONING_PROFILE_SPECIFIER = diamond_product;
+				PROVISIONING_PROFILE = "f2824c4a-75f8-4771-934d-b310e0616019";
+				PROVISIONING_PROFILE_SPECIFIER = charles_diamond_production;
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

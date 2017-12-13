@@ -23,10 +23,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let didFinishLaunching = AWSSignInManager.sharedInstance().interceptApplication(
             application, didFinishLaunchingWithOptions: launchOptions)
         
+        
         FirebaseApp.configure()
-        
         registerForPushNotifications()
-        
+    
         if (!isInitialized) {
             AWSSignInManager.sharedInstance().resumeSession(completionHandler: {
                 (result: Any?, error: Error?) in
@@ -34,20 +34,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             })
             isInitialized = true
         }
-        
+
+
         let credentialsProvider = AWSCognitoCredentialsProvider(regionType:.USEast1,
                                                                 identityPoolId:"us-east-1:ce0590c6-05bb-470f-be56-b9a76692de91")
         let configuration = AWSServiceConfiguration(region:.USEast1, credentialsProvider:credentialsProvider)
         AWSServiceManager.default().defaultServiceConfiguration = configuration
-        
+
         getAdminARN()
-        
+
         if #available(iOS 10.0, *) {
             UNUserNotificationCenter.current().delegate = self
         } else {
             // Fallback on earlier versions
         }
-        
+
         if  let user = Auth.auth().currentUser {
             UserManager.sharedInstance.loadCurrentUser()
             DiamondManager.sharedInstance.loadMarkupValues()
@@ -57,12 +58,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                     UserManager.sharedInstance.user = User(userJson!)
                     UserManager.sharedInstance.saveCurrentUser(userJson: userJson!)
                 }
+                self.moveToMainScreen()
             })
-            moveToMainScreen()
         } else {
             moveToLogin()
         }
-        
+
         return didFinishLaunching
     }
  
@@ -109,7 +110,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             UNUserNotificationCenter.current().getNotificationSettings { (settings) in
                 print("Notification settings: \(settings)")
                 guard settings.authorizationStatus == .authorized else { return }
-                UIApplication.shared.registerForRemoteNotifications()
+                DispatchQueue.main.async(execute: {
+                    UIApplication.shared.registerForRemoteNotifications()
+                })
             }
         } else {
             // Fallback on earlier versions
@@ -156,9 +159,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     
-    
     func getAdminARN() {
-        
         UserManager.sharedInstance.getAdminARNs { (_ success: Bool, _ adminARNs: [String]?) in
             if success {
                 UserManager.sharedInstance.adminARNS = adminARNs
@@ -171,10 +172,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func moveToMainScreen() {
         
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let homeVC: HomeViewController? = storyboard.instantiateViewController(withIdentifier: "HomeVC") as? HomeViewController
-        let window: UIWindow? = (UIApplication.shared.delegate?.window)!
-        window?.rootViewController = homeVC
-
+        let homeVC: HomeViewController = storyboard.instantiateViewController(withIdentifier: "HomeVC") as! HomeViewController
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        self.window?.rootViewController = homeVC
+        self.window?.makeKeyAndVisible()
     }
     
     
@@ -183,8 +184,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let splashVC: SplashViewController = (storyboard.instantiateViewController(withIdentifier: "splashVC") as? SplashViewController)!
         let startNC: UINavigationController = storyboard.instantiateViewController(withIdentifier: "startNC") as! UINavigationController
         startNC.viewControllers = [splashVC]
-        let window: UIWindow? = (UIApplication.shared.delegate?.window)!
-        window?.rootViewController = startNC
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        self.window?.rootViewController = startNC
+        self.window?.makeKeyAndVisible()
+
     }
     
 
