@@ -14,7 +14,6 @@
 		801C31281FD7F15C0004D566 /* gia.png in Resources */ = {isa = PBXBuildFile; fileRef = 801C31251FD7F14A0004D566 /* gia.png */; };
 		801C31291FD7F15C0004D566 /* gia@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 801C31261FD7F14D0004D566 /* gia@2x.png */; };
 		801C312A1FD7F15C0004D566 /* gia@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 801C31271FD7F1510004D566 /* gia@3x.png */; };
-		801C312E1FD7F83A0004D566 /* down_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 801C312B1FD7F7950004D566 /* down_arrow.png */; };
 		801C312F1FD7F83A0004D566 /* down_arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 801C312D1FD7F7C00004D566 /* down_arrow@2x.png */; };
 		801C31301FD7F83A0004D566 /* down_arrow@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 801C312C1FD7F7960004D566 /* down_arrow@3x.png */; };
 		802594EF1F8DCDFD004F1F94 /* BLACK_IV_FMX.png in Resources */ = {isa = PBXBuildFile; fileRef = 802594EC1F8DCDFD004F1F94 /* BLACK_IV_FMX.png */; };
@@ -72,6 +71,7 @@
 		808B53E41F92810E00504607 /* DiamondTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 808B53E21F92810E00504607 /* DiamondTableViewCell.xib */; };
 		808B53E61F92B71C00504607 /* DiamondSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808B53E51F92B71C00504607 /* DiamondSelectionViewController.swift */; };
 		80CBAD6C1FA11BA600D83E2B /* RotationDiamondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CBAD6B1FA11BA600D83E2B /* RotationDiamondViewController.swift */; };
+		A0CA0F511882AB135FBC5698 /* Pods_Diamonds_on_Tap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04707189804365022F10C1E0 /* Pods_Diamonds_on_Tap.framework */; };
 		A6B42BDC26D660BC9E1B026E /* Pods_Diamond_on_Tap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5D75FD33DD76717E75E3077 /* Pods_Diamond_on_Tap.framework */; };
 		B702FBF51F8BF1AA00E0EFFB /* Emerald3@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B702FBEF1F8BF1AA00E0EFFB /* Emerald3@3x.png */; };
 		B702FBF61F8BF1AA00E0EFFB /* Emerald3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B702FBF01F8BF1AA00E0EFFB /* Emerald3@2x.png */; };
@@ -136,8 +136,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04707189804365022F10C1E0 /* Pods_Diamonds_on_Tap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Diamonds_on_Tap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		078BB1686C7C774DC8B73C3C /* Pods-Diamond ReserveTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diamond ReserveTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Diamond ReserveTests/Pods-Diamond ReserveTests.release.xcconfig"; sourceTree = "<group>"; };
 		1F84CEBF271DBDAC9F4701FB /* Pods-Diamond on Tap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diamond on Tap.release.xcconfig"; path = "Pods/Target Support Files/Pods-Diamond on Tap/Pods-Diamond on Tap.release.xcconfig"; sourceTree = "<group>"; };
+		2446CABE3B74FE248F6077D0 /* Pods-Diamonds on Tap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diamonds on Tap.release.xcconfig"; path = "Pods/Target Support Files/Pods-Diamonds on Tap/Pods-Diamonds on Tap.release.xcconfig"; sourceTree = "<group>"; };
 		24668A01A8F5C2A783B2C3D2 /* Pods-Diamond ReserveUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diamond ReserveUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Diamond ReserveUITests/Pods-Diamond ReserveUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		6FDC07C33E60097F2DAD8341 /* Pods-Diamond on Tap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diamond on Tap.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Diamond on Tap/Pods-Diamond on Tap.debug.xcconfig"; sourceTree = "<group>"; };
 		8003655D1FBF5F54007A0B17 /* loading2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = loading2.gif; sourceTree = "<group>"; };
@@ -146,7 +148,6 @@
 		801C31251FD7F14A0004D566 /* gia.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gia.png; sourceTree = "<group>"; };
 		801C31261FD7F14D0004D566 /* gia@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gia@2x.png"; sourceTree = "<group>"; };
 		801C31271FD7F1510004D566 /* gia@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gia@3x.png"; sourceTree = "<group>"; };
-		801C312B1FD7F7950004D566 /* down_arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = down_arrow.png; path = "../Desktop/Diamond-reserve/down_arrow.png"; sourceTree = "<group>"; };
 		801C312C1FD7F7960004D566 /* down_arrow@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "down_arrow@3x.png"; sourceTree = "<group>"; };
 		801C312D1FD7F7C00004D566 /* down_arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "down_arrow@2x.png"; sourceTree = "<group>"; };
 		802594EC1F8DCDFD004F1F94 /* BLACK_IV_FMX.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BLACK_IV_FMX.png; sourceTree = "<group>"; };
@@ -258,6 +259,7 @@
 		B7DD64EB1F7C346C00858A6B /* Merged Background 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Merged Background 2.jpg"; sourceTree = "<group>"; };
 		DB07E7600359F9468BA31683 /* Pods-Diamond ReserveTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diamond ReserveTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Diamond ReserveTests/Pods-Diamond ReserveTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E11C5E43C156192A78E7A364 /* Pods_Diamond_ReserveTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Diamond_ReserveTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E25E15D32E0C0BD694505734 /* Pods-Diamonds on Tap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diamonds on Tap.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Diamonds on Tap/Pods-Diamonds on Tap.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -266,6 +268,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A6B42BDC26D660BC9E1B026E /* Pods_Diamond_on_Tap.framework in Frameworks */,
+				A0CA0F511882AB135FBC5698 /* Pods_Diamonds_on_Tap.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,6 +300,8 @@
 				A8CAEE2EB6C14FA1A4368963 /* Pods-Diamond ReserveUITests.release.xcconfig */,
 				6FDC07C33E60097F2DAD8341 /* Pods-Diamond on Tap.debug.xcconfig */,
 				1F84CEBF271DBDAC9F4701FB /* Pods-Diamond on Tap.release.xcconfig */,
+				E25E15D32E0C0BD694505734 /* Pods-Diamonds on Tap.debug.xcconfig */,
+				2446CABE3B74FE248F6077D0 /* Pods-Diamonds on Tap.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -453,39 +458,33 @@
 		B7DD64F31F7C3B3300858A6B /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				801C31251FD7F14A0004D566 /* gia.png */,
-				801C31261FD7F14D0004D566 /* gia@2x.png */,
-				801C31271FD7F1510004D566 /* gia@3x.png */,
-				802992E51FD820C2007EFC9E /* white_edit_circle.png */,
-				802992E31FD820AD007EFC9E /* white_edit_circle@2x.png */,
-				802992E41FD820B4007EFC9E /* white_edit_circle@3x.png */,
-				808203D61FDABEF400DB0F4A /* white-camera.png */,
-				808203D41FDABEF300DB0F4A /* white-camera@2x.png */,
-				808203D51FDABEF400DB0F4A /* white-camera@3x.png */,
-				8003655D1FBF5F54007A0B17 /* loading2.gif */,
 				802594EC1F8DCDFD004F1F94 /* BLACK_IV_FMX.png */,
 				802594ED1F8DCDFD004F1F94 /* BLACK_IV_FMX@2x.png */,
 				802594EE1F8DCDFD004F1F94 /* BLACK_IV_FMX@3x.png */,
+				802B60021FB8D692008B3202 /* down_arrow.png */,
+				801C312D1FD7F7C00004D566 /* down_arrow@2x.png */,
+				801C312C1FD7F7960004D566 /* down_arrow@3x.png */,
 				B7D6039E1F86415300B94067 /* Emerald.png */,
 				B7D6039C1F86415300B94067 /* Emerald@2x.png */,
 				B7D6039D1F86415300B94067 /* Emerald@3x.png */,
-				801C312B1FD7F7950004D566 /* down_arrow.png */,
-				801C312D1FD7F7C00004D566 /* down_arrow@2x.png */,
-				801C312C1FD7F7960004D566 /* down_arrow@3x.png */,
 				B702FBF31F8BF1AA00E0EFFB /* Emerald2.png */,
 				B702FBF41F8BF1AA00E0EFFB /* Emerald2@2x.png */,
 				B702FBF21F8BF1AA00E0EFFB /* Emerald2@3x.png */,
 				B702FBF11F8BF1AA00E0EFFB /* Emerald3.png */,
-				802B60071FBA282E008B3202 /* loading_refresh.gif */,
-				802B60081FBA282E008B3202 /* loading.gif */,
 				B702FBF01F8BF1AA00E0EFFB /* Emerald3@2x.png */,
 				B702FBEF1F8BF1AA00E0EFFB /* Emerald3@3x.png */,
 				802595021F8E2063004F1F94 /* gems.png */,
 				802595031F8E2063004F1F94 /* gems@2x.png */,
 				802595041F8E2063004F1F94 /* gems@3x.png */,
+				801C31251FD7F14A0004D566 /* gia.png */,
+				801C31261FD7F14D0004D566 /* gia@2x.png */,
+				801C31271FD7F1510004D566 /* gia@3x.png */,
 				8025950E1F8EB55C004F1F94 /* jewelry.png */,
 				8025950F1F8EB55C004F1F94 /* jewelry@2x.png */,
 				802595101F8EB55C004F1F94 /* jewelry@3x.png */,
+				802B60071FBA282E008B3202 /* loading_refresh.gif */,
+				802B60081FBA282E008B3202 /* loading.gif */,
+				8003655D1FBF5F54007A0B17 /* loading2.gif */,
 				802594FC1F8E15B4004F1F94 /* MENU_ICON.png */,
 				802594FD1F8E15B4004F1F94 /* MENU_ICON@2x.png */,
 				802594FE1F8E15B4004F1F94 /* MENU_ICON@3x.png */,
@@ -510,10 +509,15 @@
 				B75C3E131F882F6600E759EC /* strip3@2x.png */,
 				B75C3E121F882F6600E759EC /* strip3@3x.png */,
 				80566DEB1FA3B5AE009FC556 /* tutorial_1.gif */,
-				802B60051FB8D6FF008B3202 /* up_arrow.png */,
 				80566DEA1FA3B5A5009FC556 /* tutorial_2.gif */,
 				80566DEC1FA3B5B6009FC556 /* tutorial_3.gif */,
-				802B60021FB8D692008B3202 /* down_arrow.png */,
+				802B60051FB8D6FF008B3202 /* up_arrow.png */,
+				802992E51FD820C2007EFC9E /* white_edit_circle.png */,
+				802992E31FD820AD007EFC9E /* white_edit_circle@2x.png */,
+				802992E41FD820B4007EFC9E /* white_edit_circle@3x.png */,
+				808203D61FDABEF400DB0F4A /* white-camera.png */,
+				808203D41FDABEF300DB0F4A /* white-camera@2x.png */,
+				808203D51FDABEF400DB0F4A /* white-camera@3x.png */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -524,6 +528,7 @@
 				A5D75FD33DD76717E75E3077 /* Pods_Diamond_on_Tap.framework */,
 				E11C5E43C156192A78E7A364 /* Pods_Diamond_ReserveTests.framework */,
 				8F6EEBECF13E7D9E81232A23 /* Pods_Diamond_ReserveUITests.framework */,
+				04707189804365022F10C1E0 /* Pods_Diamonds_on_Tap.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -717,7 +722,6 @@
 				802B600C1FBB8D39008B3202 /* GoogleService-Info.plist in Resources */,
 				802B60041FB8D6E7008B3202 /* down_arrow.png in Resources */,
 				802B60061FB8D705008B3202 /* up_arrow.png in Resources */,
-				801C312E1FD7F83A0004D566 /* down_arrow.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -750,7 +754,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Diamond on Tap/Pods-Diamond on Tap-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Diamonds on Tap/Pods-Diamonds on Tap-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		3028CAEB3D0568E586D21707 /* [CP] Check Pods Manifest.lock */ = {
@@ -792,7 +796,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Diamond on Tap/Pods-Diamond on Tap-frameworks.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-Diamonds on Tap/Pods-Diamonds on Tap-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AWSAuthCore/AWSAuthCore.framework",
 				"${BUILT_PRODUCTS_DIR}/AWSCognito/AWSCognito.framework",
 				"${BUILT_PRODUCTS_DIR}/AWSCore/AWSCore.framework",
@@ -837,7 +841,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Diamond on Tap/Pods-Diamond on Tap-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Diamonds on Tap/Pods-Diamonds on Tap-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		77808BDB4F98CB6B7C950587 /* [CP] Embed Pods Frameworks */ = {
@@ -881,7 +885,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Diamond on Tap-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Diamonds on Tap-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1115,7 +1119,7 @@
 		};
 		B76D8D941F7ACD15000CDFC7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6FDC07C33E60097F2DAD8341 /* Pods-Diamond on Tap.debug.xcconfig */;
+			baseConfigurationReference = E25E15D32E0C0BD694505734 /* Pods-Diamonds on Tap.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Diamond Reserve/Diamond Reserve.entitlements";
@@ -1128,8 +1132,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.diamond-reserve";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "6b2cc199-8f68-4b4a-b71a-c684376d8b08";
-				PROVISIONING_PROFILE_SPECIFIER = diamond_product;
+				PROVISIONING_PROFILE = "51b18c16-74f1-4d57-87e7-44efad8e147e";
+				PROVISIONING_PROFILE_SPECIFIER = asher_diamond_production;
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1137,7 +1141,7 @@
 		};
 		B76D8D951F7ACD15000CDFC7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1F84CEBF271DBDAC9F4701FB /* Pods-Diamond on Tap.release.xcconfig */;
+			baseConfigurationReference = 2446CABE3B74FE248F6077D0 /* Pods-Diamonds on Tap.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Diamond Reserve/Diamond Reserve.entitlements";
@@ -1150,8 +1154,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.diamond-reserve";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "6b2cc199-8f68-4b4a-b71a-c684376d8b08";
-				PROVISIONING_PROFILE_SPECIFIER = diamond_product;
+				PROVISIONING_PROFILE = "51b18c16-74f1-4d57-87e7-44efad8e147e";
+				PROVISIONING_PROFILE_SPECIFIER = asher_diamond_production;
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

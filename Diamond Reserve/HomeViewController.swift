@@ -31,7 +31,7 @@ class HomeViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        editButton.isHidden = false// !(UserManager.sharedInstance.user?.is_admin)!
+        editButton.isHidden = !(UserManager.sharedInstance.user?.is_admin)!
         if home_title != nil {
             editTextView.text = home_title!
         }
