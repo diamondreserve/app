@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="jsd-vc-jXd">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -544,7 +544,7 @@
                                                         </constraints>
                                                     </view>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="REGISTER" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZL9-de-gmA">
-                                                        <rect key="frame" x="135" y="10" width="64.5" height="21"/>
+                                                        <rect key="frame" x="134.5" y="10" width="64.5" height="21"/>
                                                         <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="18"/>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -676,7 +676,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ON THE LIST?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EE0-2g-Hht">
-                                <rect key="frame" x="144" y="209" width="88.5" height="10.5"/>
+                                <rect key="frame" x="143.5" y="209" width="88.5" height="10.5"/>
                                 <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="18"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -724,7 +724,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Waiting to verify…" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="atd-p4-I8W">
-                                <rect key="frame" x="137.5" y="373" width="100.5" height="15.5"/>
+                                <rect key="frame" x="138" y="373" width="100.5" height="15.5"/>
                                 <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="13"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -874,7 +874,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WE WILL GET BACK TO YOU SHORTLY!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RuL-xU-hnB">
-                                <rect key="frame" x="94" y="568" width="187.5" height="17"/>
+                                <rect key="frame" x="94.5" y="568" width="187.5" height="17"/>
                                 <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="14"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -1836,30 +1836,21 @@ TO SEE IF YOU QUALIFY </string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WELCOME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3cz-PE-1cA">
-                                <rect key="frame" x="0.0" y="20" width="375" height="40"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="0vp-ZU-pYw"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="24"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ljo-A2-kfn" userLabel="back">
-                                <rect key="frame" x="0.0" y="60" width="375" height="607"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ljo-A2-kfn" userLabel="back">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zhB-5L-EzC" userLabel="loading">
-                                <rect key="frame" x="157.5" y="333.5" width="60" height="60"/>
+                                <rect key="frame" x="147.5" y="293.5" width="80" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="zhB-5L-EzC" secondAttribute="height" multiplier="1:1" id="1jk-bH-Fyf"/>
-                                    <constraint firstAttribute="width" constant="60" id="NBt-ZW-TPw"/>
+                                    <constraint firstAttribute="width" constant="80" id="NBt-ZW-TPw"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MPB-eZ-hUD">
-                                <rect key="frame" x="27" y="589" width="147" height="22"/>
+                                <rect key="frame" x="27" y="579" width="147" height="44"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="22" id="AKH-Aj-T8L"/>
+                                    <constraint firstAttribute="height" constant="44" id="AKH-Aj-T8L"/>
                                     <constraint firstAttribute="width" constant="147" id="gmu-UD-djO"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="17"/>
@@ -1873,7 +1864,7 @@ TO SEE IF YOU QUALIFY </string>
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="b7z-7j-Oo9">
-                                <rect key="frame" x="27" y="471" width="155" height="106"/>
+                                <rect key="frame" x="27" y="461" width="155" height="106"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="155" id="ko1-gE-iAj"/>
@@ -1898,7 +1889,7 @@ Now On Tap!</string>
                                 </connections>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kyv-mX-0pf">
-                                <rect key="frame" x="304" y="573" width="38" height="38"/>
+                                <rect key="frame" x="304" y="585" width="38" height="38"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="38" id="R3L-BP-SX0"/>
                                     <constraint firstAttribute="width" secondItem="kyv-mX-0pf" secondAttribute="height" multiplier="1:1" id="nUz-38-kwM"/>
@@ -1909,14 +1900,14 @@ Now On Tap!</string>
                                 </connections>
                             </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sTg-O8-1ju">
-                                <rect key="frame" x="27" y="438" width="26" height="22"/>
+                                <rect key="frame" x="27" y="428" width="26" height="22"/>
                                 <state key="normal" image="white-camera.png"/>
                                 <connections>
                                     <action selector="cameraAction:" destination="iJZ-ix-gyY" eventType="touchUpInside" id="pZR-Ni-URn"/>
                                 </connections>
                             </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NuE-vy-fgb">
-                                <rect key="frame" x="304" y="581" width="37" height="30"/>
+                                <rect key="frame" x="304" y="593" width="37" height="30"/>
                                 <state key="normal" title="SAVE">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -1928,9 +1919,6 @@ Now On Tap!</string>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="sTg-O8-1ju" firstAttribute="leading" secondItem="b7z-7j-Oo9" secondAttribute="leading" id="0Ei-hr-V9O"/>
-                            <constraint firstItem="ljo-A2-kfn" firstAttribute="top" secondItem="3cz-PE-1cA" secondAttribute="bottom" id="2Qg-9f-nhH"/>
-                            <constraint firstItem="3cz-PE-1cA" firstAttribute="top" secondItem="WpI-Ib-92T" secondAttribute="bottom" id="2ze-Yu-fEc"/>
-                            <constraint firstAttribute="trailing" secondItem="3cz-PE-1cA" secondAttribute="trailing" id="9qB-5S-DF5"/>
                             <constraint firstItem="NuE-vy-fgb" firstAttribute="leading" secondItem="kyv-mX-0pf" secondAttribute="leading" id="BnY-Zc-lst"/>
                             <constraint firstItem="zhB-5L-EzC" firstAttribute="centerY" secondItem="ljo-A2-kfn" secondAttribute="centerY" id="FMd-Pt-0dR"/>
                             <constraint firstItem="b7z-7j-Oo9" firstAttribute="leading" secondItem="eS7-QG-upe" secondAttribute="leadingMargin" constant="11" id="GGN-p4-nE4"/>
@@ -1940,11 +1928,11 @@ Now On Tap!</string>
                             <constraint firstItem="MPB-eZ-hUD" firstAttribute="top" secondItem="b7z-7j-Oo9" secondAttribute="bottom" constant="12" id="P8n-jI-KJ7"/>
                             <constraint firstItem="NuE-vy-fgb" firstAttribute="bottom" secondItem="kyv-mX-0pf" secondAttribute="bottom" id="PA0-lS-iQR"/>
                             <constraint firstItem="b7z-7j-Oo9" firstAttribute="top" secondItem="sTg-O8-1ju" secondAttribute="bottom" constant="11" id="QIx-r3-4uS"/>
-                            <constraint firstItem="3cz-PE-1cA" firstAttribute="leading" secondItem="eS7-QG-upe" secondAttribute="leading" id="Sii-pF-nQG"/>
+                            <constraint firstItem="ljo-A2-kfn" firstAttribute="top" secondItem="WpI-Ib-92T" secondAttribute="bottom" constant="-20" id="WuT-2U-1rI"/>
                             <constraint firstItem="zhB-5L-EzC" firstAttribute="centerX" secondItem="ljo-A2-kfn" secondAttribute="centerX" id="aGu-Tc-Tle"/>
                             <constraint firstAttribute="trailingMargin" secondItem="kyv-mX-0pf" secondAttribute="trailing" constant="17" id="cih-Ip-VFX"/>
                             <constraint firstItem="ljo-A2-kfn" firstAttribute="leading" secondItem="eS7-QG-upe" secondAttribute="leading" id="hGP-RK-Qb5"/>
-                            <constraint firstItem="7wl-pB-j2L" firstAttribute="top" secondItem="MPB-eZ-hUD" secondAttribute="bottom" constant="56" id="iWa-y2-czP"/>
+                            <constraint firstItem="7wl-pB-j2L" firstAttribute="top" secondItem="MPB-eZ-hUD" secondAttribute="bottom" constant="44" id="iWa-y2-czP"/>
                             <constraint firstAttribute="trailing" secondItem="ljo-A2-kfn" secondAttribute="trailing" id="zfi-HO-3QB"/>
                         </constraints>
                     </view>
@@ -2136,7 +2124,7 @@ Now On Tap!</string>
                                                         <state key="normal" image="round_normal" backgroundImage="diamond_button_bg_normal"/>
                                                         <state key="disabled" image="round_normal.png" backgroundImage="diamond_button_background_normal.png"/>
                                                         <state key="selected" image="round_selected" backgroundImage="diamond_button_bg_selected"/>
-                                                        <state key="highlighted" image="round_normal.png" backgroundImage="diamond_button_bg_normal"/>
+                                                        <state key="highlighted" image="round_normal.png" backgroundImage="diamond_button_background_normal.png"/>
                                                         <connections>
                                                             <action selector="didDiamondButtonSelected:" destination="fOL-pc-est" eventType="touchUpInside" id="wXX-KA-4mq"/>
                                                         </connections>
@@ -2956,7 +2944,7 @@ Now On Tap!</string>
                                 <rect key="frame" x="0.0" y="64" width="375" height="538"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SUCCESS!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Lz-IZ-ixL">
-                                        <rect key="frame" x="143.5" y="125" width="89.5" height="28"/>
+                                        <rect key="frame" x="143" y="125" width="89.5" height="28"/>
                                         <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="24"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
@@ -3523,6 +3511,9 @@ Now On Tap!</string>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WEIGHT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pQW-30-fT1" userLabel="WEIGHT">
                                                 <rect key="frame" x="19" y="142" width="40.5" height="17"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="17" id="A0t-OE-OZJ"/>
+                                                </constraints>
                                                 <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="14"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
@@ -3572,6 +3563,9 @@ Now On Tap!</string>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="COLOR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O2v-1L-gbK">
                                                 <rect key="frame" x="19" y="244" width="33.5" height="17"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="17" id="h1l-KO-Moo"/>
+                                                </constraints>
                                                 <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="14"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
@@ -4497,6 +4491,9 @@ Now On Tap!</string>
                                             </view>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cPu-20-Zek">
                                                 <rect key="frame" x="293" y="541" width="49" height="33"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="33" id="v9e-9z-AYx"/>
+                                                </constraints>
                                                 <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="17"/>
                                                 <state key="normal" title="SUBMIT">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -4528,6 +4525,7 @@ Now On Tap!</string>
                                             <constraint firstItem="agb-Qq-ioD" firstAttribute="leading" secondItem="oqV-KH-6GN" secondAttribute="leading" constant="19" id="hlu-Jb-IEA"/>
                                             <constraint firstItem="GXx-oP-Pav" firstAttribute="top" secondItem="s48-dI-xyf" secondAttribute="bottom" constant="8" id="lFN-Q0-yLP"/>
                                             <constraint firstAttribute="trailing" secondItem="s48-dI-xyf" secondAttribute="trailing" constant="19" id="p4C-OF-RxD"/>
+                                            <constraint firstAttribute="bottom" secondItem="cPu-20-Zek" secondAttribute="bottom" constant="29" id="pZN-hH-f7L"/>
                                             <constraint firstItem="Y7e-dG-Mzp" firstAttribute="leading" secondItem="oqV-KH-6GN" secondAttribute="leading" constant="19" id="rGH-Ck-B6y"/>
                                             <constraint firstAttribute="trailing" secondItem="cfZ-p9-Dsk" secondAttribute="trailing" constant="8" id="reK-bV-1Xv"/>
                                             <constraint firstItem="rxB-cG-HdO" firstAttribute="leading" secondItem="oqV-KH-6GN" secondAttribute="leading" constant="19" id="vY4-Ge-bkd"/>
@@ -5243,6 +5241,12 @@ Now On Tap!</string>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </imageView>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C5n-wt-i7S" userLabel="Certificate View Button">
+                                                        <rect key="frame" x="265" y="180" width="55" height="55"/>
+                                                        <connections>
+                                                            <action selector="showCertificateZoomAction:" destination="cEU-GD-ZEP" eventType="touchUpInside" id="Bpj-J7-y83"/>
+                                                        </connections>
+                                                    </button>
                                                     <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jewelry_sample" translatesAutoresizingMaskIntoConstraints="NO" id="SkP-0a-rNv">
                                                         <rect key="frame" x="300" y="11" width="25" height="25"/>
                                                         <color key="backgroundColor" red="0.59215686270000001" green="0.59215686270000001" blue="0.59215686270000001" alpha="0.34000000000000002" colorSpace="calibratedRGB"/>
@@ -5343,16 +5347,20 @@ Now On Tap!</string>
                                                     <constraint firstItem="Tn4-fI-veC" firstAttribute="centerX" secondItem="3PE-yB-XK1" secondAttribute="centerX" id="BtD-w3-Xi9"/>
                                                     <constraint firstAttribute="trailing" secondItem="xYE-zD-AC3" secondAttribute="trailing" id="FJv-cw-n9A"/>
                                                     <constraint firstItem="xYE-zD-AC3" firstAttribute="top" secondItem="3PE-yB-XK1" secondAttribute="top" id="KPL-Zy-Bsb"/>
+                                                    <constraint firstItem="C5n-wt-i7S" firstAttribute="centerY" secondItem="5ZD-6e-A6n" secondAttribute="centerY" id="R3q-Yk-A5Q"/>
                                                     <constraint firstItem="lQD-po-VD4" firstAttribute="centerX" secondItem="3PE-yB-XK1" secondAttribute="centerX" id="VgO-BH-U1X"/>
                                                     <constraint firstAttribute="trailing" secondItem="SkP-0a-rNv" secondAttribute="trailing" constant="10" id="Vjl-Si-9Jo"/>
+                                                    <constraint firstItem="C5n-wt-i7S" firstAttribute="centerX" secondItem="5ZD-6e-A6n" secondAttribute="centerX" id="YaM-ya-iSE"/>
                                                     <constraint firstItem="2M9-5B-X6w" firstAttribute="leading" secondItem="3PE-yB-XK1" secondAttribute="leading" constant="15" id="Zti-Im-TS8"/>
                                                     <constraint firstItem="lQD-po-VD4" firstAttribute="centerY" secondItem="xYE-zD-AC3" secondAttribute="centerY" id="b1b-bn-0t9"/>
                                                     <constraint firstItem="8dM-Kq-kgg" firstAttribute="leading" secondItem="jCG-fC-4Mj" secondAttribute="trailing" constant="5" id="f9p-2K-qDQ"/>
                                                     <constraint firstItem="SkP-0a-rNv" firstAttribute="top" secondItem="3PE-yB-XK1" secondAttribute="top" constant="11" id="gBt-4Z-LZy"/>
                                                     <constraint firstItem="2M9-5B-X6w" firstAttribute="bottom" secondItem="xYE-zD-AC3" secondAttribute="bottom" constant="-15" id="iDX-Yz-ap6"/>
                                                     <constraint firstItem="v6R-X8-fjc" firstAttribute="top" secondItem="jCG-fC-4Mj" secondAttribute="bottom" constant="10" id="j7E-Ad-jab"/>
+                                                    <constraint firstItem="C5n-wt-i7S" firstAttribute="height" secondItem="5ZD-6e-A6n" secondAttribute="height" id="lmZ-FM-4ek"/>
                                                     <constraint firstItem="8dM-Kq-kgg" firstAttribute="top" secondItem="xYE-zD-AC3" secondAttribute="bottom" constant="10" id="nZc-HM-JAz"/>
                                                     <constraint firstItem="jCG-fC-4Mj" firstAttribute="leading" secondItem="3PE-yB-XK1" secondAttribute="leading" constant="15" id="o6C-1g-Yqq"/>
+                                                    <constraint firstItem="C5n-wt-i7S" firstAttribute="width" secondItem="5ZD-6e-A6n" secondAttribute="width" id="pkH-tG-P6V"/>
                                                     <constraint firstItem="Tn4-fI-veC" firstAttribute="top" secondItem="v6R-X8-fjc" secondAttribute="bottom" constant="5" id="rOZ-8J-swb"/>
                                                     <constraint firstItem="5ZD-6e-A6n" firstAttribute="bottom" secondItem="xYE-zD-AC3" secondAttribute="bottom" constant="-15" id="xyx-Zh-Kdv"/>
                                                     <constraint firstItem="jCG-fC-4Mj" firstAttribute="top" secondItem="xYE-zD-AC3" secondAttribute="bottom" constant="10" id="yAM-cP-UgZ"/>
@@ -6139,7 +6147,7 @@ Now On Tap!</string>
                                                             <rect key="frame" x="243" y="20.5" width="20" height="20"/>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="17:31:05" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hec-0J-OmW">
-                                                            <rect key="frame" x="273" y="20.5" width="64.5" height="21.5"/>
+                                                            <rect key="frame" x="273" y="20" width="64.5" height="21.5"/>
                                                             <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="18"/>
                                                             <color key="textColor" red="0.019607843137254902" green="0.81568627450980391" blue="0.15686274509803921" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
