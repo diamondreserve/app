@@ -34,9 +34,10 @@ class UserManager: BaseManager {
     }
     
     func loadCurrentUser(){
-        let defaults = UserDefaults.standard
-        let userJson = JSON.parse(defaults.value(forKey: "userJson") as! String)
-        self.user = User(userJson)
+        if let userJsonString = UserDefaults.standard.value(forKey: "userJson") {
+            let userJson = JSON.parse(userJsonString as! String)
+            self.user = User(userJson)
+        }
     }
     
     func login(id: String, completion: @escaping (_ success : Bool, _ user: JSON?) -> Void) {

@@ -14,6 +14,7 @@ import AWSS3
 import SwiftyJSON
 import Messages
 import MessageUI
+import SimpleImageViewer
 
 
 enum ReserveState {
@@ -260,6 +261,14 @@ class DiamondDetailViewController: UIViewController, UITableViewDelegate, UITabl
         navigationController?.popViewController(animated: true)
     }
     
+    @IBAction func showCertificateZoomAction(_ sender: Any) {
+        let configuration = ImageViewerConfiguration { config in
+            config.imageView = self.certificateImageView
+        }
+        
+        let imageViewerController = ImageViewerController(configuration: configuration)
+        present(imageViewerController, animated: true)
+    }
     
     @IBAction func purchaseAction(_ sender: Any) {
         shareAction(isPurchase: true)
@@ -302,7 +311,6 @@ class DiamondDetailViewController: UIViewController, UITableViewDelegate, UITabl
         view.layer.render(in: UIGraphicsGetCurrentContext()!)
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
-       
         return image!
     }
     
@@ -405,11 +413,9 @@ class DiamondDetailViewController: UIViewController, UITableViewDelegate, UITabl
         self.rejectView.isHidden = true
     }
     
-    
     @IBAction func shareAction(_ sender: Any) {
         shareAction()
     }
-    
     
     func sendPN(){
         let sns = AWSSNS.default()
@@ -491,13 +497,7 @@ class DiamondDetailViewController: UIViewController, UITableViewDelegate, UITabl
     @IBAction func scrollDownAction(_ sender: Any) {
         let bottomOffset : CGPoint = CGPoint(x: 0, y: scrollView.contentSize.height - scrollView.bounds.size.height + scrollView.contentInset.bottom)
         scrollView.setContentOffset(bottomOffset, animated: true)
-//        dispatch_async(dispatch_get_main_queue()) {
-//            UIView.animateWithDuration(2, delay: 0, options: UIViewAnimationOptions.CurveLinear, animations: {
-//                self.scrollView.contentOffset.x = 200
-//            }, completion: nil)
-//        }
     }
-    
     
     // MARK: - Table view data source
     
@@ -665,7 +665,6 @@ class DiamondDetailViewController: UIViewController, UITableViewDelegate, UITabl
     }
     
     func uploadImage(){
-        
         var imageName = ""
         if diamond!.image == nil {
             imageName = diamond!.id!
@@ -710,19 +709,6 @@ class DiamondDetailViewController: UIViewController, UITableViewDelegate, UITabl
                 }
             })
             
-            /*
-            self.dynamoDbObjectMapper.save(self.diamond!, completionHandler: {(error: Error?) -> Void in
-                if let error = error {
-                    print(" Amazon DynamoDB Save Error: \(error)")
-                    return
-                }
- 
-                DispatchQueue.main.async(execute: {
-                    self.shapeImageView.isHidden = true
-                })
-            })
- */
-
             return nil
         })
     }

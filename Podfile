@@ -21,6 +21,7 @@ target 'Diamonds on Tap' do
     pod 'Alamofire'
     pod 'Firebase/Core'
     pod 'Firebase/Auth'
+    pod 'SimpleImageViewer'
 
 target 'Diamond ReserveTests' do
     inherit! :search_paths
