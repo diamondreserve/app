@@ -30,6 +30,9 @@ class DiamondSearchViewController: UIViewController {
         super.viewDidLoad()
         
         setNavigationBar()
+         self.navigationController?.interactivePopGestureRecognizer?.isEnabled = false
+        sideMenuController?.isLeftViewSwipeGestureDisabled = true
+        weightSlider.minDistance = 0.2
     }
 
     func setNavigationBar() {
@@ -37,7 +40,7 @@ class DiamondSearchViewController: UIViewController {
         let menuBtn = UIBarButtonItem(image: UIImage(named:"MENU_ICON"), style: .plain, target: self, action: #selector(showSideMenu))
         navigationItem.leftBarButtonItem = menuBtn
         
-        let rightBtn = UIBarButtonItem(title: "CANCEL", style: .plain, target: self, action: #selector(cancelAction))
+        let rightBtn = UIBarButtonItem(title: "SUBMIT", style: .plain, target: self, action: #selector(doneAction))
         rightBtn.setTitleTextAttributes([NSFontAttributeName: UIFont(name: "Unica One", size: 17)! ,NSForegroundColorAttributeName: UIColor.white], for: .normal)
         rightBtn.setTitleTextAttributes([NSFontAttributeName: UIFont(name: "Unica One", size: 17)! ,NSForegroundColorAttributeName: UIColor.white], for: .highlighted)
 
