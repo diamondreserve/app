@@ -49,17 +49,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             // Fallback on earlier versions
         }
 
-        if  let user = Auth.auth().currentUser {
+        if  Auth.auth().currentUser != nil {
             UserManager.sharedInstance.loadCurrentUser()
             DiamondManager.sharedInstance.loadMarkupValues()
-            UserManager.sharedInstance.login(id: user.email!, completion: { (_ success: Bool, _ userJson: JSON?) in
-                if (success) {
-                    print(userJson!)
-                    UserManager.sharedInstance.user = User(userJson!)
-                    UserManager.sharedInstance.saveCurrentUser(userJson: userJson!)
-                }
-                self.moveToMainScreen()
-            })
+            self.moveToMainScreen()
         } else {
             moveToLogin()
         }

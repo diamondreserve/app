@@ -20,8 +20,7 @@ class RightMenuViewController: UIViewController {
         nameLabel.text = UserDefaults.standard.string(forKey: "fullname")
     }
 
-    @IBAction func contactButtonTapped(_ sender: Any) {
-    }
+
     
     @IBAction func reserveButtonTapped(_ sender: Any) {
         let mainSideViewController : MainSideMenuController = self.sideMenuController as! MainSideMenuController
@@ -36,12 +35,17 @@ class RightMenuViewController: UIViewController {
         //tabbarVC.present(reserveListVC!, animated: true, completion: nil)
     }
     
-    @IBAction func messageButtonTapped(_ sender: Any) {
-    }
-    
-    @IBAction func wishlistButtonTapped(_ sender: Any) {
+    @IBAction func markupButtonTapped(_ sender: Any) {
+        
+        let mainSideViewController : MainSideMenuController = self.sideMenuController as! MainSideMenuController
+        mainSideViewController.hideLeftView(animated: true, completionHandler: nil)
+        let tabbarVC:TabbarViewController = mainSideViewController.rootViewController as! TabbarViewController
+        let markupVC = self.storyboard?.instantiateViewController(withIdentifier: "welcomeVC") as! WelcomeViewController
+        markupVC.fromMain = true
+        tabbarVC.present(markupVC, animated: true, completion: nil)
         
     }
+    
     
     @IBAction func logoutAction(_ sender: Any) {
         let firebaseAuth = Auth.auth()

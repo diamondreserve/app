@@ -10,6 +10,11 @@ import UIKit
 
 class WelcomeViewController: UIViewController, UIScrollViewDelegate {
     
+    var fromMain: Bool = false
+    
+    
+    @IBOutlet weak var titleLabel: UILabel!
+    
     @IBOutlet var markups : [UIScrollView]!
 
     @IBOutlet weak var continueButton: UIButton!
@@ -17,10 +22,15 @@ class WelcomeViewController: UIViewController, UIScrollViewDelegate {
     var selectedIndex: Int = 0
     
     var markupValues: [Float] = [1, 1, 1, 1, 1]
-
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if fromMain {
+            titleLabel.text = "Your Markup"
+        } else {
+            titleLabel.text = "WELCOME!"
+        }
         
         for scrollView: UIScrollView in markups {
             for i in 0..<20 {
@@ -30,6 +40,17 @@ class WelcomeViewController: UIViewController, UIScrollViewDelegate {
                 label.textColor = .white
                 scrollView.addSubview(label)
                 scrollView.contentSize = CGSize(width:49, height:40*20)
+            }
+        }
+        
+        if (fromMain) {
+            markupValues = DiamondManager.sharedInstance.markupValues!
+            
+            for scrollView: UIScrollView in markups {
+                let value = markupValues[scrollView.tag]
+                let pageNumber = (value - 1) / 0.1
+                let pageHeight: CGFloat = scrollView.frame.size.height;
+                scrollView.contentOffset = CGPoint(x: 0, y: pageHeight * CGFloat(pageNumber))
             }
         }
     }
@@ -44,9 +65,15 @@ class WelcomeViewController: UIViewController, UIScrollViewDelegate {
     }
 
     @IBAction func nextButtonTapped(_ sender: Any) {
+        
         DiamondManager.sharedInstance.markupValues = markupValues
         DiamondManager.sharedInstance.saveMarkupValues()
+        
+        if (fromMain) {
+            dismiss(animated: true, completion: nil)
+        } else {
+            performSegue(withIdentifier: "goCover", sender: nil)
+        }
     }
-    
     
 }

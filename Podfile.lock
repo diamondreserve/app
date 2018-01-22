@@ -1,16 +1,16 @@
 PODS:
   - Alamofire (4.5.1)
-  - AWSAuthCore (2.6.2):
-    - AWSCore (= 2.6.2)
-  - AWSCognito (2.6.2):
-    - AWSCore (= 2.6.2)
-  - AWSCore (2.6.2)
-  - AWSDynamoDB (2.6.2):
-    - AWSCore (= 2.6.2)
-  - AWSS3 (2.6.2):
-    - AWSCore (= 2.6.2)
-  - AWSSNS (2.6.2):
-    - AWSCore (= 2.6.2)
+  - AWSAuthCore (2.6.3):
+    - AWSCore (= 2.6.3)
+  - AWSCognito (2.6.3):
+    - AWSCore (= 2.6.3)
+  - AWSCore (2.6.3)
+  - AWSDynamoDB (2.6.3):
+    - AWSCore (= 2.6.3)
+  - AWSS3 (2.6.3):
+    - AWSCore (= 2.6.3)
+  - AWSSNS (2.6.3):
+    - AWSCore (= 2.6.3)
   - Firebase/Auth (4.3.0):
     - Firebase/Core
     - FirebaseAuth (= 4.2.1)
@@ -56,6 +56,7 @@ PODS:
   - SDWebImage (4.1.2):
     - SDWebImage/Core (= 4.1.2)
   - SDWebImage/Core (4.1.2)
+  - SimpleImageViewer (1.0.1)
   - SwiftGifOrigin (1.6.1)
   - SwiftHash (2.0.1)
   - SwiftyJSON (3.1.4)
@@ -75,6 +76,7 @@ DEPENDENCIES:
   - NVActivityIndicatorView
   - RangeSeekSlider
   - SDWebImage (~> 4.0)
+  - SimpleImageViewer
   - SwiftGifOrigin (~> 1.6.1)
   - SwiftHash (from `https://github.com/onmyway133/SwiftHash`)
   - SwiftyJSON
@@ -85,17 +87,17 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   SwiftHash:
-    :commit: 1387bd2a614060ff516b3aa1279354b139b3e6f1
+    :commit: dd08f681c805c759d656c1cf98b0fec3b5886e42
     :git: https://github.com/onmyway133/SwiftHash
 
 SPEC CHECKSUMS:
   Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
-  AWSAuthCore: 41155990fc5b10d84667c237a8757799edbf6267
-  AWSCognito: e8db76ef485fbbc1c90617217451301b1477ce45
-  AWSCore: 8f458961a4967be219162108f5be7df1c935639a
-  AWSDynamoDB: 29e1d8775b13a18033b6064e1563e5769fdfe024
-  AWSS3: b3e2c4aca868cae06b5b88337ceabee25709fcc5
-  AWSSNS: 8dd8972ea374391dc61f04d19cd496c523708748
+  AWSAuthCore: d45af3dc231d436703432c5fe856bfe325867f73
+  AWSCognito: 89beca0210b195ab0f1e3b21b9b3b8462c55c9ec
+  AWSCore: 05ff0ec10c2e79487e0caaa64faa3b76884a7b2f
+  AWSDynamoDB: 39ff6a016a5f9f90ea9c40db3ebdcba135d552f5
+  AWSS3: 01613bbee0409d270aabbc1e37ec5012400d4cce
+  AWSSNS: 02c2901829fcdc3a92b2555df5d97644ad7f7033
   Firebase: 83283761a1ef6dc9846e03d08059f51421afbd65
   FirebaseAnalytics: 722b53c7b32bfc7806b06e0093a2f5180d4f2c5a
   FirebaseAuth: d7f047fbeab98062b98ea933b8d934e0fb1190e2
@@ -110,10 +112,11 @@ SPEC CHECKSUMS:
   NVActivityIndicatorView: 54c9b93b6f25a4f467512680c0c90c09a1095cf2
   RangeSeekSlider: 0386c5a9aa5ebcb2fa5238e8a627280cf46c7c0a
   SDWebImage: cb6f9f266a9977741efcbc21e618e8be3734c774
+  SimpleImageViewer: ab0deb97a2cbe008db5c60ea62a9431c2ce0c2e1
   SwiftGifOrigin: d6679d3ebe9df2e049a84bc52582635107b581f6
   SwiftHash: 62691a0d6b09b958d21ab1ea0014b83d56f58e8f
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
 
-PODFILE CHECKSUM: 79c6b08b72d5b642b2bbf645b4456be446ec8ead
+PODFILE CHECKSUM: 826064157af5339dc214a70500f525f7947ec919
 
 COCOAPODS: 1.3.1

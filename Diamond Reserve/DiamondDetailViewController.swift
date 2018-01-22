@@ -262,6 +262,11 @@ class DiamondDetailViewController: UIViewController, UITableViewDelegate, UITabl
     }
     
     @IBAction func showCertificateZoomAction(_ sender: Any) {
+        
+        if (certificateImageView.image == UIImage(named: "gia")) {
+            return;
+        }
+        
         let configuration = ImageViewerConfiguration { config in
             config.imageView = self.certificateImageView
         }

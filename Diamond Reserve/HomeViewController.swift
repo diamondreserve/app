@@ -11,6 +11,8 @@ import AWSSNS
 import AWSCore
 import AWSS3
 import SDWebImage
+import Firebase
+import SwiftyJSON
 
 class HomeViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextViewDelegate {
     
@@ -31,7 +33,19 @@ class HomeViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        editButton.isHidden = !(UserManager.sharedInstance.user?.is_admin)!
+        if (UserManager.sharedInstance.user == nil){
+            let user = Auth.auth().currentUser
+            UserManager.sharedInstance.login(id: user!.email!, completion: { (_ success: Bool, _ userJson: JSON?) in
+                if (success) {
+                    UserManager.sharedInstance.user = User(userJson!)
+                    UserManager.sharedInstance.saveCurrentUser(userJson: userJson!)
+                    self.editButton.isHidden = !(UserManager.sharedInstance.user?.is_admin)!
+                }
+            })
+        } else {
+            self.editButton.isHidden = !(UserManager.sharedInstance.user?.is_admin)!
+        }
+        
         if home_title != nil {
             editTextView.text = home_title!
         }
@@ -170,7 +184,7 @@ class HomeViewController: UIViewController, UIImagePickerControllerDelegate, UIN
         //        let documentDirectory = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first! as String
         localPath = URL(fileURLWithPath: NSTemporaryDirectory()).appendingPathComponent(imageName!)
         do {
-            let data = UIImageJPEGRepresentation(photo!, 0.3)
+            let data = UIImageJPEGRepresentation(photo!, 0.6)
             try data!.write(to: localPath!)
         } catch _ {
         }
