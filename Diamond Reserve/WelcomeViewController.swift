@@ -27,7 +27,7 @@ class WelcomeViewController: UIViewController, UIScrollViewDelegate {
         super.viewDidLoad()
         
         if fromMain {
-            titleLabel.text = "Your Markup"
+            titleLabel.text = "YOUR MARKUP"
         } else {
             titleLabel.text = "WELCOME!"
         }

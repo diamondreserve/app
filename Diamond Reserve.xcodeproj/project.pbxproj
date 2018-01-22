@@ -11,6 +11,9 @@
 		8003655E1FBF5F64007A0B17 /* loading2.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8003655D1FBF5F54007A0B17 /* loading2.gif */; };
 		80057E751F9FD51D006540BC /* DiamondManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80057E741F9FD51D006540BC /* DiamondManager.swift */; };
 		80057E771FA08639006540BC /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80057E761FA08638006540BC /* MessagesViewController.swift */; };
+		800FBE1C20164F1700501A40 /* markup.png in Resources */ = {isa = PBXBuildFile; fileRef = 800FBE1920164F0000501A40 /* markup.png */; };
+		800FBE1D20164F1700501A40 /* markup@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 800FBE1A20164F0600501A40 /* markup@2x.png */; };
+		800FBE1E20164F1700501A40 /* markup@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 800FBE1B20164F0C00501A40 /* markup@3x.png */; };
 		801C31281FD7F15C0004D566 /* gia.png in Resources */ = {isa = PBXBuildFile; fileRef = 801C31251FD7F14A0004D566 /* gia.png */; };
 		801C31291FD7F15C0004D566 /* gia@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 801C31261FD7F14D0004D566 /* gia@2x.png */; };
 		801C312A1FD7F15C0004D566 /* gia@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 801C31271FD7F1510004D566 /* gia@3x.png */; };
@@ -142,6 +145,9 @@
 		8003655D1FBF5F54007A0B17 /* loading2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = loading2.gif; sourceTree = "<group>"; };
 		80057E741F9FD51D006540BC /* DiamondManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiamondManager.swift; sourceTree = "<group>"; };
 		80057E761FA08638006540BC /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
+		800FBE1920164F0000501A40 /* markup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = markup.png; sourceTree = "<group>"; };
+		800FBE1A20164F0600501A40 /* markup@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "markup@2x.png"; sourceTree = "<group>"; };
+		800FBE1B20164F0C00501A40 /* markup@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "markup@3x.png"; sourceTree = "<group>"; };
 		801C31251FD7F14A0004D566 /* gia.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gia.png; sourceTree = "<group>"; };
 		801C31261FD7F14D0004D566 /* gia@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gia@2x.png"; sourceTree = "<group>"; };
 		801C31271FD7F1510004D566 /* gia@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gia@3x.png"; sourceTree = "<group>"; };
@@ -451,6 +457,9 @@
 		B7DD64F31F7C3B3300858A6B /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				800FBE1920164F0000501A40 /* markup.png */,
+				800FBE1A20164F0600501A40 /* markup@2x.png */,
+				800FBE1B20164F0C00501A40 /* markup@3x.png */,
 				802594EC1F8DCDFD004F1F94 /* BLACK_IV_FMX.png */,
 				802594ED1F8DCDFD004F1F94 /* BLACK_IV_FMX@2x.png */,
 				802594EE1F8DCDFD004F1F94 /* BLACK_IV_FMX@3x.png */,
@@ -652,6 +661,8 @@
 				8025951F1F8EB63B004F1F94 /* search@3x.png in Resources */,
 				B702FBFA1F8BF1AA00E0EFFB /* Emerald2@2x.png in Resources */,
 				B75C3E171F882F6600E759EC /* strip3.png in Resources */,
+				800FBE1E20164F1700501A40 /* markup@3x.png in Resources */,
+				800FBE1C20164F1700501A40 /* markup.png in Resources */,
 				B7DD64EC1F7C346D00858A6B /* Merged Background 2.jpg in Resources */,
 				B738C1621F7D91290097720C /* strip2.png in Resources */,
 				80566DEF1FA3BC99009FC556 /* tutorial_3.gif in Resources */,
@@ -709,6 +720,7 @@
 				801C312F1FD7F83A0004D566 /* down_arrow@2x.png in Resources */,
 				802595011F8E15B4004F1F94 /* MENU_ICON@3x.png in Resources */,
 				B76D8D741F7ACD15000CDFC7 /* Main.storyboard in Resources */,
+				800FBE1D20164F1700501A40 /* markup@2x.png in Resources */,
 				802595131F8EB55C004F1F94 /* jewelry@3x.png in Resources */,
 				802595001F8E15B4004F1F94 /* MENU_ICON@2x.png in Resources */,
 				802B600C1FBB8D39008B3202 /* GoogleService-Info.plist in Resources */,

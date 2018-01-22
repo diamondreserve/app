@@ -544,7 +544,7 @@
                                                         </constraints>
                                                     </view>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="REGISTER" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZL9-de-gmA">
-                                                        <rect key="frame" x="134.5" y="10" width="64.5" height="21"/>
+                                                        <rect key="frame" x="135" y="10" width="64.5" height="21"/>
                                                         <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="18"/>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -676,7 +676,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ON THE LIST?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EE0-2g-Hht">
-                                <rect key="frame" x="143.5" y="209" width="88.5" height="10.5"/>
+                                <rect key="frame" x="144" y="209" width="88.5" height="10.5"/>
                                 <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="18"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -724,7 +724,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Waiting to verify…" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="atd-p4-I8W">
-                                <rect key="frame" x="138" y="373" width="100.5" height="15.5"/>
+                                <rect key="frame" x="137.5" y="373" width="100.5" height="15.5"/>
                                 <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="13"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -874,7 +874,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WE WILL GET BACK TO YOU SHORTLY!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RuL-xU-hnB">
-                                <rect key="frame" x="94.5" y="568" width="187.5" height="17"/>
+                                <rect key="frame" x="94" y="568" width="187.5" height="17"/>
                                 <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="14"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -2052,7 +2052,7 @@ Now On Tap!</string>
                                                     <constraint firstAttribute="height" constant="1" id="iIQ-rD-Pol"/>
                                                 </constraints>
                                             </view>
-                                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menu_reserved" translatesAutoresizingMaskIntoConstraints="NO" id="OCt-6C-MDz">
+                                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="markup.png" translatesAutoresizingMaskIntoConstraints="NO" id="OCt-6C-MDz">
                                                 <rect key="frame" x="0.0" y="12" width="35" height="35"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="35" id="MG5-37-Me3"/>
@@ -2991,7 +2991,7 @@ Now On Tap!</string>
                                 <rect key="frame" x="0.0" y="64" width="375" height="538"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SUCCESS!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Lz-IZ-ixL">
-                                        <rect key="frame" x="143" y="125" width="89.5" height="28"/>
+                                        <rect key="frame" x="143.5" y="125" width="89.5" height="28"/>
                                         <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="24"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
@@ -6197,7 +6197,7 @@ Now On Tap!</string>
                                                             <rect key="frame" x="243" y="20.5" width="20" height="20"/>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="17:31:05" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hec-0J-OmW">
-                                                            <rect key="frame" x="273" y="20" width="64.5" height="21.5"/>
+                                                            <rect key="frame" x="273" y="20.5" width="64.5" height="21.5"/>
                                                             <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="18"/>
                                                             <color key="textColor" red="0.019607843137254902" green="0.81568627450980391" blue="0.15686274509803921" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
@@ -6513,6 +6513,7 @@ Now On Tap!</string>
         <image name="heart_selected" width="24" height="21"/>
         <image name="jewelry_sample" width="159" height="159"/>
         <image name="knob" width="36" height="36"/>
+        <image name="markup.png" width="25" height="26"/>
         <image name="marquise_normal" width="17" height="29"/>
         <image name="marquise_selected" width="18" height="29"/>
         <image name="menu_background" width="332" height="667"/>
