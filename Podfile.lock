@@ -1,16 +1,16 @@
 PODS:
   - Alamofire (4.5.1)
-  - AWSAuthCore (2.6.3):
-    - AWSCore (= 2.6.3)
-  - AWSCognito (2.6.3):
-    - AWSCore (= 2.6.3)
-  - AWSCore (2.6.3)
-  - AWSDynamoDB (2.6.3):
-    - AWSCore (= 2.6.3)
-  - AWSS3 (2.6.3):
-    - AWSCore (= 2.6.3)
-  - AWSSNS (2.6.3):
-    - AWSCore (= 2.6.3)
+  - AWSAuthCore (2.6.2):
+    - AWSCore (= 2.6.2)
+  - AWSCognito (2.6.2):
+    - AWSCore (= 2.6.2)
+  - AWSCore (2.6.2)
+  - AWSDynamoDB (2.6.2):
+    - AWSCore (= 2.6.2)
+  - AWSS3 (2.6.2):
+    - AWSCore (= 2.6.2)
+  - AWSSNS (2.6.2):
+    - AWSCore (= 2.6.2)
   - Firebase/Auth (4.3.0):
     - Firebase/Core
     - FirebaseAuth (= 4.2.1)
@@ -92,12 +92,12 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
-  AWSAuthCore: d45af3dc231d436703432c5fe856bfe325867f73
-  AWSCognito: 89beca0210b195ab0f1e3b21b9b3b8462c55c9ec
-  AWSCore: 05ff0ec10c2e79487e0caaa64faa3b76884a7b2f
-  AWSDynamoDB: 39ff6a016a5f9f90ea9c40db3ebdcba135d552f5
-  AWSS3: 01613bbee0409d270aabbc1e37ec5012400d4cce
-  AWSSNS: 02c2901829fcdc3a92b2555df5d97644ad7f7033
+  AWSAuthCore: 41155990fc5b10d84667c237a8757799edbf6267
+  AWSCognito: e8db76ef485fbbc1c90617217451301b1477ce45
+  AWSCore: 8f458961a4967be219162108f5be7df1c935639a
+  AWSDynamoDB: 29e1d8775b13a18033b6064e1563e5769fdfe024
+  AWSS3: b3e2c4aca868cae06b5b88337ceabee25709fcc5
+  AWSSNS: 8dd8972ea374391dc61f04d19cd496c523708748
   Firebase: 83283761a1ef6dc9846e03d08059f51421afbd65
   FirebaseAnalytics: 722b53c7b32bfc7806b06e0093a2f5180d4f2c5a
   FirebaseAuth: d7f047fbeab98062b98ea933b8d934e0fb1190e2
