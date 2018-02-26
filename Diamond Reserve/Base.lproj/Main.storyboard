@@ -1765,7 +1765,7 @@ TO SEE IF YOU QUALIFY </string>
                                                 <fontDescription key="fontDescription" name="UnicaOne-Regular" family="Unica One" pointSize="12"/>
                                                 <inset key="titleEdgeInsets" minX="-30" minY="40" maxX="0.0" maxY="0.0"/>
                                                 <inset key="imageEdgeInsets" minX="22" minY="-14" maxX="0.0" maxY="0.0"/>
-                                                <state key="normal" title="SEARCH" image="search_unselected">
+                                                <state key="normal" title="FILTER" image="search_unselected">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="0.431640625" colorSpace="calibratedRGB"/>
                                                 </state>
                                                 <state key="selected" image="search.png">

@@ -33,17 +33,25 @@ class DiamondSearchViewController: UIViewController {
          self.navigationController?.interactivePopGestureRecognizer?.isEnabled = false
         sideMenuController?.isLeftViewSwipeGestureDisabled = true
         weightSlider.minDistance = 0.2
+        
     }
 
     func setNavigationBar() {
-        navigationItem.title = "SEARCH"
         let menuBtn = UIBarButtonItem(image: UIImage(named:"MENU_ICON"), style: .plain, target: self, action: #selector(showSideMenu))
         navigationItem.leftBarButtonItem = menuBtn
         
-        let rightBtn = UIBarButtonItem(title: "SUBMIT", style: .plain, target: self, action: #selector(doneAction))
-        rightBtn.setTitleTextAttributes([NSFontAttributeName: UIFont(name: "Unica One", size: 17)! ,NSForegroundColorAttributeName: UIColor.white], for: .normal)
-        rightBtn.setTitleTextAttributes([NSFontAttributeName: UIFont(name: "Unica One", size: 17)! ,NSForegroundColorAttributeName: UIColor.white], for: .highlighted)
-
+       
+        let button = UIButton(type: UIButtonType.custom)
+        button.setTitle("SEARCH", for: .normal)
+        //Add target
+        button.addTarget(self, action:#selector(DiamondSearchViewController.doneAction), for: .touchUpInside)
+        button.frame = CGRect(x: 0, y: 0, width: 70, height: 28)
+        button.titleLabel?.font = UIFont(name: "Unica One", size: 15)
+        button.layer.borderColor = UIColor.white.cgColor
+        button.layer.borderWidth = 1
+        button.layer.cornerRadius = 3
+        
+        let rightBtn = UIBarButtonItem(customView: button)
         navigationItem.rightBarButtonItem = rightBtn
         
         weightSlider.numberFormatter.numberStyle = .decimal
