@@ -66,6 +66,12 @@
 		80566DED1FA3BC92009FC556 /* tutorial_1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 80566DEB1FA3B5AE009FC556 /* tutorial_1.gif */; };
 		80566DEE1FA3BC96009FC556 /* tutorial_2.gif in Resources */ = {isa = PBXBuildFile; fileRef = 80566DEA1FA3B5A5009FC556 /* tutorial_2.gif */; };
 		80566DEF1FA3BC99009FC556 /* tutorial_3.gif in Resources */ = {isa = PBXBuildFile; fileRef = 80566DEC1FA3B5B6009FC556 /* tutorial_3.gif */; };
+		80596EE32043EC5700F94526 /* filter.png in Resources */ = {isa = PBXBuildFile; fileRef = 80596EE02043EC5400F94526 /* filter.png */; };
+		80596EE42043EC5700F94526 /* filter@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 80596EE12043EC5500F94526 /* filter@3x.png */; };
+		80596EE52043EC5700F94526 /* filter@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 80596EE22043EC5600F94526 /* filter@2x.png */; };
+		80596EE92044911100F94526 /* filter_unselect@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 80596EE62044911000F94526 /* filter_unselect@2x.png */; };
+		80596EEA2044911100F94526 /* filter_unselect@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 80596EE72044911000F94526 /* filter_unselect@3x.png */; };
+		80596EEB2044911100F94526 /* filter_unselect.png in Resources */ = {isa = PBXBuildFile; fileRef = 80596EE82044911100F94526 /* filter_unselect.png */; };
 		808203D71FDABEFA00DB0F4A /* white-camera.png in Resources */ = {isa = PBXBuildFile; fileRef = 808203D61FDABEF400DB0F4A /* white-camera.png */; };
 		808203D81FDABEFA00DB0F4A /* white-camera@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 808203D41FDABEF300DB0F4A /* white-camera@2x.png */; };
 		808203D91FDABEFA00DB0F4A /* white-camera@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 808203D51FDABEF400DB0F4A /* white-camera@3x.png */; };
@@ -201,6 +207,12 @@
 		80566DEB1FA3B5AE009FC556 /* tutorial_1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = tutorial_1.gif; sourceTree = "<group>"; };
 		80566DEC1FA3B5B6009FC556 /* tutorial_3.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = tutorial_3.gif; sourceTree = "<group>"; };
 		80566DF21FA85E98009FC556 /* Diamond Reserve.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Diamond Reserve.entitlements"; sourceTree = "<group>"; };
+		80596EE02043EC5400F94526 /* filter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = filter.png; sourceTree = "<group>"; };
+		80596EE12043EC5500F94526 /* filter@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "filter@3x.png"; sourceTree = "<group>"; };
+		80596EE22043EC5600F94526 /* filter@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "filter@2x.png"; sourceTree = "<group>"; };
+		80596EE62044911000F94526 /* filter_unselect@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "filter_unselect@2x.png"; sourceTree = "<group>"; };
+		80596EE72044911000F94526 /* filter_unselect@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "filter_unselect@3x.png"; sourceTree = "<group>"; };
+		80596EE82044911100F94526 /* filter_unselect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = filter_unselect.png; sourceTree = "<group>"; };
 		808203D41FDABEF300DB0F4A /* white-camera@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "white-camera@2x.png"; sourceTree = "<group>"; };
 		808203D51FDABEF400DB0F4A /* white-camera@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "white-camera@3x.png"; sourceTree = "<group>"; };
 		808203D61FDABEF400DB0F4A /* white-camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "white-camera.png"; sourceTree = "<group>"; };
@@ -457,6 +469,12 @@
 		B7DD64F31F7C3B3300858A6B /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				80596EE02043EC5400F94526 /* filter.png */,
+				80596EE22043EC5600F94526 /* filter@2x.png */,
+				80596EE12043EC5500F94526 /* filter@3x.png */,
+				80596EE82044911100F94526 /* filter_unselect.png */,
+				80596EE62044911000F94526 /* filter_unselect@2x.png */,
+				80596EE72044911000F94526 /* filter_unselect@3x.png */,
 				800FBE1920164F0000501A40 /* markup.png */,
 				800FBE1A20164F0600501A40 /* markup@2x.png */,
 				800FBE1B20164F0C00501A40 /* markup@3x.png */,
@@ -662,12 +680,14 @@
 				B702FBFA1F8BF1AA00E0EFFB /* Emerald2@2x.png in Resources */,
 				B75C3E171F882F6600E759EC /* strip3.png in Resources */,
 				800FBE1E20164F1700501A40 /* markup@3x.png in Resources */,
+				80596EEB2044911100F94526 /* filter_unselect.png in Resources */,
 				800FBE1C20164F1700501A40 /* markup.png in Resources */,
 				B7DD64EC1F7C346D00858A6B /* Merged Background 2.jpg in Resources */,
 				B738C1621F7D91290097720C /* strip2.png in Resources */,
 				80566DEF1FA3BC99009FC556 /* tutorial_3.gif in Resources */,
 				B76D8D791F7ACD15000CDFC7 /* LaunchScreen.storyboard in Resources */,
 				B702FBF91F8BF1AA00E0EFFB /* Emerald2.png in Resources */,
+				80596EEA2044911100F94526 /* filter_unselect@3x.png in Resources */,
 				8025951D1F8EB63B004F1F94 /* search.png in Resources */,
 				B75C3E151F882F6600E759EC /* strip3@3x.png in Resources */,
 				B738C15C1F7D90B10097720C /* Stars@3x.png in Resources */,
@@ -685,6 +705,7 @@
 				808B53E41F92810E00504607 /* DiamondTableViewCell.xib in Resources */,
 				802992E81FD820C8007EFC9E /* white_edit_circle@3x.png in Resources */,
 				801C31281FD7F15C0004D566 /* gia.png in Resources */,
+				80596EE32043EC5700F94526 /* filter.png in Resources */,
 				801C31301FD7F83A0004D566 /* down_arrow@3x.png in Resources */,
 				802595061F8E2063004F1F94 /* gems@2x.png in Resources */,
 				80566DED1FA3BC92009FC556 /* tutorial_1.gif in Resources */,
@@ -692,6 +713,7 @@
 				801C312A1FD7F15C0004D566 /* gia@3x.png in Resources */,
 				B738C1601F7D91290097720C /* strip2@2x.png in Resources */,
 				B76D8D761F7ACD15000CDFC7 /* Assets.xcassets in Resources */,
+				80596EE92044911100F94526 /* filter_unselect@2x.png in Resources */,
 				B738C1671F7D91610097720C /* strip1.png in Resources */,
 				802594F11F8DCDFD004F1F94 /* BLACK_IV_FMX@3x.png in Resources */,
 				B702FBF71F8BF1AA00E0EFFB /* Emerald3.png in Resources */,
@@ -704,6 +726,7 @@
 				B738C1611F7D91290097720C /* strip2@3x.png in Resources */,
 				801C31291FD7F15C0004D566 /* gia@2x.png in Resources */,
 				802595121F8EB55C004F1F94 /* jewelry@2x.png in Resources */,
+				80596EE42043EC5700F94526 /* filter@3x.png in Resources */,
 				802594EF1F8DCDFD004F1F94 /* BLACK_IV_FMX.png in Resources */,
 				802992E71FD820C8007EFC9E /* white_edit_circle@2x.png in Resources */,
 				808203D91FDABEFA00DB0F4A /* white-camera@3x.png in Resources */,
@@ -725,6 +748,7 @@
 				802595001F8E15B4004F1F94 /* MENU_ICON@2x.png in Resources */,
 				802B600C1FBB8D39008B3202 /* GoogleService-Info.plist in Resources */,
 				802B60041FB8D6E7008B3202 /* down_arrow.png in Resources */,
+				80596EE52043EC5700F94526 /* filter@2x.png in Resources */,
 				802B60061FB8D705008B3202 /* up_arrow.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1138,8 +1162,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.diamond-reserve";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "51b18c16-74f1-4d57-87e7-44efad8e147e";
-				PROVISIONING_PROFILE_SPECIFIER = asher_diamond_production;
+				PROVISIONING_PROFILE = "f2824c4a-75f8-4771-934d-b310e0616019";
+				PROVISIONING_PROFILE_SPECIFIER = charles_diamond_production;
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1160,8 +1184,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.diamond-reserve";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "51b18c16-74f1-4d57-87e7-44efad8e147e";
-				PROVISIONING_PROFILE_SPECIFIER = asher_diamond_production;
+				PROVISIONING_PROFILE = "f2824c4a-75f8-4771-934d-b310e0616019";
+				PROVISIONING_PROFILE_SPECIFIER = charles_diamond_production;
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
