@@ -5365,6 +5365,7 @@ Now On Tap!</string>
                                                         <subviews>
                                                             <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="green_clock" translatesAutoresizingMaskIntoConstraints="NO" id="lan-rj-Ygp">
                                                                 <rect key="frame" x="0.0" y="0.0" width="33" height="33"/>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" secondItem="lan-rj-Ygp" secondAttribute="height" multiplier="1:1" id="fiy-Xj-pYe"/>
                                                                     <constraint firstAttribute="width" constant="33" id="goH-t2-eti"/>
@@ -5372,12 +5373,13 @@ Now On Tap!</string>
                                                             </imageView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gwf-9K-rjE">
                                                                 <rect key="frame" x="33" y="0.0" width="143" height="33"/>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <color key="textColor" red="0.019607843137254902" green="0.81568627450980391" blue="0.15686274509803921" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                         </subviews>
-                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                         <constraints>
                                                             <constraint firstItem="Gwf-9K-rjE" firstAttribute="top" secondItem="Tn4-fI-veC" secondAttribute="top" id="5xf-cu-r5r"/>
                                                             <constraint firstItem="lan-rj-Ygp" firstAttribute="centerY" secondItem="Tn4-fI-veC" secondAttribute="centerY" id="7Fc-be-Yes"/>
