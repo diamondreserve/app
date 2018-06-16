@@ -18,7 +18,6 @@ class DiamondSearchViewController: UIViewController {
     @IBOutlet var colorButtons: [UIButton]!
     @IBOutlet var clarityButtons: [UIButton]!
     
-       
     var selectedShapes = [String]()
     var selectedColors = [String]()
     var selectedClarities = [String]()
@@ -33,7 +32,6 @@ class DiamondSearchViewController: UIViewController {
          self.navigationController?.interactivePopGestureRecognizer?.isEnabled = false
         sideMenuController?.isLeftViewSwipeGestureDisabled = true
         weightSlider.minDistance = 0.2
-        
     }
 
     func setNavigationBar() {
